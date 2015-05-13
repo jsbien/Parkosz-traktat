@@ -1,0 +1,60 @@
+
+\endinput
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+«s -yy rfep.; v.
+
+
+
+
+
+\catcode `\^^M=5
+
+  \newtip{48}{Łoś niesłusznie uważa, że \textit{bika} w obu wypadkach
+    napisano błędnie zamiast \textit{ƀyka}. Przykłady są bowiem podane
+    w~pisowni dotychczasowej dla pokazania jej niewystarczalności do
+    zróżnicowania wyrazów \textit{bika} i \textit{byka}.} 
+
+\obeylines
+
+
+
+
+
+
+\newcommand{\margin}[1]{\annotatetextBlue{\{#1\}}{zapisy na marginesie}}
+
+
+% \renewcommand{\over}[1]{\colorbox{blue!10}{\{#1\}}}
+
+\renewcommand{\over}[1]{\annotatetextBlue{\{#1\}}{zapisy nad rządkami}}
+
+% litery i wyrazy dodane, (których w tekście brak)
+%\newcommand{\add}[1]{\colorbox{olive!10}{<#1>}}
+\newcommand{\add}[1]{\annotatetextOlive{<#1>}{litery i wyrazy dodane, (których w tekście brak)}}
+
+% litery i wyrazy zbędne
+% \newcommand{\extra}[1]{\colorbox{magenta!10}{[#1]}}
+\newcommand{\extra}[1]{\colorbox{magenta!10}{[#1]}}
+
+% przekreślenia
+% MATHEMATICAL LEFT WHITE SQUARE BRACKET' (U+27E6)
+% 'MATHEMATICAL RIGHT WHITE SQUARE BRACKET' (U+27E7)
+\newcommand{\overstr}[1]{\annotatetextMagenta{⟦#1⟧}{przekreślenia}}
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-PDF-mode: t
+%%% TeX-engine: luatex 
+%%% TeX-master: "ParkoszLatin"
+%%% default-input-method: "Parkosz-slash"
+%%% End: 
