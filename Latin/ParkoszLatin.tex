@@ -38,11 +38,18 @@
 \setsansfont[Mapping=tex-text]{DejaVu Sans}
 \setmonofont{DejaVu Sans Mono}
 
+\font\Quivira="Quivira"
+
 
 %\font\mono="DejaVu Sans Mono"
+\font\mono="DejaVu Sans"
 %\font\mono="DejaVu Sans"
 %\font\mono="FreeSerif"
-\font\mono="Cardo"
+
+\font\fontCardo="Cardo"
+
+\newcommand{\Cardo}[1]{{\fontCardo #1}}
+
 
 % http://scholarsfonts.net/cardofnt.html
 
@@ -193,9 +200,9 @@ commandchars=\\\{\}}
 
 \author{\textbf{Marian Kucała}\\(Korekta OCR, skład i transliteracja alfabetu Parkosza: Janusz S. Bień)} 
 
-\title{TEKST TRAKTATU\\[-.2ex]([Fotokopia i] odczytanie)\\Traktat o ortografii polskiej [Jakuba Parkosza]}
+\title{TEKST TRAKTATU\\[-.5ex]([Fotokopia i] odczytanie)\\[-.5ex]Traktat o ortografii polskiej [Jakuba Parkosza]}
 
-\date{\textbf{Licencje}:\\ Creative Commons [Wspólnota twórcza]\\
+\date{\textbf{Licencje}:\\ \relsize{-1}Creative Commons [Wspólnota twórcza]\\[-.4ex]
 Uznanie autorstwa --- Na tych samych warunkach --- Polska\\
 wersja 2.5 lub późniejsza\\\textit{także}\\
 GNU Free Documentation License\\
