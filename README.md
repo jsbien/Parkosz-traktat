@@ -11,7 +11,7 @@ http://wbl.klf.uw.edu.pl/12/
 
 **Zawartość niniejszego repozytorium - Content of the repository**
 
-Oryginalne skany traktatu - original scans of th treatease.
+Oryginalne skany traktatu - original scans of the treatease.
 
 Skany w formacie DjVu z OCR - *OCRed scans in DjVu format*
 
