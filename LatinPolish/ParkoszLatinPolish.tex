@@ -161,6 +161,9 @@ commandchars=\\\{\}}
 
 \def\fullpreviouslines{\everypar{\advance\plineno by 1\llap{\the\ppreviouspageno-\ifnum\plineno<10 0\fi\the \plineno \hskip 1.5em}}}
 
+% TO DO
+\let\splitpreviouslines\fullpreviouslines
+
 \newcommand{\Polish}[1]{\everypar{}\tmppline\plineno\tmppsubline\psublineno
 \textcolor{magenta}{#1}\plineno\tmppline\psublineno\tmppsubline\currentlines}
 
@@ -215,10 +218,10 @@ commandchars=\\\{\}}
 % \footnotetext[\the\psecnoteno]{#1}
 % \def²{\annotatehere[\the\psecnoteno]{#1}}}
 
-\def\secondtip#1#2{\footnotetext[\textcolor{magenta}{#1}]{#2}\def²{\annotatehere[#1]{#2}}}
-\def\thirdtip#1#2{\footnotetext[\textcolor{magenta}{#1}]{#2}\def³{\annotatehere[#1]{#2}}}
-\def\fourthtip#1#2{\footnotetext[\textcolor{magenta}{#1}]{#2}\def⁴{\annotatehere[#1]{#2}}}
-\def\fifthtip#1#2{\footnotetext[\textcolor{magenta}{#1}]{#2}\def⁵{\annotatehere[#1]{#2}}}
+\def\secondtip#1#2{\footnotetext[#1]{\textcolor{magenta}{#2}}\def²{\annotatehere[#1]{#2}}}
+\def\thirdtip#1#2{\footnotetext[#1]{\textcolor{magenta}{#2}}\def³{\annotatehere[#1]{#2}}}
+\def\fourthtip#1#2{\footnotetext[#1]{\textcolor{magenta}{#2}}\def⁴{\annotatehere[#1]{#2}}}
+\def\fifthtip#1#2{\footnotetext[#1]{\textcolor{magenta}{#2}}\def⁵{\annotatehere[#1]{#2}}}
 
 \author{\textbf{Marian Kucała}\\(Korekta OCR, skład i transliteracja alfabetu Parkosza: Janusz S. Bień)} 
 
@@ -242,9 +245,9 @@ GNU Free Documentation License\\
 %  \newpage
 %  \input Parkosz02-04
 %  \newpage
-  \input Parkosz03-05
+%  \input Parkosz03-05
 % % \newpage
-%  \input Parkosz04-06
+  \input Parkosz04-06
 % \newpage
 % \input Parkosz05-07
 % \newpage
@@ -269,79 +272,8 @@ GNU Free Documentation License\\
 % pomaga na automatyczne wyswietlanie adnotacji?:
 \newpage
 \end{document}
- Chcąc być
-wiernym tłumaczem, nie będziesz się starał tłumaczyć słowo w słowo,
-lecz sens oddawać — to jednak wiadomo, że nie dla wszystkich jest to
-równie łatwe. Albowiem, jak tenże św. Hieronim mówi w tym samym
-miejscu, trudna to rzecz i mozolna, idąc cudzym szlakiem, tj. śladem
-cudzego pisania, nie wypaść gdzieś z koleiny, aby to, co dobrze
-wyrażono w obcym języku, zachowało tę samą ozdobność w
-przekładzie. Przecież każdy język ma różne właściwości swoich wyrazów,
-a zatem itd.
- 
-Bardzo więc przezornie niektóre narody spisują swoje
-czyny, postępki i dokonania we własnym języku, ażeby się (tu) nie
-\marginpar{s. 89}
-wkradł jakiś błąd z obcego języka. Taka przezorność jest nieznana
-jednemu tylko przesławnemu językowi polskiemu.
-
-\newtip{24}{Tj. prawa kanonicznego.}
-Widząc to znakomity Jakub syn Parkosza z Żórawic, doktor dekretów¹,
-% 24	Tj. prawa kanonicznego.
-\newtip{25}{W Krakowie.}
-kanonik krakowski i rektor kościoła parafialnego na Skałce¹, w tej
-% 25	W Krakowie.{
-myśli, by naród polski w tych rzeczach nie pozostawał nadal — z
-wielkim dla siebie niebezpieczeństwem — w tyle za innymi, wynalazł i
-przedstawił w niniejszej rozprawce jeden całkowicie wystarczający
-sposób, dzięki któremu można będzie zadowalająco pisać po polsku,
-ażeby naród pocieszony mógł spisywać swoje dzieje we własnym
-języku.
-
-Wprawdzie wielu błędnie myślącym, a właściwiej trzeba
-powiedzieć: fantastycznie i chimerycznie bredzącym, wydaje się, że
-używanie środka zaleconego w tej rozprawce, zachęcającej, by panowie
-Polacy, tak jak inne narody, myśli swoje wyrażali we własnym języku,
-może się stać okazją do błędów. Twierdzą oni mianowicie, że okazja
-taka przydarzyła się pewnym ludziom, a przyczynę błędów upatrują nie w
-czym innym, lecz w tym właśnie, że pośród wielkiej ilości ksiąg
-teologicznych i innych istnieją też księgi napisane w ich własnym
-języku. Stąd to — według tak twierdzących — zdarza się, że nie tylko
-mężczyźni, ale i kobiety, czytając takie księgi, wpadają w
-błędy.
-
-Trzymajmy się jednak z daleka od takiego paralogistycznego mniemania,
-aby odrobina kwasu nie zepsuła (zdrowej) intencji, z jaką sporządzono
-niniejsze ciasto. Bo nie rzecz sama ani nie narzędzie zdolne jest
-otrzymać pochwałę lub naganę, ale tylko jego właściwe używanie lub
-nadużywanie. Jeśliś upadł po nadużyciu wina, nie jest to upadek wina,
-ale twój. Gdyby tak nie było, toby się trzeba wyrzec i Pisma św.,
-ponieważ jego powagą także i heretycy popierają swoje mniemania,
-dowodząc każdego artykułu za pomocą Pisma św., jak się okazuje z
-rozprawy czcigodnego Benedykta, doktora dekretów, opata z
-\newtip{26}{Autora m. in. rozprawy \textit{Tractatus contra diversos
-    errores hereticorum} (znajdującego się m.in. w rękopisie
-  Biblioteki Jagiellońskiej nr 423, k. 88-111).}
-Marsylii¹. Ale nie dlatego zasługują na naganę, że się powołują na
-% 26	Autora m. in. rozprawy Tractatus contra diversos errores hereticorum—89 —
-% (znajdującego się m.in. w rękopisie Biblioteki
-% Jagiellońskiej nr 423, k. 88-111).
-Pismo św., lecz dlatego, że je opacznie rozumieją. Dobre lub złe 
-\marginpar{s. 90}
-używanie narzędzia zależy od zdolności używającego, gdyż — według
-\newtip{27}{Prawdopodobnie Inocentego III albo Inocentego V (por. następną notkę).}
-Inocentego¹ — narzędzie nie działa samo przez się, ale w połączeniu
-% 27	Prawdopodobnie Inocentego III albo Inocentego Y (por. następną notkę).
-z tym, kto je wprawia w ruch. Znaczy to, że nie działa ono swobodnie,
-lecz tylko z woli osoby narzędzie w ruch wprowadzającej. Bo — jak mówi
-\newtip{28}{Późniejszy papież Inocenty V, 1225-1276. Główne dzieła:
-  \textit{Commentaria in 4 libros sententiarum, Commentarii in epistolas
-  s. Pauli} (m.in. w kilku rękopisach w Bibliotece Jagiellońskiej).}
-Piotr z Tarantasio¹ — to wola właśnie zamyka oczy i otwiera je, jak
-% 28 Późniejszy papież Inocenty V, 1225-1276. Główne dzieła: Com-
-% mentaria in 4 libros senłentiarum, Commentarii in epistolas s. Pauli
-% (m.in. w kilku' rękopisach w Bibliotece Jagiellońskiej).
-chce.
+    
+        
 
 Niech więc ustąpi bezsensowny zarzut i niech się zacznie
 pożyteczna służba dla języka polskiego. Itd.
