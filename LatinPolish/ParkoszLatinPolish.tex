@@ -1,0 +1,1214 @@
+% TODO tips dla łaciny
+% konsekwentnie kolorować wcięcia
+
+% lualatex ze wzgledu na OCG
+%
+\documentclass[dvipsnames,12pt]{article}
+\usepackage{polyglossia}
+\setdefaultlanguage{polish}
+
+\usepackage[a4paper,landscape]{geometry}
+\usepackage[doublespacing]{setspace}
+\usepackage{fontspec}
+
+% Missing character: There is no ꝯ (U+A76F) in font "DejaVu Sans"!
+% FreeSerif
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage{soul}
+
+\usepackage{ocgx}
+\usepackage{zref-savepos}
+\usepackage{xifthen}
+\usepackage{xspace}
+
+\input{OCG_annotation}
+
+
+\usepackage{longtable}
+\usepackage{hyperref}
+
+\usepackage{fancyvrb}
+
+\usepackage{relsize}
+
+\usepackage{draftwatermark}
+
+
+\setmainfont[Mapping=tex-text]{DejaVu Serif}
+\setsansfont[Mapping=tex-text]{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+
+\font\Quivira="Quivira"
+
+
+%\font\mono="DejaVu Sans Mono"
+\font\mono="DejaVu Sans"
+%\font\mono="DejaVu Sans"
+%\font\mono="FreeSerif"
+
+\font\fontCardo="Cardo"
+
+\newcommand{\Cardo}[1]{{\fontCardo #1}}
+
+
+% http://scholarsfonts.net/cardofnt.html
+
+\font\Parkosz="Parkosz"
+\def\largeParkosz{\fontspec[Scale=1.5]{Parkosz}}
+
+\newcommand{\symbolParkosz}[1]{{\largeParkosz\symbol{#1}}}
+
+\newcommand{\sParkosz}[1]{{\fontspec[Scale=3.0]{Parkosz}\symbol{#1}}}
+
+\newcommand{\polski}[1]{\colorbox{lime}{\textit{#1}}}
+\newcommand{\parkosz}[1]{\colorbox{lime}{\textit{#1}}}
+\newcommand{\PARKOSZ}[1]{{\textit{#1}}}
+
+% za ciemny:
+% \newcommand{\almanica}[1]{\colorbox{lightgray}{\textit{#1}}}
+\newcommand{\almanica}[1]{\colorbox{pink}{\textit{#1}}}
+
+% mentioned (vs. used) - general
+\newcommand{\ment}[1]{\textit{#1}}
+
+\newcommand{\glosa}[1]{#1}
+
+%hh hyphenation head
+%ht hyphenation tail
+
+% dc dropped capital
+
+% po wprowadzeniu \Polish \relsize działa rownież na numer strony!!!
+% psuje numerację!!!
+\newcommand{\dc}[1]{{%\relsize{3}%
+\colorbox{black!15}{\textbf{#1}}}}
+
+\newcommand{\hyphh}[2]{#1\textcolor{blue}{#2}}
+\newcommand{\hypht}[2]{\fbox{#2}}
+
+% http://wbl.klf.uw.edu.pl/13/2/iParkosz.djvu?djvuopts=&page=37&zoom=width&showposition=0.5,0.55
+
+% marginalia
+% zapisy na marginesie i nad rządkami
+%\newcommand{\margin}[1]{\colorbox{blue!10}{\{#1\}}}
+\newcommand{\margin}[1]{\annotatetextBlue{\{#1\}}{zapisy na marginesie}}
+
+
+% \renewcommand{\over}[1]{\colorbox{blue!10}{\{#1\}}}
+
+\renewcommand{\over}[1]{\annotatetextBlue{\{#1\}}{zapisy nad rządkami}}
+
+% litery i wyrazy dodane, (których w tekście brak)
+%\newcommand{\add}[1]{\colorbox{olive!10}{<#1>}}
+\newcommand{\add}[1]{\annotatetextOlive{<#1>}{litery i wyrazy dodane, (których w tekście brak)}}
+
+% litery i wyrazy zbędne
+% \newcommand{\extra}[1]{\colorbox{magenta!10}{[#1]}}
+\newcommand{\extra}[1]{\colorbox{magenta!10}{[#1]}}
+
+% przekreślenia
+% MATHEMATICAL LEFT WHITE SQUARE BRACKET' (U+27E6)
+% 'MATHEMATICAL RIGHT WHITE SQUARE BRACKET' (U+27E7)
+\newcommand{\overstr}[1]{\annotatetextMagenta{⟦#1⟧}{przekreślenia}}
+
+% mało fontów:
+% RIGHT WHITE SQUARE BRACKET (U+301B)
+
+
+% wątpliwe odczytania
+% confidence
+% nie działa parametr specyfikacji koloru - może jakiś głupi błąd
+\newcommand{\conf}[2]{\textcolor{orange}{#1}}
+
+
+% wcięcia Kucały
+% akapit:
+\newcommand{\indentK}{\hskip2em}
+% cytat
+\newcommand{\indentKcyt}{\hskip5em}
+
+% wcięcia Parkosza:
+\newcommand{\indentP}{\colorbox{yellow}{\hskip2em}}
+
+\parindent0pt
+
+\DefineVerbatimEnvironment%
+{VerbatimLatin}{Verbatim}
+{commentchar=\%,numbers=left,numberblanklines=false,
+commandchars=\\\{\}}
+
+% \fboxrule2pt
+
+% Parkosz...
+
+\newcount\ppageno
+\newcount\ppreviouspageno
+
+
+\newcount\plineno
+\newcount\psublineno
+
+\newcount\pnoteno
+\newcount\psecnoteno
+
+\newcount\tmppline
+\newcount\tmppsubline
+
+% odstęp na oko - lepiej zmierzyć i wstawić
+\def\fulllines{\everypar{\advance\plineno by 1\llap{\the\ppageno-\ifnum\plineno<10 0\fi\the \plineno \hskip 1.5em}}\let\currentlines\fulllines}
+
+\def\fullpreviouslines{\everypar{\advance\plineno by 1\llap{\the\ppreviouspageno-\ifnum\plineno<10 0\fi\the \plineno \hskip 1.5em}}}
+
+% TO DO
+\let\splitpreviouslines\fullpreviouslines
+
+\newcommand{\Polish}[1]{\everypar{}\tmppline\plineno\tmppsubline\psublineno
+\textcolor{magenta}{#1}\plineno\tmppline\psublineno\tmppsubline\currentlines}
+
+
+% liczenie pustych wierszy:
+% \let\engraf\par
+% \def\par{\leavevmode\endgraf}
+
+% TODO: zbędna spacja!
+\def\splitlines{\advance\plineno by
+  1\psublineno=0\everypar{\advance\psublineno by
+    1\llap{{\the\ppageno-\ifnum\plineno<10 0\fi\the
+        \plineno-\textcolor{green}{\the\psublineno} \ }}}\let\currentlines\splitsublines}
+
+\def\splitsublines{\everypar{\advance\psublineno by
+    1\llap{\textcolor{green}{\the\ppageno-\ifnum\plineno<10 0\fi\the
+        \plineno-\the\psublineno \ }}}\let\currentlines\splitsublines}
+
+\def\newsplitline{\advance\plineno by 1}
+
+\def\newParkoszpage{\everypar{}}
+
+
+
+% ¹ 'SUPERSCRIPT ONE' (U+00B9)
+% ² U+00B2 	SUPERSCRIPT TWO
+% U+00B3 	SUPERSCRIPT THREE	
+\catcode`\¹=13
+\catcode`\²=13
+\catcode`\³=13
+\catcode`\⁴=13
+\catcode`\⁵=13
+
+% \advance\pnoteno by 1
+% \def\tip{Jeden z tych przykładów winien być napisany przez b!, drugi przez ɓ.}
+% \footnotetext[\the\pnoteno]{\tip}
+% \def¹{\annotatehere[\the\pnoteno]{\tip}}
+
+\def\newtip#1#2{
+% \pnoteno=\psecnoteno
+% \advance\pnoteno by 1
+% \footnotetext[\the\pnoteno]{#1}
+% \def¹{\annotatehere[\the\pnoteno]{#1}}}
+\footnotetext[#1]{\textcolor{magenta}{#2}}
+\def¹{\annotatehere[#1]{#2}}}
+
+\def\newltip#1#2{
+\footnotetext[#1]{#2}
+\def¹{\annotatehere[#1]{#2}}}
+
+
+
+% \def\secondtip#1{
+% \psecnoteno=\pnoteno
+% \advance\psecnoteno by 1
+% \footnotetext[\the\psecnoteno]{#1}
+% \def²{\annotatehere[\the\psecnoteno]{#1}}}
+
+\def\secondtip#1#2{\footnotetext[#1]{\textcolor{magenta}{#2}}\def²{\annotatehere[#1]{#2}}}
+\def\thirdtip#1#2{\footnotetext[#1]{\textcolor{magenta}{#2}}\def³{\annotatehere[#1]{#2}}}
+\def\fourthtip#1#2{\footnotetext[#1]{\textcolor{magenta}{#2}}\def⁴{\annotatehere[#1]{#2}}}
+\def\fifthtip#1#2{\footnotetext[#1]{\textcolor{magenta}{#2}}\def⁵{\annotatehere[#1]{#2}}}
+
+\author{\textbf{Marian Kucała}\\(Korekta OCR, skład i transliteracja alfabetu Parkosza: Janusz S. Bień)} 
+
+\title{TEKST TRAKTATU\\[-.5ex](Odczytanie i tłumaczenie)\\[-.5ex]Traktat o ortografii polskiej [Jakuba Parkosza]}
+
+\date{\textbf{Licencje}:\\ \relsize{-1}Creative Commons [Wspólnota twórcza]\\[-.4ex]
+Uznanie autorstwa --- Na tych samych warunkach --- Polska\\
+wersja 2.5 lub późniejsza\\\textit{także}\\
+GNU Free Documentation License\\
+\textbf{\today}}
+
+
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+% \input Parkosz01-03
+%  \newpage
+%  \input Parkosz02-04
+%  \newpage
+%  \input Parkosz03-05
+% % \newpage
+%  \input Parkosz04-06
+% \newpage
+ \input Parkosz05-07
+% \newpage
+% \input Parkosz06-08
+% \newpage
+%  \input Parkosz07-09
+% \newpage
+%  \input Parkosz08-10
+% \newpage
+%  \input Parkosz09-11
+% \newpage
+%  \input Parkosz10-12
+% \newpage
+%  \input Parkosz11-13
+% \newpage
+%  \input Parkosz12-14
+% \newpage
+%  \input Parkosz13-15
+% \newpage
+%  \input Parkosz14-16
+
+% pomaga na automatyczne wyswietlanie adnotacji?:
+\newpage
+\end{document}
+
+    Używa się także (litery \textit{v}) na oznaczenie samej
+spółgłoski, a wówczas (ta spółgłoska) czasem twardnieje, czasem jest
+wymawiana miękko. Przykład pierwszego (typu wymawiania):
+\textit{wykład}, \textit{wyje}, \textit{wyja}. Przykład drugiego:
+\textit{wiła} \textit{wiłuje}. A kiedy oznacza samą samogłoskę
+\textit{u}, pisze się tak samo jak \textit{u}, w górnej części
+otwarte, w dolnej połączone. Kiedy zaś się wzdłuża, wówczas jest (w
+piśmie) podwajane. Przykład pierwszego (jest) w \textit{uÿe}
+\newtip{40}{Oba przykłady niejasne. Pierwszy to prawdopodobnie forma 3 osoby od
+czasownika \textit{ujeść}, co do drugiego to Łoś dopuszcza dwie możliwości:
+zniekształcone \textit{ujazd} lub \textit{ujas} `wuj (zgrubiałe)'.}
+\textit{uÿass} (\textit{uje}, \textit{ujas})¹. Przykład drugiego: \textit{ſzvwam}
+\textit{dmuchaa} (\textit{suwam}, \textit{dmuchā}).
+\marginpar{s. 93}
+Kiedy jest spółgłoską i twardnieje, wówczas (w pisowni) z wyższego
+pierwszego rożka wyprowadza się przeciągnięcie (linii),
+np. \textit{ʋaal}, \textit{ʋyl}, \textit{ʋikład} (\textit{wāł},
+\textit{wył}, \textit{wykład}). Kiedy się zaś zmiękcza, wtedy się
+pisze z równymi rożkami, tak jak: \textit{viła}, \textit{vidzaall},
+\textit{vino} (\textit{wiła}, \textit{widziāł}, \textit{wino}).
+
+Gdy ta różnica między miękką i twardą spółgłoską \textit{v} będzie
+zachowywana, nie będzie konieczne pisanie podwójnego \textit{y} (dla
+oznaczania miękkości), jak się niegdyś pisało, np. \textit{vyatr}
+\textit{wyege}, \textit{wyoſna}, \textit{vyøonczek} (\textit{wiatr
+  wieje}, \textit{wiosna}, \textit{Wiącek}). (Nie należy tak pisać),
+ponieważ nie byłoby różnicy między \textit{wijał} i \textit{wiał}
+'dął', ale miękkie \textit{w} pisze się tak: \textit{vaal},
+\textit{vathr}, \textit{vege}, \textit{voſna}, \textit{vøczek},
+\textit{vvaaƚ} (\textit{wiāł}, \textit{wiatr}, \textit{wieje},
+\textit{wiosna}, \textit{Wiącek}, \textit{wwiāł} czy
+\textit{uwiāł}). Błędem jest bowiem czynić przy pomocy większej ilości
+rzeczy to, co równie dobrze może być uczynione przy pomocy mniejszej
+ilości.
+
+A te oto sześć liter:
+\textit{b},\textit{f},\textit{l},\textit{m},\textit{n},\textit{p},
+\newtip{41}{To „iloczas” tu zbędne.}
+zachowując to samo (w zasadzie) brzmienie i iloczas¹, są wymawiane
+bądź twardo, bądź miękko.
+
+\newtip{42}{A raczej drugiego, tj. miękkiego wymawiania.}
+O \textit{b}. Przykład pierwszego (typu wymawiania)¹ \textit{b}:
+\newtip{43}{Tj. twardego wymawiania.}
+\textit{bik}, \textit{bit} 'bity'. Przykład drugiego¹: \textit{był}
+'był’, \textit{byk} 'byk'. Na podstawie samogłoski, podwojonej i
+wzdłużonej, nie może tu być (widocznej) różnicy. Okazuje się bowiem,
+że zarówno \textit{b} wymawiane miękko jak i twardo łączy się tak z
+długim \textit{y} jak z krótkim \textit{i}. Bo chociaż tam, gdzie się
+\textit{i} (\textit{y}) wzdłuża, \textit{b} powinno twardnieć, a gdzie
+się \textit{i} (\textit{y}) skraca, \textit{b} winno by się zmiękczać,
+jak w przykładach wyżej podanych \textit{byk} i \textit{bik}, to
+jednak spotyka się wyrazy, w których \textit{i} się skraca, a
+\textit{b} raz się zmiękcza, raz twardnieje, jak w \textit{by̆t}
+'mieszkanie’, \textit{bĭt} 'bity’; w tych wyrazach \textit{i}
+(\textit{y}) się skraca, a jednak \textit{b} się i zmiękcza, i
+twardnieje. Czasem na odwrót: \textit{i} (\textit{y}) się wzdłuża, a
+jednak \textit{b} się wymawia i twardo, i miękko, jak w \textit{bīł}
+'bił’, \textit{bȳł} 'był’.
+
+F. Również \textit{f} jest wymawiane bądź twardo, bądź miękko,
+\marginpar{s. 94}
+\newtip{44}{Tj. \textit{Chwał} (i dalej: \textit{chwiał}, \textit{chwist}, \textit{chwyta}).}
+np. \textit{Fāł}¹ 'imię własne’ — \textit{fiāł} 'chwiał,
+poruszał'. Tych wyrazów też nie można różnicować przez dodane
+samogłoski, bo oba: \textit{Fāł} i \textit{fiāł} mają \textit{ā}
+długie, czyli (w pisowni) podwojone, a f się w brzmieniu różni. I
+gdyby się twierdziło, że samogłoska wzdłużona, czyli przedłużona
+powoduje twardość, a skrócona miękkość spółgłoski, jak to powiedziano
+o \textit{b}, toby się to okazało nieprawdziwe w przykładach dopiero
+co przytoczonych: \textit{Fāł} — \textit{fiāł}. Niekiedy nawet
+samogłoska się wzdłuża, a \textit{f} się zmiękcza, np.\textit{fīst}; i
+odwrotnie, samogłoska się skraca, a \textit{f} twardnieje,
+np. \textit{fy̆tā}; i znowu \textit{i} się skraca, np. \textit{fīst}
+\textit{fy̆ta} — \textit{fĭgi}.
+
+\textit{L}, \textit{ł}. Tak samo i \textit{l} bądź twardnieje, bądź
+się zmiękcza, np. \textit{list} 'list’ lub 'liść’ — \textit{łyst}
+'część nogi’; \textit{lis} 'lis’ — \textit{łys} 'łysy’. Mimo że
+wszystko inne jest tu jednakowe, \textit{l} raz twardnieje, raz się
+zmiękcza. Tak również na końcu (wyrazów), np. \textit{stāl} 'stal’ —
+\textit{stāł} 'stał’.
+
+
+\textit{M}. Podobnie twardnieje i zmiękcza się \textit{m} znajdujące
+się koło tych samych samogłosek i spółgłosek. Przykład: \textit{Mika}
+'Mikołaj’ — \textit{mykā} 'pociąga’; również położone na końcu wyrazu,
+np. \textit{dym}, \textit{grom}, \textit{jim} 'im’ — \textit{jiḿ}
+'chwytaj’, \textit{przyḿ} 'przyjmij’.
+
+
+\textit{N}. Podobnie twardnieje i zmiękcza się \textit{n}. Przykład na
+twarde: \textit{nyski} 'z miasta Nysy’. Przykład na miękkie:
+\textit{niski} 'niewysoko położony’. Tak również na końcu:
+\textit{syn} — \textit{kōń}.
+
+\textit{P}. Podobnie twardo i miękko wymawia się \textit{p}:
+\textit{Pan} \textit{Paweł} \textit{pyszno} \textit{pije}
+\textit{piwo}, \textit{Piotr} \textit{powiē} \textit{popu}.
+
+
+Jak więc zaznaczymy różnice brzmień tych liter?  Jeśli zechcemy jakoś
+te różnice zaznaczyć, napotkamy niemałe trudności. Jeśli nie będziemy
+zaznaczać, musi to pociągnąć za sobą wiele błędów. Pisanie bowiem tym
+\newtip{45}{Tj. głoski.}
+samym znakiem litery¹ miękko i twardo wymawianej jest niemałym
+błędem. A jak już powiedziano, różnica nie może być zaznaczona przez
+\newtip{46}{Tzn. przez zróżnicowanie pisowni samogłosek.}
+samogłoski długie, czyli dodane¹.
+
+\marginpar{s. 95}
+\textit{B}. Więc, jeśli łaska, (piszmy) \textit{b} twarde bez łuczka
+(zagięcia u góry) i kwadratowe, tak jak \textit{b}, które muzycy także
+nazywają \textit{b} twardym, a \textit{b} miękkie z łuczkiem u góry i
+niżej okrągłe, tak jak \textit{b}, które muzycy także nazywają
+\newtip{47}{Chodzi o znakowanie muzyczne dla tonacji moll i dur. Por. Riemann
+Musiklexikon herausgegeben von H. H. Eggebrecht, Bd. III Sachteil,
+Mainz 1967, s. 71.}
+\textit{b} miękkim¹. Przykład (na \textit{b} twarde): \textit{ƀaƀø}
+\textit{bik} \textit{ƀodze} (\textit{babą} 'babę’ \textit{byk}
+\textit{bodzie}). Przykład drugiego \textit{b}, miękkiego:
+\textit{Beneck}, \textit{ɓyka}, \textit{ɓigę} (\textit{Bieniek},
+\textit{bika}, \textit{bije}).
+
+\textit{F}. F twarde piszmy jako podwójne, czyli podwojone, \textit{f}
+miękkie jako pojedyncze. Przykład pierwszego: \textit{ffaaɬ}
+\textit{ffaſth} \textit{ffita} (\textit{Fāł} \textit{fast}
+\textit{fyta}). Przykład drugiego: \textit{fisth} \textit{figi}
+(\textit{fist} \textit{figi}).
+
+\textit{L}. Tak samo (jak \textit{b}) \textit{l} twarde niech będzie
+bez łuczka. Przykład: \textit{ƚapka} \textit{ƚekce} \textit{ƚiſzego}
+(\textit{łapka} \textit{łekce} \textit{łysego}), \textit{ƚoſze}
+\textit{ƚudzy} \textit{ƚøthka} (\textit{łosie} \textit{łudzi}
+\textit{łątkaq}). Miękkie (\textit{l}) niech będzie z łuczkiem u góry,
+Przykład: \textit{ɬaaſz}, \textit{ɬis}, \textit{ɬoſth}
+a. \textit{ɬoſch}, \textit{ɬeſćh}, \textit{ɬudze}, \textit{ɬąnkawką}
+(las, lis, lost, lesz, ludzie, łąkawka).
+
+\textit{M}, \textit{ḿ}. Twarde \textit{m} (niech będzie) z ogonkiem
+\newtip{48}{W samym traktacie końcowe m i n jest z reguły pisane z przedłużaniem
+ostatniej laski ku dołowi}
+przy trzeciej nóżce, jak się zwykło pisać na końcu wyrazów¹, jak
+np. \textit{ɱara}, \textit{ɱego}, \textit{ɱige}, \textit{ɱoge},
+\textit{ɱødro}, \textit{ɱuſchø} (\textit{mara}, \textit{mego},
+\textit{myje}, \textit{moje}, \textit{mądro}, \textit{muszą}
+'muszę’). \textit{M} zaś miękkie — bez ogonka, np. \textit{maal}
+\textit{mecz} \textit{mikołai} \textit{mood}, (\textit{miāł}
+\textit{mieć} \textit{Mikołaj} \textit{miōd}).
+
+\textit{N}, \textit{ń}. Tak również \textit{n} twarde (należy pisać) z
+ogonkiem, jak się zwykło pisać na końcu wyrazów, np. \textit{ɲapaſcz},
+\textit{gɲath}, \textit{ɲaƚøcz}, \textit{ɲoc}, \textit{ɲos},
+\textit{ɲødza} (\textit{napaść}, \textit{gnat}, \textit{nałącz}
+'nałęcz', \textit{noc}, \textit{nos}, \textit{nądza} 'nędza’). Miękkie
+(\textit{n}) — bez ogonka, np. \textit{nevaſta} \textit{ne}
+\textit{ve} \textit{niczs} (\textit{niewiasta nie wie nics}). Między ɲ
+twardym a y podwójnym będzie różnica, ponieważ ogonek ɲ pociąga się
+na prawo, ogonek \textit{y} zgina się w lewo. Ponadto nad \textit{y} pisze się podwójną
+kropkę dla odróżnienia od \textit{ɲ} twardego.
+
+\textit{P}, \textit{p}. \textit{P} twarde niech będzie kwadratowe, tak
+jak \textit{b} twarde. \textit{P} miękkie niech będzie
+zaokrąglone. Przykład pierwszego: \textit{Ᵽan}
+\marginpar{s. 96}
+\newtip{49}{Forma nie całkiem jasna, może być od \textit{piać} lub \textit{pojeść}. Chyba błędnie
+oznaczono \textit{o} jako długie.}
+\textit{Ᵽaveƚl Ᵽooge Ᵽyſchno} (\textit{pan Paweł poje¹
+  pyszno}). Przykład drugiego: \textit{Ƥotr Ƥivo Ƥige
+  Ƥilno}. (\textit{Piotr piwo pije pilno}), \textit{Ƥech Ƥecze Ƥeceną}
+(\textit{Piech piecze pieczenią}).
+
+Nie trzeba też już będzie po tych literach wymawianych miękko pisać
+podwójnego \textit{y}, jak to dotychczas pisaliśmy przy wszystkich
+wymienionych spółgłoskach. Piszemy bowiem (dotąd) \textit{byƚ} 'bił'
+przez podwójne \textit{y}, chcąc zaznaczyć miękkie \textit{b}; ale
+widać wyraźnie, że podwójne \textit{y} pisze się także koło \textit{b}
+twardego, np. \textit{byƚ} 'był'.
+
+Jakaż więc będzie między nimi różnica?  Otóż — aby było jasne, że przy
+\newtip{50}{Tj. oznaczaniu miękkości przez \textit{y}.}
+dotychczasowym sposobie pisania¹ nie może występować różnica między
+wyrazami — jeśli napiszemy wspomnianym wyżej sposobem \textit{byaal}
+'biały' i \textit{byaal} 'bijał', to w piśmie nie będzie różnicy,
+podczas gdy w wymowie i w znaczeniu różnica występuje. Niech się więc
+odtąd pisze \textit{ɓaal} 'biały', a \textit{ɓyaal} 'bijał' — w ten
+sposób różnica będzie wyraźnie zaznaczona. Tak też między
+\textit{bika} oznaczającym narzędzie murarzy, gdzie jest \textit{b}
+\newtip{51}{Biernik lp.}
+miękkie i \textit{i} się skraca, a \textit{bika} (byka) 'byka'¹ albo
+\textit{bika} (byka) 'ryczy', gdzie jest \textit{b} twarde i
+\textit{i} długie, znowu by nie było (w pisowni) żadnej
+różnicy. Lepiej jest więc różnicę \textit{b} zaznaczyć kwadratem dla
+\textit{b} twardego, a zaokrągleniem dla miękkiego.
+
+Tak samo jest przy \textit{l}. Jeśli zechcemy miękkie \textit{l}
+oznaczać za pomocą podwójnego \textit{i} (tj. \textit{y}), to w
+pewnych wyrazach będzie to odpowiednie, w innych zaś wcale nie,
+np. \textit{lyſchka} (\textit{liszka}) 'lis', \textit{lyſſka}
+\newtip{52}{Oba te nieco różnie napisane wyrazy brzmiały niewątpliwie jednakowo.}
+(\textit{liszka})¹ `gąsienica', \textit{lyſth} (list)
+'liść'. Podczas gdy — zgodnie z tym, co zostało powiedziane wyżej —
+każda z samogłosek napisana podwójnie winna być wymawiana jako długa,
+to we wszystkich dopiero co podanych przykładach (tak napisana
+samogłoska) jest w wymowie krótka. Oto pierwszy
+\marginpar{s. 97}
+przykład niedorzeczności (w dotychczasowej pisowni). A wreszcie, jeśli
+się do \textit{l} występującego na końcu wyrazów dodaje podwójne
+\textit{y}, powoduje to (również) zamieszanie w znaczeniu. Przykład:
+\textit{ſtaal} `stāl'. Gdyby po \textit{l} było napisane podwójne
+\textit{y}, powstałoby \textit{ſtaaly} `stāli'. Gdzie (więc) będzie
+nasza stal?  Jeśliby zaś napisać bez \textit{y}, to będzie
+\textit{ſtal} 'stał'. Taki jest drugi przykład niedorzeczności. Lepiej
+więc będzie wyrażona różnica, gdy napiszemy \textit{l} twarde bez
+łuczka, jako laskę np. \textit{ſtaaƚ} \textit{ƚyſſy} 'stał łysy', a
+\textit{l} miękkie z łuczkiem, a bez dodawania \textit{y},
+np. \textit{ſtaɬ} 'stal', \textit{ɬiſth} (\textit{list}) 'liść',
+\textit{ɬuud} 'lud'.
+
+To samo się odnosi do \textit{m}. (Wyrazy) \textit{Mikołaj},
+\newtip{53}{Czy też \textit{miła}.}
+\textit{misa}, \textit{mila}¹, \textit{miāł} 'coś miałkiego' lub
+czasownik '(on) miał' pisano niegdyś z podwójnym \textit{y} chcąc
+oznaczyć \textit{m} miękkie. Ale oto pokazało się, że za pomocą
+\textit{y} podwójnego nie można odróżniać znajdującego się koło
+samogłosek i spółgłosek \textit{m} miękkiego od \textit{m} twardego,
+np. \textit{mika} 'Mikołaj' — \textit{ɱikaa}, (\textit{mykā})
+'pociąga'. Lepiej jest więc wprowadzić zróżnicowanie, pisząc m miękkie
+\newtip{54}{Tu zbędne.}
+bez ogonka, np. \textit{Mika}, \textit{Mikolay}, \textit{mykaa}¹,
+\textit{myasto}, \textit{maal} (\textit{Mika}, \textit{Mikołaj},
+\textit{miasto}, \textit{miał}). Wtedy nie będzie już konieczne
+pisanie podwójnego \textit{y} między miękkim \textit{m} a następującą
+samogłoską, np. \textit{myedz}, \textit{myood} (\textit{miedź},
+\textit{miōd}), ale \textit{m} miękkie zajmie miejsce podwójnego
+\textit{y}, a (następujące po nim) \textit{a} lub \textit{o}, lub inna
+samogłoska pozostanie długa, np. \textit{maal} (\textit{miāł}) 'coś
+miałkiego', \textit{meedz} (\textit{miēdź}), \textit{mood}
+(\textit{miōd}) 'miód', \textit{mąſſo} (miąso) 'mięso',
+\textit{maaſga} (\textit{miazga}).
+
+Podobnie jest ze spółgłoskami \textit{p} i \textit{n}, przy których
+popełniano (jeszcze) gorsze błędy. Bo ilekroć się trafiało \textit{n}
+i \textit{p} miękkie, zawsze pisano je przy pomocy podwójnego
+\textit{y} przed odpowiednią samogłoską, niezależnie od tego, czy się
+\newtip{55}{W tekście: sive \textit{i} breviabatur. sive producebatur, więc
+dosłownie: czy się \textit{i} skracało, czy też przedłużało. To nie
+bardzo ma sens. Dlatego uważamy, że „i” choć bez skrótu oznacza
+„illa”, tj. ona (samogłoska).}
+ona skracała, czy wzdłużała¹. Przykład pierwszego z \textit{a}:
+\textit{gnyaaſdo} (\textit{gniāzdo}), z \textit{e}: \textit{nyewyaſta}
+(\textit{niewiasta}), z \textit{i}: \textit{nycz} (\textit{nic}). Taka
+pisownia była
+\marginpar{s. 98}
+niewystarczająca do zróżnicowania, bo między \textit{Nija}, co było
+nazwą bożka, a \textit{nia}, sylabą znajdującą się w wyrazie
+\textit{gniazdo}, nie było (w pisowni) różnicy. Tak samo jest z
+\textit{n} znajdującym się na końcu wyrazu, np. \textit{zgon} —
+\textit{koń}. Na końcu owego wyrazu \textit{koń} musiało się dodawać
+podwójne \textit{y} (i dla oznaczenia miękkości \textit{n}, i dla
+oznaczenia \textit{i} (końcówki)), a przy takiej pisowni nie może być
+różnicy między mianownikiem l. pojedynczej \textit{koonÿ}
+(\textit{koń}), a dopełniaczem l. mnogiej \textit{koonÿ}
+(\textit{koni}). Tak samo (brak różnicy) między \textit{gonÿ}
+(\textit{goń}!) w rozkaźniku 'odpędzaj', a \textit{gonÿ}
+(\textit{goni}) 'odpędza'.
+
+Tak jest również z \textit{p}. Ilekroć trzeba było napisać \textit{p}
+miękkie, zawsze dodawano (po nim) podwójne \textit{y} przed
+następującą samogłoską, np. \textit{pyaſek} 'piasek', \textit{pyechna}
+(\textit{Piechna}), \textit{pyotr} (\textit{Piotr}), \textit{pyąthno}
+(\textit{piątno}) 'piętno'. Lecz ta różnica, czyli jej zaznaczanie,
+\newtip{56}{Tzn. ta pisownia nie wystarcza do wyrażenia różnicy wymowy.}
+nie wystarcza¹. Bo przy takiej pisowni nie będzie różnicy między
+\textit{pija} a \textit{pia}, między \textit{pije} a
+\newtip{57}{\textit{Pia} i \textit{pie} są najprawdopodobniej sylabami, nie wyrazami.}
+\textit{pie}¹. Ale podobnie jak o \textit{n} powiedziano, że się
+zmiękcza, kiedy jest pisane bez ogonka, (niezależnie od tego) czy po
+nim następuje jakaś samogłoska, czy nie, np. \textit{gnaſdo},
+\textit{newaaſta}, \textit{niſczotha} (\textit{gniazdo},
+\textit{niewiasta}, \textit{niszczota}), tak (można powiedzieć) o
+\textit{p} miękkim: kiedy się zaokrągla, winno się stawać (w wymowie)
+miękkie przed następującymi jakimikolwiek samogłoskami albo kiedy
+występuje na końcu. Przykład pierwszego z a\textit{}: \textit{paaſek}
+(\textit{piāsek}), z \textit{eq}: \textit{pechna} (\textit{Piechna}),
+z \textit{i}: \textit{piſſarz} (\textit{pisarz}), \textit{piſſczek}
+(\textit{piszczek}), z \textit{o}: \textit{Potr} (\textit{Piotr}), z
+\textit{ą}: \textit{pøthno} (\textit{piątno}) 'piętno'.
+
+Pozostają teraz do rozpatrzenia litery, które zmieniają brzmienie
+inaczej niż przez twardnienie i zmiękczanie, a są to: \textit{c},
+\textit{d}, \textit{g}, \textit{s}.
+
+
+I tak, po pierwsze, niemała trudność występuje przy
+\textit{c}. Albowiem \textit{c}, jak już powiedziałem, zmienia się w
+brzmieniu pięciorako, zależnie od tego, z jakimi samogłoskami się
+łączy. Bo połączone z \textit{a} zbiega się niekiedy w brzmieniu z
+\textit{k} i niejako traci barwę głosową, np. \textit{cath} 'kat',
+\textit{captuur} 'kaptur'. Tak go
+\marginpar{s. 99}
+też w tym samym brzmieniu używają Łacinnicy. I tak też łączy się u
+\newtip{58}{'Głowa'.}
+nich z \textit{a}, \textit{o} i \textit{u}, np. \textit{caput}¹,
+\newtip{59}{'Szyja'.}
+\textit{collum}¹, 
+\newtip{60}{'Kukułka'.}
+\textit{cuculus}¹. Niekiedy łączy się z innymi
+samogłoskami i nie zbiega się w brzmieniu z \textit{k}, ale jest jakby
+syczące, tj. zachowuje własne brzmienie, które ma w alfabecie. Tak go
+też używają Łacinnicy, kiedy się łączy z \textit{e} lub z \textit{i},
+\newtip{61}{'Cebula'.}
+np. \textit{cepe}¹, 
+\newtip{62}{'Pokarm'.}
+\textit{cibus}¹, z \textit{a} również, ale
+\newtip{63}{'Czyżyk'.}
+bardzo rzadko, np. \textit{caix}¹.
+
+Otóż wymawiane w ten (ostatni) sposób jest w języku polskim trojako
+\newtip{64}{Dosłownie: grubo, grubiej i miękko. Określenie wymowy samogłoski \textit{cz}
+jako „grosse” — grubo, a \textit{ć} - „grossius” — grubiej (i podobnie
+samogłosek \textit{sz} i \textit{ś}) może dziwić. Może tu chodzić o określenia z pewnym
+wartościowaniem czy nacechowaniem ekspresywnym tych głosek, których
+nie było w języku łacińskim. Przymiotnik \textit{grossus} był często używany z
+ujemnym nacechowaniem.}
+szumiące: grubo, silniej i \textit{cienko}¹, i to niezależnie od
+tego, z jakimi samogłoskami się łączy. Przykład pierwszego (rodzaju
+brzmienia w połączeniu) z \textit{a}: \textit{czas}, \textit{czapka},
+\textit{czasza}, \textit{czapla}(?). Przykład drugiego (rodzaju
+brzmienia): \textit{ciało}, \textit{ciask}, \textit{ciemię}. Przykład
+trzeciego: \textit{cap} 'kozioł' u Wołochów lub wykrzyknik oznaczający
+\newtip{65}{Łoś objaśnił te wyrazy jako derywaty od niemieckich imion \textit{Hinze} (od
+\textit{Heinrich}), \textit{Kunze} (od \textit{Konrad}), pełniące funkcję zleksykalizowanych
+połączeń typu \textit{Paweł i Gaweł}.}
+uderzenie, \textit{hynca} \textit{kunca}¹65. Również połączone z
+\textit{e} jest szumiące trojako. Przykład pierwszego: \textit{czego},
+\textit{czeka}. Przykład drugiego: \textit{ciemię},
+\textit{cielę}. Przykład trzeciego: \textit{cepy},
+\textit{cebula}. Tak samo przy połączeniu z pozostałymi samogłoskami,
+np. \textit{czym}, \textit{czyn} 'oręż', \textit{czyń} 'czyń',
+\textit{czop}, \textit{czuje}, \textit{cząbr}(?),
+\textit{czosnek}. Wprowadzamy takie rozróżnienie (w pisowni), ażeby
+należycie i w zróżnicowany sposób wyrażać w pismach te (słowa), tak
+jak się różnią między sobą w brzmieniu. Bóżnicę zaznaczyć nie jest
+łatwo, a jednak, jeśli łaska,
+\marginpar{s. 100}
+niech będzie wprowadzone takie zróżnicowanie. Jeśli łaska — ponieważ
+\newtip{66}{Tzn. wyrażanie brzmień.}
+wszystkie brzmienia¹ i wszystkie kształty (liter) są zależne od
+upodobania twórcy i jego zwolenników.
+
+A więc w wypadku \textit{c} szumiącego wymawianego grubo, jak w
+przykładach pierwszej grupy: \textit{czas}, \textit{czego},
+\textit{czym}, \textit{czółka}, \textit{czubacz}, pisze się \textit{c}
+razem z \textit{z}, jak się przywykło pisać. A to (pisanie) uznamy tym
+skwapliwiej, im je szybciej wypróbujemy w codziennym używaniu.
+
+\newtip{67}{Takie tłumaczenie łac. „grossius” może nie być odpowiednie.}
+A kiedy się wymawia silniej szumiąco (cisząco)¹, jak w przykładach
+drugiego typu z \textit{a} i z \textit{o}, będziemy mogli łatwo
+oznaczyć różnicę. I tak, jeśli napiszemy \textit{cz} i \textit{y},
+np. \textit{czyalo}, \textit{czÿaſɲo}, \textit{czÿemyø},
+\textit{czÿelø}, \textit{czÿolek}, \textit{czÿvlaa}, \textit{czÿągne}
+(\textit{ciało}, \textit{ciasno}, \textit{ciemią} 'ciemię',
+\textit{cielą} 'cielę', \textit{ciołek}, \textit{ciułā},
+\textit{cichnie}), to w tych wyrazach różnica będzie wprawdzie
+dostatecznie wyrazista, ale w innych taka różnica (pisowni) żadnym
+sposobem nie wystarczy, mianowicie, kiedy się spotyka przykłady z
+\textit{i}: \textit{czym}, \textit{czyn}, co tu jest przykładem
+szumiącej wymowy pierwszego typu. A jakbyśmy pisali \textit{cin} z
+drugim typem szumu, czyli sylabę z wyrazów takich jak
+\textit{Bozącin}, \textit{Prądocin}, \textit{Kocin} lub podobnych?
+Nie wiem bowiem, jakby się różniły w piśmie wyrazy: \textit{czym} 'z
+czym' z pierwszym typem szumu i \textit{czyn} (\textit{cin}) z drugim
+typem będące sylabą w wymienionych wyrazach \textit{Bozącin} i
+podobnych. A tak samo \textit{czÿrpaaɬ} 'czerpał' i \textit{czÿrpaɬ}
+'cierpiał', przynajmniej w pierwszej sylabie, o której jest
+mowa. Różnią się przecież te sylaby \textit{p} twardym i miękkim. Tak
+jest również ze \textit{ſczÿrpaa} (\textit{ścirpā}) 'cierpnie,
+drętwieje' i \textit{ſczyrpaa} (\textit{sczyrpā}) 'sczerpie' i wielu
+podobnymi.
+
+Z tej przyczyny — jeśli łaska — ilekroć się trafi owa bardziej
+szumiąca (cisząca) wymowa, to w miejscu \textit{cz} i podwójnego
+\textit{y} będziemy pisać pojedyncze \textit{c} z jednym pociągnięciem
+w dolnej części, jak to starożytni pisali zamiast \textit{z}, co widać
+% A763 LATIN SMALL LETTER VISIGOTHIC Z (Michael Everson * http://www.evertype.com/ Tue, 12 May 2015)
+w dawnych księgach, mianowicie tak: \textit{ç} i {\Quivira ꝣ}.
+% Italics only in Everson fonts:
+%\textit{ꝣ}. 
+I tej litery będziemy
+używać zawsze, ilekroć się nam trafi \textit{c}, \textit{z} i
+\newtip{68}{Tj. nie wymawiane.}
+\textit{i} zduszone¹, tj. (\textit{c}) silniej
+\marginpar{s. 101}
+szumiące (ciszące), jak w wymienionych przykładach: \textit{çalo},
+\textit{çaſɲo}, \textit{çemø}, \textit{çolek}, \textit{çula},
+\textit{çøgwe} (\textit{ciało}, \textit{ciasno}, \textit{ciemią}
+'ciemię', \textit{ciołek}, \textit{ciuła}, \textit{ciągnie}). I tym
+sposobem będzie (zaznaczona) wyraźna różnica między (wyrazami)
+pierwszego typu: \textit{czym} i \textit{czyn} i (wyrazami drugiego
+typu): \textit{chciēj} 'chciej', \textit{cirpiāł}, \textit{ścirpiāł} i
+\textit{cipāł}.
+
+Zaś w (wymówieniach) szumiących cienko (syczących) niech będzie pisane
+pojedyncze \textit{c} bez (oznaczenia) jakiegokolwiek szumu,
+\newtip{69}{\textit{Cyż} zamiast \textit{czyż} może być wynikiem mazurzenia lub
+dysymilacji szumiących.}
+np. \textit{cap}, \textit{cebuɬa}, \textit{ciſz} (cyż)¹ 'czyżyk', z
+\textit{o}: \textit{co} 'co', \textit{cuudni} (\textit{cūdny})
+'piękny'.
+
+Wszystkie zaś inne wyrazy zaczynające się na \textit{c} lub po
+\textit{c} mające \textit{a}, \textit{o}, \textit{u} i \textit{ą}
+niech będą pisane przez \textit{k}. Przykłady pierwszego (typu, przed
+samogłoskami): \textit{kath} \textit{kameen} \textit{koth}
+\textit{kooth} \textit{kuurcz} \textit{kuur} (\textit{kat},
+\textit{kamiēń}, \textit{kot}, \textit{kōt}, \textit{kūrcz},
+\textit{kūr}). Przykłady drugiego (typu, przed spółgłoskami):
+\textit{kɲaaƥ} \textit{kmotr} \textit{kroɬ} \textit{ktho}
+(\textit{knāp}, \textit{kmotr}, \textit{krol}, \textit{kto}).
+
+I tak samo można by postąpić z \textit{q}, pisząc w jego miejsce
+\textit{k}, np. \textit{kvap} \textit{kvath} \textit{kveli}
+\textit{kvikaa} (\textit{kwap}, \textit{kwiat}, \textit{kwieli},
+\textit{kwika}). \textit{Q} bowiem także u Łacinników jest w pewnych
+\newtip{70}{'Ktokolwiek'.}
+wyrazach zbyteczne, z wyjątkiem \textit{quicumque}¹ i
+\newtip{71}{‘Komukolwiek’.}
+\textit{cuicumque}¹, które nie mogą być pisane wspomnianym sposobem,
+czyli przez \textit{k}. Istotna różnica owych dwu wyrazów:
+\newtip{72}{`Kto'.}
+\textit{quicumque} i \textit{cuicumque} lub \textit{qui}¹ i
+\newtip{73}{`Komu’.}
+\textit{cui}¹ 
+tkwi jednak nie w \textit{q} ani w \textit{c}, ale w
+spółgłosce i samogłosce \textit{v} i \textit{u}. Dlatego gdyby
+Łacinnicy zechcieli używać takiego jak nasze zróżnicowania między
+samogłoską \textit{u} i spółgłoską \textit{v}, nie potrzebowaliby
+\textit{q}, ponieważ w jego miejscu wystarczyłoby (pisać) \textit{c},
+którego oni (i tak) używają. My na jego miejscu będziemy pisać \textit{k}.
+
+Przy \textit{ch} szczelinowym natomiast nie ma w pisowni żadnej trudności,
+ponieważ zatrzymuje ono dawną postać, tzn. 
+\marginpar{s. 102}
+pisownię przez \textit{c} i \textit{h}, np. \textit{chɬeƀ},
+\textit{chmeeɬ}, \textit{chaarth}, \textit{chroſt} (\textup{chleb},
+\textit{chmiēl}, \textit{chārt}, \textit{chrost}).
+
+\textit{D} ma także dwa brzmienia, ale odróżniające się łatwo,
+mianowicie \textit{d} pojedyncze, czyli twarde i \textit{dź}
+miękkie. Przykład pierwszego: \textit{dal}, \textit{dēnko},
+\textit{dym}, \textit{dōm}, \textit{dumā}, \textit{dąb}. Przykład
+drugiego: \textit{dział}, \textit{dzień}, \textit{dziw},
+\textit{dziolda}, \textit{dziula}, \textit{dziągil} 'dzięgiel',
+\newtip{74}{W dotychczasowej pisowni.}
+\textit{dziąsła}. Pierwsze przykłady pisze się¹ przez \textit{d}
+pojedyncze, pozostałe przez \textit{d} i \textit{z}, co jest w dość
+powszechnym użyciu.
+
+Poza tym jednak \textit{dz}, w sytuacjach skądinąd identycznych,
+czasem się wymawia twardziej, czasem bardziej miękko. Przykład
+pierwszego: \textit{gwiżdż} 'gwiżdż!’, \textit{gwiżdż} 'orzech
+przedziurawiony przez robaka’. Przykład drugiego: \textit{gwiźdź}
+'tylna część siodła’. W każdym z tych (dwu typów) przykładów
+\textit{dz} brzmi inaczej. I chociaż się wydaje, że to twardnienie i
+miękczenie wynika częściowo z \textit{d} i \textit{z}, jednak naprawdę
+pierwsze \textit{dz} jest wymawiane twardziej niż drugie. Odpowiedniej
+różnicy między nimi nie możemy oddać (w pisowni) i rozróżnianie
+brzmienia pozostawiamy bystrości czytelnika. Jeśli bowiem wynalazca
+alfabetu łacińskiego, który miał (w tym względzie) najwyższe
+umiejętności, pozostawił zdolności czytelnika (rozróżnianie w wymowie)
+znacznej części liter, czemuż by nam nie było dozwolone to, co wolno
+było bardziej doświadczonym.
+
+(G). Chociaż \textit{g} u Łacinników ma także dwa
+\newtip{75}{W wymowie \textit{gaudium}.}
+brzmienia, np. \textit{gaudium}¹ — 
+\newtip{76}{W wymowie \textit{jenus}.}
+\textit{genus}¹, to jednak oni sami nie dbają,
+ażeby tę różnicę w piśmie oznaczać, ale rozróżnianie pozostawiają
+czytającym. My zaś podjąwszy się wyznaczyć różnice między brzmieniami
+różnych liter, i tę (różnicę) wyznaczymy.
+
+Są w polskim tego rodzaju wyrazy, że na początku, w środku lub na
+końcu mają, literę \textit{g} w obu wspomnianych brzmieniach. Przykład
+na wymowę pierwszego typu to (wyrazy): \textit{gād}, \textit{Gedka},
+\textit{gid}, \textit{Godek}, \textit{guz}, \textit{gąś},
+\textit{Magda}, \textit{migdał}, \textit{rōg}, \textit{smug}. Przykład
+na wymowę drugiego typu to \textit{jē}, \textit{jēmy} i inne formy
+odmiany (tego wyrazu). Niech więc wyrazy pierwszego typu będą 
+\marginpar{s. 103}
+pisane przez \textit{ɠ} z ogonkiem zakrzywionym w prawą stronę, tak jak
+je piszą Italczycy, np. \textit{ɠraad}, \textit{ɠruuda},
+\textit{ɠroſch} (\textit{grād}, \textit{grūda}, \textit{grosz}), a
+wyrazy drugiego typu przez \textit{g} proste, jak jest używane, z
+ogonkiem zwyczajnym, zagiętym w lewą stronę, tj. zwrócone
+(wybrzuszeniem) na prawo, np. \textit{gee}, \textit{geeɱi},
+\textit{gyɱ} (\textit{jē}, \textit{jēmy}, \textit{jim}).
+
+Nie można pominąć milczeniem i tego, że Łacinnicy wyrażają niemal tym
+samym dźwiękiem spółgłoskę \textit{i} i literę \textit{g}, pisaną
+zgodnie z tym, cośmy tu mówili, bez ogonka zakrzywionego,
+\newtip{77}{Tj. Genua.}
+np. \textit{Ianua}¹, \textit{Iaronimus}, \textit{Iohannes},
+\textit{Iunius}, \textit{genus}, \textit{gymnasium}. I jest konieczne,
+ażeby Polacy tak samo czynili. Jeśli się więc ma chęć ukryć tę różnicę
+przed czytającymi i nie zaznaczać jej żadnymi znakami, to, owszem,
+dobrze, lecz łatwiej byłoby czytać, gdyby różnica została
+zaznaczona. A moglibyśmy tę różnicę w wyrazach polskich zaznaczyć tym
+sposobem, że ilekroć się pisze \textit{g} połączone z jakąś
+samogłoską, a nie pisze się go przez \textit{g} okrągłe, wówczas się
+nie powinno pisać zwykłego \textit{g}, lecz spółgłoskę \textit{I},
+np. \textit{Iacuuſz}, \textit{Iaan}, \textit{Iost} (\textit{Jakūsz},
+\textit{Jān}, \textit{Jost}), przy czym to ostatnie jest imieniem
+świętego Jodoka. Podobnie ilekroć się (\textit{g}) łączy z
+następującymi spółgłoskami: \textit{b}, \textit{n}, \textit{w},
+\textit{d}, \textit{l}, \textit{r}, wymawia się je (jak \textit{g}) i
+pisze się z ogonkiem zakrzywionym, np. \textit{maɠda}, \textit{ɠlaſz},
+\textit{ɠnew}, \textit{ɠrod} (\textit{Magda}, \textit{głaz},
+\textit{gniew}, \textit{grod}). Ale jeśli się łączy z samogłoskami
+\textit{e} i \textit{i}, to chociaż się w wymowie różni od \textit{g}
+zakrzywionego, nie należy w języku polskim pisać (tej głoski) przez
+\newtip{78}{Tj. literę.}
+spółgłoskę¹ \textit{i}, lecz owszem przez \textit{g},
+np. \textit{geʋa}, \textit{geeɱi}, \textit{geɱu}, \textit{gÿɱ}
+(\textit{Jewa}, \textit{jēmy}, \textit{jemu}, \textit{jim}), co
+zresztą i w łacinie znajduje potwierdzenie.
+
+Trzeba mieć ponadto na uwadze, że u Łacinników spółgłoska \textit{j}
+łączy się ze wszystkimi samogłoskami, jak w przykładach wyżej
+przytoczonych. I wszystkie wyrazy, gdzie \textit{g} łączy się z
+\textit{a}, \textit{o} i \textit{u} i gdzie spółgłoska \textit{j}
+zgadza się w brzmieniu z \textit{g}, zawsze są pisane przez
+\textit{i}, a nigdy nie są pisane przez \textit{g}. Przykład: \textit{Iacobus},
+\newtip{79}{'Brama'.}
+\textit{Ianua}¹, na \textit{o}: 
+\newtip{80}{‘Żart’.}
+\textit{Iocus}¹, 
+\newtip{81}{`Żartowniś'.}
+\textit{ioculator}¹, na \textit{u}: 
+\newtip{82}{'Prawo'.}
+\textit{ius}¹,
+\break 
+\marginpar{s. 104}
+\newtip{83}{'Sąd'.}
+\textit{iudicium}¹. Gdzie zaś spółgłoska \textit{j} łączy się z
+samogłoską \textit{e}, tam czasem piszą spółgłoskę \textit{i}, czasem
+literę \textit{g}. Przykład: \textit{Ieronimus}, I\textit{eremias}, a
+to prawie zawsze w imionach własnych. W pospolitych zaś najczęściej
+\newtip{84}{'Rodzaj'.}
+piszą przez \textit{g}, np. \textit{genus}¹, 
+\newtip{85}{'Kolano’.}
+\textit{genu}¹. Mówię
+wyraźnie: najczęściej, ponieważ niekiedy także wyrazy pospolite są
+\newtip{86}{'Post'.}
+pisane przez \textit{i}, np. \textit{ieiunium}¹,
+\newtip{87}{'Wątroba’.}
+\textit{iecur}¹. Gdziekolwiek zaś \textit{g} łączy się z \textit{i},
+jest z konieczności pisane przez \textit{g}, np. \textit{gymnaſium},
+\newtip{88}{'Dwadzieścia'.}
+\textit{viginti}¹, ponieważ nie może być pisane przez spółgłoskę
+\textit{i}.
+
+Pozostaje jeszcze przedstawić literę \textit{S} w jej
+zróżnicowaniu. Więc najpierw trzeba zauważyć, że \textit{s} u
+Łacinników ma zwyczajowo dwie postacie. Mianowicie, po pierwsze, pisze
+się je z przeciągnięciem na długość, zwykle na początku i w środku
+\newtip{89}{'Słońce'.}
+wyrazów, np. \textit{ſol}¹, 
+\newtip{90}{'Sól’.}
+\textit{ſal}¹, 
+\newtip{91}{'Wysłał’.}
+\textit{miſit}¹,\newtip{92}{`Msza'.}\textit{miſſa}¹. Innym sposobem się pisze \textit{s} skręcone,
+\newtip{93}{'Opat'.}
+zwykle na końcu wyrazów, np. \textit{abbas}¹,
+\newtip{94}{'Mężczyzna’.}
+\textit{mas}¹. Oprócz tego zauważyć trzeba, że \textit{s} użyte bez
+żadnego specjalnego oznaczenia przydechu, czyli szumu, czasem się
+pisze zgodnie z jego właściwym brzmieniem, tj. tak jak zwykle brzmi
+położone na końcu wyrazów, np. \textit{abbas}, \textit{mas},
+\newtip{95}{'Kocioł’.}
+\textit{lebes}¹. Tak samo, kiedy się znajduje na początku wyrazów,
+poprzedzając samogłoskę lub spółgłoskę. Przykład pierwszego (typu,
+tj. przed samogłoską) : \textit{ſaam} \textit{seen} \textit{Syɲ}
+\textit{Sowa} \textit{Suuɱ} \textit{Søød} (\textit{sām}, \textit{sēn},
+\textit{syn}, \textit{sowa}, \textit{sūm}, \textit{są̄d}). Przykład
+drugiego (typu, tj. przed spółgłoską): \textit{Struſ} \textit{Sbil}
+\newtip{96}{Wymowa \textit{s}-: \textit{sbit} czy \textit{sbył}, (por. notkę nr 70
+do tekstu łacińskiego), \textit{sgaga} nie jest całkiem pewna, ale
+bardzo prawdopodobna, skoro to sąprzykłady na \textit{s} w
+nagłosie. Za taką wymową wypowiada się Łoś i nie uznaje twierdzenia
+H. Ułaszyna (Materiały i Prace Komisji Językowej AU V, 1912,
+s. 272-4), że wymawiano tu \textit{z}-.}
+\textit{Sɠaɠa} \textit{Smøød} \textit{Spøød} (\textit{strus}, \textit{sbil}, \textit{sgaga}¹,
+\textit{smą̄d}, \textit{spą̄d}).
+
+Jeśli zaś, jak już wspomniano, (\textit{s}) położone koło
+samogłoski albo spółgłoski staje się bardziej cienkie albo subtelne,
+wtedy traci swój charakter i przechodzi w inną literę, mianowicie
+\marginpar{s. 105}
+w \textit{z}. Przykład pierwszego (typu, tj. przed samogłoską):
+\textit{zawada}, \textit{Zygmunt}, \textit{Zofia}, \textit{Zuzanna},
+\textit{zą̄b}.  Przykład drugiego (typu, tj. przed spółgłoską):
+\textit{zmuda}, \textit{zbił} (lub \textit{zbył}),
+\textit{zdrow}. Dlatego też w naszym polskim alfabecie \textit{z}
+umieszczamy po \textit{s} z powodu bliskości brzmienia.
+
+Czasem jednak \textit{s} staje się cienkie, a nie traci swojej
+właściwości, mianowicie kiedy się znajduje między dwiema samogłoskami
+posiadającymi odrębny charakter. Przykład na \textit{a}:
+\textit{ɱaſal}, \textit{koſa}, \textit{kaaſaal} (\textit{mazał},
+\textit{koza}, \textit{kāzāł}). Stąd, chociaż jest tu wymawiane
+cienko, pisze się jednak swoim własnym kształtem, jak w przykładach
+podanych wyżej. A jeśli ma wtedy zachować własne brzmienie, należy je
+\newtip{97}{Może zamiast \textit{coſſa}.}
+podwajać. Przykład: \textit{caſſa}¹, \textit{miſſa}, \textit{Koſſa}
+(czy \textit{Roſſa}) (\textit{kasa} lub \textit{kosa}, \textit{misa},
+\textit{kosa} lub \textit{rosa}).
+
+Jeśli więc chcemy mieć właściwe rozróżnienie między \textit{s}
+występującym we własnym brzmieniu, a \textit{s} cienkim,
+np. znajdującym się między dwiema samogłoskami, piszmy pierwsze
+zakręcone, tak jak jest w zwyczaju pisać na końcu wyrazów. Przykład:
+\textit{Saam}, \textit{Seen}, \textit{Syɲ} (\textit{sām},
+\textit{sēn}, \textit{syn}), \textit{Søød} (\textit{są̄d}) 'sąd',
+\textit{SSøød} (\textit{ssą̄d}) 'naczynie'. Tak samo w połączeniu ze
+spółgłoskami: \textit{Stado}, \textit{Sluɠa}, \textit{Sboſzɲi},
+\textit{Struf}, \textit{Smøød} (\textit{stado}, \textit{sługa},
+\textit{sbożny}, \textit{strus}, \textit{smą̄d}) itd. Gdzie się zaś
+(\textit{s}) staje cienkie, niech będzie pisane pojedyncze i długie,
+np. \textit{maſal}, \textit{cofa} (\textit{mazał}, \textit{koza}). I
+tym sposobem ilekroć spotkamy ſ długie, będziemy je czytać bardziej
+cienko, niż gdyby było podwojone jak w \textit{miſſa} 'misa', \textit{møſſo}
+(miąso).
+
+Niekiedy zaś \textit{s} nie jest cienkie ani też nie występuje w swoim
+właściwym brzmieniu, lecz czasem staje się szumiące, a to gdy jest
+połączone (w pisowni) z następującym \textit{ch}, np. \textit{ſchadi},
+\textit{ſchipee}, \textit{ſchiɱuɲ}, \textit{ſchopa}, \textit{ſchum},
+\textit{ſchamɓurzaa} (\textit{szady}, \textit{szypie},
+\textit{Szymun}, \textit{szopa}, \textit{szum},
+\textit{szamburzā}).
+
+\newtip{98}{Por. notkę nr 64.}
+Czasem też szumi (inaczej)¹, i to
+wielorako.
+
+Czasem mianowicie szumi grubo, np. \textit{ſzaak}, \textit{ſzegotha},
+\textit{ſzywofh}, \textit{ſzoraʋ}, \textit{ſzuur}, \textit{ſzøødɬo}
+(\textit{żak}, \textit{Żegota}, \textit{żywot}, \textit{żoraw},
+\textit{żūr}, \textit{żą̄dło}). I wtedy się pisze przez \textit{ſ}
+długie i \textit{z}, i to widać w przykładach.
+\marginpar{s. 106}
+Niekiedy jest silniej szumiące (ciszące), kiedy \textit{s} zatrzymuje
+\newtip{99}{W rkp. chyba błędnie: \textit{s} (\textit{ſ}).}
+własne brzmienie i przybiera dodatkowo jakby \textit{i}¹. I wówczas
+winno się pisać przez ſſ rozciągnięte, czyli długie podwojone, i
+\textit{z}. Przykład: \textit{ſſzano}, \textit{ſſzemø},
+\textit{ſſzadlo}, \textit{ſſzivi}, \textit{ſſzirotha},
+\textit{ſſzoſtra}, \textit{ſſzuthka} (\textit{siano}, \textit{siemią},
+\textit{siadło}, \textit{siwy}, \textit{sirota}, \textit{siostra},
+\newtip{100}{Czytać można \textit{siatka} lub \textit{siutka}. Za -\textit{u}-
+przemawia kolejność alfabetyczna samogłosek}
+\textit{siutka}¹).I nie wystarczy w tych i podobnych przykładach
+pisać pojedynczego ſ długiego i \textit{z}, i podwójnego \textit{ÿ},
+jak niegdyś bywało pisane. Przedtem bowiem tak bywało pisane:
+\textit{fzÿano}, \textit{ſzÿemÿa}, \textit{fzÿoſtra} (\textit{siano},
+\textit{siemią} 'siemię', \textit{siostra}). Chociaż rzeczywiście w
+wyrazach, gdzie po \textit{sz} następuje \textit{a}, \textit{e},
+\textit{o}, \textit{u} i \textit{ą}, można także tak pisać, to jednak
+tam, gdzie po tej szumiącej spółgłosce następuje \textit{i},
+np. \textit{ſziwi}, \textit{ſzirotha} (\textit{siwy},
+\textit{sirota}), nie byłoby różnicy między \textit{ſzÿwÿ} 'siwy' a
+\textit{ſziwi} 'żywy' i wielu podobnymi. Będzie więc lepsza i
+znaczniejsza różnica, kiedy w tym wypadku silniejszego szumu (wymowy
+ciszącej) będzie pisane podwójne długie zakręcone ſſ, niezależnie od
+tego, czy (po nim) następuje \textit{i}, czy nie.
+
+
+Czasem zaś (\textit{s}) jest wymawiane jako szumiące bardziej cienko,
+jak gdyby się zbliżało do \textit{z}, a to \textit{z} niejako się
+wzmacnia. I dlatego najwłaściwiej by je było pisać przez podwójne
+\textit{zz}, np. \textit{zzaia}, \textit{zzeɬe}, \textit{zziɱa},
+\textit{zzolo}, \textit{zzøba} (\textit{ziaja} lub \textit{ziara},
+\textit{ziele}, \textit{zima}, \textit{zioło}, \textit{ziąba}
+'zięba'). Nie wystarczy tu bowiem pisać pojedynczego \textit{ſ} i z z
+podwójnym \textit{ÿ}, jak to dawniej bywało pisane,
+np. \textit{ſzÿarno}, \textit{ſzÿemÿa} (\textit{ziarno},
+\textit{ziemia}). Bo chociaż w tych wyrazach, gdzie po \textit{ź}
+następuje \textit{a}, \textit{e}, \textit{o}, \textit{u} i \textit{ą},
+taką pisownią czasem byśmy wyrazili różnicę między \textit{z}
+pojedynczym a tym (innym), to jednak tam, gdzie po \textit{z}
+następuje \textit{i}, między \textit{z} pojedynczym a owym
+wzmocnionym, czyli podwojonym, nie będzie żadnej różnicy. Przykład:
+\textit{zzÿɱa}, \textit{zzÿrɱɲo}, \textit{zziɱozzeɬon} (\textit{zima},
+\textit{zimno}, \textit{zimozielon}). Więc rozróżnienie, o którym
+mówiłem, jest lepsze, bo się sprawdza we wszystkich wypadkach.
+
+Wreszcie przy pozostałych literach, mianowicie \textit{h}, \textit{k},
+\textit{q}, \textit{r}, \textit{t}, \textit{x}, \textit{ÿ} i
+\textit{z} — poza tym, że ta ostatnia w połączeniu z \textit{ſ} staje
+się 
+\marginpar{s. 107}
+szumiącą — nie ma już żadnej trudności. Tak w pisowni, jak w wymowie
+nie różnią się one od liter łacińskich, z wyjątkiem tego, że jak
+powiedziano, będziemy używać \textit{k} zamiast \textit{c}
+przytłumionego. Bo chociaż przedtem wyrazy: \textit{kat},
+\textit{kłoda}, \textit{knap}, \textit{kmotr}, \textit{krōl},
+\textit{kopa} itd. były pisane przez \textit{c}, my będziemy odtąd
+wszystkie te wyrazy pisać przez \textit{k}, a więc \textit{kath},
+\textit{kłoda}, \textit{kɲap}, \textit{kɱotr}, \textit{kroɬ},
+\textit{kunrath}, \textit{køøth} (\ldots \textit{Kunrat},
+\textit{ką̄t}). A \textit{q}, jak u Łacinników, tak i u Polaków jest
+naprawdę zbyteczne. Bo zgodnie z tym, co już powiedziano, jak zamiast
+przytłumionego \textit{c} używamy \textit{k}, tak i zamiast \textit{q}
+możemy używać \textit{k}. Przykład w pisowni używanej (dotąd):
+\textit{Quas}, \textit{quath}, \textit{quap}, \textit{qveli},
+\textit{kvikaaq} (\textit{kwas}, \textit{kwiatq}, \textit{kwap},
+\textit{kwieli}, \textit{kwika}). I nikt nas nie będzie mógł słusznie
+zganić.
+
+Na koniec: Są jeszcze (w piśmie) u Łacinników pewne znaki nie będące
+wprawdzie literami, ale zastępnikami liter. Są to skróty albo
+wierzchołki, zwane summitates, ponieważ częściej są umieszczane w
+części górnej, a mianowicie:{\Cardo ⁊̵} (\textit{eciam} 'także'),{\Cardo ꝯ̃} (contra
+'przeciw'), {\Cardo ſꝫ} (\textit{scilicet} `a mianowicie, rozumie się'), {\Cardo ꝯ}
+(\textit{con}, \textit{com}, \textit{cum} — sylaba początkowa), {\Cardo t  }
+(\textit{tur} — końcówka). My ich nie potrzebujemy dopisywać do
+naszych liter — zarówno dlatego, że Polacy rzadko tych wierzchołków
+czy skrótów, czyli zastępników używają, jak i dlatego, że gdyby ich
+używać chcieli, to będą je pisać podobnie jak w łacinie.
+
+Nie można również pominąć milczeniem tego, że wszystkie litery
+abecadła, gdy są umieszczane na początku wersów albo rozdziałów, albo
+akapitów, różnią się często właściwościami i kształtami od swoich
+zwykłych właściwości i kształtów. My je pospolicie nazywamy
+wersalikami albo kapitalikami, a nazwa ta jest trafna dla nagłówków. A
+że różni różnymi sposobami rzeczone wersaliki i kapitaliki pisząc
+dowolnie formują, przeto nie staramy się ustalać w tym względzie
+reguł, ponieważ się (te litery) różnią zależnie od praktyki i nawyku
+piszących. Na końcu zaś naszego abecadła dodamy ich
+\newtip{101}{Tych przykładów jednak nie ma.}
+przykłady.¹
+
+Następuje teraz abecadło z rozróżnieniami i przykładami
+omówionych właściwości i kształtów (liter). Uprzedzam jednak, że
+\marginpar{s. 108}
+litery w naszym abecadle mają z pewnych przyczyn nie ten sam porządek,
+co w łacińskim. Albowiem \textit{k} nie jest umieszczone między
+\textit{i} i \textit{l}, ale przed \textit{d}, żeby była bardziej
+wyraźna różnica między \textit{c} we właściwym brzmieniu, a \textit{c}
+przytłumionym, zamiast którego, jak powiedziano przedtem, będziemy
+pisać \textit{k}. Również \textit{i} jest umieszczone przed \textit{h}
+dla powiązania przykładów, a \textit{y} będzie następować zaraz po
+\textit{i}, ażeby widać było między nimi różnicę. I \textit{z} (następuje)
+zaraz po \textit{s} ze względu na podobieństwo brzmienia. Dalej już możemy
+wszystkie omówione litery, czyli ich przykłady, umieścić na właściwych
+miejscach, tak je zresztą umieścimy. Nie jest bowiem uchybieniem to
+samo wiele razy zasadnie powtarzać. Itd.
+
+\begin{quote}
+Kto chce pisać doskonale 
+
+język polski i też prawie, 
+
+umiej obiecado moje, 
+
+ktorem tak napisał tobie, 
+
+aby pisał tak krótkie \textit{a}, \newtip{102}{Dla ułatwienia czytania dajemy tutaj
+    \textit{ę} i \textit{ą} zamiast jednej nosówki (\textit{ą}).}  
+
+\textit{aa} sowito, gdzie się¹ wzdłużā.  
+
+Podług tego będzie pisān 
+
+ludzi wszystkich ociec Adām.  
+
+A też gdzie \textit{ƀ} będzie grube, 
+
+tako pismem położysz jē.  
+
+Nie pisz wirzchu okrągłego, 
+
+pisząc \textit{Bartka zbawionego}.  
+
+Z wirzchem okrągłem piszy \textit{ɓ}, \
+
+textit{biodry} tako napiszesz swē.  
+
+Gdzie \textit{c} głosu mieć nie będzie, 
+
+w miasto jego tam \textit{k} siędzie.  
+
+Jako \textit{kamiēń}, tako \textit{kaptūr}, 
+
+pisan będzie przez \textit{k} i \textit{kūr}.
+
+Ale gdzie \textit{c} swoj głos miewa, 
+
+zwykłem pismem \textit{cało} tak da.  
+
+Ale \textit{cielęciu} i \textit{ciału} \marginpar{s. 109}
+
+pod ç przypiszy tak jemu.  
+
+Jestli \textit{c} barzo grubieje, 
+
+tako pismem \textit{czas} wyznaje.  
+
+Gdy \textit{h} przypisano będzie,
+
+\textit{ch} \textit{chwalebne} tako siędzie.  
+
+Ale bych ci nic przedłużył 
+
+ani teskności uczynił, 
+
+patrzy obiecada mēgo 
+
+tobie tu napisanego, 
+
+boć w niem każde słowko tobie 
+
+pismem rozny głos da w sobie.  
+
+Pisz jē w jimię Boże tako, 
+
+jeżem ci napisał jako.
+\end{quote}
+
+{
+\obeylines
+krótkie długie twarde miękkie
+a ā b b b́
+c ma w języku polskim pięć różnych odmian:
+c k ć cz ch
+właściwe miękkie krótkie długie twarde miękkie
+d dź e ē f f́ 
+właściwe niewłaściwe krótkie długie twarde miękkie
+j g i(y) ī (ȳ) ł l
+twarde miękkie twarde miękkie krótkie długiem
+
+m ḿ n ń o ó
+twarde miękkie właściwe właściwe
+p ṕ q R r
+S ma w języku polskim sześć swoich różnych odmian: 
+z s ś sz ż ź 
+krótkie długie
+t u ū
+kiedy (u) traci właściwości samogłoski, ma trzy
+różne odmiany, które są widoczne w polskim abecadle, mianowicie w \textit{Adām}
+\textit{byl} itd.:
+ẃ w wu x y
+
+}
+
+
+% Rafał Wójcik (ed.)
+
+% Culture of Memory
+% in East Central Europe
+% in the Late Middle Ages
+% and the Early Modern Period
+% Conference proceedings
+% Ciążeń, March 12-14, 2008
+
+% Biblioteka Uniwersytecka
+% Poznań 2008
+
+% Rafał Wójcik, Wiesław Wydra
+% (Poznań)
+
+% Jakub Parkoszowic’s Polish Mnemonic Verse
+% about Polish Orthography from the 15th Century
+
+\begin{quote}
+  Adam̄ byl, bił, cał, kāł,
+
+  czas, ciało, chōd, dāł, dziāł,
+
+  eż fytā figi
+
+  i jē je, hān, krol
+
+  łys, lis mykā,
+
+  Mika nyski niski,
+
+  otōż \marginpar{s. 110} pije pyszno kwas,
+
+  rosa, rzą̄sa, rozūm,
+
+  sām, szād, siādł,
+
+  żak ziarā za mną,
+
+  to umiē uj(?), wiła
+
+  wylāł w usta, ksią̄dz
+
+  jęcząc jęczy, ją̄kā.
+\end{quote}
+
+Amen. A
+trzeciego (alfabetu brak ?).
+
+Ktokolwiek więc chce pisać w języku
+polskim w sposób należyty i oddający zróżnicowanie wymowy, winien brać
+pod uwagę przedstawione tu właściwości abecadła i tę ortografię
+wprowadzać w zwyczaj powszechny, pisząc zgodnie z podanymi tu
+przepisami \textit{a} krótkie i następujące po nim inne litery z odróżniającymi
+je cechami.
+
+Na chwałę Boga wszechmogącego i jego rodzicielki chwalebnej
+dziewicy Marii. Z pomocą tego, który stworzył wszystko z niczego i
+któremu wszystko jest posłuszne, którego władza trwa, który króluj o
+na wieki wieków. 
+
+Amen.
+
+pisał sługa jest kałżdej godziny Warzykowski.
+
+
+
+% FR: interpretationis itp.
+
+
+%%% Local Variables: 
+%%% mode: LaTeX
+%%% TeX-PDF-mode: t
+%%% TeX-engine: luatex 
+%%% End:
