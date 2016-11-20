@@ -74,9 +74,13 @@
 
 % dc dropped capital
 
-\newcommand{\dc}[1]{{\relsize{3}\colorbox{black!15}{\textbf{#1}}}}
+%\newcommand{\dc}[1]{{\relsize{3}\colorbox{black!15}{\textbf{#1}}}}
+% size "migrates" into line number
+\newcommand{\dc}[1]{{\colorbox{black!15}{\textbf{#1}}}}
 
+% The color good for screen, bad for printing:
 \newcommand{\hyphh}[2]{#1\textcolor{blue}{#2}}
+%\newcommand{\hyphh}[2]{#1\textcolor{RoyalPurple}{#2}}
 \newcommand{\hypht}[2]{\fbox{#2}}
 
 % http://wbl.klf.uw.edu.pl/13/2/iParkosz.djvu?djvuopts=&page=37&zoom=width&showposition=0.5,0.55
@@ -216,6 +220,14 @@ GNU Free Documentation License\\
 \thispagestyle{empty}
 \newpage
 
+\begin{center}
+  Wstęp (w przygotowaniu)
+  
+\end{center}
+
+\raggedright
+
+\newpage
  \input Parkosz01-03
  \newpage
  \input Parkosz02-04
@@ -255,4 +267,5 @@ GNU Free Documentation License\\
 %%% mode: LaTeX
 %%% TeX-PDF-mode: t
 %%% TeX-engine: luatex 
+%%% TeX-master: t
 %%% End:
