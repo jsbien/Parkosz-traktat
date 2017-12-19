@@ -1,0 +1,9 @@
+# use glob syntax.
+syntax: glob
+
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
