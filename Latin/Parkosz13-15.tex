@@ -48,9 +48,12 @@ est enim vicium idem pluries repetere ex causa notandum.
 
 
 \def\newverse{\advance\plineno by 1\psublineno=0\hskip10em}
-\def\newversesubline{\hskip10em}
+\def\newversesubline{\hskip\indentV}
 \def\newverseline{\advance\plineno by 1\psublineno=0}
-\def\indentVerse{\hskip10em}
+\newdimen\indentV
+\indentV=10em
+%\setlength{\indentV}{10em}
+\def\indentVerse{\hskip\indentV{}}
 
 % MUFI SHORT VIRGULA
 % skomentowac w artykule!
@@ -60,26 +63,23 @@ est enim vicium idem pluries repetere ex causa notandum.
 \catcode`\/=13
 \def/{{\fontCardo }}
 
-% dopracować!
-\Quivira
-
 % \includegraphics[width=\hsize]{wierszP1m}
 
 \splitverse
 
-Ktho chce piſſaç doſkoɲaɬe
+\parkosz{Ktho} \parkosz{chce} \parkosz{piſſaç} \parkosz{doſkoɲaɬe}
 
-\indentVerse Ġøzik poɬſki
+\indentVerse \parkosz{Ġøzik} \parkosz{poɬſki}
 
 % \includegraphics[width=\hsize]{wierszP2}
 
 %\newverse 
 \splitverse
 
-itefz prave/
+\parkosz{itefz} \parkosz{prave}/
 
-
-\indentVerse uṁeĳ obecado ṁoĳe/
+\settowidth{\indentV}{\parkosz{itefz} \parkosz{prave}/}
+\indentVerse \parkosz{uṁeĳ} \parkosz{obecado} \parkosz{ṁoĳe}/
 
 % http://en.wikipedia.org/wiki/Ezh
 % 'LATIN SMALL LETTER EZH' (U+0292)
@@ -89,7 +89,8 @@ itefz prave/
 \newtip{85}{Tak w rkp., z pewnością należy czytać \textit{ktorem}, a nie \textit{któreż}, co jednak
 nie jest o tyle pewne, że w wyrazach, polskich w traktacie skrótów nie ma.}
 \obeylines
-kthore\conf{ʒ}{}¹
+\settowidth{\indentV}{\parkosz{itefz} \parkosz{prave}/ \parkosz{uṁeĳ} \parkosz{obecado} \parkosz{ṁoĳe}/}
+\indentVerse \parkosz{kthore\conf{ʒ}{}}¹
 
 % 85 Tak w rkp., z pewnością należy czytać Morem, a nie któreś, Co jednak 
 % nie jest o tyle pewne, że w wyrazach, polskich w traktacie skrótów nie ma.
@@ -99,36 +100,45 @@ kthore\conf{ʒ}{}¹
 
 \splitverse
 
-thak ɲapiſſaḷ toɓe/	
+\parkosz{thak} \parkosz{ɲapiſſaḷ} \parkosz{toɓe}/
 
-\indentVerse  aɓi piſſaḷ tak krothke 
+\settowidth{\indentV}{\parkosz{thak} \parkosz{ɲapiſſaḷ} \parkosz{toɓe}/}
+\indentVerse  \parkosz{aɓi} \parkosz{piſſaḷ} \parkosz{tak} \parkosz{krothke}
 
 % \includegraphics[width=\hsize]{wierszP4}
 
 \splitverse
 
-· a ·/
+· \parkosz{a} ·/
 
-\indentVerse  \textit{aa} ſſovitho ꝿdze ſſzø ʋſdḷuſzaa/
 
-\indentVerse  podḷuꝿ 
+\settowidth{\indentV}{· \parkosz{a} ·/}
+%\def\indentVerse
+% doesn't work:!
+% \phantom{· \parkosz{a} ·/}
+\indentVerse \parkosz{\textit{aa}} \parkosz{ſſovitho} \parkosz{ꝿdze} \parkosz{ſſzø} \parkosz{ʋſdḷuſzaa}/
+
+\settowidth{\indentV}{· \parkosz{a} ·/ \parkosz{\textit{aa}} \parkosz{ſſovitho} \parkosz{ꝿdze} \parkosz{ſſzø} \parkosz{ʋſdḷuſzaa}/}
+\indentVerse  \parkosz{podḷuꝿ} 
 
 % \includegraphics[width=\hsize]{wierszP5}
 
 \splitverse
 
-theꝿo bødze piſſaaɲ/
+\parkosz{theꝿo} \parkosz{bødze} \parkosz{piſſaaɲ}/
 
 % znika e!!!
-\indentVerse ɬudzij ʋſzyſtkĳch oçec 
+\settowidth{\indentV}{\parkosz{theꝿo} \parkosz{bødze} \parkosz{piſſaaɲ}/}
+\indentVerse \parkosz{ɬudzij} \parkosz{ʋſzyſtkĳch} \parkosz{oçec} 
 
 % \includegraphics[width=\hsize]{wierszP6}
 
 \splitverse
 
-\textit{adaaɱ}/
+\parkosz{\textit{adaaɱ}}/
 
-\indentVerse A theſz ġdze · ƀ · bødze ġruube/ 
+\settowidth{\indentV}{\parkosz{\textit{adaaɱ}}/}
+\indentVerse \parkosz{A} \parkosz{theſz ġdze} · \parkosz{ƀ} · \parkosz{bødze} \parkosz{ġruube}/ 
 
 % \newverseline
 
@@ -136,50 +146,55 @@ theꝿo bødze piſſaaɲ/
 
 \splitverse
 
-Thako piſſṁeɱ poḷoſzyſch ġee/
+\parkosz{Thako} \parkosz{piſſṁeɱ} \parkosz{poḷoſzyſch} \parkosz{ġee}/
 
-\newversesubline Ṅepiſſch 
+\settowidth{\indentV}{\parkosz{Thako} \parkosz{piſſṁeɱ} \parkosz{poḷoſzyſch} \parkosz{ġee}/}
+\newversesubline \parkosz{Ṅepiſſch} 
 
 % \includegraphics[width=\hsize]{wierszP8}
 
-\splitverse virzchu okrøꝿɬeꝿo/
+\splitverse \parkosz{virzchu} \parkosz{okrøꝿɬeꝿo}/
 
 % hyphen!!!
-\newversesubline Piſſøc \textit{bartka} \textit{\hyphh{ſba}{voɲeġo}}
+\settowidth{\indentV}{\parkosz{virzchu} \parkosz{okrøꝿɬeꝿo}/}
+\newversesubline \parkosz{Piſſøc} \parkosz{\textit{bartka}} \parkosz{\textit{\hyphh{ſba}{voɲeġo}}}
 
 % \includegraphics[width=\hsize]{wierszP9}
 
 %\newverseline
 \fullverselines
 
- \textit{\hypht{ſba}{voɲeġo}} Svirzcheɱ okrøꝿɬeṁ piſſi · ɓ ·/
+ \parkosz{\textit{\hypht{ſba}{voɲeġo}}} \parkosz{Svirzcheɱ} \parkosz{okrøꝿɬeṁ} \parkosz{piſſi} · \parkosz{ɓ} ·/
 
 % \includegraphics[width=\hsize]{wierszP10}
 
-\plineno=12
+\plineno=11
 \splitverse
 
-\textit{ɓodri} thako ɲapiſſeſch ſſvee/
+\parkosz{\textit{ɓodri}} \parkosz{thako} \parkosz{ɲapiſſeſch} \parkosz{ſſvee}/
 
 % zły numer!
 
-\indentVerse Ġdze · \textit{c} · \hyphh{ġḷoſ}{ſu}
+\settowidth{\indentV}{\parkosz{\textit{ɓodri}} \parkosz{thako} \parkosz{ɲapiſſeſch} \parkosz{ſſvee}/}
+\indentVerse \parkosz{Ġdze} · \parkosz{\textit{c}} · \parkosz{\hyphh{ġḷoſ}{ſu}}
 
 % \includegraphics[width=\hsize]{wierszP11}
 
 \splitverse
 
-\hypht{ġḷoſ}{ſu} ṁeeç ṅebødze
+\parkosz{\hypht{ġḷoſ}{ſu}} \parkosz{ṁeeç} \parkosz{ṅebødze}
 
-\indentVerse Vṁaſto ġeꝿo thaṁ \textit{k} 
+\settowidth{\indentV}{\parkosz{\hypht{ġḷoſ}{ſu}} \parkosz{ṁeeç} \parkosz{ṅebødze}}
+\indentVerse \parkosz{Vṁaſto} \parkosz{ġeꝿo} \parkosz{thaṁ} \parkosz{\textit{k}} 
 
 % \includegraphics[width=\hsize]{wierszP12}
 
 \splitverse
 
-ſſzøṅdze
+\parkosz{ſſzøṅdze}
 
-\indentVerse Iako \textit{kaṁeeɲ} thako \textit{kaᵽtuur} 
+\settowidth{\indentV}{\parkosz{ſſzøṅdze}}
+\indentVerse \parkosz{Iako} \parkosz{\textit{kaṁeeɲ}} \parkosz{thako} \parkosz{\textit{kaᵽtuur}} 
 
 \newpage
 % \includegraphics[width=\hsize]{wierszP13}
@@ -187,47 +202,47 @@ Thako piſſṁeɱ poḷoſzyſch ġee/
 \splitverse
 
 % brak Ƥ
-Ƥiſſaɲ bⱥdze przes \textit{k} ĳ \textit{kuur}
+\parkosz{Ƥiſſaɲ} \parkosz{bⱥdze} \parkosz{przes} \parkosz{\textit{k}} \parkosz{ĳ} \parkosz{\textit{kuur}}
 
-\indentVerse Aɬe ꝿdze 
+\indentVerse \parkosz{Aɬe} \parkosz{ꝿdze}
 
 % \includegraphics[width=\hsize]{wierszP14}
 
 \splitverse
 
-· \textit{c} · ſvoĳ ꝿḷos ṁeʋa
+· \parkosz{\textit{c}} · \parkosz{ſvoĳ} \parkosz{ꝿḷos} \parkosz{ṁeʋa}
 
-\indentVerse Svikḷeṁ pĳſṁeɱ  
+\indentVerse \parkosz{Svikḷeṁ} \parkosz{pĳſṁeɱ}
 
 % \includegraphics[width=\hsize]{wierszP15}
 
 \splitverse
 
-caḷo tak da/
+\parkosz{caḷo} \parkosz{tak} \parkosz{da}/
 
-\indentVerse Aɬe \textit{çeløçu} ĳ \textit{çalu}/
+\indentVerse \parkosz{Aɬe} \parkosz{\textit{çeløçu}} \parkosz{ĳ} \parkosz{\textit{çalu}}/
 
-\indentVerse  pod
+\indentVerse  \parkosz{pod}
 
 % \includegraphics[width=\hsize]{wierszP16}
 
 \splitverse
 
-  · Q · przĳpiſſy thak ġeɱv
+  · \parkosz{Q} · \parkosz{przĳpiſſy} \parkosz{thak} \parkosz{ġeɱv}
 
-\indentVerse Ġeſtɬi \textit{c} \hyphh{bar}{zo} 
+\indentVerse \parkosz{Ġeſtɬi} \parkosz{\textit{c}} \parkosz{\hyphh{bar}{zo}}
 
 % \includegraphics[width=\hsize]{wierszP17}
 
-\newverseline \hypht{bar}{zo} ġruɓeĳe.
+\newverseline \parkosz{\hypht{bar}{zo}} \parkosz{ġruɓeĳe}.
 
-\indentVerse Thako piſſṁeṁ \textit{czas} \hyphh{ʋiſɲa}{ĳe}
+\indentVerse \parkosz{Thako} \parkosz{piſſṁeṁ} \parkosz{\textit{czas}} \parkosz{\hyphh{ʋiſɲa}{ĳe}}
 
 % \includegraphics[width=\hsize]{wierszP18}
 
-\newverseline \hypht{ʋiſɲa}{ĳe} Ġdy \add{h} przĳpiſſaṅo bødze/
+\newverseline \parkosz{\hypht{ʋiſɲa}{ĳe}} \parkosz{Ġdy} \add{h} \parkosz{przĳpiſſaṅo} \parkosz{bødze}/
 
-\indentVerse \textit{Ch}  \hyphh{chʋa}{ɬebɲe}
+\indentVerse \parkosz{\textit{Ch}}  \parkosz{\hyphh{chʋa}{ɬebɲe}}
 
 \newpage
 
@@ -235,56 +250,56 @@ caḷo tak da/
 
 \splitverse
 
-\hypht{chʋa}{ɬebɲe} thako ſſzødze
+\parkosz{\hypht{chʋa}{ɬebɲe}} \parkosz{thako} \parkosz{ſſzødze}
 
-\indentVerse Aɬe bich çi \hyphh{ṅeprze}{dḷuſziḷ}
+\indentVerse \parkosz{Aɬe} \parkosz{bich} \parkosz{çi} \parkosz{\hyphh{ṅeprze}{dḷuſziḷ}}
 
 % \includegraphics[width=\hsize]{wierszP20}
 
 \splitverse
 
-\hypht{ṅeprze}{dḷuſziḷ}
+\parkosz{\hypht{ṅeprze}{dḷuſziḷ}}
 
-\indentVerse Aṅĳ theſzkɲoſczĳ uczĳṅĳḷ
+\indentVerse \parkosz{Aṅĳ} \parkosz{theſzkɲoſczĳ} \parkosz{uczĳṅĳḷ}
 
-\indentVerse Patrzĳ 
+\indentVerse \parkosz{Patrzĳ} 
 
 % \includegraphics[width=\hsize]{wierszP21}
 
 \splitverse
 
-obecada ɱeeġo
+\parkosz{obecada} \parkosz{ɱeeġo}
 
-\indentVerse Thoɓe thu ɲapiſſaɲeġo 
+\indentVerse \parkosz{Thoɓe} \parkosz{thu} \parkosz{ɲapiſſaɲeġo}
 
 % \includegraphics[width=\hsize]{wierszP22}
 
 \splitverse
 
-Boç ʋṅye\conf{ɱ}{} kaſzde ſḷoʋko thobe /
+\parkosz{Boç} \parkosz{ʋṅye\conf{ɱ}{}} \parkosz{kaſzde} \parkosz{ſḷoʋko} \parkosz{thobe} /
 
-\indentVerse Ƥiſſṁeɱ 
+\indentVerse \parkosz{Ƥiſſṁeɱ} 
 
 % \includegraphics[width=\hsize]{wierszP23}
 
 \splitverse
 
-roſɲi ġḷos da ʋſſobe/
+\parkosz{roſɲi} \parkosz{ġḷos} \parkosz{da} \parkosz{ʋſſobe}/
 
-\indentVerse  Piſch ġee \hyphh{Vġĳ}{ṁo}
+\indentVerse  \parkosz{Piſch} \parkosz{ġee} \parkosz{\hyphh{Vġĳ}{ṁo}}
 
 % \includegraphics[width=\hsize]{wierszP24}
 
 \splitverse
 
-\hypht{Vġĳ}{ṁo} boſze thako/
+\parkosz{\hypht{Vġĳ}{ṁo}} \parkosz{boſze} \parkosz{thako}/
 
 \catcode `\^^M=5
 \newtip{86}{Nie sygnalizujemy pisowni w wielu wypadkach niezgodnej z
   zaleceniami. Cały ten wiersz w pisowni zrekonstruowanej według
   wskazówek Parkosza ogłosił Łoś w Języku Polskim I, 1913, s. 56.}
 \obeylines
-\indentVerse ĳeſzeṁczĳ ɲapiſſaḷ iako¹
+\indentVerse \parkosz{ĳeſzeṁczĳ} \parkosz{ɲapiſſaḷ} \parkosz{iako}¹
 % •* Nie sygnalizujemy pisowni w wielu wypadkach niezgodnej z zale¬ 
 % ceniami. Cały ten wiersz w pisowni zrekonstruowanej według wskazówek 
 % Parkosza ogłosił Łoś w Języku Polskim I, 1913, s. 56.
@@ -298,96 +313,94 @@ roſɲi ġḷos da ʋſſobe/
 % \includegraphics[width=\hsize]{wierszP25-26}
 
 
-a breue 
+\parkosz{a} breue 
 
-aa longum 
+\parkosz{aa} longum 
 
-ƀ groſſum 
+\parkosz{ƀ} groſſum 
 
-ɓ molle
+\parkosz{ɓ} molle
 
 c has quinque differencias in Polonico idiomate habet
 
-c k ç cz ch
+\parkosz{c} \parkosz{k} \parkosz{ç} \parkosz{cz} \parkosz{ch}
 
-d per ſe 
+\parkosz{d} per ſe 
 
-dz molle 
+\parkosz{dz} molle 
 
-e breue 
+\parkosz{e} breue 
 
-ee longum 
+\parkosz{ee} longum 
 
-ﬀ durum 
+\parkosz{ﬀ} durum 
 
-f molle
+\parkosz{ḟ} molle
 
 % \includegraphics[width=\hsize]{wierszP27-28}
 
 
 
 \newtip{87}{Winno być: per se \textit{ꝿ}, improprie \textit{ġ}.}
-ġ per ſe 
+\parkosz{ġ} per ſe 
 
-ꝿ¹  inproprie 
+\parkosz{ꝿ}¹  inproprie 
 % 87	Winno być: per se g, improprie g.
 
-i breue 
+\parkosz{i} breue 
 
-ĳ longum 
+\parkosz{ĳ} longum 
 
-ḷ durum 
+\parkosz{ḷ} durum 
 
-ɬ molle 
+\parkosz{ɬ} molle 
 
+\parkosz{ɱ} groſſum 
 
+\parkosz{ṁ} molle 
 
-ɱ groſſum 
+\parkosz{ɲ}  groſſum 
 
-ṁ molle 
+\parkosz{ṅ}   molle 
 
-ɲ  groſſum 
+\parkosz{o} breue    
 
-ṅ   molle 
-
-o breue    
-
-oo longum
+\parkosz{oo} longum
 
 % \includegraphics[width=\hsize]{wierszP29-koniec}
 
 
-ᵽ durum 
+\parkosz{ᵽ} durum 
 
-ƥ molle 
+\parkosz{ƥ} molle 
 
-q per ſe
+\parkosz{q} per ſe
 
-R per ſe 
+\parkosz{R} per ſe 
 
-r
+\parkosz{r}
 
 /
 
-S in lingua Polonorum iſtas in ſe ſex differencias habet        
+\parkosz{S} in lingua Polonorum iſtas in ſe ſex differencias habet        
 
-ſ s 
+\parkosz{ſ} \parkosz{s} 
 
-ſſz ſch ſz zz
+\parkosz{ſſz} \parkosz{ſch} \parkosz{ſz} \parkosz{zz}
 
-t 
+\parkosz{t} 
 
-u breue	
+\parkosz{u} breue	
 
-uu longum
+\parkosz{uu} longum
 
-v ʋ w // x y
+\parkosz{v} \parkosz{ʋ} \parkosz{w} // \parkosz{x} \parkosz{y}
 
 eum perdit vim vocalitatis, has tres habet differencias, 
 
 que differencie patent in abecedario Polonorum, 
 
-ſcilicet adaam ɓiɬ etc.   
+\parkosz{ſcilicet} \parkosz{adaam} \parkosz{ɓiɬ} etc.   
 
 
 
