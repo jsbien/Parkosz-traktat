@@ -52,7 +52,7 @@ est enim vicium idem pluries repetere ex causa notandum.
 \def\newverseline{\advance\plineno by 1\psublineno=0}
 \newdimen\indentV
 \newdimen\indentVt
-\indentV=10em
+\indentV=5em
 %\setlength{\indentV}{10em}
 \def\indentVerse{\hskip\indentV{}}
 \def\indentVerseTotal{\hskip\indentVt{}}
@@ -69,30 +69,33 @@ est enim vicium idem pluries repetere ex causa notandum.
 
 \splitverse
 
+%\indentVerse
 \parkosz{Ktho} \parkosz{chce} \parkosz{piſſaç} \parkosz{doſkoɲaɬe}
 
-\indentVerse \parkosz{Ġøzik} \parkosz{poɬſki}
+%\indentVerse
+\parkosz{Ġøzik} \parkosz{poɬſki}
 
 % \includegraphics[width=\hsize]{wierszP2}
 
 %\newverse
 \splitverse
 
-\parkosz{itefz} \parkosz{prave}/
+\settowidth{\indentV}{\parkosz{Ġøzik} \parkosz{poɬſki}}
+\indentVerse \parkosz{itefz} \parkosz{prave}/
 
-\settowidth{\indentV}{\parkosz{itefz} \parkosz{prave}/}
-\indentVerse \parkosz{uṃeij} \parkosz{obecado} \parkosz{ṃoije}/
+% \indentVerse
+\parkosz{uṃeÿ} \parkosz{obecado} \parkosz{ṃoÿe}/
 
 % http://en.wikipedia.org/wiki/Ezh
 % 'LATIN SMALL LETTER EZH' (U+0292)
 	
-
 \catcode `\^^M=5
 \newtip{85}{Tak w rkp., z pewnością należy czytać \textit{ktorem}, a nie \textit{któreż}, co jednak
 nie jest o tyle pewne, że w wyrazach, polskich w traktacie skrótów nie ma.}
 \obeylines
-\settowidth{\indentV}{\parkosz{itefz} \parkosz{prave}/ \parkosz{uṃeij} \parkosz{obecado} \parkosz{ṃoije}/}
-\indentVerse \parkosz{kthore\conf{ʒ}{}}¹
+
+% \indentVerse
+\parkosz{kthore\conf{ʒ}{}}¹
 
 % 85 Tak w rkp., z pewnością należy czytać Morem, a nie któreś, Co jednak 
 % nie jest o tyle pewne, że w wyrazach, polskich w traktacie skrótów nie ma.
@@ -102,45 +105,42 @@ nie jest o tyle pewne, że w wyrazach, polskich w traktacie skrótów nie ma.}
 
 \splitverse
 
-\parkosz{thak} \parkosz{ɲapiſſaḷ} \parkosz{toɓe}/
+\settowidth{\indentV}{\parkosz{kthore\conf{ʒ}{}}}
+\indentVerse \parkosz{thak} \parkosz{ɲapiſſaḷ} \parkosz{toɓe}/
 
-\settowidth{\indentV}{\parkosz{thak} \parkosz{ɲapiſſaḷ} \parkosz{toɓe}/}
-\indentVerse  \parkosz{aɓi} \parkosz{piſſaḷ} \parkosz{tak} \parkosz{krothke}
+\parkosz{aɓi} \parkosz{piſſaḷ} \parkosz{tak} \parkosz{krothke}
 
 % \includegraphics[width=\hsize]{wierszP4}
 
 \splitverse
 
-· \parkosz{a} ·/
+\settowidth{\indentV}{\parkosz{aɓi} \parkosz{piſſaḷ} \parkosz{tak} \parkosz{krothke}}
+\indentVerse · \parkosz{a} ·/
 
+\parkosz{\textit{aa}} \parkosz{ſſovitho} \parkosz{ꝿdze} \parkosz{ſſzø} \parkosz{ʋſdḷuſzaa}/
 
-\settowidth{\indentV}{· \parkosz{a} ·/}
-%\def\indentVerse
-% doesn't work:!
-% \phantom{· \parkosz{a} ·/}
-\indentVerse \parkosz{\textit{aa}} \parkosz{ſſovitho} \parkosz{ꝿdze} \parkosz{ſſzø} \parkosz{ʋſdḷuſzaa}/
-
-\settowidth{\indentV}{· \parkosz{a} ·/ \parkosz{\textit{aa}} \parkosz{ſſovitho} \parkosz{ꝿdze} \parkosz{ſſzø} \parkosz{ʋſdḷuſzaa}/}
-\indentVerse  \parkosz{podḷuꝿ}
+\parkosz{podḷuꝿ}
 
 % \includegraphics[width=\hsize]{wierszP5}
 
 \splitverse
 
-\parkosz{theꝿo} \parkosz{bødze} \parkosz{piſſaaɲ}/
+\settowidth{\indentV}{\parkosz{podḷuꝿ}}
+\indentVerse \parkosz{theꝿo} \parkosz{bødze} \parkosz{piſſaaɲ}/
 
-% znika e!!!
-\settowidth{\indentV}{\parkosz{theꝿo} \parkosz{bødze} \parkosz{piſſaaɲ}/}
-\indentVerse \parkosz{ɬudzij} \parkosz{ʋſzyſtkijch} \parkosz{oçec}
+
+\parkosz{ɬudzij} \parkosz{ʋſzyſtkijch} \parkosz{oçec}
 
 % \includegraphics[width=\hsize]{wierszP6}
 
 \splitverse
 
-\parkosz{\textit{adaaɱ}}/
+\settowidth{\indentV}{\parkosz{ɬudzij} \parkosz{ʋſzyſtkijch} \parkosz{oçec}}
+\indentVerse \parkosz{\textit{adaaɱ}}/
 
-\settowidth{\indentV}{\parkosz{\textit{adaaɱ}}/}
-\indentVerse \parkosz{A} \parkosz{theſz ġdze} · \parkosz{ƀ} · \parkosz{bødze} \parkosz{ġruube}/
+%\settowidth{\indentV}{\parkosz{\textit{adaaɱ}}/}
+%\indentVerse
+\parkosz{A} \parkosz{theſz ġdze} · \parkosz{ƀ} · \parkosz{bødze} \parkosz{ġruube}/
 
 % \newverseline
 
@@ -150,16 +150,18 @@ nie jest o tyle pewne, że w wyrazach, polskich w traktacie skrótów nie ma.}
 
 \parkosz{Thako} \parkosz{piſſṃeɱ} \parkosz{poḷoſzyſch} \parkosz{ġee}/
 
-\settowidth{\indentV}{\parkosz{Thako} \parkosz{piſſṃeɱ} \parkosz{poḷoſzyſch} \parkosz{ġee}/}
-\newversesubline \parkosz{Ṇepiſſch}
+%\settowidth{\indentV}{\parkosz{Thako} \parkosz{piſſṃeɱ} \parkosz{poḷoſzyſch} \parkosz{ġee}/}
+%\newversesubline
+\parkosz{Ṇepiſſch}
 
 % \includegraphics[width=\hsize]{wierszP8}
 
-\splitverse \parkosz{virzchu} \parkosz{okrøꝿɬeꝿo}/
+\settowidth{\indentV}{\parkosz{Ṇepiſſch}}
+\splitverse
+\indentVerse \parkosz{virzchu} \parkosz{okrøꝿɬeꝿo}/
 
-% hyphen!!!
-\settowidth{\indentV}{\parkosz{virzchu} \parkosz{okrøꝿɬeꝿo}/}
-\newversesubline \parkosz{Piſſøc} \parkosz{\textit{bartka}} \parkosz{\textit{\hyphh{ſba}{voɲeġo}}}
+%\settowidth{\indentV}{\parkosz{virzchu} \parkosz{okrøꝿɬeꝿo}/}
+\parkosz{Piſſøc} \parkosz{\textit{bartka}} \parkosz{\textit{\hyphh{ſba}{voɲeġo}}}
 
 % \includegraphics[width=\hsize]{wierszP9}
 
@@ -177,26 +179,29 @@ nie jest o tyle pewne, że w wyrazach, polskich w traktacie skrótów nie ma.}
 
 % zły numer!
 
-\settowidth{\indentV}{\parkosz{\textit{ɓodri}} \parkosz{thako} \parkosz{ɲapiſſeſch} \parkosz{ſſvee}/}
-\indentVerse \parkosz{Ġdze} · \parkosz{\textit{c}} · \parkosz{\hyphh{ġḷoſ}{ſu}}
+%\settowidth{\indentV}{\parkosz{\textit{ɓodri}} \parkosz{thako} \parkosz{ɲapiſſeſch} \parkosz{ſſvee}/}
+%\indentVerse
+\parkosz{Ġdze} · \parkosz{\textit{c}} · \parkosz{\hyphh{ġḷoſ}{ſu}}
 
 % \includegraphics[width=\hsize]{wierszP11}
 
 \splitverse
 
-\parkosz{\hypht{ġḷoſ}{ſu}} \parkosz{ṃeeç} \parkosz{ṇebødze}
+\settowidth{\indentV}{\parkosz{Ġdze} · \parkosz{\textit{c}} · \parkosz{\hyphh{ġḷoſ}{}}}
+\indentVerse \parkosz{\hypht{ġḷoſ}{ſu}} \parkosz{ṃeeç} \parkosz{ṇebødze}
 
-\settowidth{\indentV}{\parkosz{\hypht{ġḷoſ}{ſu}} \parkosz{ṃeeç} \parkosz{ṇebødze}}
-\indentVerse \parkosz{Vṃaſto} \parkosz{ġeꝿo} \parkosz{thaṃ} \parkosz{\textit{k}}
+%\settowidth{\indentV}{\parkosz{\hypht{ġḷoſ}{ſu}} \parkosz{ṃeeç} \parkosz{ṇebødze}}
+% \indentVerse
+\parkosz{Vṃaſto} \parkosz{ġeꝿo} \parkosz{thaṃ} \parkosz{\textit{k}}
 
 % \includegraphics[width=\hsize]{wierszP12}
 
 \splitverse
 
-\parkosz{ſſzøṇdze}
+\settowidth{\indentV}{\parkosz{Vṃaſto} \parkosz{ġeꝿo} \parkosz{thaṃ} \parkosz{\textit{k}}}
+ \indentVerse \parkosz{ſſzøṇdze}
 
-\settowidth{\indentV}{\parkosz{ſſzøṇdze}}
-\indentVerse \parkosz{Iako} \parkosz{\textit{kaṃeeɲ}} \parkosz{thako} \parkosz{\textit{kaᵽtuur}}
+\parkosz{Iako} \parkosz{\textit{kaṃeeɲ}} \parkosz{thako} \parkosz{\textit{kaᵽtuur}}
 
 \newpage
 % \includegraphics[width=\hsize]{wierszP13}
@@ -204,75 +209,91 @@ nie jest o tyle pewne, że w wyrazach, polskich w traktacie skrótów nie ma.}
 \splitverse
 
 % brak Ƥ
-\parkosz{Ƥiſſaɲ} \parkosz{bⱥdze} \parkosz{przes} \parkosz{\textit{k}} \parkosz{ij} \parkosz{\textit{kuur}}
+\parkosz{Ƥiſſaɲ} \parkosz{bⱥdze} \parkosz{przes} \parkosz{\textit{k}} \parkosz{ÿ} \parkosz{\textit{kuur}}
 
-\indentVerse \parkosz{Aɬe} \parkosz{ꝿdze}
+% \indentVerse
+\parkosz{Aɬe} \parkosz{ꝿdze}
 
 % \includegraphics[width=\hsize]{wierszP14}
 
 \splitverse
 
-· \parkosz{\textit{c}} · \parkosz{ſvoij} \parkosz{ꝿḷos} \parkosz{ṃeʋa}
+\settowidth{\indentV}{\parkosz{Aɬe} \parkosz{ꝿdze}}
+ \indentVerse · \parkosz{\textit{c}} · \parkosz{ſvoij} \parkosz{ꝿḷos} \parkosz{ṃeʋa}
 
-\indentVerse \parkosz{Svikḷeṃ} \parkosz{pijſṃeɱ}
+ %\indentVerse
+ \parkosz{Svikḷeṃ} \parkosz{pijſṃeɱ}
 
 % \includegraphics[width=\hsize]{wierszP15}
 
 \splitverse
 
-\parkosz{caḷo} \parkosz{tak} \parkosz{da}/
+\settowidth{\indentV}{\parkosz{Svikḷeṃ} \parkosz{pijſṃeɱ}}
+\indentVerse \parkosz{caḷo} \parkosz{tak} \parkosz{da}/
 
-\indentVerse \parkosz{Aɬe} \parkosz{\textit{çeløçu}} \parkosz{ij} \parkosz{\textit{çalu}}/
+%\indentVerse
+\parkosz{Aɬe} \parkosz{\textit{çeløçu}} \parkosz{ÿ} \parkosz{\textit{çalu}}/
 
-\indentVerse  \parkosz{pod}
+\parkosz{pod}
 
 % \includegraphics[width=\hsize]{wierszP16}
 
 \splitverse
 
-  · \parkosz{Q} · \parkosz{przijpiſſy} \parkosz{thak} \parkosz{ġeɱv}
+\settowidth{\indentV}{\parkosz{pod}}
+\indentVerse · \parkosz{ç} · \parkosz{przÿpiſſy} \parkosz{thak} \parkosz{ġeɱv}
 
-\indentVerse \parkosz{Ġeſtɬi} \parkosz{\textit{c}} \parkosz{\hyphh{bar}{zo}}
+%\indentVerse
+\parkosz{Ġeſtɬi} \parkosz{\textit{c}} \parkosz{\hyphh{bar}{zo}}
 
 % \includegraphics[width=\hsize]{wierszP17}
 
-\newverseline \parkosz{\hypht{bar}{zo}} \parkosz{ġruɓeije}.
+\settowidth{\indentV}{\parkosz{Ġeſtɬi} \parkosz{\textit{c}} \parkosz{\hyphh{bar}{}}}
+\indentVerse  \parkosz{\hypht{bar}{zo}} \parkosz{ġruɓeÿe}.
 
-\indentVerse \parkosz{Thako} \parkosz{piſſṃeṃ} \parkosz{\textit{czas}} \parkosz{\hyphh{ʋiſɲa}{ije}}
+\parkosz{Thako} \parkosz{piſſṃeṃ} \parkosz{\textit{czas}} \parkosz{\hyphh{ʋiſɲa}{ÿe}}
 
 % \includegraphics[width=\hsize]{wierszP18}
+\settowidth{\indentV}{\parkosz{Thako} \parkosz{piſſṃeṃ} \parkosz{\textit{czas}} \parkosz{\hyphh{ʋiſɲa}{}}}
+\indentVerse \parkosz{\hypht{ʋiſɲa}{ÿe}}
 
-\newverseline \parkosz{\hypht{ʋiſɲa}{ije}} \parkosz{Ġdy} \add{h} \parkosz{przijpiſſaṇo} \parkosz{bødze}/
+\parkosz{Ġdy} \add{h} \parkosz{przijpiſſaṇo} \parkosz{bødze}/
 
-\indentVerse \parkosz{\textit{Ch}}  \parkosz{\hyphh{chʋa}{ɬebɲe}}
+\parkosz{\textit{Ch}}  \parkosz{\hyphh{chʋa}{ɬebɲe}}
 
-\newpage
+%\newpage
 
 % \includegraphics[width=\hsize]{wierszP19}
 
 \splitverse
 
-\parkosz{\hypht{chʋa}{ɬebɲe}} \parkosz{thako} \parkosz{ſſzødze}
+\settowidth{\indentV}{\parkosz{\textit{Ch}}  \parkosz{\hyphh{chʋa}{}}}
+\indentVerse \parkosz{\hypht{chʋa}{ɬebɲe}} \parkosz{thako} \parkosz{ſſzødze}
 
-\indentVerse \parkosz{Aɬe} \parkosz{bich} \parkosz{çi} \parkosz{\hyphh{ṇeprze}{dḷuſziḷ}}
+% \indentVerse
+\parkosz{Aɬe} \parkosz{bich} \parkosz{çi} \parkosz{\hyphh{ṇeprze}{dḷuſziḷ}}
 
 % \includegraphics[width=\hsize]{wierszP20}
 
 \splitverse
 
-\parkosz{\hypht{ṇeprze}{dḷuſziḷ}}
+\settowidth{\indentV}{\parkosz{Aɬe} \parkosz{bich} \parkosz{çi} \parkosz{\hyphh{ṇeprze}{}}}
+\indentVerse \parkosz{\hypht{ṇeprze}{dḷuſziḷ}}
 
-\indentVerse \parkosz{Aṇij} \parkosz{theſzkɲoſczij} \parkosz{uczijṇijḷ}
+\parkosz{Aṇÿ} \parkosz{theſzkɲoſczÿ} \parkosz{uczÿṇÿḷ}
 
-\indentVerse \parkosz{Patrzij}
+%\indentVerse
+\parkosz{Patrzÿ}
 
 % \includegraphics[width=\hsize]{wierszP21}
 
 \splitverse
 
-\parkosz{obecada} \parkosz{ɱeeġo}
+\settowidth{\indentV}{\parkosz{Patrzÿ}}
+\indentVerse \parkosz{obecada} \parkosz{ɱeeġo}
 
-\indentVerse \parkosz{Thoɓe} \parkosz{thu} \parkosz{ɲapiſſaɲeġo}
+%\indentVerse
+\parkosz{Thoɓe} \parkosz{thu} \parkosz{ɲapiſſaɲeġo}
 
 % \includegraphics[width=\hsize]{wierszP22}
 
@@ -280,28 +301,31 @@ nie jest o tyle pewne, że w wyrazach, polskich w traktacie skrótów nie ma.}
 
 \parkosz{Boç} \parkosz{ʋṇye\conf{ɱ}{}} \parkosz{kaſzde} \parkosz{ſḷoʋko} \parkosz{thobe} /
 
-\indentVerse \parkosz{Ƥiſſṃeɱ}
+% \indentVerse
+\parkosz{Ƥiſſṃeɱ}
 
 % \includegraphics[width=\hsize]{wierszP23}
 
 \splitverse
 
-\parkosz{roſɲi} \parkosz{ġḷos} \parkosz{da} \parkosz{ʋſſobe}/
+\settowidth{\indentV}{\parkosz{Ƥiſſṃeɱ}}
+\indentVerse \parkosz{roſɲi} \parkosz{ġḷos} \parkosz{da} \parkosz{ʋſſobe}/
 
-\indentVerse  \parkosz{Piſch} \parkosz{ġee} \parkosz{\hyphh{Vġij}{ṃo}}
+\parkosz{Piſch} \parkosz{ġee} \parkosz{\hyphh{Vġij}{ṃo}}
 
 % \includegraphics[width=\hsize]{wierszP24}
 
 \splitverse
 
-\parkosz{\hypht{Vġij}{ṃo}} \parkosz{boſze} \parkosz{thako}/
+\settowidth{\indentV}{\parkosz{Piſch} \parkosz{ġee} \parkosz{\hyphh{Vġij}{}}}
+\indentVerse \parkosz{\hypht{Vġij}{ṃo}} \parkosz{boſze} \parkosz{thako}/
 
 \catcode `\^^M=5
 \newtip{86}{Nie sygnalizujemy pisowni w wielu wypadkach niezgodnej z
   zaleceniami. Cały ten wiersz w pisowni zrekonstruowanej według
   wskazówek Parkosza ogłosił Łoś w Języku Polskim I, 1913, s. 56.}
 \obeylines
-\indentVerse \parkosz{ijeſzeṃczij} \parkosz{ɲapiſſaḷ} \parkosz{iako}¹
+\parkosz{ijeſzeṃczij} \parkosz{ɲapiſſaḷ} \parkosz{iako}¹
 % •* Nie sygnalizujemy pisowni w wielu wypadkach niezgodnej z zale¬ 
 % ceniami. Cały ten wiersz w pisowni zrekonstruowanej według wskazówek 
 % Parkosza ogłosił Łoś w Języku Polskim I, 1913, s. 56.
