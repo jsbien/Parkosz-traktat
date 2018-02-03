@@ -2,7 +2,8 @@
 % http://ebuw.uw.edu.pl/Content/215606/directory
 % lualatex ze wzgledu na OCG
 %
-\documentclass[dvipsnames,12pt]{article}
+%\documentclass[dvipsnames,12pt]{article}
+\documentclass[dvipsnames,12pt]{report}
 \usepackage{polyglossia}
 \setdefaultlanguage{polish}
 
@@ -245,55 +246,91 @@ GNU Free Documentation License\\
 
 
 \begin{document}
-
-\pagenumbering{roman}
-\maketitle
+\message{Begin document}
 \thispagestyle{empty}
-\newpage
+\message{Begin title page}
+\maketitle
 
-\begin{center}
-  Wstęp 
-\end{center}
+%\newpage
+\pagenumbering{roman}
+
+
+\phantomsection
+% wrong encoding in the bookmark!:
+%\addcontentsline{toc}{chapter}{Wstęp}
+\addcontentsline{toc}{chapter}{Wprowadzenie}
 
 W przygotowaniu.
-
 
 
 \raggedright
 
 \newpage
 \pagenumbering{arabic}
+% Package hyperref Warning: The anchor of a bookmark and its parent's must not
+% (hyperref)                be the same. Added a new anchor on input line 270.
+\phantomsection
+\addcontentsline{toc}{chapter}{Odczytanie}
+\phantomsection
+\addcontentsline{toc}{section}{Strona 1 [3]}
  \input Parkosz01-03
  \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 2 [4]}
  \input Parkosz02-04
  \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 3 [5]}
  \input Parkosz03-05
-% \newpage
+ \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 4 [6]}
  \input Parkosz04-06
 \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 5 [7]}
 \input Parkosz05-07
 \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 6 [8]}
 \input Parkosz06-08
 \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 7 [9]}
  \input Parkosz07-09
 \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 8 [10]}
  \input Parkosz08-10
 \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 9 [11]}
  \input Parkosz09-11
 \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 10 [12]}
  \input Parkosz10-12
 \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 11 [13]}
  \input Parkosz11-13
 \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 12 [14]}
  \input Parkosz12-14
 \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 13 [15]}
  \input Parkosz13-15
 \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 14 [16]}
  \input Parkosz14-16
 
  \everypar{}
 % pomaga na automatyczne wyswietlanie adnotacji?:
 \newpage
+\tableofcontents
 \printbibliography
 
 \end{document}
