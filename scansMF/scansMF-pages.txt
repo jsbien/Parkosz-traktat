@@ -1,0 +1,21 @@
+ 1  [3] 41 25093925  scansMF/0010_2R.tif
+ 2  [4] 42 21307999  scansMF/0011_1L.tif
+ 3  [5] 43 20827559  scansMF/0011_2R.tif
+ 4  [6] 44 18746883  scansMF/0012_1L.tif
+ 5  [7] 45 21108253  scansMF/0012_2R.tif
+ 6  [8] 46 20162947  scansMF/0013_1L.tif
+ 7  [9] 47 20179469  scansMF/0013_2R.tif
+ 8 [10] 48 19642711  scansMF/0014_1L.tif
+ 9 [11] 49 22148797  scansMF/0014_2R.tif
+10 [12] 50 20689431  scansMF/0015_1L.tif
+11 [13] 51 21785249  scansMF/0015_2R.tif
+12 [14] 52 19618531  scansMF/0016_1L.tif
+13 [15] 53 19669525  scansMF/0016_2R.tif
+14 [16] 54 19230999  scansMF/0017_1L.tif
+
+Columns:
+page number
+page symbol used by Kucała
+page number in Kucała's book
+scan size
+file path and name
