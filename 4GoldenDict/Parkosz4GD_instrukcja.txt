@@ -1,0 +1,151 @@
+INSTRUKCJA
+
+7.02.2018
+
+1. Dane wejściowe
+
+1.1 Książka Kucały:
+
+1.1.1 Całość
+
+Opis bibliograficzny:
+
+http://ebuw.uw.edu.pl/publication/220504
+
+Tekst:
+http://ebuw.uw.edu.pl/Content/215606/directory.djvu
+
+1.1.2 Pożyteczne fragmenty i uzupełnienia
+
+Skan mikrofilmu:
+dostępny w Moodle
+
+Faksymile (skan mikrofilmu) z przybliżoną transkrypcją:
+https://bitbucket.org/jsbien/parkosz-traktat/downloads/draftParkosz-facsimile.djvu
+
+Faksymile (skan mikrofilmu) z przybliżoną transkrypcją w formie korpusu:
+http://test.korpusy.klf.uw.edu.pl/parkosz/
+
+Odczytanie:
+https://bitbucket.org/jsbien/parkosz-traktat/downloads/ParkoszLatin.pdf
+
+Wykaz wyrazów z brudnym OCR:
+https://bitbucket.org/jsbien/parkosz-traktat/downloads/Parkosz111-126OCR-wyrazy.djvu
+
+
+
+2. Oprogramowanie
+
+2.1 Program GoldenDict
+
+2.1.1 MS Windows
+
+https://github.com/goldendict/goldendict/wiki/Early-Access-Builds-for-Windows
+
+Uwaga: na oficjalnej witrynie
+
+http://goldendict.org/
+
+wersja przestarzała, nie nadaje się do użytku
+
+2.1.2 Inne systemy
+
+Powinne nadawać się wersje z oficjalnej dystrybucji, np. w Debian
+stretch jest dostępna wersja 1.5.0-RC2+git.
+
+2.2 djview4
+
+http://djvu.sourceforge.net/djview4.html
+
+2.3 djview4poliqarp
+
+https://bitbucket.org/mrudolf/djview-poliqarp/
+
+2.3. Dowolny edytor z obsługą XML
+
+2.3.1 Dla ambitnych (również humanistów):
+wersja demonstracyjna oXygen
+
+https://www.oxygenxml.com/
+
+2.3.2 Dla MS Windows:
+
+Na przykład
+http://xml-copy-editor.sourceforge.net/,
+https://notepad-plus-plus.org/
+
+2.4. Dowolny program graficzny
+
+2.4.1 Dla ambitnych GIMP:
+
+https://www.gimp.org/
+
+2.5 Dodatkowe fonty
+
+Zgodne z rekomendacją MUFI, np.
+
+http://junicode.sourceforge.net/
+
+2. Postać wyniku
+
+Słownik w formacie XDXF dla programu GoldenDict zgodny z podanymi
+przykładami (1 hasło zwykłe, ewentualnie dodatkowe hasło odsyłaczowe).
+
+Hasło przydzielone jest w formie numeru hasła na liście
+niepoprawianych wyników OCR dla wykazu wyrazów z książki Kucały.
+
+
+3. Sugerowane etapy pracy
+
+
+3.1. Skan tekstu hasła.
+
+W "Wykazie wyrazów" w wersji DjVu odnajdujemy odpowiedni fragment,
+zaznaczamy go i zapisujemy bezstratnie, np. w formacie png, pod nazwą
+<numer strony>_<początkowy numer wiersza>-<końcowy numer
+wiersza>. Numery wierszy liczymy od góry.
+
+3.2. Poprawa OCR
+
+W edytorze tekstowym poprawiamy zauważone błędy rozpoznania znaków,
+ignorując na razie słowa pisane kursywą.
+
+3.3. Naniesienie transkrypcji przytaczanych słów.
+
+Na podstawie podanej lokalizacji (strona/wiersz) odszukujemy
+przytaczane słowa w odczytaniu (elektronicznej edycji łacińskiego
+tekstu) i kopiujemy je do swojego tekstu hasła.
+
+Ewentualne błędy lokalizacji odnotowujemy jak w przykładowym haśle
+"Adam". Odnotowujemy również błędy i wątpliwości dotyczące
+transkrypcji.
+
+Na tym etapie jest wskazane zainstalowanie dodatkowych fontów, inaczej
+niektóre skopiowane napisy nie będą się poprawnie wyświetlać.
+
+Na potrzeby dalszych etapów warto zanotować łacińskie konteksty słów.
+
+3.4. Wstępna lokalizacja słów w rękopisie
+
+Koszystamy z wyszkiwarki korpusowej korzystając z łacińskich
+kontekstów. Tworzymy i zapisujemy linki.
+
+3.5 Wykonanie wycinków skanu mikrofilmu.
+
+Na tym etapie korzystamy ze skanów mikrofilmu ze względu na ich
+lepszą jakość i wierność. Odnajdujemy wyszukane wcześniej słowa i
+zapisujemy je w formie plików graficznych o nazwach <numer
+strony>_<numer wiersza>_numer słowa>.png (numeracja według łacińskiego
+odczytania).   
+
+3.6 Stworzenie katalogu słownika o nazwie z pkt. 3.1 i umieszczenie w
+nim wycinków skanów.
+
+3.7. Zapisanie hasła w formacie XDXF w pliku o nazwie z pkt. 3.1 i
+rozszerzeniu xdxf. Dodanie informacji o autorze.  Szczegóły w
+przykładach, ale dodawanie hiperlinków do skanów (zapisanych na etapie
+3.4) nie jest obowiązkowe.
+
+Jeśli hiperlinki są dodawane, to trzeba przekształcamy je do postaci
+XML-owej zastępując "&" przez "&amp;".
+
