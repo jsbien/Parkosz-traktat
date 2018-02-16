@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xdxf SYSTEM "http://sourceforge.net/projects/xdxf/files/xdxf_lousy.dtd/download">
+<xdxf lang_from="POL" lang_to="POL" format="logical">
+<full_name>Słownik do traktatu Parkosza</full_name>
+<description> Zcalone i poprawione wyniki zadań studenckich
+
+Autor: Janusz S. Bień
+Licencja: CC BY - Creative Commons Uznanie autorstwa
+
+Struktura fizyczna słownika - katalog z nastepującą zawartością:
+
+dict.xdxf (GoldenDict akceptuje również inne nazwy z tym rozszerzeniem?)
+
+pliki graficzne, dźwiękowe i wideo, do których odwołują się hasła
+
+opcjonalnie jedna lub więcej ikon o rozmiarach 16x16, 32x32, 512x512, np.
+
+icon16.png
+
+
+
+Problemy:
+
+Czasami nowy wiersz nie jest traktowany przez GoldenDict
+jako spacja, trzeba ją podać jawnie na końcu wiersza.
+
+Element iref, kref musi być w jednym wierszu?
+
+Nie akceptuje elementu rref z plikami wideo, po prostu pomija ten
+element bez żadnego komunikatu. Powinien rozpoznawać co najmniej mp4 i ogm.
+
+</description>  
+
+<!-- Komentarz -->
+
+<!--
+    Długi komentarz
+-->
+
+
+<!--
+    
+W komentarzu wpisujemy wynik OCR:
+
+A cn (2 r») — aa 15/6, A 15/8.
+
+-->
+
+<!--
+    Listę skrótów uzupełniamy o skróty stosowane przez Kucałę
+    i przez Słownik XVI wieku
+-->
+
+<abbreviations>
+ <abr_def><k>JSB</k> <v>Janusz S. Bień</v></abr_def>
+ <abr_def><k>OJ</k> <v>Oliwia Jarocka</v></abr_def>
+ <abr_def><k>BK</k> <v>Barbara Kaczyńska</v></abr_def>
+ <abr_def><k>NK</k> <v>Natalia Kozłowska </v></abr_def>
+ <abr_def><k>MM</k> <v>Marta Matyja</v></abr_def>
+ <abr_def><k>AM</k> <v>Anna Modzelewska</v></abr_def>
+ <abr_def><k>DW</k> <v>Daniel Wieliczko</v></abr_def>
+ <abr_def><k>JCH</k> <v>Joanna Chmura</v></abr_def>
+ <abr_def><k>DG</k> <v>Daria Gomółka</v></abr_def>
+ <abr_def><k>JM</k> <v>Jakub Matuszyk</v></abr_def>
+ <abr_def><k>PCh</k> <v>Patrycja Chrzanowska</v></abr_def>
+ <abr_def><k>GK</k> <v>Grzegorz Kotecki</v></abr_def>
+ <abr_def><k>KKJ</k> <v>Kamil Kacper Jeż</v></abr_def>
+
+
+
+
+<!-- Kucała: -->
+ <abr_def><k>r.</k><v>razy </v> </abr_def>
+ <abr_def><k>a.</k><v>albo </v> </abr_def>
+ <!-- Części mowy i kategorie gramatyczne:
+http://kpbc.umk.pl/Content/29934/Czytelnia_007_01.djvu?djvuopts&page=652&zoom=width&showposition=0.526,0.150&highlight=1309,2966,33,26
+ -->
+ <abr_def><k>cn.</k><v>coniunctio = spójnik </v> </abr_def>
+ <abr_def><k>N</k><v>nominativus = mianownik </v> </abr_def>
+ <abr_def><k>A</k><v>accusativus = biernik </v> </abr_def>
+ <abr_def><k>sg</k><v>singularis = liczba pojedyncza </v> </abr_def>
+ <abr_def><k>cf.</k><v>confer = porównaj </v> </abr_def>
+ <abr_def><k>praes</k><v> praesens = czas teraźniejszy </v> </abr_def>
+ <abr_def><k>praet</k><v> praeteritum = czas przeszły </v> </abr_def>
+ <abr_def><k>3</k><v> 3 osoba </v> </abr_def>
+ <abr_def><k>m</k><v> masculinum = rodzaj męski </v> </abr_def>
+  <abr_def><k>pl</k> <v>pluralis = liczba mnoga</v></abr_def>
+ <abr_def><k>part</k><v>participium = imiesłów</v> </abr_def>
+<abr_def><k>pass</k><v>passivum = strona bierna</v> </abr_def>
+
+</abbreviations>
+
+
+<!--
+    
+W komentarzu wpisujemy wynik OCR:
+
+A cn (2 r») — aa 15/6, A 15/8.
+
+-->
+
+<!--
+    15l DPSH
+-->
+
+
+<ar> <k>Bóść</k>  <abr>praes</abr> <abr>3</abr> <abr>sg</abr>
+<rref>bodze.png</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=48&amp;zoom=300&amp;showposition=0.49,0.19&amp;djvuopts=&amp;highlight=1619,4131,256,112"> 8/4 </iref>
+<br/>
+<rref>Bosc.png</rref>
+<br/>
+<abr>JSB</abr>, <abr>JCH</abr>
+</ar>
+
+
+
+<ar>
+  <k>Być</k> (10 <abr>a.</abr> 11r)<br/>
+  <def>
+    <def>
+      <abr>praes</abr> <abr>3</abr> <abr>sg</abr>: <tr>geft</tr> 
+      <rref>Byc-16-21.jpg</rref>
+      <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts&amp;page=56&amp;zoom=page&amp;djvuopts&amp;highlight=1736,1756,244,136"> 16/21</iref>
+    </def>
+    <def>
+      <abr>praet</abr> <abr>3</abr> <abr>sg</abr> <abr>m</abr>: 
+      <def>
+        <tr>bil</tr>
+        <rref>Byc-7-15.jpg</rref>
+        <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts&amp;page=47&amp;zoom=page&amp;djvuopts&amp;highlight=1625,3285,140,86"> 7/15</iref>
+      </def>
+      <def>
+        <tr>byl</tr>
+        <rref>Byc-7-24.jpg</rref>
+        <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts&amp;page=47&amp;zoom=page&amp;djvuopts&amp;highlight=1420,2627,148,116"> 7/24</iref>, 
+        <rref>Byc-8-25.jpg</rref>
+        <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts&amp;page=48&amp;zoom=page&amp;djvuopts&amp;highlight=1905,2742,166,108"> 8/25</iref>
+      </def>
+      <def>
+        <tr>bil</tr>
+        <rref>Byc-16-1.jpg</rref>
+        <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts&amp;page=56&amp;zoom=page&amp;djvuopts&amp;highlight=1157,4255,247,265"> 16/1</iref>
+      </def>
+    </def>
+    <def>
+      <abr>fut</abr> <abr>3</abr> <abr>sg</abr>:
+      <def>
+        <tr>bødze</tr>
+        <rref>Byc-15-8.jpg</rref>
+        <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts&amp;page=55&amp;zoom=page&amp;djvuopts&amp;highlight=461,3696,254,154">15/8</iref>, 
+        <rref>Byc-15-12.jpg</rref>
+        <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts&amp;page=55&amp;zoom=page&amp;djvuopts&amp;highlight=1413,3589,243,161">15/12</iref>, 
+        <rref>Byc-15-20.jpg</rref>
+        <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts&amp;page=55&amp;zoom=page&amp;djvuopts&amp;highlight=1370,2479,257,154">15/20</iref>
+      </def>
+      <def>
+        <tr>bądze</tr>
+        <rref>Byc-15-15.jpg</rref>
+        <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts&amp;page=55&amp;zoom=page&amp;djvuopts&amp;highlight=593,2943,269,156">15/15</iref>
+      </def>
+    </def>
+    <def>
+      <abr>con</abr> <abr>1</abr> <abr>sg</abr>:
+      <tr>bich</tr>
+      <rref>Byc-15-21.jpg</rref>
+      <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts&amp;page=55&amp;zoom=page&amp;djvuopts&amp;highlight=1488,2390,193,140">15/21</iref>
+    </def>
+</def>
+<rref>Byc.jpg</rref>
+</ar>
+
+<ar> <k>być a. bić</k> <kref>Być</kref> <abr>a.</abr> <kref>Bić</kref> — <abr>praet</abr> <abr>3</abr> <abr>sg</abr> <abr>m</abr>: <i>byl</i> <rref>byl6-17.jpg</rref> <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=46&amp;zoom=300&amp;showposition=0.76,0.31&amp;highlight=2390,3082,148,81">6/17</iref>.
+<br />
+<blockquote><rref>111-bycabic.jpg</rref></blockquote>
+<!--
+Uznałam powtórzenie nazwy hasła za konieczne, gdyż:
+1) Hasło jest ściśle powiązane z dwoma innymi i moim zdaniem stosowne jest zalinkowanie do nich.
+2) "a." w nazwie hasła może być niezrozumiałe dla osoby przeglądającej hasło, w związku z czym warto umożliwić sprawdzenie znaczenia.
+3) GoldenDict nie przetwarza poprawnie tagów wstawionych wewnątrz tagu "k" - tekst w nich zawarty nie jest brany pod uwagę przy wyszukiwaniu.
+Wynik OCR: Być a. Bić —
+praet 3 sg m: byl 0/17.
+-->
+<abr>JSB</abr>, <abr>PCh</abr>
+</ar>
+
+
+<ar> <k>bykać</k> <i>'ryczeć’</i> — <abr>praes</abr> <abr>sg</abr>: 
+<rref>bykac8-31.jpg</rref> <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=48&amp;zoom=width&amp;showposition=0.5,0.4&amp;djvuopts=&amp;highlight=827,2172,161,84"> 8/31</iref> 
+<br/>
+<rref>112-bykac.jpg</rref> 
+<br/>
+<abr>JSB</abr>, <abr>DG</abr>
+</ar>
+
+<ar> <k>Cało 'w całości'</k> 
+<rref>calo1.png</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=55&amp;zoom=300&amp;showposition=0.49,0.42&amp;djvuopts=&amp;highlight=210,2775,224,112"> 15/17 </iref>
+<rref>calo.png</rref>
+<br/>
+<abr>JSB</abr>, <abr>OJ</abr>
+</ar>
+
+<ar> <k>Cap</k> (int)<i>'ciach, bęc!'</i>
+<rref>cap-9-42.bmp</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=49&amp;zoom=300&amp;showposition=0.5,0.77&amp;djvuopts=&amp;highlight=463,1244,155,86"> 9/42 </iref>
+<rref>111-Cap.bmp</rref>
+<abr>KKJ</abr>
+</ar>
+
+
+<ar> <k>chcieć</k> (2 <abr>r.</abr>) <abr>praes</abr> <abr>3</abr> <abr>sg</abr>: <i>chce</i> <rref>chce15-3.jpg</rref> <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=55&amp;zoom=300&amp;showposition=0.22,0.13&amp;highlight=434,4067,214,140">15/3</iref>; <abr>imp</abr> <abr>2</abr> <abr>sg</abr>: <!--<i>chceey</i> --><rref>chceey10-27.jpg</rref> <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=50&amp;zoom=300&amp;showposition=0.63,0.42&amp;highlight=1799,2411,314,100">10/27</iref>.
+<!-- OCR: Chcieć (2r.) — praes 3 sg: chce 15/3; imp 2 sg: ćhąeey 10/27. -->
+<blockquote><rref>111-chciec.jpg</rref></blockquote><br/>
+<abr>JSB</abr>, <abr>GK</abr>
+</ar>
+
+
+<ar> <k>cebula</k> <abr>N</abr> <abr>sg</abr> (2 <abr>r.</abr>)
+<rref>cebula09-44.jpg</rref>
+<iref href="http://teksty.klf.uw.edu.pl/46/2/draftParkosz-facsimile.djvu?djvuopts=&amp;page=p0013.djvu&amp;zoom=150&amp;showposition=0.69,0.66&amp;djvuopts=&amp;highlight=206,524,144,38"> 09/44 </iref>
+<rref>cebula10-30.jpg</rref>
+<iref href="http://teksty.klf.uw.edu.pl/46/2/draftParkosz-facsimile.djvu?djvuopts=&amp;page=p0015.djvu&amp;zoom=150&amp;showposition=0.69,0.44&amp;djvuopts=&amp;highlight=534,1084,162,44"> 10/30</iref>
+<rref>111-cebula.jpg</rref>
+<abr>BK</abr>
+</ar>
+
+<ar> <k>chart</k> <abr>N</abr> <abr>sg</abr>
+<rref>chart10-45.jpg</rref>
+<iref href="http://teksty.klf.uw.edu.pl/46/2/draftParkosz-facsimile.djvu?djvuopts=&amp;page=p0015.djvu&amp;zoom=width&amp;showposition=0.5,0.71&amp;djvuopts=&amp;highlight=1223,441,217,56"> 10/45 </iref>
+<rref>111-chart.jpg</rref>
+<abr>BK</abr>
+</ar>
+
+<ar> <k>Ciask</k>`ożóg, narzędzie do -wygarniania węgli z pieca'
+<abr>N</abr> <abr>sg</abr>
+<br/>
+<rref>ciask9-40.jpg</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=49&amp;zoom=200&amp;showposition=0.5,0.69&amp;djvuopts=&amp;highlight=1344,1308,285,126">9/40</iref>
+<br/>
+<rref>111-ciask.jpg</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=115&amp;zoom=200&amp;showposition=0.5,0.19&amp;djvuopts=&amp;highlight=51,4002,2610,213">indeks</iref>
+<br/>
+<abr>JSB</abr>, <abr>DŻ</abr>
+</ar>
+
+<ar> <k>Chleb</k>
+(2 <abr>r.</abr>) <abr>N</abr> <abr>sg</abr>:
+<rref>chleb4-45.jpg</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=44&amp;zoom=100&amp;showposition=0.5,0.49&amp;djvuopts=&amp;highlight=1181,1061,288,108"> 4/45 </iref>
+<rref>chleb10-45.jpg</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=50&amp;zoom=100&amp;showposition=0.5,0.49&amp;djvuopts=&amp;highlight=1708,911,282,78"> 10/45  </iref>
+<br/>
+
+<rref>chleb-indeks.jpg</rref>
+<br/>
+<abr>NK</abr>
+</ar>
+
+<ar>
+    <k>Chód</k>
+    <i>"chód, stąpanie, krok"</i> - <abr>N</abr><abr>sg</abr> : 
+<rref>chood.jpg</rref><iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=56&amp;zoom=width&amp;showposition=0.5,0.17&amp;djvuopts=&amp;highlight=2644,4227,348,233"> 16/1</iref><br /><rref>chood 16-1.jpg</rref><br /><abr>MM</abr>, <abr>JM</abr></ar>
+
+<ar><k>Chróst</k><i>"chrust, wycięte zarośla, suche gałęzie"</i> - <abr>N</abr> <abr>sg</abr> : 
+<rref>chrojt1.jpg</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=50&amp;zoom=300&amp;showposition=0.27,0.76&amp;djvuopts=&amp;highlight=702,774,280,128"> 10/46 </iref>
+<br/>
+<rref>Chrojt 10-46.jpg</rref>
+<br/>
+<abr>AM</abr></ar>
+
+<ar> <k>Chrust</k><br/>
+<abr>cf.</abr> <kref> Chróst  </kref>
+<br/>
+
+<rref>chrust-indeks.png</rref>
+<br/>
+<abr>NK</abr>
+</ar>
+
+<ar> <k>Chwalebnie</k><br/>
+<abr>cf.</abr>: <kref> Chwalebny </kref>
+<br/>
+
+<rref>chwalebnie-indeks.png</rref>
+<br/>
+<abr>NK</abr>
+</ar>
+
+<ar> <k>Ciało</k> (5 <abr>r.</abr>) <abr>N</abr> <abr>sg</abr>
+<br/>
+<rref>czalo9-40.png</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=49&amp;zoom=300&amp;showposition=0.48,0.6&amp;djvuopts=&amp;highlight=1126,1326,212,112"> 9/40 </iref>
+<br/>
+<rref>czyalo10-8.png</rref><iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=50&amp;zoom=300&amp;showposition=0.53,0.17&amp;djvuopts=&amp;highlight=1440,3893,283,100"> 10/8 </iref>
+<br/>
+<rref>czyalo10-25.png</rref><iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=50&amp;zoom=300&amp;showposition=0.53,0.36&amp;djvuopts=&amp;highlight=1875,2545,386,128"> 10/25 </iref>
+<br/>
+<rref>galo16-1.png</rref><iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=56&amp;zoom=200&amp;showposition=0.5,0.23&amp;djvuopts=&amp;highlight=2337,4203,291,267"> 16/1 </iref>
+<br/>
+<rref>galu15-17.png</rref><iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=55&amp;zoom=200&amp;showposition=0.5,0.23&amp;djvuopts=&amp;highlight=1638,2757,300,141"> 15/17 </iref>
+<br/>
+<rref>cialo5r.png</rref>
+<abr>JSB</abr>, <abr>DW</abr>
+</ar>
+
+
+</xdxf>

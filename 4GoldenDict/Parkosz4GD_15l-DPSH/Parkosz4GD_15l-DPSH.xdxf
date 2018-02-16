@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xdxf lang_from="POL" lang_to="POL" format="logical">
+<full_name>Słownik do traktatu Parkosza</full_name>
+<description> Zcalone i poprawione wyniki zadań studenckich
+
+Autor: Janusz S. Bień
+Licencja: CC BY - Creative Commons Uznanie autorstwa
+
+Struktura fizyczna słownika - katalog z nastepującą zawartością:
+
+dict.xdxf (GoldenDict akceptuje również inne nazwy z tym rozszerzeniem?)
+
+pliki graficzne, dźwiękowe i wideo, do których odwołują się hasła
+
+opcjonalnie jedna lub więcej ikon o rozmiarach 16x16, 32x32, 512x512, np.
+
+icon16.png
+
+
+Linki zewnętrzne:
+
+Książka Kucały:
+
+Tekst:
+http://ebuw.uw.edu.pl/Content/215606/directory.djvu
+
+http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu do zmiany
+
+https://goo.gl/ZhcCDB
+
+czyli
+
+https://bitbucket.org/jsbien/parkosz-traktat/downloads/ParkoszLatin.pdf
+
+Problemy:
+
+Czasami nowy wiersz nie jest traktowany przez GoldenDict
+jako spacja, trzeba ją podać jawnie na końcu wiersza.
+
+Element iref, kref musi być w jednym wierszu?
+
+Nie akceptuje elementu rref z plikami wideo, po prostu pomija ten
+element bez żadnego komunikatu. Powinien rozpoznawać co najmniej mp4 i ogm.
+
+</description>  
+
+<!-- Komentarz -->
+
+<!--
+    Długi komentarz
+-->
+
+
+<!--
+    
+W komentarzu wpisujemy wynik OCR:
+
+A cn (2 r») — aa 15/6, A 15/8.
+
+-->
+
+<!--
+    Listę skrótów uzupełniamy o skróty stosowane przez Kucałę
+    i przez Słownik XVI wieku
+-->
+
+<abbreviations>
+ <abr_def><k>JSB</k> <v>Janusz S. Bień</v></abr_def>
+ <abr_def><k>[JSB]</k> <v>[Janusz S. Bień] hasło wymaga komentarza lub poprawki</v></abr_def>
+ <abr_def><k>PM</k> <v>Patryk Makowski</v></abr_def>
+ <abr_def><k>KL</k> <v>Beata Korus</v></abr_def>
+ <abr_def><k>DD</k> <v>Dominika Dymińska</v></abr_def>
+ <abr_def><k>KM</k> <v>Katarzyna Mikszuta</v></abr_def>
+ <abr_def><k>KO</k> <v>Katarzyna Oleszkowicz</v></abr_def>
+ <abr_def><k>APH</k> <v>Adrian P. Hieropolitański</v></abr_def>
+ <abr_def><k>DDy</k> <v>Damian Dybek</v></abr_def>
+ <abr_def><k>PL</k> <v>Piotr Ludorf</v></abr_def>
+ <abr_def><k>KF</k> <v>Katarzyna Furman</v></abr_def>
+ <abr_def><k>SS</k> <v>Sylwia Suchodolska</v></abr_def>
+ <abr_def><k>SK</k> <v>Sylwia Krzysztoszek</v></abr_def>
+
+
+
+<!-- Kucała: -->
+ <abr_def><k>r.</k><v>razy </v> </abr_def>
+ <abr_def><k>a.</k><v>albo </v> </abr_def>
+ <!-- Części mowy i kategorie gramatyczne:
+http://kpbc.umk.pl/Content/29934/Czytelnia_007_01.djvu?djvuopts&page=652&zoom=width&showposition=0.526,0.150&highlight=1309,2966,33,26
+ -->
+ <abr_def><k>cn.</k><v>coniunctio = spójnik </v> </abr_def>
+ <abr_def><k>N</k><v>nominativus = mianownik </v> </abr_def>
+ <abr_def><k>A</k><v>accusativus = biernik </v> </abr_def>
+ <abr_def><k>sg</k><v>singularis = liczba pojedyncza </v> </abr_def>
+ <abr_def><k>cf.</k><v>confer = porównaj </v> </abr_def>
+ <abr_def><k>praes</k><v> praesens = czas teraźniejszy </v> </abr_def>
+ <abr_def><k>praet</k><v> praeteritum = czas przeszły </v> </abr_def>
+ <abr_def><k>3</k><v> 3 osoba </v> </abr_def>
+ <abr_def><k>m</k><v> masculinum = rodzaj męski </v> </abr_def>
+  <abr_def><k>pl</k> <v>pluralis = liczba mnoga</v></abr_def>
+ <abr_def><k>part</k><v>participium = imiesłów</v> </abr_def>
+<abr_def><k>pass</k><v>passivum = strona bierna</v> </abr_def>
+
+</abbreviations>
+
+
+<!--
+    
+W komentarzu wpisujemy wynik OCR:
+
+A cn (2 r») — aa 15/6, A 15/8.
+
+-->
+
+<ar> <k>A</k> <abr>cn</abr> (2 <abr>r.</abr>)
+<i>aa</i>
+<rref>A16-06.png</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0006.djvu&amp;zoom=width&amp;showposition=0.5,0.6&amp;djvuopts&amp;highlight=769,2430,137,81"> 15/6 </iref>
+<i>A</i>
+<rref>A15-08.png</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0014.djvu&amp;zoom=width&amp;showposition=0.5,0.34&amp;djvuopts&amp;highlight=614,3609,219,132"> 15/8</iref>
+<br/>
+<rref>111-A.jpg</rref>
+<abr>JSB</abr>
+</ar>
+
+<ar> <k>Adam</k>
+(3 <abr>r.</abr>) <abr>N</abr> <abr>sg</abr>
+<br/>
+adaam   <rref>adaam01.jpg</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0005.djvu&amp;zoom=300&amp;showposition=0.5,0.41&amp;djvuopts&amp;highlight=2189,2198,276,88"> 6/29 </iref>
+<br/>
+adaam   <rref>adaam02.jpg</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0014.djvu&amp;zoom=300&amp;showposition=0.32,0.19&amp;djvuopts&amp;highlight=182,3607,376,116"> 15/8 </iref>
+<br/>
+Adaam   <rref>adaam03.jpg</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0015.djvu&amp;zoom=300&amp;showposition=0.32,0.12&amp;djvuopts&amp;highlight=736,4245,474,264"> 16/1 </iref>
+<br/>
+<rref>111-Adam.jpg</rref>
+<abr>JSB</abr>
+</ar>
+
+<ar><k>albo</k> 
+<i>albo</i>
+<rref>albo4-43.jpeg</rref> <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0003.djvu&amp;zoom=150&amp;showposition=0.51,0.64&amp;djvuopts=&amp;highlight=616,1227,220,80"> 4/43 </iref>.
+<rref>111-albo.jpeg</rref>
+<br/>
+<abr>JSB</abr>, <abr>KM</abr>
+</ar>
+
+<ar> <k>ale</k>(3 <abr>r.</abr>)
+<i>Ale</i> 
+<rref>ale-15-15.jpg</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0014.djvu&amp;zoom=width&amp;showposition=0.5,0.37&amp;djvuopts&amp;highlight=1607,2943,354,127"> 15/15 </iref>
+<rref>ale-15-17.jpg</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0014.djvu&amp;zoom=width&amp;showposition=0.5,0.37&amp;djvuopts&amp;highlight=822,2776,244,123"> 15/17</iref>,
+<rref>ale-15-21.jpg</rref>
+<iref href="Aɬe http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0014.djvu&amp;zoom=width&amp;showposition=0.5,0.29&amp;djvuopts&amp;highlight=848,2787,228,108"> 15/21</iref>
+<rref>111-ALE.jpg</rref>
+<br/>
+<abr>JSB</abr>
+</ar>
+
+<ar> <k>bardzo</k>
+<abr>cf.</abr> <kref> barzo </kref><br/>
+<rref>bardzoindeks.jpg</rref> <br/><abr>JSB</abr>
+</ar>
+
+<ar> <k>Bartek</k> <abr>A</abr> <abr>sg</abr>
+<i>bartka</i> 
+<rref>Bartka15-10.jpeg</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=55&amp;zoom=253&amp;showposition=0.5,0.14&amp;djvuopts=&amp;highlight=1588,3423,358,115"> 15/10 </iref>
+<br/>
+<rref>111-Bartek.jpeg</rref>
+<br/>
+<abr>JSB</abr>, <abr>APH</abr>
+</ar>
+
+
+<ar> <k>barzo</k>
+<i>barzo</i> 
+<rref>barzo15-18,19.jpg</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0014.djvu&amp;zoom=300&amp;showposition=0.58,0.46&amp;djvuopts&amp;highlight=2047,2681,218,108"> 15/18-19 </iref>
+<br/>
+  <rref>barzoindeks.jpg</rref> <br/><abr>JSB</abr>
+
+<ar> <k>Bić</k> (4 <abr>a.</abr> 5<abr>r.</abr>) - 
+<abr>praes</abr> 3 <abr>sg</abr>:
+<i>ƀiġe</i>
+<rref>bige8-4.jpeg</rref><iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=48&amp;zoom=300&amp;showposition=0.66,0.12&amp;djvuopts=&amp;highlight=2771,4157,184,110"> 8/4 </iref>; 
+<abr>praet</abr> 3 <abr>sg</abr> <abr>m:</abr>
+<i>ɓyl</i>
+<rref>byl7-24.jpeg</rref><iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=47&amp;zoom=300&amp;showposition=0.34,0.36&amp;djvuopts=&amp;highlight=1422,2631,150,108"> 7/24 </iref>,
+<i>byl</i>
+<rref>byl8-23.jpeg</rref><iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=48&amp;zoom=300&amp;showposition=0.57,0.38&amp;djvuopts=&amp;highlight=1917,2741,152,110"> 8/23 </iref>,
+<i>bÿḷ</i>
+<rref>byl16-1.jpeg</rref><iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=56&amp;zoom=300&amp;showposition=0.5,0.13&amp;djvuopts=&amp;highlight=1406,4217,205,200"> 16/1 </iref>. 
+</ar>
+
+
+<ar> <k>Bić</k> <abr>a.</abr> <k>Być</k> -
+<abr>praet</abr> 3 <abr>sg</abr> <abr>m:</abr>
+<i>byl</i> [6/16]
+<rref>byl6-17.jpeg</rref><iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=46&amp;zoom=300&amp;showposition=0.66,0.29&amp;djvuopts=&amp;highlight=2387,3053,162,130"> 6/17 </iref>.
+<abr>Cf.</abr><kref>bit</kref>.
+<k><rref>111-bic.jpeg</rref></k>
+<br/>
+<abr>JSB</abr>, <abr>SK</abr>
+</ar>
+
+<ar><k>być</k><kref>bić</kref>
+<br/>
+<abr>JSB</abr>
+</ar>
+
+<ar> <k>bijać</k> (2 <abr>r.</abr>) <i>`bić często <abr>a.</abr> czasem'</i> - <abr>praet</abr> <abr>3</abr> <abr>sg</abr> <abr>m</abr> :
+[<i>ɓyaal</i> 8/27]
+<rref>byaal1.jpg</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=48&amp;zoom=253&amp;showposition=0.6,0.44&amp;djvuopts=&amp;highlight=2128,2473,228,81"> 8/27, </iref>
+<i>ɓyaal</i> 8/29
+<rref>byaal2.jpg</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=48&amp;zoom=253&amp;showposition=0.6,0.44&amp;djvuopts=&amp;highlight=1515,2335,248,76"> 8/29.</iref>
+<br/>
+<rref>111-bijac.jpeg</rref>
+<br/>
+<abr>JSB</abr>, <abr>PL</abr>
+</ar>
+
+
+<ar> <k>bik</k> (3 <abr>r.</abr>) <i>`narzędzie do rozwalania muru'</i> - <abr>N</abr> <abr>sg</abr> : 
+<i>ɓyk</i>
+<rref>byk07-15.jpg</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0006.djvu&amp;zoom=width&amp;showposition=0.5,0.43&amp;djvuopts&amp;highlight=2010,3261,207,90"> 7/15, </iref>
+<rref>byk07-20.jpg</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0006.djvu&amp;zoom=width&amp;showposition=0.5,0.49&amp;djvuopts&amp;highlight=102,2935,192,99"> 7/20, </iref>
+<abr>A</abr> <abr>sg</abr>
+<i>ɓyka [?]</i>
+<rref>byka08-04.jpg</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0007.djvu&amp;zoom=width&amp;showposition=0.5,0.42&amp;djvuopts&amp;highlight=2578,4151,203,95"> 8/4, </iref>
+<blockquote>
+  <rref>111-bik.jpg</rref>
+</blockquote>
+<abr>JSB</abr>, <abr>PM</abr>
+</ar>
+
+<ar> <k>bika</k>
+<i>`narzędzie do rozwalania muru'</i>
+- <abr>N</abr> <abr>sg</abr> :
+<i>bika [?]</i>
+<rref>bika8-30.jpg</rref> <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0007.djvu&amp;zoom=width&amp;showposition=0.5,0.62&amp;djvuopts&amp;highlight=1414,2172,168,92"> 8/30 </iref >
+<br/>
+<rref>111-bika.jpg</rref>
+<br/>
+<abr>JSB</abr>
+</ar>
+
+<ar> <k>biodra</k> <i>'biodro’</i> — <abr>A</abr> <abr>pl</abr>:
+<i>ɓodri</i> <rref>bodri15-12.png</rref> <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=55&amp;zoom=width&amp;showposition=0.5,0.26&amp;djvuopts=&amp;highlight=193,3230,304,122"> 15/12 </iref>
+<rref>111-biodra.jpg</rref> 
+<br/>
+<abr>JSB</abr>, <abr>SS</abr>
+</ar>
+
+<ar> <k>Bit</k> (2 <abr>r.</abr>) <abr>part</abr> <abr>praet</abr> <abr>pass</abr> 'bity' - <abr>N</abr> <abr>sg</abr> <abr>m</abr>
+<i>ɓith</i>:
+<rref>bith7-15.jpeg</rref><iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=47&amp;zoom=300&amp;showposition=0.34,0.34&amp;djvuopts=&amp;highlight=532,3279,178,106"> 7/15 </iref>,
+<rref>bith7-21.jpeg</rref><iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=47&amp;zoom=300&amp;showposition=0.51,0.4&amp;djvuopts=&amp;highlight=1434,2843,177,122"> [zły skan!] 7/21 </iref>.
+
+<k><rref>111-bit.jpg</rref></k>
+<br/>
+<abr>JSB</abr>, <abr>SK</abr>
+</ar>
+
+
+<ar> <k>boć</k>`bo, bowiem'
+<br/>
+<i>Boç</i>:
+<rref>boć11-24.jpeg</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=55&amp;zoom=200&amp;showposition=0.5,0.59&amp;djvuopts=&amp;highlight=147,2061,318,195">15/24</iref>
+<br/>
+<rref>111-boć.jpeg</rref>
+<br/>
+<abr>JSB</abr>, <abr>BK</abr>
+</ar>
+
+<ar> <k>Bozęcin</k> (2 <abr>r.</abr>) <abr>N</abr> <abr>sg</abr>
+<i>bozaczÿṇ</i>:
+<rref>bozecin10-13.jpg</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=50&amp;zoom=300&amp;showposition=0.5,0.22&amp;djvuopts=&amp;highlight=1238,3477,369,128"> 10/13 </iref>
+<i>bozⱥczÿṇ</i>:
+<rref>bozecin10-16.jpg</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=50&amp;zoom=300&amp;showposition=0.49,0.25&amp;djvuopts=&amp;highlight=1268,3271,391,94"> 10/16 </iref>
+<br/>
+<rref>111-bozecin.png</rref>
+<br/>
+<abr>JSB</abr>, <abr>DD</abr>
+</ar>
+
+</xdxf>
