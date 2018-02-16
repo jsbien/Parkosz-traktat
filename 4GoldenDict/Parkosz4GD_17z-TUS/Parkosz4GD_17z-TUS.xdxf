@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xdxf SYSTEM "http://sourceforge.net/projects/xdxf/files/xdxf_lousy.dtd/download">
+<xdxf lang_from="POL" lang_to="POL" format="logical">
+<full_name>Słownik do traktatu Parkosza</full_name>
+<description> Zcalone i poprawione wyniki zadań studenckich
+
+Autor: Janusz S. Bień
+Licencja: CC BY - Creative Commons Uznanie autorstwa
+
+Struktura fizyczna słownika - katalog z nastepującą zawartością:
+
+dict.xdxf (GoldenDict akceptuje również inne nazwy z tym rozszerzeniem?)
+
+pliki graficzne, dźwiękowe i wideo, do których odwołują się hasła
+
+opcjonalnie jedna lub więcej ikon o rozmiarach 16x16, 32x32, 512x512, np.
+
+icon16.png
+
+
+
+Problemy:
+
+Czasami nowy wiersz nie jest traktowany przez GoldenDict
+jako spacja, trzeba ją podać jawnie na końcu wiersza.
+
+Element iref, kref musi być w jednym wierszu?
+
+Nie akceptuje elementu rref z plikami wideo, po prostu pomija ten
+element bez żadnego komunikatu. Powinien rozpoznawać co najmniej mp4 i ogm.
+
+</description>  
+
+<!-- Komentarz -->
+
+<!--
+    Długi komentarz
+-->
+
+
+<!--
+    
+W komentarzu wpisujemy wynik OCR:
+
+A cn (2 r») — aa 15/6, A 15/8.
+
+-->
+
+<!--
+    Listę skrótów uzupełniamy o skróty stosowane przez Kucałę
+    i przez Słownik XVI wieku
+-->
+
+<abbreviations>
+ <abr_def><k>JSB</k> <v>Janusz S. Bień</v></abr_def>
+ <abr_def><k>PM</k> <v>Patryk Makowski</v></abr_def>
+ <abr_def><k>KL</k> <v>Beata Korus</v></abr_def>
+ <abbr_def><k>KP</k> <v>Kinga Partyka</v></abbr_def>
+ <abr_def><k>DD</k> <v>Dominika Dymińska</v></abr_def>
+ <abr_def><k>KM</k> <v>Katarzyna Mikszuta</v></abr_def>
+ <abr_def><k>KO</k> <v>Katarzyna Oleszkowicz</v></abr_def>
+ <abr_def><k>APH</k> <v>Adrian P. Hieropolitański</v></abr_def>
+ <abr_def><k>DDy</k> <v>Damian Dybek</v></abr_def>
+ <abr_def><k>PL</k> <v>Piotr Ludorf</v></abr_def>
+ <abr_def><k>KF</k> <v>Katarzyna Furman</v></abr_def>
+ <abr_def><k>SS</k> <v>Sylwia Suchodolska</v></abr_def>
+ <abr_def><k>SK</k> <v>Sylwia Krzysztoszek</v></abr_def>
+ <abbr_def><k>BM</k> <v>Barbara Mroczek</v></abbr_def>
+ <abr_def><k>KK</k> <v>Katarzyna Kowalska</v></abr_def>
+ <abbr_def><k>JT</k> <v>Jakub Tyrek</v></abbr_def>
+  <abr_def><k>AB</k> <v>Agata Bogucka</v></abr_def>
+  <abbr_def><k>MJ</k> <v>Martyna Jaciubek</v></abbr_def>
+  <abr_def><k>NK</k> <v>Natalia Kozłowska </v></abr_def> 
+ <abr_def><k>KK</k> <v>Katarzyna Kowalska</v></abr_def>
+  <abbr_def><k>FD</k> <v>Filip Dzikliński</v></abbr_def>
+<abr_def><k>SB</k> <v>Stanisław Bieniecki</v></abr_def>
+ <abbr_def><k>MS</k> <v>Maja Starzyńska</v></abbr_def>
+ <abbr_def><k>ES</k> <v>Ewelina Szczepańska</v></abbr_def>
+   <abr_def><k>KŻ</k><v>Katarzyna Życieńska</v></abr_def>
+  
+  
+<!-- Kucała: -->
+ <abr_def><k>r.</k><v>razy </v> </abr_def>
+ <abr_def><k>a.</k><v>albo </v> </abr_def>
+ <!-- Części mowy i kategorie gramatyczne:
+http://kpbc.umk.pl/Content/29934/Czytelnia_007_01.djvu?djvuopts&page=652&zoom=width&showposition=0.526,0.150&highlight=1309,2966,33,26
+ -->
+ <abr_def><k>cn.</k><v>coniunctio = spójnik </v> </abr_def>
+ <abr_def><k>N</k><v>nominativus = mianownik </v> </abr_def>
+ <abr_def><k>A</k><v>accusativus = biernik </v> </abr_def>
+ <abr_def><k>sg</k><v>singularis = liczba pojedyncza </v> </abr_def>
+ <abr_def><k>cf.</k><v>confer = porównaj </v> </abr_def>
+ <abr_def><k>praes</k><v> praesens = czas teraźniejszy </v> </abr_def>
+ <abr_def><k>praet</k><v> praeteritum = czas przeszły </v> </abr_def>
+ <abr_def><k>3</k><v> 3 osoba </v> </abr_def>
+ <abr_def><k>m</k><v> masculinum = rodzaj męski </v> </abr_def>
+ <abr_def><k>pl</k> <v>pluralis = liczba mnoga</v></abr_def>
+ <abr_def><k>part</k><v>participium = imiesłów</v> </abr_def>
+<abr_def><k>pass</k><v>passivum = strona bierna</v> </abr_def>
+
+</abbreviations>
+
+<ar>
+<k>cipać</k>
+‘rzucać (?)’ — (1 <abr>r.</abr>)
+<abr>praet</abr> 3 <abr>sg</abr> <abr>m</abr><br/>
+çypaaḷ   <rref>cipac10-28.jpg</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts&amp;page=50&amp;zoom=300&amp;showposition=0.49,0.52&amp;djvuopts&amp;highlight=1266,2302,399,151"> 10/28</iref> 
+<br/>Lekcja niepewna.
+<br/>
+<rref>111-cipac.jpg</rref>
+<br/>
+<abr>KK</abr>
+</ar>
+<!--
+
+Cudny 'piękny’ — ]STsg m: cuudni 10/30. 
+
+-->
+
+<ar> <k>Cudny</k> ‘piękny’ — <abr>N</abr> <abr>sg</abr> <abr>m</abr>:
+  <br/>
+  cuudṇi   <rref>cuudni10-30.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=300&amp;showposition=0.89,0.53&amp;djvuopts&amp;highlight=2711,2181,287,92"> 10/30</iref>
+  <br/>
+  <rref>113-cudny.jpg</rref>
+  <br/>
+  <abr>BM</abr>
+</ar>
+<!--
+
+Cyż 'czyżyk’ — N- sg: d jz 10/30. 
+
+-->
+
+<ar> <k>cyż</k> ‘czyżyk’ — <abr>N</abr> <abr>sg</abr>:
+  <br/>
+  ciſz   <rref>cyż10-30.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=400&amp;showposition=0.55,0.55&amp;djvuopts&amp;highlight=1415,2151,162,112"> 10/30</iref>
+  <br/>
+  <rref>113-cyż.jpg</rref>
+  <br/>
+  <abr>JT</abr>
+</ar>
+<!--
+    
+W komentarzu wpisujemy wynik OCR:
+
+A cn (2 r») — aa 15/6, A 15/8.
+
+-->
+
+<ar>
+
+<k>Czeebu</k> <abr>cf.</abr> <kref>Cząbr</kref>
+
+<br/>
+
+<rref>czabrindeks.jpg</rref>
+
+<br/>
+
+<abr>AB</abr>
+
+</ar>
+
+
+<!--
+ Cząbr (?) — czeebu (prawdopodobnie zamiast: czoobr) 9/45 
+-->
+
+
+<ar> <k>Cząbr</k> (?) - (prawdopodobnie zamiast: czoobr)
+<br/> 
+czeebu   <rref>czabr1.jpg</rref>
+
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0008.djvu&amp;zoom=200&amp;showposition=0.51,0.77&amp;djvuopts&amp;highlight=1668,939,264,90"> 9/45 </iref>
+<br/>
+
+<rref>czabr.jpg</rref>
+
+<br/>
+
+<abr>AB</abr>
+</ar>
+
+<!--
+
+Czekać — praes 3 sg: gekaa 9/43
+ 
+
+-->
+
+<ar> <k>Czekać</k> — <abr>praes</abr> <abr>3</abr> <abr>sg</abr>:
+  <br/>
+  çekaa   <rref>czekac.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0008.djvu&amp;zoom=283&amp;showposition=0.38,0.73&amp;djvuopts&amp;highlight=676,1115,278,78"> 9/43</iref>
+  <br/>
+  <rref>indeksczekac.jpg</rref>
+  <br/>
+  <abr>MJ</abr>
+</ar>
+<!--
+    
+W komentarzu wpisujemy wynik OCR:
+
+A cn (2 r») — aa 15/6, A 15/8.
+
+-->
+
+<ar>
+
+<k>Czerpać</k> <abr>cf.</abr> <kref>czyrpać</kref>
+
+<br/>
+
+<rref>indeksczerpac.jpg</rref>
+
+<br/>
+
+<abr>MJ</abr>
+
+</ar>
+
+
+<!--
+ Czyrpać 'czerpać’ — praet 3 sg m : czyrpaal 10/16 
+-->
+
+
+<ar> <k>Czyrpać</k> <i>‘czerpać’</i> - <abr>praet</abr> <abr>3</abr> <abr>sg</abr> <abr>m</abr>:
+<br/> 
+czÿrpaal   <rref>czerpac.jpg</rref>
+
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=283&amp;showposition=0.65,0.28&amp;djvuopts&amp;highlight=2016,3275,386,89"> 10/16 </iref>
+<br/>
+
+<rref>indeksczyrpac.jpg</rref>
+
+<br/>
+
+<abr>MJ</abr>
+</ar>
+<!--
+    
+W komentarzu wpisujemy wynik OCR:
+
+A cn (2 r») — aa 15/6, A 15/8.
+
+-->
+
+<ar><k>czołgać</k><kref>czołkać</kref>
+<br/>
+<rref>111-czolgac.jpg</rref>
+<br/>
+<abr>KK</abr>
+</ar>
+
+<!--
+Czołkać (1 r») — czoɬkaa 10/3.
+-->
+
+<ar> <k>czołkać</k> (1 <abr>r.</abr>) <i>‘czołgać się’</i> - <abr>praes</abr> 3 <abr>sg</abr>: 
+<br/>
+czoɬkaa   <rref>czolkaa10-3.png</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts&amp;page=50&amp;zoom=width&amp;showposition=0.5,0.19&amp;djvuopts&amp;highlight=2341,4274,335,85"> 10/3 </iref>
+<br/>
+<rref>111-czolkac.jpg</rref>
+<br/>
+<abr>KK</abr>
+</ar>
+<!--
+
+Czop 'kołek do zatykania beczki’ - N sg: czop 9/45. 
+
+-->
+
+<ar> <k>Czop</k> 'kołek do zatykania beczki' — <abr>N</abr> <abr>sg</abr>:
+  <br/>
+  czop   <rref>czop.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0008.djvu&amp;zoom=300&amp;showposition=0.41,0.84&amp;djvuopts&amp;highlight=1226,956,156,70"> 9/45</iref>
+  <br/>
+  <rref>indeksczop.jpg</rref>
+  <br/>
+  <abr>KP</abr>
+</ar>
+<!--
+
+Czuć — praes 3 sg: czuge 9/45
+ 
+
+-->
+
+<ar> <k>Czuć</k> — <abr>praes</abr> <abr>3</abr> <abr>sg</abr>:
+  <br/>
+  czuġe   <rref>czuc.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0008.djvu&amp;zoom=300&amp;showposition=0.54,0.77&amp;djvuopts&amp;highlight=1430,942,217,76"> 9/45</iref>
+  <br/>
+  <rref>indeksczuc.jpg</rref>
+  <br/>
+  <abr>FD</abr>
+</ar>
+<!--
+
+Ciemię (4r.) — N sg: cemo 9/40, ceme 9/43, czyemo 10/8, gema 10/26.
+ 
+
+-->
+
+<ar> <k>CIEMIĘ</k> (4 <abr>r.</abr>) — <abr>N</abr> <abr>sg</abr>:
+  <br/>
+  cemø   <rref>cemo1.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0008.djvu&amp;zoom=283&amp;showposition=0.48,0.75&amp;djvuopts&amp;highlight=1666,1348,242,66"> 9/40</iref>
+  <br/>
+  ceṃø   <rref>ceme1.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0008.djvu&amp;zoom=283&amp;showposition=0.49,0.78&amp;djvuopts&amp;highlight=1410,1109,297,46"> 9/43</iref>
+  <br/>
+  czÿeṃø   <rref>czyemo1.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=300&amp;showposition=0.42,0.19&amp;djvuopts&amp;highlight=1070,3909,336,52"> 10/8</iref>
+  <br/>
+  çeṃø    <rref>gema1.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=283&amp;showposition=0.33,0.51&amp;djvuopts&amp;highlight=857,2514,301,57"> 10/26</iref>
+  <br/>
+  <rref>indeksciemie.jpg</rref>
+  <br/>
+  <abr>FD</abr>
+</ar>
+
+<!--
+
+Ciągnąć (2r .) — praes 3 sg : czyągne 10/8, gegne 10/26. 
+
+-->
+
+<ar> <k>CIĄGNĄĆ</k> (2 <abr>r.</abr>) — <abr>praes</abr><abr>3</abr> <abr>sg</abr>:
+  <br/>
+  czÿⱥġṇe    <rref>czyagne.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=600&amp;showposition=0.84,0.15&amp;djvuopts&amp;highlight=2471,3896,417,77"> 10/8</iref>
+  <br/>
+  çøġṇe    <rref>cogne.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=600&amp;showposition=0.54,0.47&amp;djvuopts&amp;highlight=1698,2484,284,97"> 10/26</iref>
+  <br/>
+  <rref>indeksciagnac.jpg</rref>
+  <br/>
+  <abr>AB</abr>
+</ar>
+
+<!--
+
+Cirpieć (2 r.) — praet 3 sg m : czyrpal 10/17, ęyrpaal 10/27.
+
+-->
+
+<ar> <k>CIRPIEĆ</k> (2 <abr>r.</abr>) — <abr>praet</abr><abr>3</abr> <abr>sg</abr><abr>m</abr>:
+  <br/>
+  czÿrpal   <rref>czyrpal.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=300&amp;showposition=0.32,0.31&amp;djvuopts&amp;highlight=698,3167,336,152"> 10/17</iref>
+  <br/>
+  çÿrpaal   <rref>cyrpaal.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=300&amp;showposition=0.68,0.48&amp;djvuopts&amp;highlight=2491,2397,390,126"> 10/27</iref>
+  <br/>
+  <rref>indekscirpiec.jpg</rref>
+  <br/>
+  <abr>MJ</abr>
+</ar>
+
+<!--
+
+Co (8r.) - 3ST sg: co 10/30; G sg: gego 9/43, czejro 10/3;' I sg: czyni 9/44, 10/14, czym 10/3, 10/11, 10/26. .
+ 
+
+-->
+
+<ar> <k>Co</k> (8 <abr>r.</abr>) — <abr>N</abr> <abr>sg</abr>:
+  <br/>
+  co   <rref>co1030.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=283&amp;showposition=0.67,0.53&amp;djvuopts&amp;highlight=2103,2164,104,89"> 10/30</iref>
+  <br/>
+  <abr>G</abr> <abr>sg</abr>:<br/>
+  çeġo   <rref>cego943.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0008.djvu&amp;zoom=283&amp;showposition=0.33,0.76&amp;djvuopts&amp;highlight=424,1121,229,64"> 9/43</iref>
+  <br/>
+  czeġo   <rref>czego103.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=283&amp;showposition=0.63,0.14&amp;djvuopts&amp;highlight=1874,4252,214,94"> 10/3</iref>
+  <br/>
+  <abr>I</abr> <abr>sg</abr>: <br/>
+  czyɱ   <rref>czym944.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0008.djvu&amp;zoom=283&amp;showposition=0.56,0.82&amp;djvuopts&amp;highlight=1866,994,250,102"> 9/44</iref>
+  <br/>
+  czyɱ   <rref>czym1014.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=283&amp;showposition=0.67,0.27&amp;djvuopts&amp;highlight=2258,3417,223,72"> 10/14</iref><br/>
+  czyṃ   <rref>czym103.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=283&amp;showposition=0.65,0.1&amp;djvuopts&amp;highlight=2112,4273,210,66"> 10/3</iref><br/>
+  czijṃ    <rref>czym1011.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=283&amp;showposition=0.46,0.11&amp;djvuopts&amp;highlight=952,3635,242,89"> 10/11</iref><br/>
+  czyṃ   <rref>czym1026.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=283&amp;showposition=0.67,0.46&amp;djvuopts&amp;highlight=2718,2497,218,83"> 10/26</iref><br/>
+  <br/>
+  <rref>indeksCO.jpg</rref>
+  <br/>
+  <abr>KP</abr>
+</ar>
+
+<!--
+
+Ciasno (2r.) — czjjafjio 10/8 ęafrio 10/25.
+
+-->
+
+<ar> <k>Ciasno</k> (2 <abr>r.</abr>) —
+  <br/>
+  czÿaſɲo   <rref>czjjafjio10-8.bmp</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=300&amp;showposition=0.39,0.15&amp;djvuopts&amp;highlight=661,3840,410,152"> 10/8</iref>
+  <br/>
+  çaſɲo   <rref>ęafrio10-25.bmp</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=300&amp;showposition=0.89,0.45&amp;djvuopts&amp;highlight=2561,2510,310,182"> 10/25</iref>
+  <br/>
+  <rref>index.png</rref>
+  <br/>
+  <abr>SB</abr>
+</ar>
+
+<!--
+
+Ciołek (2r.) 'byczek’ — N sg: czyolek 10/8, golek 10/26.
+
+-->
+
+<ar> <k>Ciołek</k> (2 <abr>r.</abr>) ‘byczek’ — <abr>N</abr> <abr>sg</abr>:
+  <br/>
+  czÿoḷek   <rref>czyolek1.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=200&amp;showposition=0.5,0.19&amp;djvuopts&amp;highlight=1734,3891,363,105"> 10/8</iref>
+  <br/>
+  çoḷek   <rref>golek1.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=200&amp;showposition=0.5,0.34&amp;djvuopts&amp;highlight=1140,2490,300,138"> 10/26</iref>
+  <br/>
+  <rref>indeksciolek.jpg</rref>
+  <br/>
+  <abr>MS</abr>
+</ar>
+
+<!--
+
+Ciułać (2r.) — praes 3 sg: czyvlaa 10/8, gula 10/26.
+ 
+
+-->
+
+<ar> <k>CIUŁAĆ</k> (2 <abr>r.</abr>) — <abr>praes</abr> <abr>3</abr> <abr>sg</abr>:
+  <br/>
+  czÿvḷaa   <rref>czyvlaa.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=200&amp;showposition=0.5,0.19&amp;djvuopts&amp;highlight=2109,3873,354,114"> 10/8</iref>
+  <br/>
+  çuḷa   <rref>gula.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=200&amp;showposition=0.5,0.35&amp;djvuopts&amp;highlight=1434,2490,273,138"> 10/26</iref>
+  <br/>
+  <rref>indeksciulac.jpg</rref>
+  <br/>
+  <abr>ES</abr>
+</ar>
+
+<!--
+Czas (4r.) - N sg: czas 9/39, 10/3, 15/19, 16/1.
+-->
+
+<ar> <k>Czas </k> (4 <abr>r.</abr>) czas — <abr>N</abr> <abr>sg</abr> :
+  <br/>
+  <br/>
+  czas   <rref>czas9-40.tif</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0008.djvu&amp;zoom=200&amp;showposition=0.57,0.69&amp;djvuopts&amp;highlight=1920,1395,213,102"> 9/40 </iref>
+  <br />
+  czas    <rref>czas10-3.tif</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=400&amp;showposition=0.57,0.15&amp;djvuopts&amp;highlight=1661,4267,201,81"> 10/3 </iref>
+  <br />
+  czas   <rref>czas15-19.tif</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0014.djvu&amp;zoom=200&amp;showposition=0.5,0.44&amp;djvuopts&amp;highlight=1650,2559,231,138"> 15/19 </iref>
+  <br />
+  czas    <rref>czas16-1.tif</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0015.djvu&amp;zoom=150&amp;showposition=0.5,0.35&amp;djvuopts&amp;highlight=2075,4209,260,164"> 16/1 </iref>
+  <br />
+  <rref>113-czas.png</rref>
+  <br />
+  <abr>KŻ</abr>
+</ar>
+
+<!--
+
+Czasza 'kielich, czara’ — s g : czafcha 9/40.
+
+-->
+
+<ar> <k>Czasza</k> 'kielich, czara' — <abr>N</abr> <abr>sg</abr> :
+  <br/>
+  czaſcha   <rref>czafcha9-40.png</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0008.djvu&amp;zoom=300&amp;showposition=0.1,0.7&amp;djvuopts&amp;highlight=210,1310,330,142"> 9/40</iref>
+  <br/>
+  <rref>index1.png</rref>
+  <br/>
+  <abr>SB</abr>
+</ar>
+
+<!--
+Czosnek — N sg: czosnek 9/45.
+-->
+
+<ar> <k>Czosnek </k> (1 <abr>r.</abr>) — <abr>N</abr> <abr>sg</abr> :
+  <br/>
+  <br/>
+  czoſɲek   <rref>czosnek9-45.tif</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0008.djvu&amp;zoom=400&amp;showposition=0.56,0.75&amp;djvuopts&amp;highlight=1962,919,353,102"> 9/45 </iref>
+  <br />
+  <rref>113-czosnek.png</rref>
+  <br />
+  <abr>KŻ</abr>
+</ar>
+
+<!--
+Czubacz — (?), może 'gołąb czubaty’ — N sg: czubaacz 10/3.
+-->
+
+<ar> <k>Czubacz </k> (1 <abr>r.</abr>) — <abr>N</abr> <abr>sg</abr> :
+  <br/>
+  <br/>
+  czubaacz   <rref>czubacz10-3.tif</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0009.djvu&amp;zoom=400&amp;showposition=0.74,0.13&amp;djvuopts&amp;highlight=2691,4260,329,103"> 10/3 </iref>
+  <br />
+  <rref>113-czubacz.png</rref>
+  <br />
+  <abr>KŻ</abr>
+</ar>
+
+</xdxf>
