@@ -3,8 +3,9 @@
 <xdxf lang_from="POL" lang_to="POL" format="logical">
 <full_name>Słownik do traktatu Parkosza</full_name>
 <description> Zcalone i poprawione wyniki zadań studenckich
+Digitalizacja polskich słowników historycznych 2016 semest letni
 
-Autor: Janusz S. Bień
+Autor: Janusz S. Bień (redaktor)
 Licencja: CC BY - Creative Commons Uznanie autorstwa
 
 Struktura fizyczna słownika - katalog z nastepującą zawartością:
@@ -76,6 +77,7 @@ A cn (2 r») — aa 15/6, A 15/8.
 http://kpbc.umk.pl/Content/29934/Czytelnia_007_01.djvu?djvuopts&page=652&zoom=width&showposition=0.526,0.150&highlight=1309,2966,33,26
  -->
  <abr_def><k>cn.</k><v>coniunctio = spójnik </v> </abr_def>
+ <abr_def><k>con.</k>conditionalis = tryb przypuszczający</v> </abr_def>
  <abr_def><k>N</k><v>nominativus = mianownik </v> </abr_def>
  <abr_def><k>A</k><v>accusativus = biernik </v> </abr_def>
  <abr_def><k>sg</k><v>singularis = liczba pojedyncza </v> </abr_def>
