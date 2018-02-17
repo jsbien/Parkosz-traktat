@@ -3,8 +3,9 @@
 <xdxf lang_from="POL" lang_to="POL" format="logical">
 <full_name>Słownik do traktatu Parkosza</full_name>
 <description> Zcalone i poprawione wyniki zadań studenckich
+Grafemika i paleografia cyfrowa 2017 semestr zimowy
 
-Autor: Janusz S. Bień
+Autor: Janusz S. Bień (redaktor)
 Licencja: CC BY - Creative Commons Uznanie autorstwa
 
 Struktura fizyczna słownika - katalog z nastepującą zawartością:
@@ -86,19 +87,25 @@ A cn (2 r») — aa 15/6, A 15/8.
  <!-- Części mowy i kategorie gramatyczne:
 http://kpbc.umk.pl/Content/29934/Czytelnia_007_01.djvu?djvuopts&page=652&zoom=width&showposition=0.526,0.150&highlight=1309,2966,33,26
  -->
- <abr_def><k>cn.</k><v>coniunctio = spójnik </v> </abr_def>
- <abr_def><k>N</k><v>nominativus = mianownik </v> </abr_def>
+ <abr_def><k>2</k><v> 2 osoba </v> </abr_def>
+ <abr_def><k>3</k><v> 3 osoba </v> </abr_def>
  <abr_def><k>A</k><v>accusativus = biernik </v> </abr_def>
- <abr_def><k>sg</k><v>singularis = liczba pojedyncza </v> </abr_def>
+ <abr_def><k>D</k><v>accusativus = biernik </v> </abr_def>
  <abr_def><k>cf.</k><v>confer = porównaj </v> </abr_def>
+ <abr_def><k>cn.</k><v>coniunctio = spójnik </v> </abr_def>
+ <abr_def><k>con.</k><v>conditionalis = tryb przypuszczający</v></abr_def>
+ <abr_def><k>D</k><v>dativus = celownik </v> </abr_def>
+ <abr_def><k>fut</k><v>futurum = czas przyszły</v></abr_def>
+ <abr_def><k>int</k><v>interiectio = wykrzyknik</v></abr_def>
+ <abr_def><k>imp</k><v>imperativus = tryb rozkazujący</v>/</abr_def>
+ <abr_def><k>m</k><v> masculinum = rodzaj męski </v> </abr_def>
+ <abr_def><k>N</k><v>nominativus = mianownik </v> </abr_def>
+ <abr_def><k>part</k><v>participium = imiesłów</v> </abr_def>
+ <abr_def><k>pass</k><v>passivum = strona bierna</v> </abr_def>
+ <abr_def><k>pl</k> <v>pluralis = liczba mnoga</v></abr_def>
  <abr_def><k>praes</k><v> praesens = czas teraźniejszy </v> </abr_def>
  <abr_def><k>praet</k><v> praeteritum = czas przeszły </v> </abr_def>
- <abr_def><k>3</k><v> 3 osoba </v> </abr_def>
- <abr_def><k>m</k><v> masculinum = rodzaj męski </v> </abr_def>
- <abr_def><k>pl</k> <v>pluralis = liczba mnoga</v></abr_def>
- <abr_def><k>part</k><v>participium = imiesłów</v> </abr_def>
-<abr_def><k>pass</k><v>passivum = strona bierna</v> </abr_def>
-
+ <abr_def><k>sg</k><v>singularis = liczba pojedyncza </v> </abr_def>
 </abbreviations>
 
 <ar>
