@@ -145,14 +145,15 @@ http://kpbc.umk.pl/Content/29934/Czytelnia_007_01.djvu?djvuopts&page=652&zoom=wi
 </ar
 >	
 
-<ar> <k>Ciołek "byczek"</k> (2 <abr>r.</abr>) <abr>N</abr> <abr>sg</abr>
-<rref>ciolek.png</rref>
+<ar> <k>Ciołek</k>
+ `byczek' (2 <abr>r.</abr>) <abr>N</abr> <abr>sg</abr>
 <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=50&amp;zoom=200&amp;showposition=0.5,0.22&amp;djvuopts=&amp;highlight=1740,3900,351,99"> 10/8 </iref>
 <rref>czyolek.png</rref>
 <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=50&amp;zoom=200&amp;showposition=0.5,0.3&amp;djvuopts=&amp;highlight=1164,2502,270,120"> 10/26 </iref>
 <br/>
 <rref>golek.png</rref>
 <br/>
+<rref>ciolek.png</rref>
 <abr>JSB</abr>, <abr>NF</abr>
 </ar>
 
@@ -186,7 +187,8 @@ http://kpbc.umk.pl/Content/29934/Czytelnia_007_01.djvu?djvuopts&page=652&zoom=wi
 </ar>
 
 
-<ar> <k>Cyż 'czyżyk'</k> <abr>N</abr> <abr>sg</abr>
+<ar> <k>Cyż</k>
+ 'czyżyk' <abr>N</abr> <abr>sg</abr>
 <rref>cijz.png</rref>
 <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=50&amp;zoom=300&amp;showposition=0.49,0.44&amp;djvuopts=&amp;highlight=1384,2154,225,104"> 10/30 </iref>
 <rref>cyz.png</rref>
@@ -245,7 +247,8 @@ http://kpbc.umk.pl/Content/29934/Czytelnia_007_01.djvu?djvuopts&page=652&zoom=wi
 </ar>
 
 
-<ar> <k>Czołkać 'czołgać się'</k> <abr>praes</abr> <abr>3</abr> <abr>sg</abr>
+<ar> <k>Czołkać</k>
+ 'czołgać się' <abr>praes</abr> <abr>3</abr> <abr>sg</abr>
 <rref>czolkaa.png</rref>
 <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=50&amp;zoom=200&amp;showposition=0.5,0.19&amp;djvuopts=&amp;highlight=2334,4269,351,105"> 10/3 </iref>
 <rref>czolkac.png</rref>
@@ -254,7 +257,8 @@ http://kpbc.umk.pl/Content/29934/Czytelnia_007_01.djvu?djvuopts&page=652&zoom=wi
 </ar>
 
 
-<ar> <k>czołgać <abr>cf.</abr> czołkać</k> 
+<ar> <k>czołgać</k>
+ <abr>cf.</abr> <kref>czołkać</kref>
 <rref>czolgac.png</rref>
 <abr>JSB</abr>, <abr>OS</abr>
 </ar>
