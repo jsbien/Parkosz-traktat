@@ -142,7 +142,15 @@ odczytania).
 nim wycinków skanów.
 
 3.7. Zapisanie hasła w formacie XDXF w pliku o nazwie z pkt. 3.1 i
-rozszerzeniu xdxf. Dodanie informacji o autorze.  Szczegóły w
+rozszerzeniu xdxf.
+
+3.7.1 Z odpowiedniego pliku XDXF usuwamy wszystkie hasła poza
+właściwym.
+
+3.7.2 Sprawdzamy, czy pisownia wyrazu hasłowego dużą literą - jeśli
+występuje - jest uzsadniona; jeśli nie, to zmieniamy na małą.
+
+Dodanie informacji o autorze.  Szczegóły w
 przykładach, ale dodawanie hiperlinków do skanów (zapisanych na etapie
 3.4) nie jest obowiązkowe.
 
