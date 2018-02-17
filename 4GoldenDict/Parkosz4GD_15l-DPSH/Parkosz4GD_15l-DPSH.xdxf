@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xdxf lang_from="POL" lang_to="POL" format="logical">
 <full_name>Słownik do traktatu Parkosza</full_name>
-<description> Zcalone i poprawione wyniki zadań studenckich
+<description> Zcalone i poprawione wyniki zadań studenckich:
+Digitalizacja polskich słowników historycznych 2015 semest letni
 
-Autor: Janusz S. Bień
+Autor: Janusz S. Bień (redaktor)
 Licencja: CC BY - Creative Commons Uznanie autorstwa
 
 Struktura fizyczna słownika - katalog z nastepującą zawartością:
@@ -182,7 +183,8 @@ Adaam   <rref>adaam03.jpg</rref>
 <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=p0014.djvu&amp;zoom=300&amp;showposition=0.58,0.46&amp;djvuopts&amp;highlight=2047,2681,218,108"> 15/18-19 </iref>
 <br/>
   <rref>barzoindeks.jpg</rref> <br/><abr>JSB</abr>
-
+</ar>
+  
 <ar> <k>Bić</k> (4 <abr>a.</abr> 5<abr>r.</abr>) - 
 <abr>praes</abr> 3 <abr>sg</abr>:
 <i>ƀiġe</i>
@@ -207,10 +209,6 @@ Adaam   <rref>adaam03.jpg</rref>
 <abr>JSB</abr>, <abr>SK</abr>
 </ar>
 
-<ar><k>być</k><kref>bić</kref>
-<br/>
-<abr>JSB</abr>
-</ar>
 
 <ar> <k>bijać</k> (2 <abr>r.</abr>) <i>`bić często <abr>a.</abr> czasem'</i> - <abr>praet</abr> <abr>3</abr> <abr>sg</abr> <abr>m</abr> :
 [<i>ɓyaal</i> 8/27]
