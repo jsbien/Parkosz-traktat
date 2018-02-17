@@ -62,7 +62,7 @@ A cn (2 r») — aa 15/6, A 15/8.
  <abr_def><k>DW</k> <v>Daniel Wieliczko</v></abr_def>
  <abr_def><k>JCH</k> <v>Joanna Chmura</v></abr_def>
  <abr_def><k>DG</k> <v>Daria Gomółka</v></abr_def>
- <abr_def><k>JM</k> <v>Jakub Matuszyk</v></abr_def>
+ <abr_def><k>JM</k> <v>Jakub Matuszyk</v></abr_def>
  <abr_def><k>PCh</k> <v>Patrycja Chrzanowska</v></abr_def>
  <abr_def><k>GK</k> <v>Grzegorz Kotecki</v></abr_def>
  <abr_def><k>KKJ</k> <v>Kamil Kacper Jeż</v></abr_def>
@@ -76,20 +76,25 @@ A cn (2 r») — aa 15/6, A 15/8.
  <!-- Części mowy i kategorie gramatyczne:
 http://kpbc.umk.pl/Content/29934/Czytelnia_007_01.djvu?djvuopts&page=652&zoom=width&showposition=0.526,0.150&highlight=1309,2966,33,26
  -->
- <abr_def><k>cn.</k><v>coniunctio = spójnik </v> </abr_def>
- <abr_def><k>con.</k>conditionalis = tryb przypuszczający</v> </abr_def>
- <abr_def><k>N</k><v>nominativus = mianownik </v> </abr_def>
+ <abr_def><k>2</k><v> 2 osoba </v> </abr_def>
+ <abr_def><k>3</k><v> 3 osoba </v> </abr_def>
  <abr_def><k>A</k><v>accusativus = biernik </v> </abr_def>
- <abr_def><k>sg</k><v>singularis = liczba pojedyncza </v> </abr_def>
+ <abr_def><k>D</k><v>accusativus = biernik </v> </abr_def>
  <abr_def><k>cf.</k><v>confer = porównaj </v> </abr_def>
+ <abr_def><k>cn.</k><v>coniunctio = spójnik </v> </abr_def>
+ <abr_def><k>con.</k><v>conditionalis = tryb przypuszczający</v></abr_def>
+ <abr_def><k>D</k><v>dativus = celownik </v> </abr_def>
+ <abr_def><k>fut</k><v>futurum = czas przyszły</v></abr_def>
+ <abr_def><k>int</k><v>interiectio = wykrzyknik</v></abr_def>
+ <abr_def><k>imp</k><v>imperativus = tryb rozkazujący</v>/</abr_def>
+ <abr_def><k>m</k><v> masculinum = rodzaj męski </v> </abr_def>
+ <abr_def><k>N</k><v>nominativus = mianownik </v> </abr_def>
+ <abr_def><k>part</k><v>participium = imiesłów</v> </abr_def>
+ <abr_def><k>pass</k><v>passivum = strona bierna</v> </abr_def>
+ <abr_def><k>pl</k> <v>pluralis = liczba mnoga</v></abr_def>
  <abr_def><k>praes</k><v> praesens = czas teraźniejszy </v> </abr_def>
  <abr_def><k>praet</k><v> praeteritum = czas przeszły </v> </abr_def>
- <abr_def><k>3</k><v> 3 osoba </v> </abr_def>
- <abr_def><k>m</k><v> masculinum = rodzaj męski </v> </abr_def>
-  <abr_def><k>pl</k> <v>pluralis = liczba mnoga</v></abr_def>
- <abr_def><k>part</k><v>participium = imiesłów</v> </abr_def>
-<abr_def><k>pass</k><v>passivum = strona bierna</v> </abr_def>
-
+ <abr_def><k>sg</k><v>singularis = liczba pojedyncza </v> </abr_def>
 </abbreviations>
 
 
@@ -195,7 +200,7 @@ praet 3 sg m: byl 0/17.
 <abr>JSB</abr>, <abr>DG</abr>
 </ar>
 
-<ar> <k>Cało 'w całości'</k> 
+<ar> <k>Cało<opt> 'w całości'</opt></k> 
 <rref>calo1.png</rref>
 <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=55&amp;zoom=300&amp;showposition=0.49,0.42&amp;djvuopts=&amp;highlight=210,2775,224,112"> 15/17 </iref>
 <rref>calo.png</rref>
@@ -203,11 +208,13 @@ praet 3 sg m: byl 0/17.
 <abr>JSB</abr>, <abr>OJ</abr>
 </ar>
 
-<ar> <k>Cap</k> (int)<i>'ciach, bęc!'</i>
+<ar> <k><opt>2 .</opt>Cap</k>
+<abr>int</abr> <i>'ciach, bęc!'</i>
 <rref>cap-9-42.bmp</rref>
 <iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=49&amp;zoom=300&amp;showposition=0.5,0.77&amp;djvuopts=&amp;highlight=463,1244,155,86"> 9/42 </iref>
 <rref>111-Cap.bmp</rref>
-<abr>KKJ</abr>
+<br/>
+<abr>KKJ</abr>, <abr>JSB</abr>
 </ar>
 
 
@@ -234,17 +241,6 @@ praet 3 sg m: byl 0/17.
 <abr>BK</abr>
 </ar>
 
-<ar> <k>Ciask</k>`ożóg, narzędzie do -wygarniania węgli z pieca'
-<abr>N</abr> <abr>sg</abr>
-<br/>
-<rref>ciask9-40.jpg</rref>
-<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=49&amp;zoom=200&amp;showposition=0.5,0.69&amp;djvuopts=&amp;highlight=1344,1308,285,126">9/40</iref>
-<br/>
-<rref>111-ciask.jpg</rref>
-<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=115&amp;zoom=200&amp;showposition=0.5,0.19&amp;djvuopts=&amp;highlight=51,4002,2610,213">indeks</iref>
-<br/>
-<abr>JSB</abr>, <abr>DŻ</abr>
-</ar>
 
 <ar> <k>Chleb</k>
 (2 <abr>r.</abr>) <abr>N</abr> <abr>sg</abr>:
@@ -282,9 +278,8 @@ praet 3 sg m: byl 0/17.
 </ar>
 
 <ar> <k>Chwalebnie</k><br/>
-<abr>cf.</abr>: <kref> Chwalebny </kref>
+<abr>cf.</abr>: <kref>Chwalebny</kref>
 <br/>
-
 <rref>chwalebnie-indeks.png</rref>
 <br/>
 <abr>NK</abr>
@@ -301,10 +296,24 @@ praet 3 sg m: byl 0/17.
 <br/>
 <rref>galo16-1.png</rref><iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=56&amp;zoom=200&amp;showposition=0.5,0.23&amp;djvuopts=&amp;highlight=2337,4203,291,267"> 16/1 </iref>
 <br/>
+<abr>D</abr> <abr>sg</abr>
 <rref>galu15-17.png</rref><iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=55&amp;zoom=200&amp;showposition=0.5,0.23&amp;djvuopts=&amp;highlight=1638,2757,300,141"> 15/17 </iref>
 <br/>
 <rref>cialo5r.png</rref>
 <abr>JSB</abr>, <abr>DW</abr>
+</ar>
+
+<ar> <k>Ciask</k>
+<br/>
+`ożóg, narzędzie do -wygarniania węgli z pieca'
+<abr>N</abr> <abr>sg</abr>
+<rref>ciask9-40.jpg</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=49&amp;zoom=200&amp;showposition=0.5,0.69&amp;djvuopts=&amp;highlight=1344,1308,285,126">9/40</iref>
+<br/>
+<rref>111-ciask.jpg</rref>
+<iref href="http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts=&amp;page=115&amp;zoom=200&amp;showposition=0.5,0.19&amp;djvuopts=&amp;highlight=51,4002,2610,213">indeks</iref>
+<br/>
+<abr>JSB</abr>, <abr>DŻ</abr>
 </ar>
 
 
