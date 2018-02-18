@@ -1,6 +1,8 @@
 INSTRUKCJA
 
-7.02.2018
+PDT 2017Z
+
+17.02.2018
 
 1. Dane wejściowe
 
@@ -17,18 +19,24 @@ http://ebuw.uw.edu.pl/Content/215606/directory.djvu
 
 1.1.2 Pożyteczne fragmenty i uzupełnienia
 
+1.1.2.1
 Skan mikrofilmu:
-dostępny w Moodle
+dostępny w repozytorium (nie mylić ze skanem książki)
+https://bitbucket.org/jsbien/parkosz-traktat/
 
-Faksymile (skan mikrofilmu) z przybliżoną transkrypcją:
+1.1.2.2
+Faksymile z przybliżoną transkrypcją:
 https://bitbucket.org/jsbien/parkosz-traktat/downloads/draftParkosz-facsimile.djvu
 
-Faksymile (skan mikrofilmu) z przybliżoną transkrypcją w formie korpusu:
+1.1.2.3
+Faksymile z przybliżoną transkrypcją w formie korpusu:
 http://test.korpusy.klf.uw.edu.pl/parkosz/
 
+1.1.2.4
 Odczytanie:
 https://bitbucket.org/jsbien/parkosz-traktat/downloads/ParkoszLatin.pdf
 
+1.1.2.5
 Wykaz wyrazów z brudnym OCR:
 https://bitbucket.org/jsbien/parkosz-traktat/downloads/Parkosz111-126OCR-wyrazy.djvu
 
@@ -89,10 +97,9 @@ http://junicode.sourceforge.net/
 2. Postać wyniku
 
 Słownik w formacie XDXF dla programu GoldenDict zgodny z podanymi
-przykładami (1 hasło zwykłe, ewentualnie dodatkowe hasło odsyłaczowe).
+przykładami (1 hasło zwykłe).
 
-Hasło przydzielone jest w formie numeru hasła na liście
-niepoprawianych wyników OCR dla wykazu wyrazów z książki Kucały.
+Hasło przydzielone jest w formie numeru strony i numeru hasła.
 
 
 3. Sugerowane etapy pracy
@@ -100,10 +107,11 @@ niepoprawianych wyników OCR dla wykazu wyrazów z książki Kucały.
 
 3.1. Skan tekstu hasła.
 
-W "Wykazie wyrazów" w wersji DjVu odnajdujemy odpowiedni fragment,
-zaznaczamy go i zapisujemy bezstratnie, np. w formacie png, pod nazwą
-<numer strony>_<początkowy numer wiersza>-<końcowy numer
-wiersza>. Numery wierszy liczymy od góry.
+W "Wykazie wyrazów" w wersji DjVu (1.1.2.5, 2.2) odnajdujemy odpowiedni fragment,
+zaznaczamy go i zapisujemy jego obraz bezstratnie, np. w formacie png,
+pod nazwą <numer strony>-<numer hasła>. Następnie dla tego samego
+fragmentu kopiujemy tekst ukryty i zapisujemy go w jakimś edytorze
+tekstowym.
 
 3.2. Poprawa OCR
 
@@ -114,7 +122,7 @@ ignorując na razie słowa pisane kursywą.
 
 Na podstawie podanej lokalizacji (strona/wiersz) odszukujemy
 przytaczane słowa w odczytaniu (elektronicznej edycji łacińskiego
-tekstu) i kopiujemy je do swojego tekstu hasła.
+tekstu, 1.1.2.4) i kopiujemy je do swojego tekstu hasła.
 
 Ewentualne błędy lokalizacji odnotowujemy jak w przykładowym haśle
 "Adam". Odnotowujemy również błędy i wątpliwości dotyczące
@@ -127,14 +135,14 @@ Na potrzeby dalszych etapów warto zanotować łacińskie konteksty słów.
 
 3.4. Wstępna lokalizacja słów w rękopisie
 
-Koszystamy z wyszkiwarki korpusowej korzystając z łacińskich
-kontekstów. Tworzymy i zapisujemy linki.
+Korzystamy z wyszukiwarki korpusowej (1.1.2.3, 2.3) korzystając z
+łacińskich kontekstów. Tworzymy i zapisujemy linki.
 
 3.5 Wykonanie wycinków skanu mikrofilmu.
 
-Na tym etapie korzystamy ze skanów mikrofilmu ze względu na ich
-lepszą jakość i wierność. Odnajdujemy wyszukane wcześniej słowa i
-zapisujemy je w formie plików graficznych o nazwach <numer
+Na tym etapie korzystamy ze skanów mikrofilmu (ze względu na ich
+lepszą jakość i wierność, 1.1.2.1). Odnajdujemy wyszukane wcześniej słowa i
+zapisujemy je w formie plików graficznych (2.4) o nazwach <numer
 strony>_<numer wiersza>_numer słowa>.png (numeracja według łacińskiego
 odczytania).   
 
@@ -142,18 +150,39 @@ odczytania).
 nim wycinków skanów.
 
 3.7. Zapisanie hasła w formacie XDXF w pliku o nazwie z pkt. 3.1 i
-rozszerzeniu xdxf.
+rozszerzeniu xdxf (2.3).
 
 3.7.1 Z odpowiedniego pliku XDXF usuwamy wszystkie hasła poza
-właściwym.
+przykładowym; plik przemianowujemy <numer strony>-<numer
+wiersza>.xdxf.
 
-3.7.2 Sprawdzamy, czy pisownia wyrazu hasłowego dużą literą - jeśli
-występuje - jest uzsadniona; jeśli nie, to zmieniamy na małą.
+3.7.2 Dodajemy informację o autorze m.in. w formie inicjałów.
 
-Dodanie informacji o autorze.  Szczegóły w
-przykładach, ale dodawanie hiperlinków do skanów (zapisanych na etapie
-3.4) nie jest obowiązkowe.
+3.7.3 Sprawdzamy, czy pisownia wyrazu hasłowego dużą literą - jeśli
+występuje - jest uzasadniona (np. n. pers.); jeśli nie, to wpisując
+wyraz zmieniamy na małą.
 
-Jeśli hiperlinki są dodawane, to trzeba przekształcamy je do postaci
-XML-owej zastępując "&" przez "&amp;".
+3.7.4 Dodawanie hiperlinków do skanów (zapisanych na etapie 3.4) nie
+jest obowiązkowe.  Jeśli jednak hiperlinki są dodawane, to trzeba
+przekształcamy je do postaci XML-owej zastępując "&" przez "&amp;".
+
+3.7.5 Interpunkcję staramy się oddać wiernie, myślnik zapisujemy jako
+U+2014 EM DASH (—).
+
+3.7.5 Ambitni mogą zadbać o czytelny format pliku źródłowego i
+wyświetlanego hasła.
+
+4. Przygotowanie do przekazania
+
+4.1 Robimy zrzut ekranu demonstrujacy, że słownik rzeczywiscie
+działa. Zrzut zapisujemy pod nazwą zgodną z punktem następnym.
+
+4.2. Wszystkie pliki słownika i zrzut ekranu umieszczamy w katalogu o
+nazwie <numer strony>-<numer-hasła>; słowniki za nieobecność
+umieszczamy w katalogu z datą odpracowywanej nieobecności: <numer
+strony>-<numer-wiersza>_<rok>-<miesiąc>-<dzień>.
+
+4.3. Katalog kompresujemy za pomocą programu zip. Nazwa archiwum to
+<numer strony>-<numer-hasła>_<numer wersji>.zip
+
 
