@@ -1,0 +1,120 @@
+INSTRUKCJA
+
+DPSH 2017Z
+
+17.02.2018
+
+1. Dane wejściowe
+
+1.1 Książka Kucały:
+
+1.1.1 Całość
+
+Opis bibliograficzny:
+
+http://ebuw.uw.edu.pl/publication/220504
+
+Tekst:
+http://ebuw.uw.edu.pl/Content/215606/directory.djvu
+
+1.1.2 Pożyteczne fragmenty i uzupełnienia
+
+1.1.2.1
+Skan mikrofilmu:
+dostępny w Moodle
+
+1.1.2.2
+Faksymile (skan mikrofilmu) z przybliżoną transkrypcją:
+https://bitbucket.org/jsbien/parkosz-traktat/downloads/draftParkosz-facsimile.djvu
+
+1.1.2.3
+Faksymile (skan mikrofilmu) z przybliżoną transkrypcją w formie korpusu:
+http://test.korpusy.klf.uw.edu.pl/parkosz/
+
+1.1.2.4
+Odczytanie:
+https://bitbucket.org/jsbien/parkosz-traktat/downloads/ParkoszLatin.pdf
+
+1.1.2.5
+Wykaz wyrazów z brudnym OCR:
+https://bitbucket.org/jsbien/parkosz-traktat/downloads/Parkosz111-126OCR-wyrazy.djvu
+
+1.2 Słowniki dla GoldenDict
+
+https://bitbucket.org/jsbien/parkosz-traktat
+
+2. Oprogramowanie
+
+2.1 Program GoldenDict
+
+2.1.1 MS Windows
+
+https://github.com/goldendict/goldendict/wiki/Early-Access-Builds-for-Windows
+
+Uwaga: na oficjalnej witrynie
+
+http://goldendict.org/
+
+wersja przestarzała, nie nadaje się do użytku
+
+2.1.2 Inne systemy
+
+Powinne nadawać się wersje z oficjalnej dystrybucji, np. w Debian
+stretch jest dostępna wersja 1.5.0-RC2+git.
+
+2.2 djview4 
+
+http://djvu.sourceforge.net/djview4.html
+
+2.3 djview4poliqarp
+
+https://bitbucket.org/mrudolf/djview-poliqarp/
+
+2.3. Dla ciekawych dowolny edytor z obsługą XML 
+
+2.3.1 Dla ambitnych (również humanistów):
+wersja demonstracyjna oXygen
+
+https://www.oxygenxml.com/
+
+2.3.2 Dla MS Windows:
+
+Na przykład
+http://xml-copy-editor.sourceforge.net/,
+https://notepad-plus-plus.org/
+
+2.4 Dowolny edytor tekstowy lub arkusz kalkulacyjny
+
+Na przykład
+Notepad++
+OpenOffice
+
+3. Postać wyniku.
+
+Wynikiem jest hasło z wykazu Kucały w formie indeksu dla programu
+djview4poliqarp, który może być traktowany jako plik tekstowy lub
+arkusz kalkulacyjny.
+
+Zadanie jest przydzielone w formie numeru strony i numeru hasła.
+
+Indeks ma 4 kolumny (patrz przykład):
+1. Hasło
+2. URL formy fleksyjnej
+3. Opis gramatyczny formy fleksyjnej
+4. Forma fleksyjna i jej lokalizacja.
+5. Opcjonalnie: komentarz
+
+3. Sugerowane etapy pracy
+
+3.1. Zidentyfikowanie hasła w wykazie (1.1.2.1, 2.2)).
+3.2. Zidentyfikowanie słownika zawierającego hasło (1.2), otworzenie go w
+GoldenDict (2.1), ewentualnie rownież w edytorze XML (2.3).
+3.3 Przekopiowanie odpowiednich informacji do odpowiednich pól indeksu (2.4).
+3.4 Zweryfikowanie i ewentualne poprawienie transkrypcji, uściślenie lokalizacji (1.1.2.4).
+3.5 Zweryfikowanie i ewentualnie skorygowanie URL (2.3)
+3.6 W razie potrzeby dodanie komentarzy.
+
+4. Przygotowanie wyniku do przekazania.
+4.1. Indeksowi nadajemy nazwę <numer strony wykazu>-<numer hasła na stronie>-<numer wersji>.csv 
+4.2.  Kompresujemy za pomocą programu zip, nazwa archiwum jest taka
+sama jak indeksu (ale oczywiście inne rozszerzenie).
