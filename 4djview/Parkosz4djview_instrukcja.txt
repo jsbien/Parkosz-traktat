@@ -107,14 +107,25 @@ Indeks ma 4 kolumny (patrz przykład):
 3. Sugerowane etapy pracy
 
 3.1. Zidentyfikowanie hasła w wykazie (1.1.2.1, 2.2)).
-3.2. Zidentyfikowanie słownika zawierającego hasło (1.2), otworzenie go w
-GoldenDict (2.1), ewentualnie rownież w edytorze XML (2.3).
-3.3 Przekopiowanie odpowiednich informacji do odpowiednich pól indeksu (2.4).
-3.4 Zweryfikowanie i ewentualne poprawienie transkrypcji, uściślenie lokalizacji (1.1.2.4).
-3.5 Zweryfikowanie i ewentualnie skorygowanie URL (2.3)
+
+3.2. Zidentyfikowanie słownika zawierającego hasło (1.2), otworzenie
+go w GoldenDict (2.1), ewentualnie rownież w edytorze XML (2.3).
+
+3.3 Przekopiowanie odpowiednich informacji do odpowiednich pól indeksu
+(2.4).
+
+3.4 Zweryfikowanie i ewentualne poprawienie transkrypcji, uściślenie
+lokalizacji (1.1.2.4).
+
+3.5 Zmodyfikowanie, zweryfikowanie i ewentualnie skorygowanie URL
+(2.3). Niezbędne zastąpienie identyfikatorów stron przez ich numery.
+
 3.6 W razie potrzeby dodanie komentarzy.
 
 4. Przygotowanie wyniku do przekazania.
-4.1. Indeksowi nadajemy nazwę <numer strony wykazu>-<numer hasła na stronie>-<numer wersji>.csv 
+
+4.1. Indeksowi nadajemy nazwę <numer strony wykazu>-<numer hasła na
+stronie>-<numer wersji>.csv
+
 4.2.  Kompresujemy za pomocą programu zip, nazwa archiwum jest taka
 sama jak indeksu (ale oczywiście inne rozszerzenie).
