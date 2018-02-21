@@ -163,8 +163,11 @@ występuje - jest uzasadniona (np. n. pers.); jeśli nie, to wpisując
 wyraz zmieniamy na małą.
 
 3.7.4 Dodawanie hiperlinków do skanów (zapisanych na etapie 3.4) nie
-jest obowiązkowe.  Jeśli jednak hiperlinki są dodawane, to trzeba
-przekształcamy je do postaci XML-owej zastępując "&" przez "&amp;".
+jest obowiązkowe w tym sensie, że można po prostu wpisać link do
+pierwszej strony dokumentu:
+"http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu".  Jeśli
+jednak hiperlinki są dodawane, to trzeba je przekształcić do postaci
+XML-owej zastępując "&" przez "&amp;".
 
 3.7.5 Interpunkcję staramy się oddać wiernie, myślnik zapisujemy jako
 U+2014 EM DASH (—).
