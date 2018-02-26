@@ -1,3 +1,6 @@
+% 
+% ?https://tex.stackexchange.com/questions/286778/how-to-make-pdf-outlines-work-correctly-in-luatex?rq=1?
+% https://tex.stackexchange.com/questions/294883/setting-up-pdf-outlines-from-lua
 % http://wbl.klf.uw.edu.pl/13/2/iParkosz
 % http://ebuw.uw.edu.pl/Content/215606/directory
 % lualatex ze wzgledu na OCG
@@ -29,7 +32,7 @@
 
 
 \usepackage{longtable}
-\usepackage{hyperref}
+\usepackage[pdfencoding=unicode]{hyperref}
 
 \usepackage{fancyvrb}
 
@@ -280,6 +283,7 @@ GNU Free Documentation License\\
 \raggedright
 
 \section*{Wstęp --- fragmenty (s.~5--6)}
+\addcontentsline{toc}{section}{Wstęp --- fragmenty (s.~5--6)}
 \label{sec:wstp}
 Wydanie to i opracowanie jest oparte na badaniach i pracach
 dotychczasowych — Jana Łosia, Bolesława Ulanowskiego, Witolda
@@ -308,7 +312,8 @@ Parkoszem (Jakubem Parkoszem nazywał go jeszcze za jego życia Zbigniew
 Oleśnicki). Tej ostatniej nazwy używamy w niniejszym opracowaniu.
 
 \section*{Zasady wydania (s. 34--35)}
-\label{sec:zasady-wydania}
+\addcontentsline{toc}{section}{Zasady wydania (s. 34--35)}
+\label{sec:zasady-wydania}{Zasady wydania (s. 34--35)}
 
 
 Wydanie niniejsze, jak to już powiedziano na wstępie, opiera się na
