@@ -69,6 +69,10 @@ http://djvu.sourceforge.net/djview4.html
 
 https://bitbucket.org/mrudolf/djview-poliqarp/
 
+Uwaga: program należy skonfigurować dodając serwer
+"test.korpusy.klf.uw.edu.pl" i sprawdzić, czy da się wybrać korpus
+"Parkosz".
+
 2.3. Dowolny edytor z obsługą XML
 
 2.3.1 Dla ambitnych (również humanistów):
