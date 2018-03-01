@@ -68,6 +68,7 @@ http://djvu.sourceforge.net/djview4.html
 2.3 djview4poliqarp
 
 https://bitbucket.org/mrudolf/djview-poliqarp/
+http://bc.klf.uw.edu.pl/380/
 
 Uwaga: program należy skonfigurować dodając serwer
 "test.korpusy.klf.uw.edu.pl" i sprawdzić, czy da się wybrać korpus
