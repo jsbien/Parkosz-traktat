@@ -146,10 +146,11 @@ Korzystamy z wyszukiwarki korpusowej (1.1.2.3, 2.3) korzystając z
 3.5 Wykonanie wycinków skanu mikrofilmu.
 
 Na tym etapie korzystamy ze skanów mikrofilmu (ze względu na ich
-lepszą jakość i wierność, 1.1.2.1). Odnajdujemy wyszukane wcześniej słowa i
-zapisujemy je w formie plików graficznych (2.4) o nazwach <numer
-strony>_<numer wiersza>_numer słowa>.png (numeracja według łacińskiego
-odczytania).   
+lepszą jakość i wierność, 1.1.2.1). Odnajdujemy wyszukane wcześniej
+słowa i zapisujemy je w formie plików graficznych (2.4) o nazwach
+<numer strony>_<numer wiersza>_numer słowa>.png (numeracja według
+łacińskiego odczytania; liczymy wszystkie słowa występujące przed
+danym słowem, nawet te w jakiś sposób wyróżnione).
 
 3.6 Stworzenie katalogu słownika o nazwie z pkt. 3.1 i umieszczenie w
 nim wycinków skanów.
