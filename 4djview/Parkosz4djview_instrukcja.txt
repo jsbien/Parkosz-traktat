@@ -120,11 +120,13 @@ odpowiednich informacji do odpowiednich pól indeksu
 (2.4).
 
 3.4 Zweryfikowanie i ewentualne poprawienie transkrypcji, uściślenie
-lokalizacji (1.1.2.4).
+lokalizacji przez podanie numeru słowa we wierszu (1.1.2.4).  Liczymy
+wszystkie słowa występujące przed danym słowem, nawet te w jakiś
+sposób wyróżnione.
 
 3.5 Zmodyfikowanie, zweryfikowanie i ewentualnie skorygowanie URL -
 wymaga djview4poliqarp (2.3). Niezbędne zastąpienie identyfikatorów
-stron przez ich numery.
+stron (np. "p0005.djvu") przez ich numery (np. "0005").
 
 3.6 W razie potrzeby dodanie komentarzy.
 
