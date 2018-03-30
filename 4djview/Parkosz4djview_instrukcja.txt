@@ -135,5 +135,8 @@ stron (np. "p0005.djvu") przez ich numery (np. "0005").
 4.1. Indeksowi nadajemy nazwę <numer strony wykazu>-<numer hasła na
 stronie>-<numer wersji>.csv
 
-4.2.  Kompresujemy za pomocą programu zip, nazwa archiwum jest taka
-sama jak indeksu (ale oczywiście inne rozszerzenie).
+4.2. Wykonujemy zrzut ekranu pokazujacy, że plik jest poprawnie
+interpretowany przez program djview4poliqarp.
+
+4.2.  Kompresujemy plik i zrzut za pomocą programu zip, nazwa archiwum
+jest taka sama jak indeksu (ale oczywiście inne rozszerzenie).
