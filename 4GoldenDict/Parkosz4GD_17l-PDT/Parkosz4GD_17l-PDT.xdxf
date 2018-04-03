@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xdxf SYSTEM "http://sourceforge.net/projects/xdxf/files/xdxf_lousy.dtd/download">
+<xdxf lang_from="POL" lang_to="POL" format="logical">
+<full_name>Słownik do traktatu Parkosza</full_name>
+<description> Rozwiązanie zadania domowego - Karol Farbiś
+	Problemy Dygitalizacji Tekstów, semestr letni 2017/2018
+
+</description>  
+<!--
+    Listę skrótów uzupełniamy o skróty stosowane przez Kucałę
+    i przez Słownik XVI wieku
+-->
+
+<abbreviations>
+ <abr_def><k>KF</k> <v>Karol Farbiś</v></abr_def>
+ <abr_def><k>NG</k> <v>Natalia Gołębiewska</v></abr_def>
+ <abr_def><k>AK</k> <v>Artur Kozak</v></abr_def>
+ <abr_def><k>KK</k><v>Karolina Kubicka</v></abr_def>
+ <abr_def><k>MB</k><v>Magdalena Bartnik</v></abr_def>
+ <abr_def><k>NB</k><v>Natalia Brzostek</v></abr_def>
+ <abr_def><k>SB</k> <v>Stanisław Bieniecki</v></abr_def>
+ <abr_def><k>TS</k><v>Tomasz Stecko</v></abr_def>
+ <abr_def><k>KŻ</k><v>Kinga Żelechowska</v></abr_def>
+
+  
+<!-- Kucała: -->
+ <abr_def><k>r.</k><v>razy </v> </abr_def>
+ <abr_def><k>a.</k><v>albo </v> </abr_def>
+ <!-- Części mowy i kategorie gramatyczne:
+http://kpbc.umk.pl/Content/29934/Czytelnia_007_01.djvu?djvuopts&page=652&zoom=width&showposition=0.526,0.150&highlight=1309,2966,33,26
+ -->
+ <abr_def><k>2</k><v> 2 osoba </v> </abr_def>
+ <abr_def><k>3</k><v> 3 osoba </v> </abr_def>
+ <abr_def><k>A</k><v>accusativus = biernik </v> </abr_def>
+ <abr_def><k>D</k><v>accusativus = biernik </v> </abr_def>
+ <abr_def><k>cf.</k><v>confer = porównaj </v> </abr_def>
+ <abr_def><k>Cf.</k><v>Confer = Porównaj </v> </abr_def>
+ <abr_def><k>cn.</k><v>coniunctio = spójnik </v> </abr_def>
+ <abr_def><k>con.</k><v>conditionalis = tryb przypuszczający</v></abr_def>
+ <abr_def><k>D</k><v>dativus = celownik </v> </abr_def>
+ <abr_def><k>fut</k><v>futurum = czas przyszły</v></abr_def>
+ <abr_def><k>int</k><v>interiectio = wykrzyknik</v></abr_def>
+ <abr_def><k>imp</k><v>imperativus = tryb rozkazujący</v>/</abr_def>
+ <abr_def><k>m</k><v> masculinum = rodzaj męski </v> </abr_def>
+ <abr_def><k>N</k><v>nominativus = mianownik </v> </abr_def>
+ <abr_def><k>part</k><v>participium = imiesłów</v> </abr_def>
+ <abr_def><k>pass</k><v>passivum = strona bierna</v> </abr_def>
+ <abr_def><k>pl</k> <v>pluralis = liczba mnoga</v></abr_def>
+ <abr_def><k>praes</k><v> praesens = czas teraźniejszy </v> </abr_def>
+ <abr_def><k>praet</k><v> praeteritum = czas przeszły </v> </abr_def>
+ <abr_def><k>sg</k><v>singularis = liczba pojedyncza </v> </abr_def>
+</abbreviations>
+
+<!--
+
+Doskonale — dofkonale 15/3.
+
+-->
+
+<ar> <k>doskonale</k>:
+  <br/>
+  doskoɲaɬe   <rref>15_3_4.png</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=14&amp;zoom=width&amp;showposition=0.373,0.128&amp;highlight=942,4113,497,80"> 15/3</iref>
+  <br/>
+  <rref>114-10.png</rref>
+  <br/>
+  <abr>KF</abr>
+</ar>
+
+<!--
+-->
+
+Drug 'druh, przyjaciel’ — N sg: druug 6/19. Cf. drugi
+-->
+
+<ar> <k>drug</k> (1 <abr>a.</abr> 2 <abr>r.</abr>) ‘druh, przyjaciel’ — <abr>N</abr> <abr>sg</abr>:
+  <br/>
+  druuġ   <rref>drug6-19.png</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/redirect/ju4X4/http/test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu%3Fdjvuopts&amp;page=5&amp;zoom=width&amp;showposition=0.474,0.372&amp;highlight=1439,2960,153,57"> 6/18-1/5 [6/19] </iref>.
+  <abr>Cf.</abr> <kref>drugi</kref>
+  <br/>
+  <rref>114-14.png</rref>
+  <br/>
+  <abr>NG</abr>, <abr>JSB</abr>
+ </ar>
+
+<ar>
+    <!-- OCR: Dym (2 r.) — N sg: dym 7/39, dirri 11/2.
+         po poprawce: Dym (2 r.) — N sg: dyɱ 7/39, diɱ 11/2.
+    -->
+    <k>dym</k> (2<abr> r.</abr>) — <abr>N</abr> <abr>sg</abr>:
+    <br/>
+    dyɱ <rref>7_39_10.png</rref>
+    <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=6&amp;zoom=width&amp;showposition=0.234,0.671&amp;highlight=1679,1522,222,100,ffff00#parkosz">
+        7/39
+    </iref>,
+    <br/>
+    diɱ <rref>11_2_10.png</rref>
+    <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=10&amp;zoom=width&amp;showposition=0.053,0.094&amp;highlight=2241,4227,200,102,ffff00#parkosz">
+        11/2
+    </iref>
+    <br/>
+    <rref>114-17.png</rref>
+    <br/>
+    <abr>AK</abr>
+</ar>
+
+<!--
+Dział (2 r.) - N sg: dzal 11/3, dzaal 16/2.
+-->
+
+<ar> <k>dział</k> (2 <abr>r.</abr>) — <abr>N</abr> <abr>sg</abr> :
+  <br/>
+  <br/>
+  dzaḷ  <rref>dzal11-3.tif</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=200&amp;showposition=0.5,0.21&amp;djvuopts=&amp;highlight=1590,4185,186,87"> 11/3 </iref>
+  <br />
+  dzaaḷ   <rref>dzaal16-2.tif</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0015.djvu&amp;zoom=200&amp;showposition=0.5,0.19&amp;djvuopts=&amp;highlight=1095,4107,333,159"> 16/2 </iref>
+  <br />
+  <rref>114-18.png</rref>
+  <br />
+  <abr>KK</abr>
+</ar>
+
+
+<!--
+Dziuła 'kaptur, kapuza sukienna noszona jako ochrona przed deszczem’ — N sg: dzuḷa 11/4
+-->
+
+<ar> <k>dziuła</k> `kaptur, kapuza sukienna noszona jako ochrona przed deszczem’ — <abr>N</abr> <abr>sg</abr> :
+  <br/>
+  <br/>
+  dzuḷa   <rref>dziuła11-4.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=1200&amp;showposition=0.51,0.37&amp;djvuopts=&amp;highlight=377,4105,248,112"> 11/4 </iref>
+  <br />
+  <rref>dziuła114-24.jpg</rref>
+  <br />
+  <abr>MB</abr>
+</ar>
+
+<!--
+Denko 'dno naczynia, przykrywka’ — N sg: deeƞko 11/2 
+-->
+
+<ar> <k>denko</k> `dno naczynia, przykrywka’ — <abr>N</abr> <abr>sg</abr> :
+  <br/>
+  <br/>
+  deeƞko   <rref>deeriko11-2.jpg</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=300&amp;showposition=0.55,0.09&amp;djvuopts=&amp;highlight=1889,4237,336,100"> 11/2 </iref>
+  <br />
+  <rref>114-7.jpg</rref>
+  <br />
+  <abr>NB</abr>
+</ar>
+
+<!--
+
+dom — N sg: dooɱ 11/3
+
+-->
+
+<ar>
+  <k>dom</k> — <abr>N</abr> <abr>sg</abr> :
+  <br/>
+  dooɱ <rref>11-3-1.png</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=0010&amp;zoom=300&amp;showposition=0.32,0.12&amp;djvuopts&amp;highlight=200,4145,304,164"> 11/3</iref>
+  <br/>
+  <rref>114-9.png</rref>
+  <br/>
+  <abr>SB</abr>
+</ar>
+
+
+  <!--
+Fał (4 r.)
+n. pers. 'Chwał’ — N sg: ffaal 7/25, 7/26, ffaaɬ 7/30, 8/6.
+-->
+
+<ar>
+<k>Fał</k>(4 <abr>r.</abr>) n. pers. 'Chwał’ —
+<abr>N</abr> <abr>sg</abr>: 
+ffaal <rref>7_25_5.png</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 7/25</iref>, 
+  <rref>7_26_11.png</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 7/26</iref>,
+<br/> 
+ffaaɬ   <rref>7_30_9.png</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 7/30</iref>,
+  <rref>8_6_3.png</rref>
+<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 8/6</iref>.
+
+<rref>115-2.png</rref>
+<br/>
+<abr>TS</abr>
+</ar>
+
+
+<!--
+Fast 'chwast, zielsko’ — N sg: ffa th 8/6. 
+-->
+
+<ar> <k>fast</k> `chwast, zielsko' — <abr>N</abr> <abr>sg</abr> :
+  <br/>
+  <br/>
+  ffaſth   <rref>fast8-6.tif</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0007.djvu&amp;zoom=300&amp;showposition=0.58,0.15&amp;djvuopts=&amp;highlight=1594,3979,225,88"> 8/6 </iref>
+  <br />
+  <rref>115-3.png</rref>
+  <br />
+  <abr>KŻ</abr>
+</ar>
+
+ 
+</xdxf>
