@@ -2,7 +2,7 @@ INSTRUKCJA
 
 DPSH 2017Z
 
-17.02.2018
+17.02.2018 (uaktualnienie 27.05.2018)
 
 1. Dane wejściowe
 
@@ -21,7 +21,7 @@ http://ebuw.uw.edu.pl/Content/215606/directory.djvu
 
 1.1.2.1
 Skan mikrofilmu:
-dostępny w Moodle
+https://bitbucket.org/jsbien/parkosz-traktat/src/default/scansMF/
 
 1.1.2.2
 Faksymile (skan mikrofilmu) z przybliżoną transkrypcją:
@@ -29,7 +29,8 @@ https://bitbucket.org/jsbien/parkosz-traktat/downloads/draftParkosz-facsimile.dj
 
 1.1.2.3
 Faksymile (skan mikrofilmu) z przybliżoną transkrypcją w formie korpusu:
-http://test.korpusy.klf.uw.edu.pl/parkosz/
+https://bitbucket.org/jsbien/parkosz-traktat/src/skansMF
+
 
 1.1.2.4
 Odczytanie:
@@ -125,8 +126,7 @@ wszystkie słowa występujące przed danym słowem, nawet te w jakiś
 sposób wyróżnione.
 
 3.5 Zmodyfikowanie, zweryfikowanie i ewentualnie skorygowanie URL -
-wymaga djview4poliqarp (2.3). Niezbędne zastąpienie identyfikatorów
-stron (np. "p0005.djvu") przez ich numery (np. "0005").
+wymaga djview4poliqarp (2.3). 
 
 3.6 W razie potrzeby dodanie komentarzy.
 
