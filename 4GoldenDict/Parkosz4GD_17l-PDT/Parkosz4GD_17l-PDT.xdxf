@@ -19,7 +19,13 @@
  <abr_def><k>MB</k><v>Magdalena Bartnik</v></abr_def>
  <abr_def><k>NB</k><v>Natalia Brzostek</v></abr_def>
  <abr_def><k>SB</k> <v>Stanisław Bieniecki</v></abr_def>
+ <abr_def><k>MC</k><v>Małgorzata Cukrowska</v></abr_def>
+ <abr_def><k>WK</k> <v>Wojciech Kizik</v></abr_def>
+ <abr_def><k>KK</k><v>Karolina Kubicka</v></abr_def>
  <abr_def><k>TS</k><v>Tomasz Stecko</v></abr_def>
+ <abr_def><k>MG</k><v>Malwina Grzywacz</v></abr_def>    
+ <abr_def><k>MS</k><v>Michal Siewruk</v></abr_def>
+ <abr_def><k>AS</k><v>Agata Staniszewska</v></abr_def>
  <abr_def><k>KŻ</k><v>Kinga Żelechowska</v></abr_def>
 
   
@@ -171,6 +177,23 @@ dom — N sg: dooɱ 11/3
   <abr>SB</abr>
 </ar>
 
+<!--
+Drugi — N sg f: druga 6/19. Może to być forma D sg wyrazu Drug   
+-->
+
+
+<ar> <k>drugi</k> <abr>N</abr> <abr>sg</abr> <abr>f</abr>: 
+  <br/>
+  <i>druga</i>	<rref>6-19-4.jpeg</rref>
+  <iref href="http://teksty.klf.uw.edu.pl/46/2/draftParkosz-facsimile.djvu?djvuopts&amp;page=p0007.djvu&amp;zoom=300&amp;showposition=0.54,0.35&amp;djvuopts&amp;highlight=566,1470,131,44"> 6/19</iref>
+  . Może to być forma <abr>D</abr> <abr>sg</abr> wyrazu <kref>drug</kref>
+  <br/>
+  <iref href="http://teksty.klf.uw.edu.pl/46/2/draftParkosz-facsimile.djvu?djvuopts&amp;page=p0007.djvu&amp;zoom=300&amp;showposition=0.54,0.35&amp;djvuopts&amp;highlight=698,1466,127,47"></iref>
+  <rref>drugi.jpeg</rref>
+  <br/>
+  <abr>MG
+  </abr>
+</ar>   
 
   <!--
 Fał (4 r.)
@@ -209,6 +232,85 @@ Fast 'chwast, zielsko’ — N sg: ffa th 8/6.
   <rref>115-3.png</rref>
   <br />
   <abr>KŻ</abr>
+</ar>
+
+<!--
+
+dąb - N sg: døøb 11/3.
+
+-->
+
+<ar> 
+  <k>dąb</k> — <abr>N</abr> <abr>sg</abr> :
+  <br/>
+  døøb <rref>doob11-3.png</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=200&amp;showposition=0.5,0.21&amp;djvuopts=&amp;highlight=1590,4185,186,87"> 11/3 </iref>
+  <br />
+  <rref>114-6.png</rref>
+  <br />
+  <abr>WK</abr>
+</ar>
+
+
+<!--
+dzięgil 'dzięgiel’ — N sg: dzøøgif 11/4 
+-->
+
+<ar> <k>dzięgil</k> `dzięgiel’ — <abr>N</abr> <abr>sg</abr> :
+  <br/>
+  <br/>
+  dzięgil <rref>dzięgil1.png</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=300&amp;showposition=0.55,0.09&amp;djvuopts=&amp;highlight=1889,4237,336,100"> 11/4 </iref>
+  <br />
+  <rref>11-4-1.png</rref>
+  <br />
+  <abr>MS</abr>
+</ar>
+
+
+<!--
+Dumać 'myśleć, rozmyślać ’ — praes 3 sg: duɱaa 11/3.
+-->
+<ar> <k>dumać</k> `myśleć, rozmyślać' — <abr>N</abr> <abr>sg</abr> :
+  <br/>
+  <br/>
+  duɱaa
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=0010&amp;zoom=300&amp;showposition=0.178,0.113&amp;djvuopts&amp;highlight=444,4190,249,69"> 11/3 </iref>
+ <rref>11-03-02.png</rref>
+  <br />
+  <rref>114-16.png</rref>
+  <br />
+  <abr>KK</abr>
+</ar>
+
+<!--
+dziw 'coś rzadkiego, osobliwego’ — N sg: dziv 11/3.
+-->
+
+<ar> <k>dziw</k> `coś rzadkiego, osobliwego' — <abr>N</abr> <abr>sg</abr> :
+  <br/>
+  <br/>
+  dziv   <rref>114-25a.png</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 11/3 </iref>
+  <br />
+  <rref>114-25.png</rref>
+  <br />
+  <abr>MC</abr>
+</ar>
+
+<!--
+Eż 'że’ —  eſz 16/2 
+-->
+
+<ar> <k>eż</k> 'że’ — <abr>cn.</abr> <abr></abr> :
+  <br/>
+  <br/>
+  eſz   <rref>16-2-2.png</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0015.djvu&amp;zoom=400&amp;showposition=0.51,0.12&amp;djvuopts=&amp;highlight=1463,4051,177,179"> 16/2 </iref>
+  <br />
+  <rref>115-1.png</rref>
+  <br />
+  <abr>AS</abr>
 </ar>
 
  

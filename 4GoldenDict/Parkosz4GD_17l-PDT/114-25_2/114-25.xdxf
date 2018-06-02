@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xdxf SYSTEM "http://sourceforge.net/projects/xdxf/files/xdxf_lousy.dtd/download">
+<xdxf lang_from="POL" lang_to="POL" format="logical">
+<full_name>Słownik do traktatu Parkosza</full_name>
+<description> Zcalone i poprawione wyniki zadań studenckich
+Grafemika i paleografia cyfrowa 2017 semestr zimowy
+
+Autor: Janusz S. Bień (redaktor)
+Licencja: CC BY - Creative Commons Uznanie autorstwa
+
+Transkrypcję dopisał Filip Dzikliński.
+
+Struktura fizyczna słownika - katalog z nastepującą zawartością:
+
+dict.xdxf (GoldenDict akceptuje również inne nazwy z tym rozszerzeniem?)
+
+pliki graficzne, dźwiękowe i wideo, do których odwołują się hasła
+
+opcjonalnie jedna lub więcej ikon o rozmiarach 16x16, 32x32, 512x512, np.
+
+icon16.png
+
+
+
+Problemy:
+
+Czasami nowy wiersz nie jest traktowany przez GoldenDict
+jako spacja, trzeba ją podać jawnie na końcu wiersza.
+
+Element iref, kref musi być w jednym wierszu?
+
+Nie akceptuje elementu rref z plikami wideo, po prostu pomija ten
+element bez żadnego komunikatu. Powinien rozpoznawać co najmniej mp4 i ogm.
+
+</description>  
+
+<!-- Komentarz -->
+
+<!--
+    Długi komentarz
+-->
+
+
+<!--
+    
+W komentarzu wpisujemy wynik OCR:
+
+A cn (2 r») — aa 15/6, A 15/8.
+
+-->
+
+<!--
+    Listę skrótów uzupełniamy o skróty stosowane przez Kucałę
+    i przez Słownik XVI wieku
+-->
+
+<abbreviations>
+   <abr_def><k>MC</k><v>Małgorzata Cukrowska</v></abr_def>
+  
+  
+<!-- Kucała: -->
+ <abr_def><k>r.</k><v>razy </v> </abr_def>
+ <abr_def><k>a.</k><v>albo </v> </abr_def>
+ <!-- Części mowy i kategorie gramatyczne:
+http://kpbc.umk.pl/Content/29934/Czytelnia_007_01.djvu?djvuopts&page=652&zoom=width&showposition=0.526,0.150&highlight=1309,2966,33,26
+ -->
+ <abr_def><k>2</k><v> 2 osoba </v> </abr_def>
+ <abr_def><k>3</k><v> 3 osoba </v> </abr_def>
+ <abr_def><k>A</k><v>accusativus = biernik </v> </abr_def>
+ <abr_def><k>D</k><v>accusativus = biernik </v> </abr_def>
+ <abr_def><k>cf.</k><v>confer = porównaj </v> </abr_def>
+ <abr_def><k>cn.</k><v>coniunctio = spójnik </v> </abr_def>
+ <abr_def><k>con.</k><v>conditionalis = tryb przypuszczający</v></abr_def>
+ <abr_def><k>D</k><v>dativus = celownik </v> </abr_def>
+ <abr_def><k>fut</k><v>futurum = czas przyszły</v></abr_def>
+ <abr_def><k>int</k><v>interiectio = wykrzyknik</v></abr_def>
+ <abr_def><k>imp</k><v>imperativus = tryb rozkazujący</v>/</abr_def>
+ <abr_def><k>m</k><v> masculinum = rodzaj męski </v> </abr_def>
+ <abr_def><k>N</k><v>nominativus = mianownik </v> </abr_def>
+ <abr_def><k>part</k><v>participium = imiesłów</v> </abr_def>
+ <abr_def><k>pass</k><v>passivum = strona bierna</v> </abr_def>
+ <abr_def><k>pl</k> <v>pluralis = liczba mnoga</v></abr_def>
+ <abr_def><k>praes</k><v> praesens = czas teraźniejszy </v> </abr_def>
+ <abr_def><k>praet</k><v> praeteritum = czas przeszły </v> </abr_def>
+ <abr_def><k>sg</k><v>singularis = liczba pojedyncza </v> </abr_def>
+</abbreviations>
+
+<!--
+dziw 'coś rzadkiego, osobliwego’ — N sg: dziv 11/3.
+-->
+
+<ar> <k>dziw</k> `coś rzadkiego, osobliwego' — <abr>N</abr> <abr>sg</abr> :
+  <br/>
+  <br/>
+  dziv   <rref>114-25a.png</rref>
+  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 11/3 </iref>
+  <br />
+  <rref>114-25.png</rref>
+  <br />
+  <abr>MC</abr>
+</ar>
+
+</xdxf>
