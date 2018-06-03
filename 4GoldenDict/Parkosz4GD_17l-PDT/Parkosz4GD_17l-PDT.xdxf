@@ -2,9 +2,11 @@
 <!DOCTYPE xdxf SYSTEM "http://sourceforge.net/projects/xdxf/files/xdxf_lousy.dtd/download">
 <xdxf lang_from="POL" lang_to="POL" format="logical">
 <full_name>Słownik do traktatu Parkosza</full_name>
-<description> Rozwiązanie zadania domowego - Karol Farbiś
-	Problemy Dygitalizacji Tekstów, semestr letni 2017/2018
+<description> Scalone i poprawione wyniki zadań studenckich
+"Problemy dygitalizacji tekstów", semestr letni 2017/2018
 
+Autor: Janusz S. Bień (redaktor)
+Licencja: CC BY - Creative Commons Uznanie autorstwa
 </description>  
 <!--
     Listę skrótów uzupełniamy o skróty stosowane przez Kucałę
@@ -67,7 +69,7 @@ Doskonale — dofkonale 15/3.
 <ar> <k>doskonale</k>:
   <br/>
   doskoɲaɬe   <rref>15_3_4.png</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=14&amp;zoom=width&amp;showposition=0.373,0.128&amp;highlight=942,4113,497,80"> 15/3</iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=14&amp;zoom=width&amp;showposition=0.373,0.128&amp;highlight=942,4113,497,80"> 15/3</iref>
   <br/>
   <rref>114-10.png</rref>
   <br/>
@@ -83,7 +85,7 @@ Drug 'druh, przyjaciel’ — N sg: druug 6/19. Cf. drugi
 <ar> <k>drug</k> (1 <abr>a.</abr> 2 <abr>r.</abr>) ‘druh, przyjaciel’ — <abr>N</abr> <abr>sg</abr>:
   <br/>
   druuġ   <rref>drug6-19.png</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/redirect/ju4X4/http/test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu%3Fdjvuopts&amp;page=5&amp;zoom=width&amp;showposition=0.474,0.372&amp;highlight=1439,2960,153,57"> 6/18-1/5 [6/19] </iref>.
+  <iref href="http://szukajwslownikach.uw.edu.pl/redirect/ju4X4/http/szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu%3Fdjvuopts&amp;page=5&amp;zoom=width&amp;showposition=0.474,0.372&amp;highlight=1439,2960,153,57"> 6/18-1/5 [6/19] </iref>.
   <abr>Cf.</abr> <kref>drugi</kref>
   <br/>
   <rref>114-14.png</rref>
@@ -98,12 +100,12 @@ Drug 'druh, przyjaciel’ — N sg: druug 6/19. Cf. drugi
     <k>dym</k> (2<abr> r.</abr>) — <abr>N</abr> <abr>sg</abr>:
     <br/>
     dyɱ <rref>7_39_10.png</rref>
-    <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=6&amp;zoom=width&amp;showposition=0.234,0.671&amp;highlight=1679,1522,222,100,ffff00#parkosz">
+    <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=6&amp;zoom=width&amp;showposition=0.234,0.671&amp;highlight=1679,1522,222,100,ffff00#parkosz">
         7/39
     </iref>,
     <br/>
     diɱ <rref>11_2_10.png</rref>
-    <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=10&amp;zoom=width&amp;showposition=0.053,0.094&amp;highlight=2241,4227,200,102,ffff00#parkosz">
+    <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=10&amp;zoom=width&amp;showposition=0.053,0.094&amp;highlight=2241,4227,200,102,ffff00#parkosz">
         11/2
     </iref>
     <br/>
@@ -120,10 +122,10 @@ Dział (2 r.) - N sg: dzal 11/3, dzaal 16/2.
   <br/>
   <br/>
   dzaḷ  <rref>dzal11-3.tif</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=200&amp;showposition=0.5,0.21&amp;djvuopts=&amp;highlight=1590,4185,186,87"> 11/3 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=200&amp;showposition=0.5,0.21&amp;djvuopts=&amp;highlight=1590,4185,186,87"> 11/3 </iref>
   <br />
   dzaaḷ   <rref>dzaal16-2.tif</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0015.djvu&amp;zoom=200&amp;showposition=0.5,0.19&amp;djvuopts=&amp;highlight=1095,4107,333,159"> 16/2 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0015.djvu&amp;zoom=200&amp;showposition=0.5,0.19&amp;djvuopts=&amp;highlight=1095,4107,333,159"> 16/2 </iref>
   <br />
   <rref>114-18.png</rref>
   <br />
@@ -139,7 +141,7 @@ Dziuła 'kaptur, kapuza sukienna noszona jako ochrona przed deszczem’ — N sg
   <br/>
   <br/>
   dzuḷa   <rref>dziuła11-4.jpg</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=1200&amp;showposition=0.51,0.37&amp;djvuopts=&amp;highlight=377,4105,248,112"> 11/4 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=1200&amp;showposition=0.51,0.37&amp;djvuopts=&amp;highlight=377,4105,248,112"> 11/4 </iref>
   <br />
   <rref>dziuła114-24.jpg</rref>
   <br />
@@ -154,7 +156,7 @@ Denko 'dno naczynia, przykrywka’ — N sg: deeƞko 11/2
   <br/>
   <br/>
   deeƞko   <rref>deeriko11-2.jpg</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=300&amp;showposition=0.55,0.09&amp;djvuopts=&amp;highlight=1889,4237,336,100"> 11/2 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=300&amp;showposition=0.55,0.09&amp;djvuopts=&amp;highlight=1889,4237,336,100"> 11/2 </iref>
   <br />
   <rref>114-7.jpg</rref>
   <br />
@@ -171,7 +173,7 @@ dom — N sg: dooɱ 11/3
   <k>dom</k> — <abr>N</abr> <abr>sg</abr> :
   <br/>
   dooɱ <rref>11-3-1.png</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=0010&amp;zoom=300&amp;showposition=0.32,0.12&amp;djvuopts&amp;highlight=200,4145,304,164"> 11/3</iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=0010&amp;zoom=300&amp;showposition=0.32,0.12&amp;djvuopts&amp;highlight=200,4145,304,164"> 11/3</iref>
   <br/>
   <rref>114-9.png</rref>
   <br/>
@@ -205,14 +207,14 @@ n. pers. 'Chwał’ — N sg: ffaal 7/25, 7/26, ffaaɬ 7/30, 8/6.
 <k>Fał</k>(4 <abr>r.</abr>) n. pers. 'Chwał’ —
 <abr>N</abr> <abr>sg</abr>: 
 ffaal <rref>7_25_5.png</rref>
-<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 7/25</iref>, 
+<iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 7/25</iref>, 
   <rref>7_26_11.png</rref>
-<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 7/26</iref>,
+<iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 7/26</iref>,
 <br/> 
 ffaaɬ   <rref>7_30_9.png</rref>
-<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 7/30</iref>,
+<iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 7/30</iref>,
   <rref>8_6_3.png</rref>
-<iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 8/6</iref>.
+<iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 8/6</iref>.
 
 <rref>115-2.png</rref>
 <br/>
@@ -228,7 +230,7 @@ Fast 'chwast, zielsko’ — N sg: ffa th 8/6.
   <br/>
   <br/>
   ffaſth   <rref>fast8-6.tif</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0007.djvu&amp;zoom=300&amp;showposition=0.58,0.15&amp;djvuopts=&amp;highlight=1594,3979,225,88"> 8/6 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0007.djvu&amp;zoom=300&amp;showposition=0.58,0.15&amp;djvuopts=&amp;highlight=1594,3979,225,88"> 8/6 </iref>
   <br />
   <rref>115-3.png</rref>
   <br />
@@ -245,7 +247,7 @@ dąb - N sg: døøb 11/3.
   <k>dąb</k> — <abr>N</abr> <abr>sg</abr> :
   <br/>
   døøb <rref>doob11-3.png</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=200&amp;showposition=0.5,0.21&amp;djvuopts=&amp;highlight=1590,4185,186,87"> 11/3 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=200&amp;showposition=0.5,0.21&amp;djvuopts=&amp;highlight=1590,4185,186,87"> 11/3 </iref>
   <br />
   <rref>114-6.png</rref>
   <br />
@@ -261,7 +263,7 @@ Dumać 'myśleć, rozmyślać ’ — praes 3 sg: duɱaa 11/3.
   <br/>
   <br/>
   duɱaa
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=0010&amp;zoom=300&amp;showposition=0.178,0.113&amp;djvuopts&amp;highlight=444,4190,249,69"> 11/3 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=0010&amp;zoom=300&amp;showposition=0.178,0.113&amp;djvuopts&amp;highlight=444,4190,249,69"> 11/3 </iref>
  <rref>11-03-02.png</rref>
   <br />
   <rref>114-16.png</rref>
@@ -277,7 +279,7 @@ Dziąsła - pl tantum, N: dzøøſḷa 11/4.
   <br/>
   <br/>
   dzøøſḷa <rref>dziąsła114-19.tif</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?amp;djvuopts=&amp;page=p0010.djvu&amp;zoom=300&amp;showposition=0.37,0.12&amp;djvuopts=&amp;highlight=1048,4083,370,108"> 11/4 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?amp;djvuopts=&amp;page=p0010.djvu&amp;zoom=300&amp;showposition=0.37,0.12&amp;djvuopts=&amp;highlight=1048,4083,370,108"> 11/4 </iref>
   <br />
   <rref>114-19.png</rref>
   <br />
@@ -294,7 +296,7 @@ dzień - N sg: dzen 11/3
   <k>dzień</k> — <abr>N</abr> <abr>sg</abr> :
   <br/>
   dzen <rref>11-3-6.png</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=0010&amp;zoom=300&amp;showposition=0.62,0.12&amp;djvuopts&amp;highlight=1800,4145,204,124"> 11/3</iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=0010&amp;zoom=300&amp;showposition=0.62,0.12&amp;djvuopts&amp;highlight=1800,4145,204,124"> 11/3</iref>
   <br/>
   <rref>114-20.png</rref>
   <br/>
@@ -310,7 +312,7 @@ dzięgil 'dzięgiel’ — N sg: dzøøgif 11/4
   <br/>
   <br/>
   dzięgil <rref>dzięgil1.png</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=300&amp;showposition=0.55,0.09&amp;djvuopts=&amp;highlight=1889,4237,336,100"> 11/4 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=300&amp;showposition=0.55,0.09&amp;djvuopts=&amp;highlight=1889,4237,336,100"> 11/4 </iref>
   <br />
   <rref>11-4-1.png</rref>
   <br />
@@ -328,7 +330,7 @@ Dzięgil 'dzięgiel' - N sg: dzøøġiɬ 11/4.
   <br/>
   <br/>
   dzøøġiɬ   <rref>dzięgil111-4.tif</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=300&amp;showposition=0.37,0.12&amp;djvuopts=&amp;highlight=662,4093,368,114"> 11/4 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=300&amp;showposition=0.37,0.12&amp;djvuopts=&amp;highlight=662,4093,368,114"> 11/4 </iref>
   <br />
   <rref>114-22.png</rref>
   <br />
@@ -345,9 +347,9 @@ dziołda '?’ — dzolda 11/3-4.
   <k>dziołda</k> '?' —
   <br/>
   dzolda <rref>11-3-8.png</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=0010&amp;zoom=300&amp;showposition=0.62,0.12&amp;djvuopts&amp;highlight=2200,4145,284,124"> 11/3 początek słowa</iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=0010&amp;zoom=300&amp;showposition=0.62,0.12&amp;djvuopts&amp;highlight=2200,4145,284,124"> 11/3 początek słowa</iref>
   <rref>11-4-0.png</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=0010&amp;zoom=300&amp;showposition=0.32,0.12&amp;djvuopts&amp;highlight=200,4095,184,124"> 11/4 koniec słowa</iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=0010&amp;zoom=300&amp;showposition=0.32,0.12&amp;djvuopts&amp;highlight=200,4095,184,124"> 11/4 koniec słowa</iref>
   <br/>
   <rref>114-23.png</rref>
   <br/>
@@ -363,7 +365,7 @@ dziw 'coś rzadkiego, osobliwego’ — N sg: dziv 11/3.
   <br/>
   <br/>
   dziv   <rref>114-25a.png</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 11/3 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu"> 11/3 </iref>
   <br />
   <rref>114-25.png</rref>
   <br />
@@ -378,7 +380,7 @@ Eż 'że’ —  eſz 16/2
   <br/>
   <br/>
   eſz   <rref>16-2-2.png</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0015.djvu&amp;zoom=400&amp;showposition=0.51,0.12&amp;djvuopts=&amp;highlight=1463,4051,177,179"> 16/2 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0015.djvu&amp;zoom=400&amp;showposition=0.51,0.12&amp;djvuopts=&amp;highlight=1463,4051,177,179"> 16/2 </iref>
   <br />
   <rref>115-1.png</rref>
   <br />
@@ -393,13 +395,13 @@ Figa (3 r.) - A pl: ḟiġi 7/33, 8/6, fiꝿi 16/2.
   <br/>
   <br/>
   ḟiġi  <rref>figi7-33.jpg</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0006.djvu&amp;zoom=1200&amp;showposition=0.32,0.57&amp;djvuopts=&amp;highlight=772,1968,181,91"> 7/33 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0006.djvu&amp;zoom=1200&amp;showposition=0.32,0.57&amp;djvuopts=&amp;highlight=772,1968,181,91"> 7/33 </iref>
   <br/>
         <rref>figi8-6.jpg</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0007.djvu&amp;zoom=800&amp;showposition=0.8,0.14&amp;djvuopts=&amp;highlight=2680,4005,222,101"> 8/6 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0007.djvu&amp;zoom=800&amp;showposition=0.8,0.14&amp;djvuopts=&amp;highlight=2680,4005,222,101"> 8/6 </iref>
   <br />
   fiꝿi  <rref>figi16-2.jpg</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0015.djvu&amp;zoom=800&amp;showposition=0.68,0.12&amp;djvuopts=&amp;highlight=1952,4043,289,217"> 16/2 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0015.djvu&amp;zoom=800&amp;showposition=0.68,0.12&amp;djvuopts=&amp;highlight=1952,4043,289,217"> 16/2 </iref>
   <br />
   <rref>115-5.jpg</rref>
   <br />
@@ -414,16 +416,16 @@ Fytać (4 r.) - 'chwytać, porywac' praes 3 sg: ffytaa 7/32, ffita 7/33, ffitaa 
   <br/>
   <br/>
   ffytaa  <rref>chwytać7-32.jpg</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0006.djvu&amp;zoom=1200&amp;showposition=0.55,0.53&amp;djvuopts=&amp;highlight=1648,2085,233,120"> 7/32 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0006.djvu&amp;zoom=1200&amp;showposition=0.55,0.53&amp;djvuopts=&amp;highlight=1648,2085,233,120"> 7/32 </iref>
   <br/>
   ffita   <rref>chwytać7-33.jpg</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0006.djvu&amp;zoom=1200&amp;showposition=0.26,0.57&amp;djvuopts=&amp;highlight=572,1961,194,101"> 7/33 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0006.djvu&amp;zoom=1200&amp;showposition=0.26,0.57&amp;djvuopts=&amp;highlight=572,1961,194,101"> 7/33 </iref>
   <br/>
   ffitaa  <rref>chwytać8-6.jpg</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0007.djvu&amp;zoom=300&amp;showposition=0.5,0.18&amp;djvuopts=&amp;highlight=1839,3969,284,100"> 8/6 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0007.djvu&amp;zoom=300&amp;showposition=0.5,0.18&amp;djvuopts=&amp;highlight=1839,3969,284,100"> 8/6 </iref>
   <br />
          <rref>chwytać16-2.jpg</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0015.djvu&amp;zoom=300&amp;showposition=0.5,0.18&amp;djvuopts=&amp;highlight=1615,4059,366,192"> 16/2 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0015.djvu&amp;zoom=300&amp;showposition=0.5,0.18&amp;djvuopts=&amp;highlight=1615,4059,366,192"> 16/2 </iref>
   <br />
   <rref>fytać115-7.jpg</rref>
   <br />
@@ -435,7 +437,7 @@ Fytać (4 r.) - 'chwytać, porywac' praes 3 sg: ffytaa 7/32, ffita 7/33, ffitaa 
     <k>gad</k> — <abr>N</abr> <abr>sg</abr>: 
     <br/>
     ꝿaad <rref>11_23_6.png</rref>
-    <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=10&amp;zoom=width&amp;showposition=0.264,0.460&amp;highlight=1502,2562,250,85,ffff00#parkosz">
+    <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=10&amp;zoom=width&amp;showposition=0.264,0.460&amp;highlight=1502,2562,250,85,ffff00#parkosz">
         11/23
     </iref>
     <br/>
@@ -451,7 +453,7 @@ Gdy - Gdÿ 15/20.
 
 <ar> <k>gdy</k> -  Gdÿ <br/> 
 <rref>Gdy15-20.tif</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?amp;djvuopts=&amp;page=p0014.djvu&amp;zoom=600&amp;showposition=0.26,0.47&amp;djvuopts=&amp;highlight=394,2494,332,99"> 15/20 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?amp;djvuopts=&amp;page=p0014.djvu&amp;zoom=600&amp;showposition=0.26,0.47&amp;djvuopts=&amp;highlight=394,2494,332,99"> 15/20 </iref>
   <br />
   <rref>115-9.png</rref>
   <br />
@@ -465,7 +467,7 @@ Gruda 'bryła, okruch' - N sg: ꝿruuda 11/28.
 <ar> <k>gruda</k> `bryła, okruch' — <abr>N</abr> <abr>sg</abr> : 
   <br/>
   ꝿruuda <br/> <rref>gruda11-28.tif</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=400&amp;showposition=0.58,0.51&amp;djvuopts=&amp;highlight=1626,2112,381,108"> 11/28 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=400&amp;showposition=0.58,0.51&amp;djvuopts=&amp;highlight=1626,2112,381,108"> 11/28 </iref>
   <br />
   <rref>116-1.png</rref>
   <br />
@@ -480,21 +482,21 @@ Gruda 'bryła, okruch' - N sg: ꝿruuda 11/28.
     <k>gdzie</k> (4<abr>r.</abr>) —
     <br/>
     ꝿdze <rref>15_6_4.png</rref>
-    <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=14&amp;zoom=width&amp;showposition=0.247,0.185&amp;highlight=942,3831,190,82,ffff00#parkosz">
+    <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=14&amp;zoom=width&amp;showposition=0.247,0.185&amp;highlight=942,3831,190,82,ffff00#parkosz">
         15/6
     </iref>,
     <rref>15_15_8.png</rref>
-    <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=14&amp;zoom=width&amp;showposition=0.532,0.308&amp;highlight=1977,2949,212,108,ffff00#parkosz">
+    <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=14&amp;zoom=width&amp;showposition=0.532,0.308&amp;highlight=1977,2949,212,108,ffff00#parkosz">
         15/15
     </iref>,
     <br/>
     ġdze <rref>15_8_4.png</rref>
-    <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=14&amp;zoom=width&amp;showposition=0.247,0.185&amp;highlight=1064,3629,196,84,ffff00#parkosz">
+    <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=14&amp;zoom=width&amp;showposition=0.247,0.185&amp;highlight=1064,3629,196,84,ffff00#parkosz">
         15/8
     </iref>,
     <br/>
     Ġdze <rref>15_12_5.png</rref>
-    <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=14&amp;zoom=width&amp;showposition=0.532,0.308&amp;highlight=1562,3223,343,108,ffff00#parkosz">
+    <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=14&amp;zoom=width&amp;showposition=0.532,0.308&amp;highlight=1562,3223,343,108,ffff00#parkosz">
         15/12
     </iref>
     <br/>
@@ -508,7 +510,7 @@ Gruda 'bryła, okruch' - N sg: ꝿruuda 11/28.
     <k>Gedka</k> <abr>n. pers.</abr> (zdrobnienie od Gedeon) — <abr>N</abr> <abr>sg</abr>
     <br/>
     ꝿedka <rref>11_23_7.png</rref>
-    <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=10&amp;zoom=width&amp;showposition=0.264,0.460&amp;highlight=1805,2562,310,82,ffff00#parkosz">
+    <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts&amp;page=10&amp;zoom=width&amp;showposition=0.264,0.460&amp;highlight=1805,2562,310,82,ffff00#parkosz">
         11/23
     </iref>
     <br/>
@@ -526,7 +528,7 @@ Gęś — N sg: ꝿøffz 11/24
   <br/>
   <br/>
   ꝿøʃʃɀ   <rref>gęś11-24.jpg</rref>
-  <iref href="http://test.korpusy.klf.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=1200&amp;showposition=0.33,0.47&amp;djvuopts=&amp;highlight=770,2426,269,149"> 11/24 </iref>
+  <iref href="http://szukajwslownikach.uw.edu.pl/djvus/parkosz/parkosz.djvu?djvuopts=&amp;page=p0010.djvu&amp;zoom=1200&amp;showposition=0.33,0.47&amp;djvuopts=&amp;highlight=770,2426,269,149"> 11/24 </iref>
   <br />
   <rref>gęś115-12.jpg</rref>
   <br />
