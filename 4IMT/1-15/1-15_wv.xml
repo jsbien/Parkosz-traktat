@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="1-15_wv.xsl"?>
+<?xml-stylesheet type="text/xsl" href="1-15_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="_1-15_wv"><teiHeader>
+  <fileDesc>
+    <titleStmt><title></title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>3298 x 163 3298 x 163 800 x 40 3298 x 163 3298 x 163</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="Line_15"><desc>transcriptional</desc><label>Line_15</label><code rend="rectangle" lang="text/css">color: #ff00ff</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.0" notAfter="2016-05-23T02:57:06">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://www.tapor.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="00\1-15_wv_zoom_1-15.jpg" width="3298px" height="163px"></graphic><zone xml:id="imtArea_0" rendition="Line_15" ulx="6" uly="14" lrx="416" lry="115" rend="visible"></zone><zone xml:id="imtArea_1" rendition="Line_15" ulx="463" uly="12" lrx="835" lry="122" rend="visible"></zone><zone xml:id="imtArea_2" rendition="Line_15" ulx="848" uly="17" lrx="1229" lry="111" rend="visible"></zone><zone xml:id="imtArea_3" rendition="Line_15" ulx="1248" uly="9" lrx="1459" lry="119" rend="visible"></zone><zone xml:id="imtArea_4" rendition="Line_15" ulx="1479" uly="3" lrx="1635" lry="120" rend="visible"></zone><zone xml:id="imtArea_5" rendition="Line_15" ulx="1629" uly="10" lrx="2178" lry="114" rend="visible"></zone><zone xml:id="imtArea_6" rendition="Line_15" ulx="2191" uly="14" lrx="2530" lry="115" rend="visible"></zone><zone xml:id="imtArea_7" rendition="Line_15" ulx="2536" uly="26" lrx="3005" lry="149" rend="visible"></zone><zone xml:id="imtArea_8" rendition="Line_15" ulx="3005" uly="45" lrx="3115" lry="130" rend="visible"></zone><zone xml:id="imtArea_9" rendition="Line_15" ulx="3114" uly="28" lrx="3296" lry="160" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div facs="#imtArea_0" type="imtAnnotation"><head>sequitur</head><div><p>ſçꝙꝳíţʋɤ</p></div></div><div facs="#imtArea_1" type="imtAnnotation"><head>confusio</head><div><p>ꝉꝺɴꝓɻꞂꝉꝺ</p></div></div><div facs="#imtArea_2" type="imtAnnotation"><head>victum.</head><div><p>ꝺʅꬲƭꭒɱ</p></div></div><div facs="#imtArea_3" type="imtAnnotation"><head>Hac</head><div><p>Ꝙɑꞇ</p></div></div><div facs="#imtArea_4" type="imtAnnotation"><head>eciam</head><div><p>ƹⲓየ</p></div></div><div facs="#imtArea_5" type="imtAnnotation"><head>saluberrima</head><div><p>ꞃɑǷꭎɓꝩꝩɱɑ</p></div></div><div facs="#imtArea_6" type="imtAnnotation"><head>ratione</head><div><p>ⱱɑɲοจ</p></div></div><div facs="#imtArea_7" type="imtAnnotation"><head>exigente</head><div><p>ɾᶒǐƣеսէⱸ</p></div></div><div facs="#imtArea_8" type="imtAnnotation"><head>et</head><div><p>ҿț</p></div></div><div facs="#imtArea_9" type="imtAnnotation"><head>quasi</head><div><p>qȋȋ</p></div></div></div></body></text></TEI>

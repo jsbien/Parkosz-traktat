@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="0-14_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="_00-14_wv"><teiHeader>
+  <fileDesc>
+    <titleStmt><title></title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>3353 x 360</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="Default"><label>Explanation of this annotation category...</label><code rend="rectangle" lang="text/css">color: #0000ff</code></rendition><rendition xml:id="_0-14"><label>0-14</label><code rend="rectangle" lang="text/css">color: #ff0000</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-05-12T23:17:07">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="..\00-14_wv_zoom_1-14.jpg" width="3353px" height="360px"></graphic><zone xml:id="imtArea_0" rendition="_0-14" ulx="0" uly="25" lrx="304" lry="154" rend="visible"></zone><zone xml:id="imtArea_1" rendition="_0-14" ulx="302" uly="26" lrx="598" lry="161" rend="visible"></zone><zone xml:id="imtArea_2" rendition="_0-14" ulx="598" uly="26" lrx="907" lry="164" rend="visible"></zone><zone xml:id="imtArea_3" rendition="_0-14" ulx="904" uly="26" lrx="1276" lry="164" rend="visible"></zone><zone xml:id="imtArea_4" rendition="_0-14" ulx="1275" uly="26" lrx="1737" lry="159" rend="visible"></zone><zone xml:id="imtArea_5" rendition="_0-14" ulx="1731" uly="30" lrx="2090" lry="146" rend="visible"></zone><zone xml:id="imtArea_6" rendition="_0-14" ulx="2101" uly="15" lrx="2347" lry="159" rend="visible"></zone><zone xml:id="imtArea_7" rendition="_0-14" ulx="2336" uly="22" lrx="2702" lry="162" rend="visible"></zone><zone xml:id="imtArea_8" rendition="_0-14" ulx="2697" uly="38" lrx="3095" lry="196" rend="visible"></zone><zone xml:id="imtArea_9" rendition="_0-14" ulx="3094" uly="42" lrx="3326" lry="168" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div corresp="#imtArea_0" type="imtAnnotation"><head>monti</head><div><p>ɱonȶǐ</p></div></div><div corresp="#imtArea_1" type="imtAnnotation"><head>olimpi</head><div><p>oɩɨɱǐ</p></div></div><div corresp="#imtArea_2" type="imtAnnotation"><head>Aurea</head><div><p>Ⱥʊɍɞȃ</p></div></div><div corresp="#imtArea_3" type="imtAnnotation"><head>victrices</head><div><p>ʋıƈȶŗıƈēš</p></div></div><div corresp="#imtArea_4" type="imtAnnotation"><head>obnubit</head><div><p>ǒƅɳɥƅıȶ</p></div></div><div corresp="#imtArea_5" type="imtAnnotation"><head>laurea</head><div><p>ɩɑɥŗɛɑ</p></div></div><div corresp="#imtArea_6" type="imtAnnotation"><head>crines</head><div><p>ʗɍȋɳěŝ</p></div></div><div corresp="#imtArea_7" type="imtAnnotation"><head>Ducit</head><div><p>Đũċĩŧ</p></div></div><div corresp="#imtArea_8" type="imtAnnotation"><head>pompa</head><div><p>pompɑ</p></div></div><div corresp="#imtArea_9" type="imtAnnotation"><head>dom</head><div><p>đȱɯ</p></div></div></div></body></text></TEI>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="2-16_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="_2-16"><teiHeader>
+  <fileDesc>
+    <titleStmt><title></title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>3524 x 254</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="Default"><label>Explanation of this annotation category...</label><code rend="rectangle" lang="text/css">color: #0000ff</code></rendition><rendition xml:id="_2-16"><label>Line 16</label><code rend="rectangle" lang="text/css">color: #00ff00</code></rendition><rendition xml:id="Znaki"><label>Pomocnicza dla znaków interpunkcyjnych</label><code rend="rectangle" lang="text/css">color: #0000ff</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-04-18T20:16:12">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="2-16.jpg" width="3524px" height="254px"></graphic><zone xml:id="imtArea_0" rendition="_2-16" ulx="20" uly="57" lrx="495" lry="174" rend="visible"></zone><zone xml:id="imtArea_2" rendition="_2-16" ulx="531" uly="49" lrx="1031" lry="256" rend="visible"></zone><zone xml:id="imtArea_3" rendition="_2-16" ulx="1016" uly="51" lrx="1268" lry="247" rend="visible"></zone><zone xml:id="imtArea_4" rendition="_2-16" ulx="1241" uly="53" lrx="1543" lry="184" rend="visible"></zone><zone xml:id="imtArea_5" rendition="_2-16" ulx="1553" uly="58" lrx="2122" lry="178" rend="visible"></zone><zone xml:id="imtArea_6" rendition="_2-16" ulx="2132" uly="45" lrx="2557" lry="246" rend="visible"></zone><zone xml:id="imtArea_7" rendition="_2-16" ulx="2583" uly="48" lrx="2760" lry="222" rend="visible"></zone><zone xml:id="imtArea_8" rendition="_2-16" ulx="2738" uly="41" lrx="3156" lry="190" rend="visible"></zone><zone xml:id="imtArea_9" rendition="_2-16" ulx="3120" uly="34" lrx="3504" lry="217" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div corresp="#imtArea_0" type="imtAnnotation"><head>Latinos</head><div><p>Latinos</p></div></div><div corresp="#imtArea_2" type="imtAnnotation"><head>Quamquam</head><div><p>Qu̅qu̅ (Q(uam)q(uam))</p></div></div><div corresp="#imtArea_3" type="imtAnnotation"><head>igitur</head><div><p>igi̅ (igi(tur))</p></div></div><div corresp="#imtArea_4" type="imtAnnotation"><head>multe</head><div><p>mu̅te (m(u)lte)</p></div></div><div corresp="#imtArea_5" type="imtAnnotation"><head>naciones</head><div><p>naciones</p></div></div><div corresp="#imtArea_6" type="imtAnnotation"><head>diversas</head><div><p>div̅sas (div(er)sas)</p></div></div><div corresp="#imtArea_7" type="imtAnnotation"><head>sic</head><div><p>sic</p></div></div><div corresp="#imtArea_8" type="imtAnnotation"><head>habent</head><div><p>habe̅t (hab(en)t)</p></div></div><div corresp="#imtArea_9" type="imtAnnotation"><head>figuras</head><div><p>figua̅s  (figu(r)as)</p></div></div></div></body></text></TEI>

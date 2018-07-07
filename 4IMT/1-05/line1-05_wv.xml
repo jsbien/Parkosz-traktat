@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="line1-05_wv.xsl"?>
+<?xml-stylesheet type="text/xsl" href="line5._wv.xsl"?>
+<?xml-stylesheet type="text/xsl" href="line51_wv.xsl"?>
+<?xml-stylesheet type="text/xsl" href="line51_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="line5._wv"><teiHeader>
+  <fileDesc>
+    <titleStmt><title>line 5</title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>3024 x 220</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="line_5"><label>line_5</label><code rend="rectangle" lang="text/css">color: #ff0000</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-05-12T01:17:40">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="5 wiersz.png" width="3024px" height="220px"></graphic><zone xml:id="imtArea_0" rendition="line_5" ulx="34" uly="-22" lrx="581" lry="302" rend="visible"></zone><zone xml:id="imtArea_1" rendition="line_5" ulx="520" uly="-52" lrx="936" lry="272" rend="visible"></zone><zone xml:id="imtArea_2" rendition="line_5" ulx="833" uly="-42" lrx="1157" lry="282" rend="visible"></zone><zone xml:id="imtArea_3" rendition="line_5" ulx="1046" uly="-42" lrx="1436" lry="282" rend="visible"></zone><zone xml:id="imtArea_4" rendition="line_5" ulx="1391" uly="-22" lrx="1907" lry="302" rend="visible"></zone><zone xml:id="imtArea_5" rendition="line_5" ulx="1805" uly="-32" lrx="2321" lry="292" rend="visible"></zone><zone xml:id="imtArea_6" rendition="line_5" ulx="2281" uly="-27" lrx="2696" lry="297" rend="visible"></zone><zone xml:id="imtArea_7" rendition="line_5" ulx="2669" uly="-47" lrx="2993" lry="277" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div corresp="#imtArea_0" type="imtAnnotation"><head>inconcussa</head><div><p>ınc◌◌oɲcuſſ</p></div></div><div corresp="#imtArea_1" type="imtAnnotation"><head>patrum</head><div><p>þ𝒶𝑡r◌◌u</p></div></div><div corresp="#imtArea_2" type="imtAnnotation"><head>ac</head><div><p>𝒶ɾ</p></div></div><div corresp="#imtArea_3" type="imtAnnotation"><head>philosophroum</head><div><p>þ𝒽◌◌</p></div></div><div corresp="#imtArea_4" type="imtAnnotation"><head>sanxit</head><div><p>ſ𝒶n</p></div></div><div corresp="#imtArea_5" type="imtAnnotation"><head>autoritas</head><div><p>𝒶uto◌◌rt𝒶Ϭ</p></div></div><div corresp="#imtArea_6" type="imtAnnotation"><head>sacius</head><div><p>Ϭ𝒶ɲuß</p></div></div><div corresp="#imtArea_7" type="imtAnnotation"><head>reipublice</head><div><p>r𝒶.p. - prawdopodobnie skrót</p></div></div></div></body></text></TEI>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="1-08_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="_08_01"><teiHeader>
+  <fileDesc>
+    <titleStmt><title></title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>3553 x 175</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="Line_08"><desc>transcriptional</desc><label>Line_08</label><code rend="rectangle" lang="text/css">color: #ff00ff</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.0" notAfter="2016-04-28T22:53:09">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://www.tapor.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="1-08.jpg" width="3553px" height="175px"></graphic><zone xml:id="imtArea_0" rendition="Line_08" ulx="58" uly="13" lrx="608" lry="148" rend="visible"></zone><zone xml:id="imtArea_1" rendition="Line_08" ulx="598" uly="13" lrx="872" lry="124" rend="visible"></zone><zone xml:id="imtArea_2" rendition="Line_08" ulx="909" uly="37" lrx="1054" lry="176" rend="visible"></zone><zone xml:id="imtArea_3" rendition="Line_08" ulx="1051" uly="29" lrx="1443" lry="164" rend="visible"></zone><zone xml:id="imtArea_4" rendition="Line_08" ulx="1462" uly="34" lrx="1686" lry="143" rend="visible"></zone><zone xml:id="imtArea_5" rendition="Line_08" ulx="1680" uly="32" lrx="2072" lry="133" rend="visible"></zone><zone xml:id="imtArea_6" rendition="Line_08" ulx="2081" uly="34" lrx="2165" lry="145" rend="visible"></zone><zone xml:id="imtArea_7" rendition="Line_08" ulx="2170" uly="29" lrx="2275" lry="138" rend="visible"></zone><zone xml:id="imtArea_8" rendition="Line_08" ulx="2278" uly="40" lrx="2710" lry="157" rend="visible"></zone><zone xml:id="imtArea_9" rendition="Line_08" ulx="2734" uly="50" lrx="3118" lry="161" rend="visible"></zone><zone xml:id="imtArea_10" rendition="Line_08" ulx="3116" uly="69" lrx="3224" lry="170" rend="visible"></zone><zone xml:id="imtArea_11" rendition="Line_08" ulx="3221" uly="66" lrx="3484" lry="175" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div facs="#imtArea_0" type="imtAnnotation"><head>Predicamentis</head><div><p>p  ጸ ſ Ϛ</p></div></div><div facs="#imtArea_1" type="imtAnnotation"><head>dicens:</head><div><p>ദ</p></div></div><div facs="#imtArea_2" type="imtAnnotation"><head>Non</head><div><p>୧</p></div></div><div facs="#imtArea_3" type="imtAnnotation"><head>existentibus</head><div><p>ϗ  ⳏ Ԇ ި</p></div></div><div facs="#imtArea_4" type="imtAnnotation"><head>primis</head><div><p>p</p></div></div><div facs="#imtArea_5" type="imtAnnotation"><head>substanciis,</head><div><p>ദ Ⳏ પ ȏ</p></div></div><div facs="#imtArea_6" type="imtAnnotation"><head>id</head><div><p>ſ lub િ</p></div></div><div facs="#imtArea_7" type="imtAnnotation"><head>est</head><div><p>ᑘpierwsze słowo "est" możemy interpretować jako znak z słownictwa lub znak ಲ</p></div></div><div facs="#imtArea_8" type="imtAnnotation"><head>singularibus,</head><div><p>𐨒 የ જ∿</p></div></div><div facs="#imtArea_9" type="imtAnnotation"><head>impossibile</head><div><p>ท ɑ ؎ ޥ</p></div></div><div facs="#imtArea_10" type="imtAnnotation"><head>est</head><div><p>ᒷ drugie słowo "est" możemy interpretować jako znak z słownictwa Canadian Aboriginal Syllabics</p></div></div><div facs="#imtArea_11" type="imtAnnotation"><head>aliquid</head><div><p>ɑ ȏ</p></div></div></div></body></text></TEI>

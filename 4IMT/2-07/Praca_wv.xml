@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Praca_wv.xsl"?>
+<?xml-stylesheet type="text/xsl" href="index_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="Praca">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Praca</title>
+        <principal>[IMPORTANT: name of the author of the transcription]</principal>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>[Name of the publisher]</publisher>
+        <availability status="restricted">
+          <p>[your license agreement]</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>3018 x 346 2048 x 112</p>
+        <p>
+          <msDesc>
+            <msIdentifier>
+              <settlement>[IMPORTANT: City where the document is kept]</settlement>
+              <repository xml:id="XXX">[IMPORTANT: Institution where the document is kept; its unique identifier in @xml:id]</repository>
+              <idno type="">[IMPORTANT: Shelfmark of the document; optional: the series to which it belongs in @type]</idno>
+            </msIdentifier>
+          </msDesc>
+        </p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+
+      <projectDesc>
+        <ab n="introduction">[IMPORTANT: your presentation of the document]</ab>
+      </projectDesc>
+      
+      
+    <tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="marques"><label>Marques</label><code rend="rectangle" lang="text/css">color: #ffffff</code></rendition><rendition xml:id="line07"><label>Line 7</label><code rend="rectangle" lang="text/css">color: #ff0000</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-09-02T02:05:01">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc>
+  </teiHeader>
+  <facsimile xml:id="imtAnnotatedImage"><surface><graphic url="praca.jpg" width="2048px" height="112px"></graphic><zone xml:id="imtArea_0" rendition="line07" ulx="9" uly="18" lrx="412" lry="105" rend="visible"></zone><zone xml:id="imtArea_1" rendition="line07" ulx="414" uly="12" lrx="491" lry="110" rend="visible"></zone><zone xml:id="imtArea_2" rendition="line07" ulx="481" uly="16" lrx="759" lry="116" rend="visible"></zone><zone xml:id="imtArea_3" rendition="line07" ulx="747" uly="5" lrx="1033" lry="91" rend="visible"></zone><zone xml:id="imtArea_4" rendition="line07" ulx="1027" uly="11" lrx="1349" lry="109" rend="visible"></zone><zone xml:id="imtArea_5" rendition="line07" ulx="1348" uly="10" lrx="1696" lry="86" rend="visible"></zone><zone xml:id="imtArea_6" rendition="line07" ulx="1709" uly="15" lrx="1887" lry="106" rend="visible"></zone><zone xml:id="imtArea_7" rendition="line07" ulx="1879" uly="9" lrx="2030" lry="110" rend="visible"></zone></surface></facsimile>
+  <text>
+    <body>
+      <div xml:id="imtImageAnnotations"><div corresp="#imtArea_0" type="imtAnnotation"><head>Montalino</head><div><p>Montalino</p></div></div><div corresp="#imtArea_1" type="imtAnnotation"><head>qui</head><div><p>qui</p></div></div><div corresp="#imtArea_2" type="imtAnnotation"><head>diversarum</head><div><p>diversarum</p></div></div><div corresp="#imtArea_3" type="imtAnnotation"><head>nacionum</head><div><p>nacionum</p></div></div><div corresp="#imtArea_4" type="imtAnnotation"><head>forinaliter</head><div><p>forinaliter</p></div></div><div corresp="#imtArea_5" type="imtAnnotation"><head>abecedaria</head><div><p>abecedaria</p></div></div><div corresp="#imtArea_6" type="imtAnnotation"><head>secundum</head><div><p>secundum</p></div></div><div corresp="#imtArea_7" type="imtAnnotation"><head>suas</head><div><p>suas</p></div></div></div>
+    </body>
+  </text>
+</TEI>

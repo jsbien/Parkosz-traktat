@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="1-09_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="ogun1"><teiHeader>
+  <fileDesc>
+    <titleStmt><title>09</title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>5228 x 6348 3489 x 141</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="Default"><desc>transcriptional</desc><label>Line 9</label><code rend="rectangle" lang="text/css">color: #ff0000</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-04-17T20:00:25">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="1-09.jpg" width="3489px" height="141px"></graphic><zone xml:id="imtArea_0" rendition="Default" ulx="93" uly="-11" lrx="290" lry="126" rend="visible"></zone><zone xml:id="imtArea_1" rendition="Default" ulx="284" uly="-17" lrx="352" lry="108" rend="visible"></zone><zone xml:id="imtArea_2" rendition="Default" ulx="344" uly="-17" lrx="421" lry="95" rend="visible"></zone><zone xml:id="imtArea_3" rendition="Default" ulx="411" uly="-14" lrx="750" lry="79" rend="visible"></zone><zone xml:id="imtArea_4" rendition="Default" ulx="739" uly="-17" lrx="1171" lry="90" rend="visible"></zone><zone xml:id="imtArea_5" rendition="Default" ulx="1182" uly="-14" lrx="1503" lry="103" rend="visible"></zone><zone xml:id="imtArea_6" rendition="Default" ulx="1533" uly="-22" lrx="1735" lry="113" rend="visible"></zone><zone xml:id="imtArea_7" rendition="Default" ulx="1751" uly="-11" lrx="2349" lry="136" rend="visible"></zone><zone xml:id="imtArea_8" rendition="Default" ulx="2351" uly="0" lrx="2902" lry="105" rend="visible"></zone><zone xml:id="imtArea_9" rendition="Default" ulx="2917" uly="36" lrx="3083" lry="126" rend="visible"></zone><zone xml:id="imtArea_10" rendition="Default" ulx="3083" uly="26" lrx="3221" lry="131" rend="visible"></zone><zone xml:id="imtArea_11" rendition="Default" ulx="3214" uly="0" lrx="3461" lry="146" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div facs="#imtArea_0" type="imtAnnotation"><head>horum</head><div><p>hor</p></div></div><div facs="#imtArea_1" type="imtAnnotation"><head>id</head><div><p>e</p></div></div><div facs="#imtArea_2" type="imtAnnotation"><head>est</head><div><p>s</p></div></div><div facs="#imtArea_3" type="imtAnnotation"><head>commune</head><div><p>comic</p></div></div><div facs="#imtArea_4" type="imtAnnotation"><head>remanere</head><div><p>remande</p></div></div><div facs="#imtArea_5" type="imtAnnotation"><head>quia</head><div><p>qma</p></div></div><div facs="#imtArea_6" type="imtAnnotation"><head>hoc</head><div><p>goc</p></div></div><div facs="#imtArea_7" type="imtAnnotation"><head>intelligitur</head><div><p>ulkllgtour</p></div></div><div facs="#imtArea_8" type="imtAnnotation"><head>naturaliter</head><div><p>natualilek</p></div></div><div facs="#imtArea_9" type="imtAnnotation"><head>vel</head><div><p>nl</p></div></div><div facs="#imtArea_10" type="imtAnnotation"><head>ut</head><div><p>nt</p></div></div><div facs="#imtArea_11" type="imtAnnotation"><head>libet</head><div><p>liler</p></div></div></div></body></text></TEI>

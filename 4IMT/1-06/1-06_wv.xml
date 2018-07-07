@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="1-06_wv.xsl"?>
+<?xml-stylesheet type="text/xsl" href="1-06_wv.xsl"?>
+<?xml-stylesheet type="text/xsl" href="1-06_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="_1-06_wv"><teiHeader>
+  <fileDesc>
+    <titleStmt><title></title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>3347 x 158</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="Line_06"><desc>transcriptional</desc><label>Line_06</label><code rend="rectangle" lang="text/css">color: #ff00ff</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-05-11T21:44:22">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="1-06.jpg" width="3347px" height="158px"></graphic><zone xml:id="imtArea_0" rendition="Line_06" ulx="5" uly="1" lrx="215" lry="112" rend="visible"></zone><zone xml:id="imtArea_1" rendition="Line_06" ulx="221" uly="4" lrx="796" lry="100" rend="visible"></zone><zone xml:id="imtArea_2" rendition="Line_06" ulx="837" uly="11" lrx="983" lry="143" rend="visible"></zone><zone xml:id="imtArea_3" rendition="Line_06" ulx="1017" uly="24" lrx="1337" lry="136" rend="visible"></zone><zone xml:id="imtArea_4" rendition="Line_06" ulx="1353" uly="20" lrx="1607" lry="145" rend="visible"></zone><zone xml:id="imtArea_5" rendition="Line_06" ulx="1639" uly="27" lrx="1957" lry="147" rend="visible"></zone><zone xml:id="imtArea_6" rendition="Line_06" ulx="1978" uly="33" lrx="2383" lry="145" rend="visible"></zone><zone xml:id="imtArea_7" rendition="Line_06" ulx="2402" uly="43" lrx="3024" lry="155" rend="visible"></zone><zone xml:id="imtArea_8" rendition="Line_06" ulx="3050" uly="43" lrx="3335" lry="155" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div facs="#imtArea_0" type="imtAnnotation"><head>fore</head><div><p>ʄoĉ</p></div></div><div facs="#imtArea_1" type="imtAnnotation"><head>insudandum,</head><div><p>𝚤𝓃ʃ𝓊𝛝𝒶𝓃𝛝ư</p></div></div><div facs="#imtArea_2" type="imtAnnotation"><head>quam</head><div><p>Ꮡ - prawdopodobnie skrót.</p></div></div><div facs="#imtArea_3" type="imtAnnotation"><head>alias</head><div><p>𝒶𝓁𝒾𝒶ɞ</p></div></div><div facs="#imtArea_4" type="imtAnnotation"><head>cuilibet</head><div><p>𝓂𝒾ϟ</p></div></div><div facs="#imtArea_5" type="imtAnnotation"><head>privato</head><div><p>Ϭν𝒶𝘵o</p></div></div><div facs="#imtArea_6" type="imtAnnotation"><head>comodo</head><div><p>𝒸o𝓂o𝛝o</p></div></div><div facs="#imtArea_7" type="imtAnnotation"><head>adherendum,</head><div><p>𝒶𝛝𝒽𝔢ν𝔢𝓃𝛝ȗ</p></div></div><div facs="#imtArea_8" type="imtAnnotation"><head>sal</head><div><p>Ϭ𝒶𝓁𝒸</p></div></div></div></body></text></TEI>

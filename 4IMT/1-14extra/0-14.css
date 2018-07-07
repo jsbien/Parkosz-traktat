@@ -1,0 +1,352 @@
+﻿/*
+     Image Markup Tool v 1.8 Web View CSS file
+     Paleography exercise version (developed by Marjorie Burghart)  
+     v. 1.0 January 2010
+
+     LICENSE
+     
+     The contents of this file are subject to the Mozilla Public License Version
+     1.1 (the "License"); you may not use this file except in compliance with
+     the License. You may obtain a copy of the License at
+     "http://www.mozilla.org/MPL/"
+     
+     Software distributed under the License is distributed on an "AS IS" basis,
+     WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+     the specific language governing rights and limitations under the License.exp
+     
+     The Original Code is "[web_view.xsl]".
+     
+     The Developer of this Modification is Marjorie Burghart (http://marjorie.burghart.online.fr). 
+     Copyright (C) 2010 Marjorie Burghart. All Rights Reserved.
+     
+     The Initial Developer of the Original Code is Martin Holmes (Victoria,
+     BC, Canada, "http://www.mholmes.com/"). Copyright (C) 2006-2008 Martin Holmes
+     and the University of Victoria Computing and Media Centre. The code was
+     co-developed for university and personal projects, and rights are shared
+     by Martin Holmes and the University of Victoria. All Rights Reserved.
+     
+ */
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "trebuchet ms", verdana, sans-serif;
+    font-size: small;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* added to comply with html.css on castellanie.net */
+
+    /* ButtonFace #DCDAD0  #F0EDE0*/
+
+kbd,  menu, .button, .form, div.head, .bar, .bar table, .menu, .nav, p.first:first-letter
+    { background-color:#DEAC89; color:#000000; }
+
+/* end of addition */
+
+h1{
+    margin: 0;
+    border-color: #d0d0f0 #a0a0d0 #a0a0d0 #d0d0f0;
+    border-width: 2px;
+    border-style: solid;
+    background: url(gradient.png) repeat-x left top;
+    background-color: #DEAC89;
+    color: #000000;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 150%;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    position: relative;
+    left: 20px;
+}
+
+h3 a {
+	font-size: x-small;
+}
+
+ul{
+    left: 20px;
+}
+
+input{
+	border-width: 1px;
+	font-size: x-small;
+	background-color: white;
+}
+
+input.selection{
+	border-width: 1px;
+	border-style: dashed;
+/*	border-color: #DEAC89;*/
+	border-color: #0033FF;
+}
+
+
+div.DocTranscription{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-size: 120%;
+    background-color: #FEF8EC;
+}
+
+div.docTranscriptionAuto{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-size: 120%;
+    background-color: #FEF8EC;
+	/* Position it off-screen initially, to avoid flicker. */
+    left: -33%;
+}
+
+div.docTranscriptionCases{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-size: 120%;
+    background-color: #FEF8EC;
+}
+
+
+#DocIntroduction{
+    padding-left: 15px;
+    position: relative;
+}
+
+#lineNumber{
+    color: gray;
+}
+
+
+#ImageContainer{
+    margin: 0;
+    padding: 0;
+}
+
+#Image{
+    margin: 1em;
+    padding: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #e0e0e0 #b0b0b0 #b0b0b0 #e0e0e0;
+}
+
+div#CurrentAnnotation{
+    display: none;
+}
+
+div.Annotation{
+    display: none;
+    position: absolute;
+    width: auto;
+    min-width: 10%;
+    background-color: #ffffff;
+    color: #000000;
+/*    border-color: #d0d0f0 #a0a0d0 #a0a0d0 #d0d0f0; */
+/*    border-width: 2px; */
+/*    border-style: outset; */
+    border-top-style: dotted;
+    border-top-width: 2px;
+    border-top-color: #000000;
+    padding: 0;
+    max-width: 90%;
+}
+
+div.AnnTitleBar{
+}
+
+div.PopupCloser{
+/* Floating right causes the containing element to stretch to its max-width. :-( */
+    float: left;
+    width: 1em;
+    margin-right: 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #a0a0d0 #d0d0f0 #d0d0f0 #a0a0d0;
+    font-variant: small-caps;
+/*    font-stretch: extra-expanded;*/
+    cursor: pointer;
+	padding-right: 7px;
+}
+
+div.AnnText{
+    border-top-style: dotted;
+    border-top-width: 2px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-color: #000000;
+}
+
+#AnnMenuContainer{
+    position: absolute;
+    padding: 0.2em;
+    width: auto;
+    top: 10px;
+    left: 10px;
+	/*
+    border-color: #d0d0f0 #a0a0d0 #a0a0d0 #d0d0f0;
+    border-width: 2px;
+    border-style: solid;
+    color: #000000;
+    background-color: #DEAC89;
+	*/
+/*    max-width: 33%; */
+/* Position it off-screen initially, to avoid flicker. */
+    left: -33%;
+}
+
+#AnnMenuTitle, div.Annotation div.AnnTitlebar{
+    background: url(gradient.png) repeat-x left top;
+    color: #000000;
+    padding: 0.25em;
+    cursor: move;
+    margin: 0;
+    text-align: center;
+}
+
+#AnnMenu{
+    margin: 0;
+    padding: 15px;
+    font-family: "trebuchet ms", verdana, sans-serif;
+	border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    list-style-type: none;
+    background-color: #ffffff;
+    color: #000000;
+    overflow: auto;
+}
+
+#AnnMenuTranscription{
+    margin: 0;
+    padding: 15px;
+    font-family: "trebuchet ms", verdana, sans-serif;
+/*
+	border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+*/
+	list-style-type: none;
+    background-color: #ffffff;
+    color: #000000;
+    overflow: auto;
+}
+
+
+#AnnMenuCases{
+    margin: 0;
+    padding: 15px;
+    font-family: "trebuchet ms", verdana, sans-serif;
+    font-size: x-small;
+/*
+	border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+	*/
+    list-style-type: none;
+    background-color: #FEF8EC;
+    color: #000000;
+    overflow: auto;
+}
+
+.CategoryTitleClosed{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#AnnMenu>li{
+    padding: 0.25em;
+    margin: 0.2em;
+    cursor: pointer;
+}
+
+/*
+.AnnSubmenu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.AnnSubmenu>li{
+    margin-left: 0.5em;
+}
+*/
+
+.AnnMenuItem{
+    cursor: pointer;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.HighlightedAnnMenuItem{
+    cursor: pointer;
+    background-color: #DEAC89;
+    color: #000000;
+}
+
+.SelectedAnnMenuItem{
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+div.SelectedArea{
+    border-width: 2px;
+    border-style: solid;
+}
+
+div.HighlightedArea{
+    border-width: 2px;
+    border-style: dashed;
+}
+
+p{
+    margin: 0.25em;
+}
+
+div.Para{
+    margin: 0.25em;
+}
+
+div.Stanza{
+    margin: 0.5em;
+}
+
+div.BlockCit{
+    margin: 1em;
+}
+
+div.BlockCitBibl{
+    text-align: right;
+}
+
+div#Zoom{
+    display: none;
+    overflow: hidden;
+    position: absolute;
+	border-style: solid;
+    border-width: 3px;
+    border-color: #000000;
+}   
+
+div#Zoom img{
+    position: relative;
+}

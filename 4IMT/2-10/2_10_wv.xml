@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="2_10_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="_2_10"><teiHeader>
+  <fileDesc>
+    <titleStmt><title></title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>5025 x 201</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="Line1"><label>Line1</label><code rend="rectangle" lang="text/css">color: #ff0000</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-04-11T20:34:44">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="..\2_10.jpeg" width="5025px" height="201px"></graphic><zone xml:id="imtArea_0" rendition="Line1" ulx="1000" uly="-36" lrx="1318" lry="256" rend="visible"></zone><zone xml:id="imtArea_1" rendition="Line1" ulx="1284" uly="-37" lrx="1417" lry="255" rend="visible"></zone><zone xml:id="imtArea_2" rendition="Line1" ulx="1392" uly="-37" lrx="1611" lry="255" rend="visible"></zone><zone xml:id="imtArea_3" rendition="Line1" ulx="1616" uly="-37" lrx="1953" lry="255" rend="visible"></zone><zone xml:id="imtArea_4" rendition="Line1" ulx="1963" uly="-37" lrx="2480" lry="255" rend="visible"></zone><zone xml:id="imtArea_5" rendition="Line1" ulx="2460" uly="-37" lrx="2634" lry="255" rend="visible"></zone><zone xml:id="imtArea_6" rendition="Line1" ulx="2636" uly="-38" lrx="2961" lry="254" rend="visible"></zone><zone xml:id="imtArea_7" rendition="Line1" ulx="2970" uly="-38" lrx="3523" lry="254" rend="visible"></zone><zone xml:id="imtArea_8" rendition="Line1" ulx="3501" uly="-38" lrx="3628" lry="254" rend="visible"></zone><zone xml:id="imtArea_9" rendition="Line1" ulx="3625" uly="-38" lrx="3938" lry="254" rend="visible"></zone><zone xml:id="imtArea_10" rendition="Line1" ulx="3806" uly="-37" lrx="4452" lry="255" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div corresp="#imtArea_0" type="imtAnnotation"><head>licet</head><div><p>licet</p></div></div><div corresp="#imtArea_1" type="imtAnnotation"><head>in</head><div><p>in</p></div></div><div corresp="#imtArea_2" type="imtAnnotation"><head>suis</head><div><p>suis</p></div></div><div corresp="#imtArea_3" type="imtAnnotation"><head>vocibus</head><div><p>vocibus</p></div></div><div corresp="#imtArea_4" type="imtAnnotation"><head>differant,</head><div><p>differant,</p></div></div><div corresp="#imtArea_5" type="imtAnnotation"><head>ut</head><div><p>ut</p></div></div><div corresp="#imtArea_6" type="imtAnnotation"><head>aliter</head><div><p>aliter</p></div></div><div corresp="#imtArea_7" type="imtAnnotation"><head>scribantur</head><div><p>scribantur</p></div></div><div corresp="#imtArea_8" type="imtAnnotation"><head>et</head><div><p>et</p></div></div><div corresp="#imtArea_9" type="imtAnnotation"><head>aliter</head><div><p>aliter</p></div></div><div corresp="#imtArea_10" type="imtAnnotation"><head>proferantur</head><div><p>proferantur</p></div></div></div></body></text></TEI>

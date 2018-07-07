@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="0011_1L 02-14_wv.xsl"?>
+<?xml-stylesheet type="text/xsl" href="digitalizacja_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="digitalizacja"><teiHeader>
+  <fileDesc>
+    <titleStmt><title></title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>3492 x 193</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="Line1"><label>Line 1</label><code rend="rectangle" lang="text/css">color: #ff0000</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-03-26T19:55:14">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="..\0011_1L 02-14.jpg" width="3492px" height="193px"></graphic><zone xml:id="imtArea_0" rendition="Line1" ulx="4" uly="-3" lrx="372" lry="193" rend="visible"></zone><zone xml:id="imtArea_1" rendition="Line1" ulx="364" uly="-5" lrx="531" lry="193" rend="visible"></zone><zone xml:id="imtArea_2" rendition="Line1" ulx="522" uly="-3" lrx="937" lry="195" rend="visible"></zone><zone xml:id="imtArea_3" rendition="Line1" ulx="934" uly="0" lrx="1098" lry="196" rend="visible"></zone><zone xml:id="imtArea_4" rendition="Line1" ulx="1089" uly="-3" lrx="1654" lry="193" rend="visible"></zone><zone xml:id="imtArea_5" rendition="Line1" ulx="1648" uly="-3" lrx="2231" lry="193" rend="visible"></zone><zone xml:id="imtArea_6" rendition="Line1" ulx="2229" uly="0" lrx="2775" lry="196" rend="visible"></zone><zone xml:id="imtArea_7" rendition="Line1" ulx="2772" uly="0" lrx="3438" lry="190" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div corresp="#imtArea_0" type="imtAnnotation"><head>omnes</head><div><p>oḿ</p></div></div><div corresp="#imtArea_1" type="imtAnnotation"><head>tamen</head><div><p>t</p></div></div><div corresp="#imtArea_2" type="imtAnnotation"><head>gentes</head><div><p>ente</p></div></div><div corresp="#imtArea_3" type="imtAnnotation"><head>in</head><div><p>ıƞ</p></div></div><div corresp="#imtArea_4" type="imtAnnotation"><head>principali</head><div><p>ppli</p></div></div><div corresp="#imtArea_5" type="imtAnnotation"><head>conveniunt</head><div><p>coenit</p></div></div><div corresp="#imtArea_6" type="imtAnnotation"><head>expressionis</head><div><p>põı</p></div></div><div corresp="#imtArea_7" type="imtAnnotation"><head>elemento</head><div><p>elemento</p></div></div></div></body></text></TEI>

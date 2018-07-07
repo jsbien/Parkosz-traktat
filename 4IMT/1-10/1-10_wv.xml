@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="_1-10_wv">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>[IMPORTANT: title of the document]</title>
+        <principal>[IMPORTANT: name of the author of the transcription]</principal>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>[Name of the publisher]</publisher>
+        <availability status="restricted">
+          <p>[your license agreement]</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>3018 x 346 1000 x 31</p>
+        <p>
+          <msDesc>
+            <msIdentifier>
+              <settlement>[IMPORTANT: City where the document is kept]</settlement>
+              <repository xml:id="XXX">[IMPORTANT: Institution where the document is kept; its unique identifier in @xml:id]</repository>
+              <idno type="">[IMPORTANT: Shelfmark of the document; optional: the series to which it belongs in @type]</idno>
+            </msIdentifier>
+          </msDesc>
+        </p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+
+      <projectDesc>
+        <ab n="introduction">[IMPORTANT: your presentation of the document]</ab>
+      </projectDesc>
+      
+      
+    <tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="TempCategory"><label></label><code rend="rectangle" lang="text/css">color: #a6caf0</code></rendition><rendition xml:id="line02"><label>Line 2</label><code rend="rectangle" lang="text/css">color: #ff00ff</code></rendition><rendition xml:id="line03"><label>Line 3</label><code rend="rectangle" lang="text/css">color: #ffff00</code></rendition><rendition xml:id="line04"><label>Line 4</label><code rend="rectangle" lang="text/css">color: #00ffff</code></rendition><rendition xml:id="line05"><label>Line 5</label><code rend="rectangle" lang="text/css">color: #800000</code></rendition><rendition xml:id="line06"><label>Line 6</label><code rend="rectangle" lang="text/css">color: #00ff00</code></rendition><rendition xml:id="line07"><label>Line 7</label><code rend="rectangle" lang="text/css">color: #ff00ff</code></rendition><rendition xml:id="line08"><label>Line 8</label><code rend="rectangle" lang="text/css">color: #ffff00</code></rendition><rendition xml:id="line09"><label>Line 9</label><code rend="rectangle" lang="text/css">color: #00ffff</code></rendition><rendition xml:id="line10"><label>Line 10</label><code rend="rectangle" lang="text/css">color: #800000</code></rendition><rendition xml:id="line11"><label>Line 11</label><code rend="rectangle" lang="text/css">color: #00ff00</code></rendition><rendition xml:id="line12"><label>Line 12</label><code rend="rectangle" lang="text/css">color: #ff00ff</code></rendition><rendition xml:id="line13"><label>Line 13</label><code rend="rectangle" lang="text/css">color: #ffff00</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-04-27T20:28:54">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc>
+  </teiHeader>
+  <facsimile xml:id="imtAnnotatedImage"><surface><graphic url="1-10.jpg" width="1000px" height="31px"></graphic><zone xml:id="imtArea_0" rendition="line03" ulx="149" uly="-1" lrx="238" lry="27" rend="visible"></zone><zone xml:id="imtArea_1" rendition="line03" ulx="241" uly="-4" lrx="295" lry="28" rend="visible"></zone><zone xml:id="imtArea_2" rendition="line03" ulx="295" uly="-1" lrx="322" lry="29" rend="visible"></zone><zone xml:id="imtArea_3" rendition="line03" ulx="323" uly="-1" lrx="418" lry="29" rend="visible"></zone><zone xml:id="imtArea_4" rendition="line03" ulx="419" uly="2" lrx="460" lry="29" rend="visible"></zone><zone xml:id="imtArea_5" rendition="line03" ulx="458" uly="0" lrx="541" lry="29" rend="visible"></zone><zone xml:id="imtArea_6" rendition="line03" ulx="535" uly="1" lrx="591" lry="30" rend="visible"></zone><zone xml:id="imtArea_7" rendition="line03" ulx="590" uly="1" lrx="700" lry="31" rend="visible"></zone><zone xml:id="imtArea_8" rendition="line03" ulx="696" uly="3" lrx="726" lry="37" rend="visible"></zone><zone xml:id="imtArea_9" rendition="line03" ulx="719" uly="4" lrx="800" lry="34" rend="visible"></zone></surface></facsimile>
+  <text>
+    <body>
+      <div xml:id="imtImageAnnotations"><div corresp="#imtArea_0" type="imtAnnotation"><head>moraliter.</head><div><p>moralıtͤͬ</p></div></div><div corresp="#imtArea_1" type="imtAnnotation"><head>Undo</head><div><p>Un&amp; </p></div></div><div corresp="#imtArea_2" type="imtAnnotation"><head>et</head><div><p>et</p></div></div><div corresp="#imtArea_3" type="imtAnnotation"><head>Romanis</head><div><p>Romanıß</p></div></div><div corresp="#imtArea_4" type="imtAnnotation"><head>diu</head><div><p>dıú</p></div></div><div corresp="#imtArea_5" type="imtAnnotation"><head>consuetum</head><div><p>conƥûeⱦum</p></div></div><div corresp="#imtArea_6" type="imtAnnotation"><head>erat</head><div><p>erat</p></div></div><div corresp="#imtArea_7" type="imtAnnotation"><head>triumphantem</head><div><p>ⱦriumphanteƷ</p></div></div><div corresp="#imtArea_8" type="imtAnnotation"><head>pro</head><div><p> - skrót</p></div></div><div corresp="#imtArea_9" type="imtAnnotation"><head>republica</head><div><p>republica</p></div></div></div>
+    </body>
+  </text>
+</TEI>

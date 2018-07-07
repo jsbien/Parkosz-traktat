@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="2-19_wv.xsl"?>
+<?xml-stylesheet type="text/xsl" href="2-19_wv.xsl"?>
+<?xml-stylesheet type="text/xsl" href="2-19_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="_2-19"><teiHeader>
+  <fileDesc>
+    <titleStmt><title>2-19.png</title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>3612 x 188</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="unique_NewCategoryID"><desc>transcriptional</desc><label>2-19</label><code rend="rectangle" lang="text/css">color: #00ff00</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-05-15T18:14:13">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="Nowy folder\2-19.png" width="3612px" height="188px"></graphic><zone xml:id="imtArea_0" rendition="unique_NewCategoryID" ulx="96" uly="32" lrx="358" lry="139" rend="visible"></zone><zone xml:id="imtArea_1" rendition="unique_NewCategoryID" ulx="370" uly="-3" lrx="785" lry="169" rend="visible"></zone><zone xml:id="imtArea_2" rendition="unique_NewCategoryID" ulx="806" uly="5" lrx="1518" lry="164" rend="visible"></zone><zone xml:id="imtArea_3" rendition="unique_NewCategoryID" ulx="1513" uly="13" lrx="1976" lry="174" rend="visible"></zone><zone xml:id="imtArea_4" rendition="unique_NewCategoryID" ulx="1973" uly="5" lrx="2361" lry="172" rend="visible"></zone><zone xml:id="imtArea_5" rendition="unique_NewCategoryID" ulx="2338" uly="24" lrx="2882" lry="185" rend="visible"></zone><zone xml:id="imtArea_6" rendition="unique_NewCategoryID" ulx="2881" uly="54" lrx="3007" lry="143" rend="visible"></zone><zone xml:id="imtArea_9" rendition="unique_NewCategoryID" ulx="2999" uly="32" lrx="3197" lry="190" rend="visible"></zone><zone xml:id="imtArea_7" rendition="unique_NewCategoryID" ulx="3154" uly="62" lrx="3355" lry="191" rend="visible"></zone><zone xml:id="imtArea_8" rendition="unique_NewCategoryID" ulx="3363" uly="30" lrx="3513" lry="162" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div facs="#imtArea_0" type="imtAnnotation"><head>ut:</head><div><p>ut:</p></div></div><div facs="#imtArea_1" type="imtAnnotation"><head>Italici,</head><div><p>Italici,</p></div></div><div facs="#imtArea_2" type="imtAnnotation"><head>Francigene,</head><div><p>Francigene,</p></div></div><div facs="#imtArea_3" type="imtAnnotation"><head>Anglici,</head><div><p>Anglici,</p></div></div><div facs="#imtArea_4" type="imtAnnotation"><head>Bohemi,</head><div><p>Bohemi,</p></div></div><div facs="#imtArea_5" type="imtAnnotation"><head>Theotoni</head><div><p>Theotoni</p></div></div><div facs="#imtArea_6" type="imtAnnotation"><head>et</head><div><p>et</p></div></div><div facs="#imtArea_9" type="imtAnnotation"><head>ceteris,</head><div><p>ceteris,</p></div></div><div facs="#imtArea_7" type="imtAnnotation"><head>qui</head><div><p>qui</p></div></div><div facs="#imtArea_8" type="imtAnnotation"><head>sibi</head><div><p>sibi</p></div></div></div></body></text></TEI>

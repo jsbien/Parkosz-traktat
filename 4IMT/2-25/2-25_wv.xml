@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="2-25_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="_2-25"><teiHeader>
+  <fileDesc>
+    <titleStmt><title>2-25.jpg</title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>3336 x 170</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="Default"><label>Explanation of this annotation category...</label><code rend="rectangle" lang="text/css">color: #0000ff</code></rendition><rendition xml:id="Transkrypcja"><desc>transcriptional</desc><label>Transkrypcja</label><code rend="rectangle" lang="text/css">color: #00ff00</code></rendition><rendition xml:id="unique_NewCategoryID"><desc>transcriptional</desc><label>2-25</label><code rend="rectangle" lang="text/css">color: #00ff00</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-05-31T21:44:27">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="..\2-25.jpg" width="3336px" height="170px"></graphic><zone xml:id="imtArea_0" rendition="Transkrypcja" ulx="9" uly="-1" lrx="188" lry="157" rend="visible"></zone><zone xml:id="imtArea_2" rendition="Transkrypcja" ulx="212" uly="-1" lrx="415" lry="157" rend="visible"></zone><zone xml:id="imtArea_3" rendition="Transkrypcja" ulx="412" uly="2" lrx="986" lry="160" rend="visible"></zone><zone xml:id="imtArea_4" rendition="Transkrypcja" ulx="974" uly="4" lrx="1103" lry="162" rend="visible"></zone><zone xml:id="imtArea_5" rendition="Transkrypcja" ulx="1095" uly="6" lrx="1553" lry="164" rend="visible"></zone><zone xml:id="imtArea__7" rendition="Transkrypcja" ulx="1560" uly="4" lrx="1907" lry="162" rend="visible"></zone><zone xml:id="imtArea_6" rendition="Transkrypcja" ulx="1904" uly="4" lrx="2424" lry="162" rend="visible"></zone><zone xml:id="imtArea_7" rendition="Transkrypcja" ulx="2410" uly="2" lrx="2774" lry="160" rend="visible"></zone><zone xml:id="imtArea_8" rendition="Transkrypcja" ulx="2767" uly="-1" lrx="3329" lry="165" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div facs="#imtArea_0" type="imtAnnotation"><head>in</head><div><p>słowo słabo czytelne, zlewa się z sąsiadującą linijką. Literka "n" przypomina literę "y"</p></div></div><div facs="#imtArea_2" type="imtAnnotation"><head>proprio</head><div><p>słowo całkowicie nieczytelne, wygląda na zbitkę liter.</p></div></div><div facs="#imtArea_3" type="imtAnnotation"><head>idiomate</head><div><p>wyraz łatwiejszy do odczytanie, autor ma charakterystyczny sposób zapisu litery "i", charakterystyczna jest również litera "d"</p></div></div><div facs="#imtArea_4" type="imtAnnotation"><head>per</head><div><p>wyraz niemożliwy do odczytania</p></div></div><div facs="#imtArea_5" type="imtAnnotation"><head>latinas</head><div><p>wyraz łatwiejszy do odczytania, warto zwrócić uwagę na zamazaną literkę "s"</p></div></div><div facs="#imtArea__7" type="imtAnnotation"><head>litteras</head><div><p>wyraz nachodzi na sąsiednią linijkę, widać charakterystyczną literę "s", właściwie niewidoczne litery "t"</p></div></div><div facs="#imtArea_6" type="imtAnnotation"><head>scribunt</head><div><p>warto zwrócić uwagę na inny zapis litery "s" na kończy  początku wyrazu</p></div></div><div facs="#imtArea_7" type="imtAnnotation"><head>certas</head><div><p>wyraz trudny do rozczytania</p></div></div><div facs="#imtArea_8" type="imtAnnotation"><head>differencias</head><div><p>niewidoczne litery "e" i "i"</p></div></div></div></body></text></TEI>
