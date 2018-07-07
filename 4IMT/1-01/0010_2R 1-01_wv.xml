@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="0010_2R 1-01_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="paleografia"><teiHeader>
+  <fileDesc>
+    <titleStmt><title></title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>1544 x 193</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="Line1"><label>Line 1</label><code rend="rectangle" lang="text/css">color: #ff0000</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-04-03T12:26:58">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="C:\Users\Elżbieta\Music\0010_2R 1-1.jpg" width="1544px" height="193px"></graphic><zone xml:id="imtArea_0" rendition="Line1" ulx="3" uly="2" lrx="489" lry="187" rend="visible"></zone><zone xml:id="imtArea_1" rendition="Line1" ulx="491" uly="4" lrx="650" lry="190" rend="visible"></zone><zone xml:id="imtArea_2" rendition="Line1" ulx="650" uly="2" lrx="957" lry="189" rend="visible"></zone><zone xml:id="imtArea_3" rendition="Line1" ulx="957" uly="1" lrx="1200" lry="191" rend="visible"></zone><zone xml:id="imtArea_4" rendition="Line1" ulx="1203" uly="2" lrx="1537" lry="191" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div corresp="#imtArea_0" type="imtAnnotation"><head>Pugna</head><div><p>uɡn</p></div></div><div corresp="#imtArea_1" type="imtAnnotation"><head>pro</head><div><p>pꝛo</p></div></div><div corresp="#imtArea_2" type="imtAnnotation"><head>patria</head><div><p>ptꝛı</p></div></div><div corresp="#imtArea_3" type="imtAnnotation"><head>quia</head><div><p>quí</p></div></div><div corresp="#imtArea_4" type="imtAnnotation"><head>ipsam</head><div><p>ıpm</p></div></div></div></body></text></TEI>

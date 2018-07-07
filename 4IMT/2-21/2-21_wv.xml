@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="2-21_wv.xsl"?>
+<?xml-stylesheet type="text/xsl" href="index_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="_2-21">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title></title>
+        <principal></principal>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>[Name of the publisher]</publisher>
+        <availability status="restricted">
+          <p>[your license agreement]</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>3516 x 244</p>
+        <p>
+          <msDesc>
+            <msIdentifier>
+              <settlement></settlement>
+              <repository xml:id="XXX"></repository>
+              <idno type=""></idno>
+            </msIdentifier> 
+          </msDesc>
+        </p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+
+      <projectDesc>
+        <ab n="introduction"></ab>
+      </projectDesc>
+      
+      
+    <tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="marques"><label>Marques</label><code rend="rectangle" lang="text/css">color: #ffffff</code></rendition><rendition xml:id="line01"><label>Line 1</label><code rend="rectangle" lang="text/css">color: #00ff00</code></rendition><rendition xml:id="line02"><label>Line 2</label><code rend="rectangle" lang="text/css">color: #ff00ff</code></rendition><rendition xml:id="line03"><label>Line 3</label><code rend="rectangle" lang="text/css">color: #ffff00</code></rendition><rendition xml:id="line04"><label>Line 4</label><code rend="rectangle" lang="text/css">color: #00ffff</code></rendition><rendition xml:id="line05"><label>Line 5</label><code rend="rectangle" lang="text/css">color: #800000</code></rendition><rendition xml:id="line06"><label>Line 6</label><code rend="rectangle" lang="text/css">color: #00ff00</code></rendition><rendition xml:id="line07"><label>Line 7</label><code rend="rectangle" lang="text/css">color: #ff00ff</code></rendition><rendition xml:id="line08"><label>Line 8</label><code rend="rectangle" lang="text/css">color: #ffff00</code></rendition><rendition xml:id="line09"><label>Line 9</label><code rend="rectangle" lang="text/css">color: #00ffff</code></rendition><rendition xml:id="line10"><label>Line 10</label><code rend="rectangle" lang="text/css">color: #800000</code></rendition><rendition xml:id="line11"><label>Line 11</label><code rend="rectangle" lang="text/css">color: #00ff00</code></rendition><rendition xml:id="line12"><label>Line 12</label><code rend="rectangle" lang="text/css">color: #ff00ff</code></rendition><rendition xml:id="line13"><label>Line 13</label><code rend="rectangle" lang="text/css">color: #ffff00</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-05-17T05:11:35">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc>
+  </teiHeader>
+  <facsimile xml:id="imtAnnotatedImage"><surface><graphic url="2-21.jpg" width="3516px" height="244px"></graphic><zone xml:id="imtArea_0" rendition="line01" ulx="23" uly="31" lrx="513" lry="195" rend="visible"></zone><zone xml:id="imtArea_1" rendition="line01" ulx="480" uly="8" lrx="670" lry="174" rend="visible"></zone><zone xml:id="imtArea_2" rendition="line01" ulx="654" uly="8" lrx="972" lry="174" rend="visible"></zone><zone xml:id="imtArea_3" rendition="line01" ulx="969" uly="5" lrx="1462" lry="171" rend="visible"></zone><zone xml:id="imtArea_4" rendition="line01" ulx="1501" uly="10" lrx="1712" lry="176" rend="visible"></zone><zone xml:id="imtArea_5" rendition="line01" ulx="1686" uly="44" lrx="1839" lry="174" rend="visible"></zone><zone xml:id="imtArea_6" rendition="line01" ulx="1816" uly="13" lrx="2087" lry="197" rend="visible"></zone><zone xml:id="imtArea_7" rendition="line01" ulx="2069" uly="13" lrx="2409" lry="200" rend="visible"></zone><zone xml:id="imtArea_8" rendition="line01" ulx="2400" uly="26" lrx="2892" lry="203" rend="visible"></zone><zone xml:id="imtArea_9" rendition="line01" ulx="2867" uly="23" lrx="3481" lry="246" rend="visible"></zone></surface></facsimile>
+  <text>
+    <body>
+      <div xml:id="imtImageAnnotations"><div corresp="#imtArea_0" type="imtAnnotation"><head>punctis</head><div><p>punctis</p></div></div><div corresp="#imtArea_1" type="imtAnnotation"><head>ad</head><div><p>ad</p></div></div><div corresp="#imtArea_2" type="imtAnnotation"><head>differenciam</head><div><p>drām (differenciam) - kreska oznaczająca skrót wygląda jakby była umieszczona nad literami a oraz m, nie znalazłem w unicodzie odpowiedniego oznaczenia, możliwe też, że zamiarem autora było umieszczenie jej jedynie nad a, która jest literą następującą bezpośrednio po skrócie.</p></div></div><div corresp="#imtArea_3" type="imtAnnotation"><head>appositis</head><div><p>appositis</p></div></div><div corresp="#imtArea_4" type="imtAnnotation"><head>ut</head><div><p>ut</p></div></div><div corresp="#imtArea_5" type="imtAnnotation"><head>ex</head><div><p>ex</p></div></div><div corresp="#imtArea_6" type="imtAnnotation"><head>hoc</head><div><p>hoc</p></div></div><div corresp="#imtArea_7" type="imtAnnotation"><head>proprium</head><div><p>ꝑpriū / ꝑpiū (proprium) - pierwszy znak jest dosyć zagadkowy, porównałem go z kilkoma innymi miejscami wystąpienia przedrostka "pro", wydaje mi się, że obecna tu litera została niedokładnie napisana i jest to jakieś zmodyfikowane p oznaczające "pro", to które znalazłem było temu najbliższe. Nie jestem pewien obecności r, natomiast wydaje mi się, że pod znakiem z poprzedniej linii zniknęło i. Innym moim podejrzeniem jest to, że znak, który wcześniej uznałem za r, jest jednak i.</p></div></div><div corresp="#imtArea_8" type="imtAnnotation"><head>ideoma</head><div><p>ideoma</p></div></div><div corresp="#imtArea_9" type="imtAnnotation"><head>sufficienter</head><div><p>sufficienter</p></div></div></div>
+    </body>
+  </text>
+</TEI>

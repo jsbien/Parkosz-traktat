@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="1-07_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="_1-07"><teiHeader>
+  <fileDesc>
+    <titleStmt><title></title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>3309 x 159</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="Line_07"><desc>transcriptional</desc><label>Line_07</label><code rend="rectangle" lang="text/css">color: #ff00ff</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-05-11T21:10:35">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="1-07.jpg" width="3309px" height="159px"></graphic><zone xml:id="imtArea_0" rendition="Line_07" ulx="16" uly="7" lrx="262" lry="96" rend="visible"></zone><zone xml:id="imtArea_1" rendition="Line_07" ulx="265" uly="2" lrx="461" lry="117" rend="visible"></zone><zone xml:id="imtArea_2" rendition="Line_07" ulx="459" uly="3" lrx="874" lry="94" rend="visible"></zone><zone xml:id="imtArea_3" rendition="Line_07" ulx="873" uly="3" lrx="1175" lry="130" rend="visible"></zone><zone xml:id="imtArea_4" rendition="Line_07" ulx="1177" uly="19" lrx="1395" lry="128" rend="visible"></zone><zone xml:id="imtArea_5" rendition="Line_07" ulx="1396" uly="37" lrx="1554" lry="137" rend="visible"></zone><zone xml:id="imtArea_6" rendition="Line_07" ulx="1602" uly="24" lrx="1719" lry="125" rend="visible"></zone><zone xml:id="imtArea_7" rendition="Line_07" ulx="1724" uly="31" lrx="1886" lry="127" rend="visible"></zone><zone xml:id="imtArea_8" rendition="Line_07" ulx="1898" uly="45" lrx="1969" lry="115" rend="visible"></zone><zone xml:id="imtArea_9" rendition="Line_07" ulx="1971" uly="22" lrx="2193" lry="131" rend="visible"></zone><zone xml:id="imtArea_10" rendition="Line_07" ulx="2254" uly="27" lrx="2436" lry="136" rend="visible"></zone><zone xml:id="imtArea_11" rendition="Line_07" ulx="2449" uly="24" lrx="2855" lry="126" rend="visible"></zone><zone xml:id="imtArea_12" rendition="Line_07" ulx="2858" uly="21" lrx="3164" lry="159" rend="visible"></zone><zone xml:id="imtArea_13" rendition="Line_07" ulx="3158" uly="59" lrx="3270" lry="146" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div facs="#imtArea_0" type="imtAnnotation"><head>vata</head><div><p>𝓋𝒶t𝒶</p></div></div><div facs="#imtArea_1" type="imtAnnotation"><head>enim</head><div><p>dŷ</p></div></div><div facs="#imtArea_2" type="imtAnnotation"><head>comunitate,</head><div><p>cɞmιûtc</p></div></div><div facs="#imtArea_3" type="imtAnnotation"><head>salvatur</head><div><p>ɼ𝒶𝓵𝓊ã</p></div></div><div facs="#imtArea_4" type="imtAnnotation"><head>eius</head><div><p>eι𝓊ɞ</p></div></div><div facs="#imtArea_5" type="imtAnnotation"><head>pars,</head><div><p>ϼɞ</p></div></div><div facs="#imtArea_6" type="imtAnnotation"><head>et</head><div><p>𝙙ߪ</p></div></div><div facs="#imtArea_7" type="imtAnnotation"><head>non</head><div><p>𝓃ȏ</p></div></div><div facs="#imtArea_8" type="imtAnnotation"><head>e</head><div><p>e</p></div></div><div facs="#imtArea_9" type="imtAnnotation"><head>contra.</head><div><p>ȸŷ</p></div></div><div facs="#imtArea_10" type="imtAnnotation"><head>Nec</head><div><p>𝒽𝛂</p></div></div><div facs="#imtArea_11" type="imtAnnotation"><head>obviat</head><div><p>ℴ𝓫𝓿ι𝒶t</p></div></div><div facs="#imtArea_12" type="imtAnnotation"><head>Philosophus</head><div><p>𝓅𝒽𝓃B</p></div></div><div facs="#imtArea_13" type="imtAnnotation"><head>in</head><div><p>i𝘺</p></div></div></div></body></text></TEI>

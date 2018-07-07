@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="_2-18"><teiHeader>
+  <fileDesc>
+    <titleStmt><title>2-18.png</title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>3512 x 196</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="unique_NewCategoryID"><desc>transcriptional</desc><label>2-18</label><code rend="rectangle" lang="text/css">color: #ff0000</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-05-15T17:37:07">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="..\2-18.png" width="3512px" height="196px"></graphic><zone xml:id="imtArea_0" rendition="unique_NewCategoryID" ulx="80" uly="29" lrx="278" lry="149" rend="visible"></zone><zone xml:id="imtArea_1" rendition="unique_NewCategoryID" ulx="273" uly="55" lrx="417" lry="192" rend="visible"></zone><zone xml:id="imtArea_2" rendition="unique_NewCategoryID" ulx="416" uly="26" lrx="880" lry="198" rend="visible"></zone><zone xml:id="imtArea_3" rendition="unique_NewCategoryID" ulx="900" uly="18" lrx="1486" lry="201" rend="visible"></zone><zone xml:id="imtArea_4" rendition="unique_NewCategoryID" ulx="1487" uly="3" lrx="2117" lry="144" rend="visible"></zone><zone xml:id="imtArea_5" rendition="unique_NewCategoryID" ulx="2119" uly="23" lrx="2843" lry="151" rend="visible"></zone><zone xml:id="imtArea_6" rendition="unique_NewCategoryID" ulx="2848" uly="44" lrx="3014" lry="159" rend="visible"></zone><zone xml:id="imtArea_7" rendition="unique_NewCategoryID" ulx="2991" uly="18" lrx="3460" lry="200" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div facs="#imtArea_0" type="imtAnnotation"><head>et</head><div><p>et</p></div></div><div facs="#imtArea_1" type="imtAnnotation"><head>in</head><div><p>in</p></div></div><div facs="#imtArea_2" type="imtAnnotation"><head>eiusdem</head><div><p>eiusdem</p></div></div><div facs="#imtArea_3" type="imtAnnotation"><head>idiomatis</head><div><p>idiomatis</p></div></div><div facs="#imtArea_4" type="imtAnnotation"><head>concordant</head><div><p>concordant</p></div></div><div facs="#imtArea_5" type="imtAnnotation"><head>caracteribus</head><div><p>caracteribus</p></div></div><div facs="#imtArea_6" type="imtAnnotation"><head>et</head><div><p>et</p></div></div><div facs="#imtArea_7" type="imtAnnotation"><head>figuris,</head><div><p>figuris,</p></div></div></div></body></text></TEI>

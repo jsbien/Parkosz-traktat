@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transkrypcja1_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="transkrypcja1"><teiHeader>
+  <fileDesc>
+    <titleStmt><title></title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>2163 x 87</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="Default"><label>Explanation of this annotation category...</label><code rend="rectangle" lang="text/css">color: #0000ff</code></rendition><rendition xml:id="Line1"><label>Line 1</label><code rend="rectangle" lang="text/css">color: #ff0000</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-05-13T19:41:22">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="transkrypcjazoom.jpg" width="2163px" height="87px"></graphic><zone xml:id="imtArea_0" rendition="Line1" ulx="6" uly="-6" lrx="399" lry="96" rend="visible"></zone><zone xml:id="imtArea_1" rendition="Line1" ulx="396" uly="-8" lrx="481" lry="94" rend="visible"></zone><zone xml:id="imtArea_2" rendition="Line1" ulx="477" uly="-8" lrx="644" lry="94" rend="visible"></zone><zone xml:id="imtArea_3" rendition="Line1" ulx="641" uly="-10" lrx="837" lry="92" rend="visible"></zone><zone xml:id="imtArea_4" rendition="Line1" ulx="832" uly="-11" lrx="1167" lry="91" rend="visible"></zone><zone xml:id="imtArea_5" rendition="Line1" ulx="1164" uly="-11" lrx="1281" lry="91" rend="visible"></zone><zone xml:id="imtArea_6" rendition="Line1" ulx="1278" uly="-11" lrx="1602" lry="91" rend="visible"></zone><zone xml:id="imtArea_7" rendition="Line1" ulx="1595" uly="-10" lrx="1818" lry="92" rend="visible"></zone><zone xml:id="imtArea_8" rendition="Line1" ulx="1815" uly="-10" lrx="1904" lry="92" rend="visible"></zone><zone xml:id="imtArea_9" rendition="Line1" ulx="1900" uly="-11" lrx="2163" lry="91" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div corresp="#imtArea_0" type="imtAnnotation"><head>abecedaria</head><div><p>abecedaria</p></div></div><div corresp="#imtArea_1" type="imtAnnotation"><head>et</head><div><p>et</p></div></div><div corresp="#imtArea_2" type="imtAnnotation"><head>tria</head><div><p>tria</p></div></div><div corresp="#imtArea_3" type="imtAnnotation"><head>horum</head><div><p>horum</p></div></div><div corresp="#imtArea_4" type="imtAnnotation"><head>comuniora</head><div><p>comuniora</p></div></div><div corresp="#imtArea_5" type="imtAnnotation"><head>scilicet</head><div><p>scilicet</p></div></div><div corresp="#imtArea_6" type="imtAnnotation"><head>Hebraicum,</head><div><p>Hebraicum,</p></div></div><div corresp="#imtArea_7" type="imtAnnotation"><head>Grecum,</head><div><p>Grecum,</p></div></div><div corresp="#imtArea_8" type="imtAnnotation"><head>et</head><div><p>et</p></div></div><div corresp="#imtArea_9" type="imtAnnotation"><head>Latinum,</head><div><p>Latinum,</p></div></div></div></body></text></TEI>

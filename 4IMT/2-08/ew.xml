@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="EmiliaWojnickapoprawione"><teiHeader>
+  <fileDesc>
+    <titleStmt><title></title></titleStmt>
+      
+    <publicationStmt>
+      <p></p></publicationStmt>
+    <sourceDesc>
+    <p>800 x 45</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="Default"><label>Explanation of this annotation category...</label><code rend="rectangle" lang="text/css">color: #0000ff</code></rendition><rendition xml:id="Line1"><label>Line 1</label><code rend="rectangle" lang="text/css">color: #00ff00</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-05-21T03:07:59">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="Problemy dygitalizacji tekstu\transkrypcjaEmilia\test_wv_transkrypcjaEmilia_wv_13223575_984342838301015_1965425077_o.jpg" width="800px" height="45px"></graphic><zone xml:id="imtArea_0" rendition="Line1" ulx="2" uly="-3" lrx="100" lry="46" rend="visible"></zone><zone xml:id="imtArea_1" rendition="Line1" ulx="100" uly="-1" lrx="238" lry="48" rend="visible"></zone><zone xml:id="imtArea_2" rendition="Line1" ulx="235" uly="-3" lrx="277" lry="45" rend="visible"></zone><zone xml:id="imtArea_3" rendition="Line1" ulx="278" uly="-1" lrx="408" lry="48" rend="visible"></zone><zone xml:id="imtArea_4" rendition="Line1" ulx="409" uly="0" lrx="534" lry="46" rend="visible"></zone><zone xml:id="imtArea_5" rendition="Line1" ulx="534" uly="3" lrx="560" lry="43" rend="visible"></zone><zone xml:id="imtArea_6" rendition="Line1" ulx="559" uly="4" lrx="579" lry="42" rend="visible"></zone><zone xml:id="imtArea_7" rendition="Line1" ulx="578" uly="1" lrx="611" lry="45" rend="visible"></zone><zone xml:id="imtArea_8" rendition="Line1" ulx="611" uly="0" lrx="678" lry="46" rend="visible"></zone><zone xml:id="imtArea_9" rendition="Line1" ulx="677" uly="0" lrx="748" lry="45" rend="visible"></zone><zone xml:id="imtArea_10" rendition="Line1" ulx="749" uly="0" lrx="796" lry="46" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div corresp="#imtArea_0" type="imtAnnotation"><head>figuras</head><div><p>figuras</p></div></div><div corresp="#imtArea_1" type="imtAnnotation"><head>conscripsit</head><div><p>conscripsit</p></div></div><div corresp="#imtArea_2" type="imtAnnotation"><head>ut</head><div><p>ut</p></div></div><div corresp="#imtArea_3" type="imtAnnotation"><head>Teucrorum</head><div><p>Teucrorum</p></div></div><div corresp="#imtArea_4" type="imtAnnotation"><head>Caldeorum</head><div><p>Caldeorum</p></div></div><div corresp="#imtArea_5" type="imtAnnotation"><head>et</head><div><p>et</p></div></div><div corresp="#imtArea_6" type="imtAnnotation"><head>sic</head><div><p>skrót od  sic?</p></div></div><div corresp="#imtArea_7" type="imtAnnotation"><head>de</head><div><p>de</p></div></div><div corresp="#imtArea_8" type="imtAnnotation"><head>aliis</head><div><p>aliis</p></div></div><div corresp="#imtArea_9" type="imtAnnotation"><head>omnia</head><div><p>omnia</p></div></div><div corresp="#imtArea_10" type="imtAnnotation"><head>[Annotation title]</head><div><p>tamen - skrót od n </p></div></div></div></body></text></TEI>

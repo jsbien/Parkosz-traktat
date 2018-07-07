@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="1-12_wv.xsl"?>
+<?oasis-schema href="imt_1_8.rng" type="application/xml"?>
+<?oxygen RNGSchema="imt_1_8.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5.0" xml:id="wf"><teiHeader>
+  <fileDesc>
+    <titleStmt><title>1-12</title></titleStmt>
+      
+    <publicationStmt>
+      <p>Sebastian Sowik</p></publicationStmt>
+    <sourceDesc>
+    <p>800 x 38 124 x 29 800 x 38</p></sourceDesc></fileDesc>
+  <encodingDesc><tagsDecl xml:id="imtAnnotationCategories"><rendition xml:id="Default"><label>Explanation of this annotation category...</label><code rend="rectangle" lang="text/css">color: #0000ff</code></rendition><rendition xml:id="unique_NewCategoryID"><desc>transcriptional</desc><label>Line 1</label><code rend="rectangle" lang="text/css">color: #0000ff</code></rendition><rendition xml:id="nowa"><label>nowa</label><code rend="rectangle" lang="text/css">color: #0000ff</code></rendition></tagsDecl><appInfo>
+     <application ident="ImageMarkupTool01" version="1.8.2.2" notAfter="2016-05-05T20:31:28">
+     <label>
+     Image Markup Tool</label><desc>
+     Tool for annotating images using TEI</desc><ref type="appURI" target="http://hcmc.uvic.ca/~mholmes/image_markup/">
+     </ref><ptr target="#imtAnnotatedImage"></ptr><ptr target="#imtImageAnnotations"></ptr><ptr target="#imtAnnotationCategories"></ptr></application>
+     
+     
+     </appInfo></encodingDesc></teiHeader><facsimile xml:id="imtAnnotatedImage"><surface><graphic url="asdf_wv_test1b_wv_TEST3_wv_zoom_1-12.jpg" width="800px" height="38px"></graphic><zone xml:id="imtArea_2" rendition="unique_NewCategoryID" ulx="9" uly="4" lrx="133" lry="33" rend="visible"></zone><zone xml:id="imtArea_1" rendition="unique_NewCategoryID" ulx="132" uly="5" lrx="169" lry="32" rend="visible"></zone><zone xml:id="imtArea__4" rendition="unique_NewCategoryID" ulx="165" uly="6" lrx="194" lry="35" rend="visible"></zone><zone xml:id="imtArea_3" rendition="unique_NewCategoryID" ulx="191" uly="6" lrx="234" lry="39" rend="visible"></zone><zone xml:id="imtArea_4" rendition="unique_NewCategoryID" ulx="236" uly="5" lrx="306" lry="33" rend="visible"></zone><zone xml:id="imtArea_5" rendition="unique_NewCategoryID" ulx="303" uly="6" lrx="426" lry="36" rend="visible"></zone><zone xml:id="imtArea_6" rendition="unique_NewCategoryID" ulx="426" uly="7" lrx="454" lry="35" rend="visible"></zone><zone xml:id="imtArea_7" rendition="unique_NewCategoryID" ulx="451" uly="3" lrx="499" lry="37" rend="visible"></zone><zone xml:id="imtArea_8" rendition="unique_NewCategoryID" ulx="501" uly="4" lrx="587" lry="32" rend="visible"></zone><zone xml:id="imtArea_9" rendition="unique_NewCategoryID" ulx="594" uly="3" lrx="664" lry="31" rend="visible"></zone><zone xml:id="imtArea_10" rendition="unique_NewCategoryID" ulx="714" uly="1" lrx="797" lry="37" rend="visible"></zone></surface></facsimile><text><body><div xml:id="imtImageAnnotations"><div facs="#imtArea_2" type="imtAnnotation"><head>volentibus.</head><div><p>𝑣ℴ𝓁𝑒𝑛𝘵𝚤𝒷𝓊𝓈</p></div></div><div facs="#imtArea_1" type="imtAnnotation"><head>Et</head><div><p>𝔈𝘵</p></div></div><div facs="#imtArea__4" type="imtAnnotation"><head>hoc</head><div><p>𝒽˚ [charakterystyczny skrót wg słownika Cappeliego.]</p></div></div><div facs="#imtArea_3" type="imtAnnotation"><head>ipsum</head><div><p>𝚤p͡ɱ [Skrót poprzez pominięcie środkowych liter sygnalizowany kreską u góry.]</p></div></div><div facs="#imtArea_4" type="imtAnnotation"><head>tangit</head><div><p>𝘵𝒶𝑛𝑔𝚤𝘵</p></div></div><div facs="#imtArea_5" type="imtAnnotation"><head>Theodolus</head><div><p>𝔗𝒽𝔢𝔬𝔡𝔬𝓁𝓊𝓈 [Początek podkreślenia.]</p></div></div><div facs="#imtArea_6" type="imtAnnotation"><head>in</head><div><p>𝚤𝔶</p></div></div><div facs="#imtArea_7" type="imtAnnotation"><head>suis</head><div><p>ʃ𝓊𝚤𝓈̇̇</p></div></div><div facs="#imtArea_8" type="imtAnnotation"><head>Eglogis</head><div><p>𝑒𝑔𝓁𝔬𝑔𝚤𝓈̇ [Ostatnie podkreślone słowo.]</p></div></div><div facs="#imtArea_9" type="imtAnnotation"><head>dicens,</head><div><p>𝔡𝚤𝒸𝔢𝓃𝓈̇</p></div></div><div facs="#imtArea_10" type="imtAnnotation"><head>Egloga IV</head><div><p>𝔢𝑔𝑙͡𝔞 𝓁 [Trudny do odczytania fragment.]</p></div></div></div></body></text></TEI>
