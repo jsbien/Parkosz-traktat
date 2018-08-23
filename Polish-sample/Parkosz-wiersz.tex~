@@ -1,0 +1,235 @@
+% lualatex ze wzgledu na OCG
+%
+\documentclass[dvipsnames,12pt]{article}
+\usepackage{polyglossia}
+\setdefaultlanguage{polish}
+
+\usepackage[a4paper,landscape]{geometry}
+\usepackage[doublespacing]{setspace}
+\usepackage{fontspec}
+
+% Missing character: There is no ꝯ (U+A76F) in font "DejaVu Sans"!
+% FreeSerif
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage{soul}
+
+\usepackage{ocgx}
+\usepackage{zref-savepos}
+\usepackage{xifthen}
+\usepackage{xspace}
+
+\input{OCG_annotation}
+
+
+\usepackage{longtable}
+\usepackage{hyperref}
+
+\usepackage{fancyvrb}
+
+\usepackage{relsize}
+
+\usepackage{draftwatermark}
+
+
+\setmainfont[Mapping=tex-text]{DejaVu Serif}
+\setsansfont[Mapping=tex-text]{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+
+
+%\font\mono="DejaVu Sans Mono"
+%\font\mono="DejaVu Sans"
+%\font\mono="FreeSerif"
+\font\mono="Cardo"
+
+% http://scholarsfonts.net/cardofnt.html
+
+\font\Parkosz="Parkosz"
+\def\largeParkosz{\fontspec[Scale=1.5]{Parkosz}}
+
+\newcommand{\symbolParkosz}[1]{{\largeParkosz\symbol{#1}}}
+
+\newcommand{\sParkosz}[1]{{\fontspec[Scale=3.0]{Parkosz}\symbol{#1}}}
+
+\newcommand{\parkosz}[1]{\colorbox{lime}{\textit{#1}}}
+\newcommand{\PARKOSZ}[1]{{\textit{#1}}}
+
+% za ciemny:
+% \newcommand{\almanica}[1]{\colorbox{lightgray}{\textit{#1}}}
+\newcommand{\almanica}[1]{\colorbox{pink}{\textit{#1}}}
+
+
+
+%hh hyphenation head
+%ht hyphenation tail
+
+% dc dropped capital
+
+\newcommand{\dc}[1]{{\relsize{3}\colorbox{black!15}{\textbf{#1}}}}
+
+\newcommand{\hyphh}[2]{#1\textcolor{blue}{#2}}
+\newcommand{\hypht}[2]{\fbox{#2}}
+
+% http://wbl.klf.uw.edu.pl/13/2/iParkosz.djvu?djvuopts=&page=37&zoom=width&showposition=0.5,0.55
+
+% marginalia
+% zapisy na marginesie i nad rządkami
+%\newcommand{\margin}[1]{\colorbox{blue!10}{\{#1\}}}
+\newcommand{\margin}[1]{\annotatetextBlue{\{#1\}}{zapisy na marginesie}}
+
+
+% \renewcommand{\over}[1]{\colorbox{blue!10}{\{#1\}}}
+
+\renewcommand{\over}[1]{\annotatetextBlue{\{#1\}}{zapisy nad rządkami}}
+
+% litery i wyrazy dodane, (których w tekście brak)
+%\newcommand{\add}[1]{\colorbox{olive!10}{<#1>}}
+\newcommand{\add}[1]{\annotatetextOlive{<#1>}{litery i wyrazy dodane, (których w tekście brak)}}
+
+% litery i wyrazy zbędne
+% \newcommand{\extra}[1]{\colorbox{magenta!10}{[#1]}}
+\newcommand{\extra}[1]{\colorbox{magenta!10}{[#1]}}
+
+% przekreślenia
+% MATHEMATICAL LEFT WHITE SQUARE BRACKET' (U+27E6)
+% 'MATHEMATICAL RIGHT WHITE SQUARE BRACKET' (U+27E7)
+\newcommand{\overstr}[1]{\annotatetextMagenta{⟦#1⟧}{przekreślenia}}
+
+% mało fontów:
+% RIGHT WHITE SQUARE BRACKET (U+301B)
+
+
+% wątpliwe odczytania
+% confidence
+% nie działa parametr specyfikacji koloru - może jakiś głupi błąd
+\newcommand{\conf}[2]{\textcolor{orange}{#1}}
+
+
+% wcięcia Kucały
+% akapit:
+\newcommand{\indentK}{\hskip2em}
+% cytat
+\newcommand{\indentKcyt}{\hskip5em}
+
+% wcięcia Parkosza:
+\newcommand{\indentP}{\colorbox{yellow}{\hskip2em}}
+
+\parindent0pt
+
+\DefineVerbatimEnvironment%
+{VerbatimLatin}{Verbatim}
+{commentchar=\%,numbers=left,numberblanklines=false,
+commandchars=\\\{\}}
+
+% \fboxrule2pt
+
+% Parkosz...
+
+\newcount\ppageno
+\newcount\ppreviouspageno
+
+
+\newcount\plineno
+\newcount\psublineno
+
+\newcount\pnoteno
+\newcount\psecnoteno
+
+% odstęp na oko - lepiej zmierzyć i wstawić
+\def\fulllines{\everypar{\advance\plineno by 1\llap{\the\ppageno-\ifnum\plineno<10 0\fi\the \plineno \hskip 1.5em}}}
+
+\def\fullpreviouslines{\everypar{\advance\plineno by 1\llap{\the\ppreviouspageno-\ifnum\plineno<10 0\fi\the \plineno \hskip 1.5em}}}
+
+
+
+% liczenie pustych wierszy:
+% \let\engraf\par
+% \def\par{\leavevmode\endgraf}
+
+\def\splitlines{\advance\plineno by 1\psublineno=0\everypar{\advance\psublineno by 1\llap{\textcolor{green}{\the\ppageno-\ifnum\plineno<10 0\fi\the \plineno-\the\psublineno \ }}}}
+
+\def\newsplitline{\advance\plineno by 1}
+
+\def\newParkoszpage{\everypar{}}
+
+
+
+% ¹ 'SUPERSCRIPT ONE' (U+00B9)
+% ² U+00B2 	SUPERSCRIPT TWO
+% U+00B3 	SUPERSCRIPT THREE	
+\catcode`\¹=13
+\catcode`\²=13
+\catcode`\³=13
+\catcode`\⁴=13
+\catcode`\⁵=13
+
+% \advance\pnoteno by 1
+% \def\tip{Jeden z tych przykładów winien być napisany przez b!, drugi przez ɓ.}
+% \footnotetext[\the\pnoteno]{\tip}
+% \def¹{\annotatehere[\the\pnoteno]{\tip}}
+
+\def\newtip#1#2{
+% \pnoteno=\psecnoteno
+% \advance\pnoteno by 1
+% \footnotetext[\the\pnoteno]{#1}
+% \def¹{\annotatehere[\the\pnoteno]{#1}}}
+\footnotetext[#1]{#2}
+\def¹{\annotatehere[#1]{#2}}}
+
+
+
+% \def\secondtip#1{
+% \psecnoteno=\pnoteno
+% \advance\psecnoteno by 1
+% \footnotetext[\the\psecnoteno]{#1}
+% \def²{\annotatehere[\the\psecnoteno]{#1}}}
+
+\def\secondtip#1#2{\footnotetext[#1]{#2}\def²{\annotatehere[#1]{#2}}}
+\def\thirdtip#1#2{\footnotetext[#1]{#2}\def³{\annotatehere[#1]{#2}}}
+\def\fourthtip#1#2{\footnotetext[#1]{#2}\def⁴{\annotatehere[#1]{#2}}}
+\def\fifthtip#1#2{\footnotetext[#1]{#2}\def⁵{\annotatehere[#1]{#2}}}
+
+
+
+\begin{document}
+
+
+%  \input Parkosz01-03
+%  \newpage
+%  \input Parkosz02-04
+%  \newpage
+%  \input Parkosz03-05
+% % \newpage
+%  \input Parkosz04-06
+% \newpage
+% \input Parkosz05-07
+% \newpage
+% \input Parkosz06-08
+% \newpage
+%  \input Parkosz07-09
+% \newpage
+%  \input Parkosz08-10
+% \newpage
+%  \input Parkosz09-11
+% \newpage
+%  \input Parkosz10-12
+% \newpage
+%  \input Parkosz11-13
+% \newpage
+%  \input Parkosz12-14
+% \newpage
+ \input Parkosz13-15wiersz
+% pomaga na automatyczne wyswietlanie adnotacji?:
+\newpage
+\end{document}
+
+% FR: interpretationis itp.
+
+
+%%% Local Variables: 
+%%% mode: LaTeX
+%%% TeX-PDF-mode: t
+%%% TeX-engine: luatex 
+%%% End:
