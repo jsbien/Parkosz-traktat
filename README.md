@@ -23,6 +23,3 @@ Skany z transkrypcją są dostępne również w systemie Transkribus (https://tr
 
 **Scans with transcription are also available in Transkribus system (https://transkribus.eu)**
 
-Przykładowe wyniki są dostępne do pobrania.
-
-Sample Transkribus output is available in the download area.
