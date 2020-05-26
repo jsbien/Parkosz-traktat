@@ -19,12 +19,6 @@ Fragmenty książki skonwertowane na LuaLaTeX, wersja wstępna z licznymi usterk
 
 *Quick and dirty LuaLaTeX fragments of the book with several technical problems.*
 
-Wiki z notatkami i potencjalnie przydatnymi linkami
-
-*Wiki with notes and potentially useful references*
-
-https://bitbucket.org/jsbien/parkosz-traktat/wiki/
-
 Skany z transkrypcją są dostępne również w systemie Transkribus (https://transkribus.eu)
 
 **Scans with transcription are also available in Transkribus system (https://transkribus.eu)**
