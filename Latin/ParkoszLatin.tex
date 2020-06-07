@@ -1,4 +1,6 @@
-% 
+% http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts&page=57&zoom=width&showposition=0.5,0.16
+% ->
+%  https://djvu.szukajwslownikach.uw.edu.pl/parkosz/parkosz.djvu
 % ?https://tex.stackexchange.com/questions/286778/how-to-make-pdf-outlines-work-correctly-in-luatex?rq=1?
 % https://tex.stackexchange.com/questions/294883/setting-up-pdf-outlines-from-lua
 % http://wbl.klf.uw.edu.pl/13/2/iParkosz
@@ -48,6 +50,9 @@
 %   [0.05em]
 %   {\textquoteleft}
 %   {\textquoteright}
+
+\usepackage{makeidx}\makeindex
+
 
 
 \usepackage{draftwatermark}
@@ -100,8 +105,9 @@
 
 \newcommand{\sParkosz}[1]{{\fontspec[Scale=3.0]{Parkosz}\symbol{#1}}}
 
-\newcommand{\parkosz}[1]{\colorbox{lime}{\textit{\Quivira #1}}}
-\newcommand{\PARKOSZ}[1]{{\textit{#1}}}
+\newcommand{\parkosz}[1]{\index{#1}\colorbox{lime}{\textit{\Quivira #1}}}
+% nie używane:
+% \newcommand{\PARKOSZ}[1]{{\textit{#1}}}
 
 % za ciemny:
 % \newcommand{\almanica}[1]{\colorbox{lightgray}{\textit{#1}}}
@@ -264,10 +270,12 @@ domena publiczna (samo odczytanie)
 \begin{titlepage}
 {\textbf{Marian Kucała}\\(Korekta OCR, skład i transliteracja alfabetu Parkosza: Janusz S. Bień)} 
 
-\vfill
-{\relsize{1}
-  {TEKST TRAKTATU\\[-.5ex]([Fotokopia i] odczytanie)\\[-.5ex]Traktat o ortografii polskiej [Jakuba Parkosza]}\\\relsize{-1} DOI: 10.13140/RG.2.2.12938.31685/1 (ResearchGate)}
-%  DOI: 10.13140/RG.2.2.12938.31685 
+\vfill {\relsize{1} {TEKST TRAKTATU\\[-.5ex]([Fotokopia i]
+    odczytanie)\\[-.5ex]Traktat o ortografii polskiej [Jakuba
+    Parkosza]}\\\relsize{-1} DOI:10.5281/zenodo.3883821\\ zastepuje
+  DOI: 10.13140/RG.2.2.12938.31685/1, 10.13140/RG.2.2.12938.31685
+  (ResearchGate)}
+% DOI: 10.13140/RG.2.2.12938.31685
 
 \vfill
 {\textbf{Licencje}:\\ \relsize{-1}Creative Commons [Wspólnota twórcza]\\[-.4ex]
@@ -417,14 +425,15 @@ za członem \textit{manifest=}, np.
 można użyć do wyświetlenia skanu strony w innej przeglądarce IIIF.
 
 Adresy postaci
-\url{http://ebuw.uw.edu.pl/Content/215606/directory.djvu?djvuopts&page=57&zoom=width&showposition=0.5,0.16}
+\url{https://djvu.szukajwslownikach.uw.edu.pl/parkosz/parkosz.djvu?djvuopts&page=57&zoom=width&showposition=0.5,0.16}
 nie są niestety już wspierane przez przeglądarki WWW. Aby z nich
 korzystać, należy zainstalować program \textsf{djview4}
 (\url{http://djvu.sourceforge.net/djview4.html}) i w programie wkleić
   ten adres do pola \textit{Open Location}.
 
   Modyfikowalna postać niniejszego tekstu jest dostępna w
-  repozytoriach \url{https://bitbucket.org/jsbien/parkosz-traktat/} i
+  repozytorum
+  % \url{https://bitbucket.org/jsbien/parkosz-traktat/} i
   \url{https://github.com/jsbien/Parkosz-traktat}. Zgodnie z zasadami
   licencji modyfikacji może dokonywac każdy zainteresowany bez pytania
   o zgodę.
@@ -500,8 +509,11 @@ korzystać, należy zainstalować program \textsf{djview4}
  \everypar{}
 % pomaga na automatyczne wyswietlanie adnotacji?:
 \newpage
+\printindex
+
 \tableofcontents
 %\printbibliography
+
 
 \end{document}
 
