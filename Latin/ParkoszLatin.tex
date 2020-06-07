@@ -39,26 +39,30 @@
 \usepackage{relsize}
 
 \usepackage{csquotes}
-\usepackage[style=authoryear,backend=biber]{biblatex}
-\addbibresource{Parkosz.bib}
+% \usepackage[style=authoryear,backend=biber]{biblatex}
+% \addbibresource{Parkosz.bib}
 % http://tex.stackexchange.com/questions/166337/quotation-mark-quotation-sign-xelatex-polyglossia-csquotes
-\DeclareQuoteStyle{polish}% I looked it up on Wikipedia, no idea if it's right
-  {\quotedblbase}
-  {\textquotedblright}
-  [0.05em]
-  {\textquoteleft}
-  {\textquoteright}
+% \DeclareQuoteStyle{polish}% I looked it up on Wikipedia, no idea if it's right
+%   {\quotedblbase}
+%   {\textquotedblright}
+%   [0.05em]
+%   {\textquoteleft}
+%   {\textquoteright}
 
 
 \usepackage{draftwatermark}
 
 
-
-\setmainfont[Mapping=tex-text]{DejaVu Serif}
-\setsansfont[Mapping=tex-text]{DejaVu Sans}
+% LuaTeX:
+\setmainfont[Ligatures=TeX]{DejaVu Serif}
+\setsansfont[Ligatures=TeX]{DejaVu Sans}
+% XeTeX
+% \setmainfont[Mapping=tex-text]{DejaVu Serif}
+% \setsansfont[Mapping=tex-text]{DejaVu Sans}
 \setmonofont{DejaVu Sans Mono}
 
-\font\Quivira="Quivira"
+%\font\Quivira="Quivira"
+\font\Quivira="Symbola"
 
 % temporary change of transliteration:
 % \catcode`\ĳ=\active
@@ -81,15 +85,16 @@
 %\font\mono="DejaVu Sans"
 %\font\mono="FreeSerif"
 
-\font\fontCardo="Cardo"
+%\font\fontCardo="Cardo"
+\font\fontCardo="Symbola"
 
 \newcommand{\Cardo}[1]{{\fontCardo #1}}
 
 
 % http://scholarsfonts.net/cardofnt.html
 
-\font\Parkosz="Parkosz"
-\def\largeParkosz{\fontspec[Scale=1.5]{Parkosz}}
+% \font\Parkosz="Parkosz"
+% \def\largeParkosz{\fontspec[Scale=1.5]{Parkosz}}
 
 \newcommand{\symbolParkosz}[1]{{\largeParkosz\symbol{#1}}}
 
@@ -496,7 +501,7 @@ korzystać, należy zainstalować program \textsf{djview4}
 % pomaga na automatyczne wyswietlanie adnotacji?:
 \newpage
 \tableofcontents
-\printbibliography
+%\printbibliography
 
 \end{document}
 
