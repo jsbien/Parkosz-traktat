@@ -1,13 +1,12 @@
+Traktat - the treatise:
+
+https://jsbien.github.io/Parkosz4IIIF
+
 **Kucała, Marian (1985) Jakuba Parkosza traktat o ortografii polskiej. Państwowe Wydawnictwo Naukowe.**
 
 Podstawowy adres dygitalizacji - The primary address
 
 http://ebuw.uw.edu.pl/publication/220504
-
-
-Adres tymczasowy dygitalizacji książki i dodatkowych materiałów - Temporary address of the book and additional data
-
-http://wbl.klf.uw.edu.pl/12/
 
 **Zawartość niniejszego repozytorium - Content of the repository**
 
