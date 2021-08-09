@@ -1,0 +1,445 @@
+% pdf2djvu --no-nfkc  ParkoszLatin4djvu.pdf -o ParkoszLatin4djvu.djvu
+\documentclass[dvipsnames,12pt]{report}
+\usepackage{polyglossia}
+\setdefaultlanguage{polish}
+
+\usepackage[a4paper,landscape]{geometry}
+\usepackage[doublespacing]{setspace}
+\usepackage{fontspec}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage{soul}
+
+% \usepackage{ocgx}
+% % ocg2 doesn't work
+% \usepackage{zref-savepos}
+% \usepackage{xifthen}
+% \usepackage{xspace}
+
+% \input{OCG_annotation}
+
+
+\usepackage{longtable}
+\usepackage[pdfencoding=unicode]{hyperref}
+
+\usepackage{fancyvrb}
+
+\usepackage{relsize}
+
+\usepackage{csquotes}
+
+% LuaTeX:
+% \setmainfont[Ligatures=TeX]{DejaVu Serif}
+% \setsansfont[Ligatures=TeX]{DejaVu Sans}
+% XeTeX
+\setmainfont[Mapping=tex-text]{DejaVu Serif}
+\setsansfont[Mapping=tex-text]{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+
+%\font\Quivira="Quivira"
+\font\Quivira="Symbola"
+
+
+%\font\mono="DejaVu Sans Mono"
+\font\mono="DejaVu Sans"
+%\font\mono="DejaVu Sans"
+%\font\mono="FreeSerif"
+
+%\font\fontCardo="Cardo"
+\font\fontCardo="Symbola"
+
+\newcommand{\Cardo}[1]{{\fontCardo #1}}
+
+
+% http://scholarsfonts.net/cardofnt.html
+
+\newcommand{\symbolParkosz}[1]{{\largeParkosz\symbol{#1}}}
+
+\newcommand{\sParkosz}[1]{{\fontspec[Scale=3.0]{Parkosz}\symbol{#1}}}
+
+\newcommand{\parkosz}[1]{\index{#1}\colorbox{lime}{\textit{\Quivira #1}}}
+
+% za ciemny:
+% \newcommand{\almanica}[1]{\colorbox{lightgray}{\textit{#1}}}
+\newcommand{\almanica}[1]{\colorbox{pink}{\textit{#1}}}
+
+
+
+%hh hyphenation head
+%ht hyphenation tail
+
+% dc dropped capital
+
+%\newcommand{\dc}[1]{{\relsize{3}\colorbox{black!15}{\textbf{#1}}}}
+% size "migrates" into line number
+\newcommand{\dc}[1]{{\colorbox{black!15}{\textbf{#1}}}}
+
+% The color good for screen, bad for printing:
+\newcommand{\hyphh}[2]{#1}
+%\newcommand{\hyphh}[2]{#1\textcolor{RoyalPurple}{#2}}
+\newcommand{\hypht}[2]{\fbox{#2}}
+
+
+% marginalia
+% zapisy na marginesie i nad rządkami
+\newcommand{\margin}[1]{\colorbox{blue!10}{\{#1\}}}
+%\newcommand{\margin}[1]{\annotatetextBlue{\{#1\}}{zapisy na marginesie}}
+
+\renewcommand{\over}[1]{\colorbox{blue!10}{\{#1\}}}
+%\renewcommand{\over}[1]{\annotatetextBlue{\{#1\}}{zapisy nad rządkami}}
+
+% litery i wyrazy dodane, (których w tekście brak)
+\newcommand{\add}[1]{\colorbox{olive!10}{<#1>}}
+
+% litery i wyrazy zbędne
+% \newcommand{\extra}[1]{\colorbox{magenta!10}{[#1]}}
+\newcommand{\extra}[1]{\colorbox{magenta!10}{[#1]}}
+
+% przekreślenia
+% MATHEMATICAL LEFT WHITE SQUARE BRACKET' (U+27E6)
+% 'MATHEMATICAL RIGHT WHITE SQUARE BRACKET' (U+27E7)
+%\newcommand{\overstr}[1]{\annotatetextMagenta{{\Quivira⟦}#1{\Quivira⟧}}{przekreślenia}}
+\newcommand{\overstr}[1]{\colorbox{magenta}{{\Quivira⟦}#1{\Quivira⟧}}}
+
+% mało fontów:
+% RIGHT WHITE SQUARE BRACKET (U+301B)
+
+
+% wątpliwe odczytania
+% confidence
+% nie działa parametr specyfikacji koloru - może jakiś głupi błąd
+\newcommand{\conf}[2]{\textcolor{orange}{#1}}
+
+
+% wcięcia Kucały
+% akapit:
+\newcommand{\indentK}{\hskip2em}
+% cytat
+\newcommand{\indentKcyt}{\hskip5em}
+
+% wcięcia Parkosza:
+\newcommand{\indentP}{\colorbox{yellow}{\hskip2em}}
+
+\parindent0pt
+
+\DefineVerbatimEnvironment%
+{VerbatimLatin}{Verbatim}
+{commentchar=\%,numbers=left,numberblanklines=false,
+commandchars=\\\{\}}
+
+
+\newcount\ppageno
+\newcount\ppreviouspageno
+
+
+\newcount\plineno
+\newcount\psublineno
+
+\newcount\pnoteno
+\newcount\psecnoteno
+
+% odstęp na oko - lepiej zmierzyć i wstawić
+\def\fulllines{\everypar{\advance\plineno by 1\llap{\the\ppageno-\ifnum\plineno<10 0\fi\the \plineno \hskip 1.5em}}}
+
+\def\fullpreviouslines{\everypar{\advance\plineno by 1\llap{\the\ppreviouspageno-\ifnum\plineno<10 0\fi\the \plineno \hskip 1.5em}}}
+
+% liczenie pustych wierszy:
+% \let\engraf\par
+% \def\par{\leavevmode\endgraf}
+
+\def\splitlines{\advance\plineno by 1\psublineno=0\everypar{\advance\psublineno by 1\llap{\textcolor{green}{\the\ppageno-\ifnum\plineno<10 0\fi\the \plineno-\the\psublineno \ }}}}
+
+\def\newsplitline{\advance\plineno by 1}
+
+\def\newParkoszpage{\everypar{}}
+
+\catcode`\¹=13
+\catcode`\²=13
+\catcode`\³=13
+\catcode`\⁴=13
+\catcode`\⁵=13
+
+\def\newtip#1#2{\def¹{}}
+\def\secondtip#1#2{\def²{}}
+\def\thirdtip#1#2{\def³{}}
+\def\fourthtip#1#2{\def⁴{}}
+\def\fifthtip#1#2{\def⁵{}}
+
+\author{\textbf{Marian Kucała}\\(Korekta OCR, skład i transliteracja alfabetu Parkosza: Janusz S. Bień)} 
+
+\title{TEKST TRAKTATU\\[-.5ex]([Fotokopia i] odczytanie)\\[-.5ex]Traktat o ortografii polskiej [Jakuba Parkosza]\\DOI: 10.5281/zenodo.3883863}
+
+
+\date{\textbf{Licencje}:\\ \relsize{-1}Creative Commons [Wspólnota twórcza]\\[-.4ex]
+Uznanie autorstwa --- Na tych samych warunkach --- Polska\\
+wersja 2.5 lub późniejsza\\\textit{także}\\
+GNU Free Documentation License\\\textit{także}\\
+domena publiczna (samo odczytanie)
+\textbf{\today}}
+
+
+
+\begin{document}
+\message{Begin document}
+\thispagestyle{empty}
+\message{Begin title page}
+% \maketitle
+
+\begin{titlepage}
+{\textbf{Marian Kucała}\\(Korekta OCR, skład i transliteracja alfabetu Parkosza: Janusz S. Bień)} 
+
+\vfill {\relsize{1} {TEKST TRAKTATU\\[-.5ex]([Fotokopia i]
+    odczytanie)\\[-.5ex]Traktat o ortografii polskiej [Jakuba
+    Parkosza]}\\\relsize{-1} DOI:10.5281/zenodo.3883863\\ zastepuje
+  DOI: 10.13140/RG.2.2.12938.31685/1, 10.13140/RG.2.2.12938.31685
+  (ResearchGate)}
+% DOI: 10.13140/RG.2.2.12938.31685
+
+\vfill
+{\textbf{Licencje}:\\ \relsize{-1}Creative Commons [Wspólnota twórcza]\\[-.4ex]
+Uznanie autorstwa --- Na tych samych warunkach --- Polska\\
+wersja 2.5 lub późniejsza\\\textit{także}\\
+GNU Free Documentation License\\\textit{także}\\
+domena publiczna (samo odczytanie)\\
+\textbf{\today}}
+
+\end{titlepage}
+
+%\newpage
+\pagenumbering{roman}
+
+
+\phantomsection
+% wrong encoding in the bookmark!:
+%\addcontentsline{toc}{chapter}{Wstęp}
+\addcontentsline{toc}{chapter}{Wprowadzenie}
+
+\raggedright
+
+\section*{Wstęp --- fragmenty (s.~5--6)}
+\addcontentsline{toc}{section}{Wstęp --- fragmenty (s.~5--6)}
+\label{sec:wstp}
+Wydanie to i opracowanie jest oparte na badaniach i pracach
+dotychczasowych — Jana Łosia, Bolesława Ulanowskiego, Witolda
+Taszyckiego, Eyszarda Ganszyńca, Zdzisława Stiebera, także innych. Do
+ustaleń tych badaczy wprowadzono tylko niewielkie korektury i
+uzupełnienia. Nie chodzi tu bowiem o pokazanie rezultatów jakichś
+nowych badań nad Parkoszem, a tym bardziej nowych odkryć, ale o
+udostępnienie tego zabytku wszystkim, których interesuje historia
+języka polskiego.
+
+Do nazwisk wymienionych wyżej badaczy trzeba dodać nazwiska
+recenzentów niniejszego wydania: prof. Juliusza Domańskiego i dra
+Józefa Reczka, którzy tu wnieśli znaczny wkład pracy. Prot. Domański
+wprowadził w wielu wypadkach korektury do odczytania tekstu
+łacińskiego i niemało zmian do tłumaczenia (przede wszystkim wstępu do
+traktatu). Dr Reczek zaproponował również szereg poprawek w
+odczytaniu,
+trochę w tłumaczeniu; jego zasługą jest odczytanie wyrazów:
+\textit{siutka} zamiast \textit{siatka}, \textit{wiłuje}
+zam. \textit{wilnie}, \textit{żur} zam. \textit{żum}<\textit{p}>.
+Wydawca jest PP. Recenzentom bardzo wdzięczny.
+
+Jacobus Parcossii de Zoravice jest nazywany Jakubem Parkoszowicem,
+Jakubem synem Parkosza, Jakubem z Żórawic, a najczęściej krótko ---
+Parkoszem (Jakubem Parkoszem nazywał go jeszcze za jego życia Zbigniew
+Oleśnicki). Tej ostatniej nazwy używamy w niniejszym opracowaniu.
+
+\section*{Zasady wydania (s. 34--35)}
+\addcontentsline{toc}{section}{Zasady wydania (s. 34--35)}
+\label{sec:zasady-wydania}%{Zasady wydania (s. 34--35)}
+
+
+Wydanie niniejsze, jak to już powiedziano na wstępie, opiera się na
+opracowaniach dotychczasowych, przede wszystkim na wydaniu Jana
+Łosia. W odczytaniu tekstu bardzo pomocne było odczytanie Bolesława
+Ulanowskiego. I choć różnic w stosunku do tamtego odczytania jest tu
+dość sporo (część poprawek jest zasługą recenzentów), to jednak w
+miejscach trudnych przyjmuje się najczęściej lekcje Ulanowskiego.
+
+
+W tekście łacińskim skróty wyrazów rozwiązano bez zaznaczania
+tego. Długie \textit{ſ} występujące z reguły na początku i w środku
+wyrazów zastąpiono \textit{s} krótkim, zmieniono występowanie liter
+\textit{u} i \textit{v}, majuskułową literę oznaczającą [\textit{i}] i
+[\textit{j}] podobną do późniejszego \textit{J} oddaje się (zarówno w
+wyrazach łacińskich jak polskich) przez \textit{i}, \textit{I};
+wprowadzono poza tym parę drobnych zmian --- nie wprowadzono do
+pisowni dyftongów. Zmodernizowano duże i małe litery, interpunkcję i
+podział na akapity\footnote{W niniejszej wersji elektronicznej
+przy podziale na wersy wykorzystano również sugestie Wójcika i Wydry ``{Jakub
+    {Parkoszowic}'s {Polish} {Mnemonic} {Verse} about {Polish}
+    {Orthography} from the 15th {Century}},'', \textit{Culture of
+    Memory in East Central Europe in the Late Middle Ages and the
+    Early Modern Period}, 2008, s. 119--127. [JSB]}.
+
+Wyrazy i teksty polskie oddaje się w dokładnej transliteracji, pisząc
+tylko znak przestankowy (kropkę) u dołu wiersza, a nie w środku jak w
+rękopisie\footnote{Nie zawsze [JSB]}.
+
+Oznaczono strony i wiersze rękopisu (a nie wiersze transkrybowanego
+tekstu).  Przekład polski wstępu do traktatu jest oparty na
+przekładzie Łosia, jednak oprócz wydawcy niemało zmian wprowadził tu
+prof. J. Domański (por. \textit{Wstęp}). W przekładzie samego traktatu
+znaczną trudność sprawiała terminologia: określenia głosek i ich
+cech. Nie można terminów łacińskich tłumaczyć zbyt dosłownie, nie
+można ich też zastępować dzisiejszymi językoznawczymi określeniami
+cech fonemów (głosek) — trzeba było wybrać drogę pośrednią. Przekład
+terminów pozostawia z pewnością wiele do życzenia, sprawa Parkoszowej
+terminologii gramatycznej wymaga dokładniejszego przedstawienia
+(wydawca ma zamiar poświęcić temu osobny artykuł).
+
+W tłumaczeniu tekstu wyrazy polskie podaje się w transkrypcji, a tam,
+gdzie mowa o pisowni — w transliteracji, dodając transkrypcję w
+nawiasach. Długość samogłosek w transkrypcji zaznaczono tylko w
+wypadkach oznaczenia jej w rękopisie (litery podwojone) i nie
+budzących wątpliwości. Nosówkę w transkrypcji oznaczono przez
+\textit{ą}\footnote{\parkosz{ⱥ} i \parkosz{ø} ??? --- JSB}, natomiast
+w części wstępnej (przy omawianiu słownictwa) i w hasłach w indeksie
+zastosowano \textit{ę} i \textit{ą}.
+
+W komentarzu wyzyskano w znacznym stopniu uwagi Łosia.  Przy podawaniu
+znaczeń większości wyrazów opierano się na \textit{Słowniku
+  staropolskim}\footnote{\textit{Słownik staropolski},
+  red. nacz. S. Urbańczyk, Wrocław\ldots, 1953
+  nn.}\footnote{\url{http://rcin.org.pl/publication/39990} ---
+  JSB}. Znaczenia wyrazów — ale tylko różne od współczesnych — podaje
+się nie w notkach, ale w indeksie (przy wyrazach w staropolszczyźnie
+wieloznacznych, a w traktacie nie mających kontekstu, znaczeń się nie
+podaje). Indeks jest więc także rodzajem słownika.
+
+
+Cały komentarz umieszczono w notkach pod tekstem; przy
+czytaniu jest to wygodniejsze niż komentarz umieszczony po tekście. W
+komentarzu tym poprawki pisowni przykładów podaje się tylko w tych
+wypadkach, kiedy dotyczą omawianych głosek i liter.
+
+Przykłady w tekście wyróżniono \parkosz{kursywą}\footnote{kolorem
+  zielonym [JSB].}.
+
+Nawiasy ujmują: \extra{} litery i wyrazy zbędne, \add{} litery i wyrazy
+dodane (których w tekście brak), \margin{} zapisy na marginesie i nad
+rządkami, \overstr{} przekreślenia. Pionowe kreski | oddzielają
+wiersze (rządki) rękopisu, kreski podwójne || oddzielają
+strony\footnote{nie dotyczy niniejszej wersji elektronicznej [JSB]}.
+
+\section*{Uwagi techniczne [JSB]}
+\addcontentsline{toc}{section}{Uwagi techniczne [JSB]}
+\label{sec:Uwagi techniczne}
+
+{\relsize{-1}
+
+Przypisy powinny się wyświetlać w osobnym oknie po najechaniu myszą na
+ich numer w tekście --- jeśli to nie działa, należy kliknąć na
+numer, by otworzyć okno, i ponownie kliknąć, by je zamknąć.
+
+\break Linki typu
+\url{https://jsbien.github.io/Parkosz4IIIF/\#?cv=0&manifest=https://jsbien.github.io/Parkosz4IIIF/collection/ParkoszJBC/index.json}
+prowadzą do skanu odpowiedniej strony w formacie IIIF i teoretycznie
+powinny wyświetlić się w każdej przeglądarce WWW --- wykorzystana jest
+przeglądarka IIIF o nazwie \textit{Universal Viewer}. Część adresu
+za członem \textit{manifest=}, np.
+\url{https://jsbien.github.io/Parkosz4IIIF/collection/ParkoszJBC/index.json}
+można użyć do wyświetlenia skanu strony w innej przeglądarce IIIF.
+
+Adresy postaci
+\url{https://djvu.szukajwslownikach.uw.edu.pl/parkosz/parkosz.djvu?djvuopts&page=57&zoom=width&showposition=0.5,0.16}
+nie są niestety już wspierane przez przeglądarki WWW. Aby z nich
+korzystać, należy zainstalować program \textsf{djview4}
+(\url{http://djvu.sourceforge.net/djview4.html}) i w programie wkleić
+  ten adres do pola \textit{Open Location}.
+
+  Modyfikowalna postać niniejszego tekstu jest dostępna w
+  repozytorum
+  % \url{https://bitbucket.org/jsbien/parkosz-traktat/} i
+  \url{https://github.com/jsbien/Parkosz-traktat}. Zgodnie z zasadami
+  licencji modyfikacji może dokonywac każdy zainteresowany bez pytania
+  o zgodę.
+
+  Więcej informacji na ten temat będzie można znaleźć w artykule
+  \textit{Traktat Parkosza. Eksperymentalna edycja elektroniczna},
+  który został przyjęty do druku w \textit{Poznańskich Studiach
+    Polonistycznych. Seria Językoznawcza}
+  (\url{https://pressto.amu.edu.pl/index.php/pspsj}).
+}  
+\newpage
+\pagenumbering{arabic}
+% Package hyperref Warning: The anchor of a bookmark and its parent's must not
+% (hyperref)                be the same. Added a new anchor on input line 270.
+\phantomsection
+\addcontentsline{toc}{chapter}{Odczytanie}
+\phantomsection
+\addcontentsline{toc}{section}{Strona 1 [3]}
+ \input Parkosz01-03
+ \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 2 [4]}
+ \input Parkosz02-04
+ \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 3 [5]}
+ \input Parkosz03-05
+ \newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 4 [6]}
+ \input Parkosz04-06
+\newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 5 [7]}
+\input Parkosz05-07
+\newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 6 [8]}
+\input Parkosz06-08
+\newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 7 [9]}
+ \input Parkosz07-09
+\newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 8 [10]}
+ \input Parkosz08-10
+\newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 9 [11]}
+ \input Parkosz09-11
+\newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 10 [12]}
+ \input Parkosz10-12
+\newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 11 [13]}
+ \input Parkosz11-13
+\newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 12 [14]}
+ \input Parkosz12-14
+\newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 13 [15]}
+ \input Parkosz13-15
+\newpage
+ \phantomsection
+\addcontentsline{toc}{section}{Strona 14 [16]}
+ \input Parkosz14-16
+
+ \everypar{}
+% pomaga na automatyczne wyswietlanie adnotacji?:
+% \newpage
+% \printindex
+
+\tableofcontents
+%\printbibliography
+
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: LaTeX
+%%% TeX-PDF-mode: t
+%%% TeX-engine: luatex 
+%%% TeX-master: t
+%%% End:
