@@ -12,14 +12,6 @@
 
 \usepackage{soul}
 
-% \usepackage{ocgx}
-% % ocg2 doesn't work
-% \usepackage{zref-savepos}
-% \usepackage{xifthen}
-% \usepackage{xspace}
-
-% \input{OCG_annotation}
-
 
 \usepackage{longtable}
 \usepackage[pdfencoding=unicode]{hyperref}
@@ -30,9 +22,6 @@
 
 \usepackage{csquotes}
 
-% LuaTeX:
-% \setmainfont[Ligatures=TeX]{DejaVu Serif}
-% \setsansfont[Ligatures=TeX]{DejaVu Sans}
 % XeTeX
 \setmainfont[Mapping=tex-text]{DejaVu Serif}
 \setsansfont[Mapping=tex-text]{DejaVu Sans}
@@ -220,6 +209,7 @@ domena publiczna (samo odczytanie)
 \catcode`\Ƥ=\active
 \def Ƥ{\sgl{P\&\_\_p;\&\_\_r;}}
 
+\usepackage{makeidx}\makeindex
 
 \begin{document}
 \message{Begin document}
@@ -465,8 +455,8 @@ korzystać, należy zainstalować program \textsf{djview4}
 
  \everypar{}
 % pomaga na automatyczne wyswietlanie adnotacji?:
-% \newpage
-% \printindex
+ \newpage
+ \printindex
 
 \tableofcontents
 %\printbibliography
