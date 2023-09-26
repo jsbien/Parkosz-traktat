@@ -19,12 +19,11 @@ Fragmenty książki skonwertowane na LuaLaTeX, wersja wstępna z licznymi usterk
 *Quick and dirty LuaLaTeX fragments of the book with several technical problems.*
 
 Skany z transkrypcją są dostępne również w systemie Transkribus (https://transkribus.eu)
--
 Scans with transcription are also available in Transkribus system (https://transkribus.eu)
 
-*Zadania studenckie dotyczące traktatu - studenrs term assignments related to the treatise*
+*Zadania studenckie dotyczące traktatu - students term assignments related to the treatise*
 
-GoldenDict
+GoldenDict:	    
 
 ![GoldenDict entry](4GoldenDict/GoldenDict_1.5.0_screenshots/czop.png "Przykładowe hasło")
 
