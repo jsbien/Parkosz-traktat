@@ -31,7 +31,7 @@ IMT:
 
 ![IMT example](4IMT/screenshots/IMTline07.png "Przykład zadania paleograficznego")
 
-* Eksperyment z djview4poliqarp - an experiment with djview4poliqarp*
+*Eksperyment z djview4poliqarp - an experiment with djview4poliqarp*
 
 ![DjVu example](4djview/screenshots/djvie4poliqarp_Parkosz.png "Słownik w formie indeksu")
 
