@@ -27,3 +27,6 @@ GoldenDict:
 
 ![GoldenDict entry](4GoldenDict/GoldenDict_1.5.0_screenshots/czop.png "Przykładowe hasło")
 
+IMT:
+
+![IMT example](4IMT/screenshots/IMTline07.png "Przykład zadania paleograficznego")
