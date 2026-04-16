@@ -1,0 +1,773 @@
+\tracinglostchars=3
+\documentclass[final]{ltugboat}
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage[hidelinks,pdfa]{hyperref}
+
+%%% Start of metadata %%%
+
+\title{Representing Parkosz's alphabet in~the~Junicode
+  font% Two.
+}
+
+\author{Janusz S. Bień}
+\address{Warsaw, Poland}
+\netaddress{jsbien (at) uw.edu.pl}
+\personalURL{sites.google.com/view/jsbien}
+\ORCID{0000-0001-5006-8183}
+% To receive a physical copy of the TUGboat issue, please include the
+% mailing address we should use, as a comment if you prefer it not be printed.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Janusz Bień
+% Bacewiczówny 2 m. 45
+% 02-786 Warszawa
+% Poland
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% End of metadata %%%
+
+% I do not insist on using color.
+\usepackage{xcolor}
+
+% This is a must:
+% https://github.com/psb1558/Junicode-font
+% 1.053beta of 22-08-?? or later
+\newfontfamily{\Junicode}{JunicodeTwoBeta-Regular.ttf}%[Path=/home/jsbien/work/Junicode-font/fonts/ttf/]
+\newfontfamily{\JunicodeI}{JunicodeTwoBeta-Italic.ttf}%[Path=/home/jsbien/work/Junicode-font/fonts/ttf/]
+\newfontfamily{\JunicodeB}{JunicodeTwoBeta-Bold.ttf}%[Path=/home/jsbien/work/Junicode-font/fonts/ttf/]
+
+
+\newfontfamily{\Symbola}{Symbola_hint.ttf}%[Path=/usr/share/fonts/truetype/ancient-scripts/]
+% Any other font with the appropriate coverage will do
+% Characters needed:
+% 0x001D7D  	ᵽ	LATIN SMALL LETTER P WITH STROKE
+% 0x0020E8  	⃨	 COMBINING TRIPLE UNDERDOT
+% 0x00263A  	☺	WHITE SMILING FACE
+% 0x002C63  	Ᵽ	LATIN CAPITAL LETTER P WITH STROKE
+% Package: fonts-symbola
+% Version: 2.60-1.1
+% https://packages.debian.org/bullseye/fonts-symbola
+
+\newcommand{\uname}[1]{{\textsc{\MakeLowercase{#1}}}}
+\newcommand{\ucode}[1]{{\acro{U+#1}}}
+\newcommand{\mcode}[1]{{\acro{M+#1}}}
+
+% glyph
+\setlength{\fboxsep}{2pt} % default 3pt, reduce clashes
+\newcommand{\gl}[1]{\fbox{\Junicode\addfontfeature{StylisticSet=10}#1}}
+% simple glyph (no box)
+%\newcommand{\sgl}[1]{{\mtags{#1}}}
+\newcommand{\sgl}[1]{{\Junicode\addfontfeature{StylisticSet=10}#1}}
+%  simple glyph (no box) in italics
+\newcommand{\sgli}[1]{{\JunicodeI\addfontfeature{StylisticSet=10}#1}}
+
+% Junicode input
+%\newcommand{\Ji}[1]{{\JunicodeMagenta\textbf{#1}}}
+\newcommand{\Ji}[1]{{\JunicodeB #1}}
+
+% Symbola (or equivalent) glyph
+\newcommand{\Sgl}[1]{\fbox{\Symbola #1}}
+% Symbola (or equivalent) simple glyph (no box)
+\newcommand{\Ssgl}[1]{{\Symbola #1}}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+  The 15th century Latin manuscript containing a treatise by Jakub Parkosz
+  was the very first proposal of Polish spelling. To account for all
+  the phonemes of Polish some new letters were proposed, which are not
+  available in present day fonts. This makes it difficult to quote
+  the proposal when discussing the history of Polish spelling. A
+  transliteration was designed which uses only the characters
+  available in the Unicode standard, but it was rather
+  cumbersome. Another approach, suggested by the present author and
+  implemented by Peter S. Baker in his Junicode (version two) font, is to
+  use so-called tag characters.
+\end{abstract}
+
+\section{Introduction}
+ \label{sec:introduction}
+
+ 
+ \begin{quote}
+   A digression: when in 1990 I was writing my proposal of an extended
+   font layout \cite{JSB90} and wanted to include some comments
+   about the origin of the letters specific to the Polish language, I was
+   very much surprised by the lack of published information on this
+   topic. Now the situation is definitely better in one respect: the
+   original sources have been digitized and are freely available to
+   anybody. In my opinion the analysis of sources is still lacking
+   many details, so some time ago I decided to try to answer my
+   questions myself \Ssgl{☺}.
+ \end{quote}
+
+
+ The 15th century handwritten Latin treatise by Jakub Parkosz (called
+ also Parkoszowic) was the very first proposal of Polish spelling. You
+ can find the scans at (for example)
+ \tbsurl{jsbien.github.io/Parkosz4IIIF/}. The best source of English
+ language information on the treatise and its author seems to be
+ \cite{rafał08:_jakub_parkos_polis_mnemon_verse}; in Polish,
+ it is \cite{TraktatPWN1985}.  To account for all the phonemes of
+ Polish, Parkosz created some completely new letters. As his proposal
+ did not catch on, the letters haven't became available in printer's
+ fonts. He also assigned some different meanings to the variants of
+ handwritten letters, which also were not used in print. The almost
+ complete repertoire of Parkosz's letters is presented in
+ Fig.~\ref{fig:Parkosz-alphabet}.
+
+ \begin{figure*}
+   \centering
+   \includegraphics[width=\hsize]{img/parkoszTalfabet}
+   \caption{Parkosz's alphabet summary (with a few omissions)}
+   \label{fig:Parkosz-alphabet}
+ \end{figure*}
+
+ 
+ Both the 1830 \cite{samuel30:_jacob_parkos_żoraw} and 1907
+ \cite{Los_traktat} editions of the treatise were typeset manually
+ and undoubtedly special types had to be prepared for the missing
+ characters. The 1985 edition \cite{TraktatPWN1985} was typeset leaving
+ empty space for
+ Parkosz's letters. The letters were drawn by hand, cut into pieces
+ and carefully pasted into the empty spaces.
+ 
+ Two amateurish attempts have been made (by the author and his student) to create a font for Parkosz's
+ letters with FontForge. One was intended to reproduce the shape of
+ the letters in the 1985 edition:
+ \tbsurl{bitbucket.org/jsbien/parkosz-font-old}.  Another was
+ intended to reproduce the shape of the letters in the 1907 edition:
+ \tbsurl{github.com/jsbien/parkosz-font}. However, their quality
+was not satisfactory, so for the electronic edition of the treatise
+ \cite{kucała20:_trakt_jakub_parkos} (see also
+ \tbsurl{github.com/jsbien/Parkosz-traktat}) a transliteration system
+ was designed. The rationale for the transliteration decisions were
+ presented in Polish in \cite{bien_parkoszPSP} and summarized in
+ English in \cite{bień22:_parkos}; see also Appendix
+ \ref{sec:excerpt-2}. The transliteration covers all the characters
+ used by Parkosz, not just the newly created ones.
+
+ As the transliteration uses regular Unicode characters but changes
+ their meaning, some metadata is needed to distinguish the normal
+ text from the transliteration. It would be convenient to make the metadata
+ unnecessary. Theoretically it is possible with so-called variation
+ sequences, but they have to be officially registered by the Unicode
+ Consortium, which makes this approach impractical, at least at the
+ present stage.
+
+ In \cite{bień_stand_unicod1} a brute force approach was proposed.  It
+ assumed that after creating a TrueType/OpenType font with
+ appropriate ligatures a little used combining character, namely
+ \ucode{20E8} \uname{COMBINING TRIPLE UNDERDOT} \Sgl{◌⃨},
+ would serve as a kind of a private variant selector. At that time I
+ was only vaguely aware of the usage of the so-called tag characters
+ in Unicode.
+
+ 
+ In March 2022 Margaret Kibi (\texttt{marrus-sh}) proposed using tag
+ characters instead of the variable sequences in the Junicode
+ font.\footnote{\raggedright \tbsurl{github.com/psb1558/Junicode-font/discussions/122\#discussioncomment-2416880}} The
+ proposal was supported by several font users and accepted by the font
+ author. I hope this approach will become a kind of a \textit{de
+   facto} standard, as it shares many advantages with
+ TrueType/OpenType features (cf.\
+ \cite[pp.~12--13]{baker22:Junicode}). To make a long story short, using
+ those features preserves the properties of the base character, while
+ a character in the Private Use Area has no properties.
+ 
+ This approach was also applied to Parkosz's letters as the
+ implementation of my feature
+ request\footnote{\tbsurl{github.com/psb1558/Junicode-New/issues/27}}
+ and this is the subject of the present paper.
+%
+ The characters accessed by variation sequences, tag characters or
+ ligatures can have their own codepoints in the Private Use Area, but
+ this is another topic.
+
+ Tag characters are in principle invisible, but for documentation
+ purposes the tag sequences will be rendered here as, e.g.,
+ {\Ji{\&\_\_p;}}{\Ji{\&\_\_s;}}; \textit{p} stands for
+ \textit{Parkosz}\footnote{The tag is available in Junicode since build
+   1.052beta of August 25, 2022.}  and is always the very first tag,
+ \textit{s} refers to the shape and means \textit{square}. Other
+ secondary tags used are \Ji{\&\_\_r;} for \textit{round},
+ \Ji{\&\_\_h;} for \textit{hook} and \Ji{\&\_\_l;} for \textit{loop},
+ \Ji{\&\_\_s;} for \textit{slashed}, \Ji{\&\_\_b;} for \textit{below};
+ \Ji{\&\_\_d;} means \textit{descender} or \textit{dot}.
+
+    In a \XeLaTeX{} source they can be written respectively as
+    \verb|\&\_\_p;|, {\verb|\&\_\_s;|} etc. The same convention
+    applies to \XeTeX{} and even to Microsoft Word and OpenOffice
+    \cite[p.\,38]{baker22:Junicode}.
+
+    The
+    input can and should be simplified by using special Emacs input
+    methods or equivalent macros in other tools. On the other hand
+    usually just isolated words will be quoted, so providing the tag
+    characters explicitly is not excessively tedious.
+
+ For the reader's convenience the layout of this paper is similar to
+ \cite{bień22:_parkos} and some figures are repeated here. Please
+ consult \cite{bień22:_parkos} for more details.
+
+ \section{New letters}
+ \label{sec:new-letters}
+
+
+ \subsection{\textit{b grossum}}
+ \label{sec:b-grossum}
+ Called also \textit{b durum} and \textit{b quadratum}. Some
+ occurrences in the manuscript are presented in
+ Fig.~\ref{fig:ParkoszBgrossum}.  It was transliterated as
+ \ucode {0180} \uname{LATIN SMALL LETTER B WITH STROKE} (\gl{ƀ}, Latin
+ Extended-B block).
+
+ In Junicode the glyph is 
+ {\gl{b\&\_\_p;\&\_\_s;}} and the
+ input is {\Ji{b\&\_\_p;\&\_\_s;}}.
+
+
+ \begin{figure}
+   \centering
+   %  s. [15]  w. 28:
+   \includegraphics[width=.2\hsize]{img/Parkosz15b}
+   %  s. [8]  w. 2:
+   \includegraphics[width=.1\hsize]{img/8b2}
+   % s. [7] marginalia w. 15:
+   \caption{\textit{b grossum} in the manuscript:
+     p.~[15] l.~28 (on the left), p.~[8] l.~2}
+   \label{fig:ParkoszBgrossum}
+ \end{figure}
+
+ \subsection{\textit{b molle}}
+ \label{sec:b-molle}
+
+ Called also \textit{b rotundum}. Some occurrences in the manuscript are presented
+ in Fig.~\ref{fig:ParkoszBmolle}. 
+
+
+It was  transliterated as
+\ucode {0253} \uname{LATIN SMALL LETTER B WITH HOOK} (\gl{ɓ}, \acro{IPA}
+Extensions block).  
+
+ \begin{figure}
+   \centering
+   %  s. [15]  w. 28:
+   \includegraphics[width=.2\hsize]{img/Parkosz15b}
+   % s. [7] marginalia w. 15:
+   \includegraphics[width=.12\hsize]{img/47b1}
+   % s. [7]  w. 15 drugie słowo:
+   \includegraphics[width=.1\hsize]{img/47b2}
+   \caption{\textit{b molle} in the manuscript:
+     p.~[15] l.~28 (on the right),  p.~[7] marginalia and l.~15.}
+   \label{fig:ParkoszBmolle}
+ \end{figure}
+
+ In Junicode the glyph is {\gl{b\&\_\_p;\&\_\_l;}} and the
+ input is {\Ji{b\&\_\_p;\&\_\_l;}}.
+
+
+ 
+ \subsection{\textit{p durum}}
+ \label{sec:p-durum}
+
+ \begin{figure}
+   \centering
+ \includegraphics[width=.1\hsize]{img/Parkosz8marginalia}
+   \includegraphics[width=.33\hsize]{img/Parkosz15w32-p}
+   \caption{Letters \textit{p durum} and \textit{p molle} in the manuscript:
+      p.~[8] marginalia, p.~[15] l.~32}
+   \label{fig:ParkoszPmarg}
+ \end{figure}
+
+ 
+ Called also \textit{p quadratum}. Some occurrences in the
+ manuscript are presented in Fig.~\ref{fig:ParkoszPmarg}.
+
+It was transliterated as
+ \ucode {1D7D} \uname{LATIN SMALL LETTER P WITH STROKE} (\Sgl{ᵽ}, Latin
+ Extended-C block).
+
+ In Junicode the glyph is {\gl{p\&\_\_p;\&\_\_s;}} and the
+ input is {\Ji{p\&\_\_p;\&\_\_s;}}.
+
+ 
+ \subsection{\textit{p molle}}
+ \label{sec:p-molle}
+
+ Some occurrences in the manuscript are also presented in
+ Fig.~\ref{fig:ParkoszPmarg}.
+
+ 
+ The letter was transliterated as
+ \ucode{01A5} \uname{LATIN SMALL LETTER P WITH HOOK} (\gl{ƥ}, Latin Extended-B  block).
+
+ In Junicode the glyph is {\gl{p\&\_\_p;\&\_\_r;}} and the
+ input is {\Ji{p\&\_\_p;\&\_\_r;}}.
+
+
+ \subsection{\textit{l molle}}
+ \label{sec:l-molle}
+
+ The letter was transliterated as
+ \ucode{026C} \uname{LATIN SMALL LETTER L WITH BELT}
+ ({\gl{ɬ}},  \acro{IPA} Extensions block),
+
+ In Junicode the glyph is {\gl{l\&\_\_p;\&\_\_l;}} and the
+ input is {\Ji{l\&\_\_p;\&\_\_l;}}.
+
+
+ \subsection{\textit{durum v}}
+ \label{sec:durum-v}
+
+ The letter was transliterated as \ucode{028B} \uname{LATIN SMALL LETTER
+   V WITH HOOK} (\gl{ʋ}, \acro{IPA} Extensions  block).
+
+ In Junicode the glyph is {\gl{v\&\_\_p;\&\_\_h;}} and the
+ input is {\Ji{v\&\_\_p;\&\_\_h;}}.
+
+\section{Adapted letters}
+ \label{sec:adapted-letters}
+
+
+ \subsection{\textit{g improprie}}
+ \label{sec:g-improprio}
+
+ This is the letter \textit{g} as written by Italians (\textit{unco
+   retorto versus dexteram partem sicut scribunt ipsum Italici}).
+
+ The letter was transliterated as \ucode{A77F} \uname{LATIN SMALL
+   LETTER TURNED INSULAR G} (\gl{ꝿ}, Latin Ex\-tended-D block).
+
+ In Junicode the glyph is {\gl{g\&\_\_p;\&\_\_h;}} and the
+ input is {\Ji{g\&\_\_p;\&\_\_h;}}.
+
+ \subsection{\textit{grossum m}}
+ \label{sec:grossum-m}
+
+ This is the letter \textit{m} as written at the end of words
+ (\textit{[\ldots]\ spissum cum cauda, sicut in fine diccionum poni
+   solet}). As discussed in \cite[p.~48]{bień22:_parkos}, the intended
+ shape of the letter is not clear.
+ 
+ The letter was transliterated as \ucode{0271} \uname{LATIN SMALL
+   LETTER M WITH HOOK} (\gl{ɱ}, \acro{IPA} Extensions block).
+
+ In Junicode the recommended input is {\Ji{m\&\_\_p;\&\_\_d;}}; it
+ now renders {\gl{m\&\_\_p;\&\_\_d;}}, i.e., the \acro{MUFI} (Medieval
+ Font Unicode Initiative\footnote{\tbsurl{mufi.info}}) Private Use
+ Area character \mcode{F223}\footnote{For referencing \acro{MUFI} codepoints
+   I advocate the use of the \acro{M+} prefix.} \uname{LATIN SMALL LETTER M
+   WITH RIGHT DESCENDER}. This may change in the future.
+
+% can
+%  be used, the glyph   {\gl{m\&\_\_d;\&\_\_c;}} can be accessed as {\Ji{m\&\_\_d;\&\_\_c;}}
+ 
+\subsection{\textit{grossum n}}
+ \label{sec:grossum-n}
+
+ Similar to \textit{grossum m}, this is the letter \textit{n} as
+ written at the end of words.  As discussed in
+ \cite[pp.~48--49]{bień22:_parkos}, the intended shape of the letter is not
+ clear; see also Fig.~\ref{fig:ParkoszN}.
+ 
+   \begin{figure*}
+   \centering
+   \includegraphics[width=1.0\hsize]{img/Parkosz8w14n1}
+   \caption{Grossum \emph{n} in the manuscript at the beginning of words:
+     p.~[8] l.~14}
+   \label{fig:ParkoszN}
+ \end{figure*}
+
+ The letter was transliterated as \ucode{0272} \uname{LATIN SMALL
+   LETTER N WITH LEFT HOOK} (\gl{ɲ}, \acro{IPA} Extensions block).
+
+ In Junicode the recommended input is {\Ji{n\&\_\_p;\&\_\_d;}}; it
+ now renders {\gl{n\&\_\_p;\&\_\_d;}}, i.e., the \acro{MUFI} character
+ \mcode{F228} \uname{LATIN SMALL LETTER N WITH RIGHT
+   DESCENDER}. This may change in the future.
+
+\section{Special use letters}
+ \label{sec:special-use-letters}
+
+
+ To this category belong the letters with the standard shape, but with
+ a non-standard (from the contemporary point of view) phoneme assigned
+ to them by Parkosz. They are: \textit{f molle}, \textit{g per se},
+ \textit{l durum}, \textit{m molle}, \textit{n molle}.
+
+ All three editions used for these just the standard letters, which
+ is quite confusing for present-day readers, even if they are
+ scholars. Therefore the decision was made to transliterate them as,
+ respectively:
+ \begin{itemize}\raggedright
+ \item \ucode{1E1F} \uname{LATIN SMALL LETTER F WITH DOT ABOVE} (\gl{ḟ}),
+ \item \ucode{0121} \uname{LATIN SMALL LETTER G WITH DOT ABOVE} (\gl{ġ}),
+ \item \ucode{1E37} \uname{LATIN SMALL LETTER L WITH DOT BELOW} (\gl{ḷ}),
+ \item \ucode{1E43} \uname{LATIN SMALL LETTER M WITH DOT BELOW} (\gl{ṃ}),
+ \item \ucode{1E47} \uname{LATIN SMALL LETTER N WITH DOT BELOW} (\gl{ṇ}),
+ \end{itemize}
+
+ This part of my proposal can be considered an unnecessary
+ complication, so should be treated as optional. Nevertheless in
+ Junicode the characters can be entered as, respectively:
+ {\Ji{f\&\_\_p;\&\_\_d;}} ({\gl{f\&\_\_p;\&\_\_d;}}\/),
+ {\Ji{g\&\_\_p;\&\_\_d;}} ({\gl{g\&\_\_p;\&\_\_d;}}),
+ {\Ji{l\&\_\_p;\&\_\_b;}} ({\gl{l\&\_\_p;\&\_\_b;}}),
+ {\Ji{m\&\_\_p;\&\_\_b;}} ({\gl{m\&\_\_p;\&\_\_b;}}) and
+ {\Ji{n\&\_\_p;\&\_\_b;}} ({\gl{n\&\_\_p;\&\_\_b;}}).
+
+ If used in colored text, it would be desirable to render the dot in a
+ different color to make clear this is an artificial addition (an idea
+ of Jakub Wilk formulated long ago in a different context). I am aware
+ that because of technical difficulties this is at present rather
+ a dream.
+ 
+
+\section{Regular letters}
+ \label{sec:regular-letters}
+
+ There is no typographical problem with the letters listed below. We
+ give their names using original early Latin spelling (\textit{breue}
+ meaning \textit{breve}, i.e., `short').
+
+ They are:
+  \gl{a} (\textit{breue}),
+ \gl{c}, \gl{d} (\textit{per se}), \gl{e} (\textit{breue}),
+\gl{i} (\textit{breue}),
+\gl{ÿ}, 
+\gl{k},
+ \gl{o} (\textit{breue}),
+\gl{q} (\textit{per se}),
+\gl{r} and \gl{R} (\textit{per
+   se}, see also
+ section~\ref{sec:majuscules}), \gl{ſ} and \gl{s},
+\gl{t},
+\gl{u} (\textit{breue}),
+\gl{v}, \gl{w}
+and \gl{x}.
+
+
+As for an unnamed variant of the letter \gl{c}, it is not obvious how
+to interpret it. I assumed this is \ucode{00E7} \uname{LATIN SMALL
+  LETTER C WITH CEDILLA} (\gl{ç}, Latin-1 Supplement block) and
+transcribed as such. However in Junicode there is a special glyph for
+it, namely {\gl{c\&\_\_p;\&\_\_h;}} input as {\Ji{c\&\_\_p;\&\_\_h;}}.
+
+In Junicode \textit{long s} \gl{s\&\_\_l;\&\_\_o;} can be input as
+{\Ji{s\&\_\_l;\&\_\_o;}}.
+\section{Letters not listed in the alphabet summary}
+ \label{sec:letters-not-listed}
+ 
+ Most old Polish texts for the nasal vowel use \ucode{A7C1}
+ \uname{LATIN SMALL LETTER OLD POLISH O} (\sgl{ꟁ}) 
+ introduced to Unicode in version 14.0
+ \cite{buncic:_propos_old_polis_o_iso}.  However in Parkosz's treatise
+ the vowel has the shape of \ucode{00F8} \uname{LATIN SMALL LETTER O
+   WITH STROKE} \gl{ø}, cf.~the second and the third stroked
+ letter in Fig.~\ref{fig:nosowe}, so it was used in the
+ transliteration. However in Junicode it can be input as
+ {\Ji{ꟁ\&\_\_p;\&\_\_s;}} which makes its meaning clear.
+
+ The manuscript contains a single occurrence of \ucode{2C65}
+ \uname{LATIN SMALL LETTER A WITH STROKE} (\sgl{ⱥ}), cf.~the first stroked
+ letter in Fig.~\ref{fig:nosowe}, which could be a scribal mistake.
+ Nevertheless it was transcribed just as \gl{ⱥ}. 
+
+ \begin{figure}
+   \centering
+ \includegraphics[width=\hsize]{img/16-7-2trimmed}
+   \caption{Nasal vowels in the manuscript}
+   \label{fig:nosowe}
+ \end{figure}
+
+ Letter \gl{z} was omitted in the alphabet, probably by mistake; in
+ the transliteration it was used without change, which is a
+ simplification, as it looks more like \gl{ʒ} \ucode{0292}
+ \uname{LATIN SMALL LETTER EZH}.
+
+ The letter \gl{h} was also omitted probably by mistake.
+
+ \section{Multigraphs}
+ \label{sec:multigraphs}
+
+ Some multigraphs in the manuscript are written as ligatures, but
+ there is no need to represent them as such in the transliteration. On
+ the other hand it would be desirable if the font rendered them as
+ ligatures.
+
+ As it was mentioned earlier, some multigraphs consist of doubled vowels:
+ \textit{longum} \textit{aa},
+  \textit{longum} \textit{ee},
+ \textit{longum}  \textit{oo},
+ \textit{longum}  \textit{uu}.
+
+ There is an open question whether the text would be more readable if
+\textit{longum} \textit{aa} was rendered as \ucode{A733} \uname{LATIN SMALL
+   LETTER AA} ({\sgl{ꜳ}}, Latin Ex\-\mbox{tended-D}) and \textit{longum} \textit{oo}
+ as \ucode{A74F} \uname{LATIN SMALL LETTER OO} ({\sgl{ꝏ}}, also
+ Latin Extended-D). For \textit{longum} \textit{ee} and \textit{uu}
+the  ligatures would have to be designed. The character \mcode{E8C7}
+ \uname{LATIN SMALL LIGATURE UU} (\sgl{}) would be rather
+ misleading.
+
+ The other multigraphs are: \sgli{ch} (taken over from Latin), \sgli{cz}, \textit{molle}
+ \sgli{dz}, \sgli{ſſz}, \sgli{ſch} and
+ \sgli{ſz}, and \sgli{zz}.
+
+ \section{Majuscules}
+ \label{sec:majuscules}
+
+ Some of the examples are proper names, so they usually (not always)
+ start with a majuscule  (cf.\ the index in
+\cite{kucała20:_trakt_jakub_parkos}).
+
+ The main Polish example is a verse, and the first
+ words of some lines also start with a majuscule.
+
+ \begin{figure*}[ht]\centering
+   \includegraphics[width=\hsize]{img/parkosz15l24}
+   \caption{The manuscript p.~15 l.~24: \Junicode {Ɓoç} {ʋṇye{ɱ}{}}
+     {kaſzde} {ſḷoʋko} {thoɓe} (transliteration)}
+   \label{fig:Bmolle}
+ \end{figure*}
+
+
+ In consequence the transcription contained the following
+ majuscules: \gl{A},
+  \gl{Ɓ} (\textit{B molle}, cf.\ Fig.~\ref{fig:Bmolle}),
+ \gl{C},
+ \gl{Ġ} (\textit{G per se}),
+ \gl{I},
+ \gl{K},
+ \gl{N},
+ \Sgl{Ᵽ} (\textit{P grossum}),
+ {\gl{Ƥ}} (\textit{P molle}),
+ \gl{Q},
+ \gl{R},
+ \gl{S},
+ \gl{V},
+ \gl{T},
+ \gl{Z}.
+
+ In Junicode we have now {\gl{P\&\_\_p;\&\_\_s;}} input as
+ {\Ji{P\&\_\_p;\&\_\_s;}} and {\gl{P\&\_\_p;\&\_\_r;}} input
+ as {\Ji{P\&\_\_p;\&\_\_r;}};
+ \gl{G\&\_\_p;\&\_\_d;} can be input as {\Ji{G\&\_\_p;\&\_\_d;}}.
+
+ 
+ It is perhaps worth noting that the upper case of \textit{g per se}
+ is \gl{I}.
+
+ 
+
+ \section{Concluding remarks}
+ \label{sec:concluding-remarks}
+
+ Adding Parkosz's letter to Junicode is in my opinion a large step
+ forward in improving the editorial quality of publications concerning
+ the treatise. Elsewhere I intend to present the difficulties caused
+ by the lack of an appropriate font, including a misrepresentation of
+ Parkosz's views.
+ 
+ It would be fun to have also a font simulating original handwriting,
+ but the text would be unreadable for people without at least some
+ knowledge of paleography; see, for example, the letters \textit{d} and
+ \textit{x} shown in Fig.~\ref{fig:Pilas2}.
+
+  \begin{figure}
+   \centering
+   \includegraphics[width=.13\hsize]{img/c}%
+   \includegraphics[width=.13\hsize]{img/d}%
+   \includegraphics[width=.13\hsize]{img/ff}%
+   \includegraphics[width=.13\hsize]{img/pParkosz}%
+   \includegraphics[width=.13\hsize]{img/w4}%
+   \includegraphics[width=.13\hsize]{img/w5}%
+   \caption{Outlines (by Szymon Pilas): {\sgl{c\&\_\_p;\&\_\_h;}}, d, ff, p~grossum, w, x}
+   \label{fig:Pilas2}
+ \end{figure}
+
+\appendix{}
+% \appendixpage
+ \section{An excerpt: a word list}
+ \label{sec:excerpt-2}
+
+ According to \cite{rafał08:_jakub_parkos_polis_mnemon_verse}, this
+ is a mnemonic verse; in that paper you can also find the English
+ translation.
+
+\subsection{Pure Unicode transliteration}
+\label{sec:old-transliteration}
+
+Some minor mistakes in \cite{kucała20:_trakt_jakub_parkos} corrected.
+
+\begin{quote}\raggedright
+\Junicode
+Adaaṃ biḷ bÿḷ caḷ kaal
+czas çaḷo chood
+daaḷ dzaaḷ
+eſz ffitaa fiꝿi
+i ġee ÿe
+ꝿhaaɲ
+kroɬ
+ḷis ɬis ɱikaa
+ṃika ɲiſſki ṇiſki
+othooſz ƥiġe piſchṇo qʋras
+roſſa rzøøſſa
+roſuuɱ.
+ſaaɱ ſchaad ſſzaadḷ
+ſzak 
+zzaraa Zaɱɲø
+to uṃee uuɲ viḷa
+ʋiɬaaḷ wſta xøødz
+ÿⱥṇczøc ÿoczi
+ÿøøkaa
+\end{quote}
+
+
+\subsection{Junicode transliteration}
+\label{sec:junic-transl}
+The characters accessed with tag sequences are set in italics.
+
+
+\begin{quote}\raggedright
+\Junicode
+%Adaaṃ
+Adaam
+%biḷ
+bil
+%bÿḷ
+bÿl
+%caḷ
+cal
+%kaal
+kaal
+%czas
+czas
+%çaḷo
+\sgli{c\&\_\_p;\&\_\_h;}a{\sgli{l\&\_\_p;\&\_\_b;}}o
+%chood
+chood
+%daaḷ
+daa
+%dzaaḷ
+dzaal
+%eſz
+e\sgli{s\&\_\_l;\&\_\_o;}z
+%ffitaa
+ffitaa
+%fiꝿi
+fi\sgli{g\&\_\_p;\&\_\_h;}i
+i
+%ġee
+ee
+%ÿe
+ÿe
+%ꝿhaaɲ
+\sgli{g\&\_\_p;\&\_\_h;}haa\sgli{n\&\_\_d;\&\_\_c;}
+%kroɬ
+kro{\sgli{l\&\_\_p;\&\_\_l;}}
+%ḷis
+{\sgli{l\&\_\_p;\&\_\_b;}}is
+%ɬis
+{\sgli{l\&\_\_p;\&\_\_l;}}is
+%ɱikaa
+{\sgli{m\&\_\_p;\&\_\_d;}}ikaa
+% ṃika
+{\sgli{m\&\_\_p;\&\_\_b;}}ika
+%ɲiſſki
+{\sgli{n\&\_\_p;\&\_\_d;}}iſſki
+%ṇiſki
+{\sgli{n\&\_\_p;\&\_\_b;}}iſki
+%othooſz
+othooſz
+%ƥiġe
+{\sgli{p\&\_\_p;\&\_\_r;}}ige
+%piſchṇo
+piſchno
+%qʋras
+q{\sgli{v\&\_\_p;\&\_\_h;}}ras
+%roſſa
+roſſa
+%rzøøſſa
+rzøøſſa
+%roſuuɱ.
+roſuu{\sgli{m\&\_\_p;\&\_\_d;}}.
+%ſaaɱ
+ſaa{\sgli{m\&\_\_p;\&\_\_b;}}
+%ſchaad
+ſchaad
+%ſſzaadḷ
+ſſzaad{\sgli{l\&\_\_p;\&\_\_b;}}
+%ſzak 
+ſzak 
+%zzaraa
+zzaraa
+%Zaɱɲø
+Za{\sgli{m\&\_\_p;\&\_\_d;}}{\sgli{n\&\_\_p;\&\_\_d;}}ø
+%to
+to
+%uṃee
+u{\sgli{m\&\_\_p;\&\_\_b;}}ee
+%uuɲ
+uu{\sgli{n\&\_\_p;\&\_\_d;}}
+%viḷa
+vi{\sgli{l\&\_\_p;\&\_\_b;}}a
+%ʋiɬaaḷ
+ʋi{\sgli{l\&\_\_p;\&\_\_l;}}aa{\sgli{l\&\_\_p;\&\_\_b;}}
+%wſta
+wſta
+%xøøodz
+xøødz
+%ÿⱥṇczøc
+ÿⱥnczøc
+%ÿoczi
+ÿoczi
+%ÿøøkaa
+ÿøøkaa
+
+\end{quote}
+
+
+\subsection{A sample transcription}
+\label{sec:simpl-transcr}
+
+Various publications use various transcriptions to quote
+the treatise. Here is the one used in
+\cite[pp.~125--126]{rafał08:_jakub_parkos_polis_mnemon_verse}.
+
+\begin{quote}
+Adam był bił cał kał;
+czas, ciało, chod dał dział;
+eż fyta figi
+i je je chan krol;
+łys lis myka,
+Mika nyski niski
+otoż pije pyszno kwas;
+rosa rząsa, rozum;
+sam szad siadł;
+żak ziara za mną;
+to umie un wiła;
+wylał w usta ksiądz,
+jęcząc jęczy, jąka.
+\end{quote}
+
+\let\url\tbsurl
+\SetBibJustification{\raggedright\hfuzz=16pt}
+\bibliographystyle{tugboat}
+%\nocite{book-minimal}      % make the bibliography non-empty
+\bibliography{JSB}       % xampl.bib comes with BibTeX
+
+\makesignature
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% ispell-local-dictionary: "english"
+%%% TeX-master: t
+%%% coding: utf-8-unix
+%%% TeX-PDF-mode: t
+%%% TeX-engine: xetex
+%%% End:
