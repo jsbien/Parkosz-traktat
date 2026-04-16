@@ -1,0 +1,137 @@
+\tracinglostchars=3
+\listfiles
+
+\documentclass[withmarginpar]{mwart}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{polish}
+\setotherlanguage{english}
+\usepackage{csquotes}
+
+% https://tex.stackexchange.com/questions/16765/biblatex-author-year-square-brackets
+% \usepackage[style=authoryear,backend=biber,backref=true,urldate=short]{biblatex}
+\usepackage[style=ext-authoryear,backend=biber,backref=true,urldate=short]{biblatex}
+\DeclareOuterCiteDelims{parencite}{\bibopenbracket}{\bibclosebracket}
+\addbibresource{all.bib}
+\DefineBibliographyStrings{polish}{%
+  byeditor = {red.},
+  urlseen = {dostęp},
+}
+
+% http://tex.stackexchange.com/questions/166337/quotation-mark-quotation-sign-xelatex-polyglossia-csquotes
+\DeclareQuoteStyle{polish}% I looked it up on Wikipedia, no idea if it's right
+  {\quotedblbase}
+  {\textquotedblright}
+  [0.05em]
+  {\textquoteleft}
+  {\textquoteright}
+
+% psuje tytuły???:
+%  \usepackage{ulem}
+\usepackage{metalogo}
+%\usepackage[polish]{cleveref}
+\def\eob{ę}
+
+\setmainfont[Mapping=tex-text]{TeX Gyre Termes}
+
+\usepackage{relsize}
+
+% https://tex.stackexchange.com/questions/139459/vref-and-input-command/167539#167539
+% nie działa!
+\usepackage[polish]{varioref}
+\vrefwarning
+% dla varioref!
+\usepackage{hyperref}
+%\usepackage{cleveref}
+
+\usepackage{graphicx}
+% nieintuicyjne:
+%\usepackage{rviewport}
+% [hyphens]: options clash
+\usepackage{url}
+%\usepackage{natbib}
+
+% program name
+\newcommand{\pname}[1]{\textsf{#1}}
+
+
+% file name
+\newcommand{\fname}[1]{\texttt{#1}}
+
+\newcommand{\uname}[1]{\texttt{'#1'}}
+\newcommand{\ucode}[1]{\texttt{U+#1}}
+\newcommand{\usi}[1]{\texttt{#1}}
+
+% Aletheia
+\newcommand{\aname}[1]{\texttt{#1}}
+\newcommand{\acode}[1]{\texttt{#1}}
+
+% MUFI
+\newcommand{\mname}[1]{\texttt{'#1 \textsc{<mufi>'}}}
+\newcommand{\mcode}[1]{\texttt{M+#1}}
+
+
+
+\usepackage{draftwatermark}
+\usepackage[doublespacing]{setspace}
+
+% \usepackage[draft]{fixme}
+
+% nie działa:?
+%\renewcommand{\topfraction}{0.9}
+\renewcommand{\floatpagefraction}{0.9}	% require fuller float pages
+\renewcommand{\topfraction}{0.9}	% max fraction of floats at top
+\setcounter{topnumber}{5}
+\setcounter{totalnumber}{5}  
+
+\newfontfamily{\Junicode}{JunicodeTwoBeta-Regular.ttf}
+\newfontfamily{\JunicodeI}{JunicodeTwoBeta-Italic.ttf}[Path=/home/jsbien/work/Junicode-font/fonts/ttf/]
+\newfontfamily{\JunicodeB}{JunicodeTwoBeta-Bold.ttf}[Path=/home/jsbien/work/Junicode-font/fonts/ttf/]
+
+\newcommand{\gl}[1]{\fbox{\Junicode\addfontfeature{StylisticSet=10}#1}}
+\newcommand{\gli}[1]{\fbox{\JunicodeI\addfontfeature{StylisticSet=10}#1}}
+\newcommand{\glb}[1]{\fbox{\JunicodeB\addfontfeature{StylisticSet=10}#1}}
+
+\newcommand{\sgl}[1]{{\Junicode\addfontfeature{StylisticSet=10}#1}}
+
+\newcommand{\Ji}[1]{{\JunicodeB #1}}
+
+
+\begin{document}
+%\gappto\captionslingua{\renewcommand{\chaptername}{Caput}}
+\gappto\captionspolish{\renewcommand{\figurename}{Ilustracja}}
+
+% \newcommand{\uname}[1]{{\relsize{-1}\texttt{#1}}}
+% \newcommand{\ucode}[1]{\texttt{#1}}
+% \newcommand{\mname}[1]{\texttt{#1}}
+% \newcommand{\mcode}[1]{\texttt{#1}}
+% \newcommand{\aname}[1]{\texttt{#1}}
+% \newcommand{\acode}[1]{\texttt{#1}}
+% \newcommand{\prname}[1]{\textsf{#1}}
+
+
+\title{Parkosz, Unicode i Junicode\\Postprint\footnote{???}}
+
+\author{Janusz S. Bień\\ORCID 0000-0001-5006-8183}
+
+\date{\today}
+
+\maketitle
+
+%\catcode`\&=11
+% \catcode`\|=11
+% \catcode`\_=11
+
+\input JSB_Parkosz_font-tekst
+
+% redundantne:
+\end{document}
+
+%%% Local Variables: 
+%%% coding: utf-8-unix
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-PDF-mode: t
+%%% TeX-engine: xetex
+%%% TeX-command-extra-options: "-shell-escape"
+%%% End: 

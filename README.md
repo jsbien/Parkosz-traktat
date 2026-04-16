@@ -35,3 +35,5 @@ IMT:
 
 ![DjVu example](4djview/screenshots/djvie4poliqarp_Parkosz.png "Słownik w formie indeksu")
 
+Artykuł o znakach Parkosza w foncie Junicode
+A paper on Parkosz's character in the Junicode font
